@@ -1,0 +1,12 @@
+.banniere {
+  display: flex;
+  align-items: left;
+  border-bottom: solid 3px black;
+}
+
+.descriptionPerso {
+  display: flex;
+  align-items: left;
+  padding: 8px;
+  display: inline-block;
+}

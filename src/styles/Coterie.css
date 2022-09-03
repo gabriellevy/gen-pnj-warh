@@ -1,0 +1,67 @@
+.coterie {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+}
+  
+.lstCoteries_li {
+	padding: 0px 0px 30px 0px;
+	margin: 0px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+	transition-duration: 0.4s;
+}
+
+.lstCoteries_li_selection {
+	padding: 30px 0px 0px 0px;
+	margin-left: 4px;
+	margin-right: 4px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+	transition-duration: 0.4s;
+}
+
+.lstCoteries_img {
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 150px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.boutonCoterie {
+	color: rgb(1, 18, 32);
+	background-color: rgb(225, 235, 243);
+	text-align: center;
+	width: 150px;
+	font-size: 14px;
+	border-radius: 10px;
+	transition-duration: 0.4s;
+	cursor:pointer;
+  }
+
+  .boutonCoterie_selection {
+	color: rgb(1, 18, 32);
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	width: 150px;
+	font-size: 18px;
+	border-radius: 10px;
+	transition-duration: 0.4s;
+	cursor:pointer;
+  }
+  
+  .boutonCoterie:hover {
+	background-color: #a7bbbe;
+  }

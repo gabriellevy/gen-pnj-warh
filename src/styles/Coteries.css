@@ -1,0 +1,8 @@
+.lstCoteries_ul {
+    list-style-type: none;
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top:0px;
+      margin-bottom:0px;
+  }
