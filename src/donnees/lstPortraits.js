@@ -1,9 +1,7 @@
-import { nomCotTempliers } from './lstCoteries'
+import { nomCotBretonniens } from './lstCoteries'
 import { nomCotConquistadors } from './lstCoteries'
 import { nomCotElfes } from './lstCoteries'
-import { nomCotOrks } from './lstCoteries'
-import { nomCotZaporogues } from './lstCoteries'
-import { nomCotTranshumanistes } from './lstCoteries'
+import { nomCotKislevites } from './lstCoteries'
 import { nomCotAcheron } from './lstCoteries'
 
 import portrait_conquistador_25_60 from './img/conquistadors/portraits/25-60.jpg'
@@ -99,17 +97,6 @@ import portrait_elfe_20_50 from './img/elfes/portraits/portrait20_50.jpg'
 import portrait_elfe_20_50_b from './img/elfes/portraits/portrait20_50_b.jpg'
 import portrait_elfe_sournois20_50 from './img/elfes/portraits/sournois20_50.jpg'
 
-import portrait_ork_15_plus from './img/orks/portraits/portrait_15+.jpg'
-import portrait_ork_30_50 from './img/orks/portraits/portrait30-50.jpg'
-import portrait_ork_20_50_c from './img/orks/portraits/portrait20-50_c.jpg'
-import portrait_ork_20_50_b from './img/orks/portraits/portrait20-50_b.jpg'
-import portrait_ork_20_50 from './img/orks/portraits/portrait20-50.jpg'
-import portrait_ork_15_40 from './img/orks/portraits/portrait15-40.jpg'
-import portrait_ork_15_gobelin_musicien_plus from './img/orks/portraits/portrait_gobelin_musicien_15+.jpg'
-import portrait_ork_25_gobelin_plus from './img/orks/portraits/portrait_gobelin_25+.jpg'
-import portrait_ork_40_plus from './img/orks/portraits/portrait_40+.jpg'
-import portrait_ork_30_plus from './img/orks/portraits/portrait_30+.jpg'
-
 import portrait_8_15 from './img/portraits/8-15.jpg'
 import portrait_femme13_20 from './img/portraits/F13-20.jpg'
 import portrait_femme20_40 from './img/portraits/F20-40.jpg'
@@ -131,59 +118,36 @@ import portrait_40_plus from './img/portraits/portrait40+.png'
 import portrait_60_plus from './img/portraits/portrait60+_miserable.png'
 import portrait_forgeron_60_plus from './img/portraits/portrait_forgeron_60+.jpg'
 
-import portrait_zaporogue_15_35_chasseur from './img/zaporogues/portraits/15-35_chasseur.jpg'
-import portrait_zaporogue_20_45 from './img/zaporogues/portraits/20-45.jpg'
-import portrait_zaporogue_20_45_b from './img/zaporogues/portraits/20-45_2.jpg'
-import portrait_zaporogue_20_45_c from './img/zaporogues/portraits/20-45_3.jpg'
-import portrait_zaporogue_20_50 from './img/zaporogues/portraits/25-50.jpg'
-import portrait_zaporogue_20_50_b from './img/zaporogues/portraits/25-50_2.jpg'
-import portrait_zaporogue_20_50_guerrier from './img/zaporogues/portraits/25-50_guerrier.jpg'
-import portrait_zaporogue_30_60 from './img/zaporogues/portraits/30-60.jpg'
-import portrait_zaporogue_30_60_b from './img/zaporogues/portraits/30-60_2.jpg'
-import portrait_zaporogue_30_60_musicien from './img/zaporogues/portraits/30-60_musicien.jpg'
-import portrait_zaporogue_40_60 from './img/zaporogues/portraits/40-60.jpg'
-import portrait_zaporogue_40_70 from './img/zaporogues/portraits/45-70.jpg'
-import portrait_zaporogue_50_plus from './img/zaporogues/portraits/50+.jpg'
-import portrait_zaporogue_50_plus_b from './img/zaporogues/portraits/50+_2.jpg'
-import portrait_zaporogue_65_plus from './img/zaporogues/portraits/65+.jpg'
-import portrait_zaporogue_femme15_35 from './img/zaporogues/portraits/F15-35.jpg'
-import portrait_zaporogue_femme20_40 from './img/zaporogues/portraits/F20-40.jpg'
-import portrait_zaporogue_femme20_40_bergere from './img/zaporogues/portraits/F20-40_bergere.jpg'
-import portrait_zaporogue_femme20_40_paysane from './img/zaporogues/portraits/F20-40_paysane.jpg'
-import portrait_zaporogue_femme30_60 from './img/zaporogues/portraits/F30-60.jpg'
-import portrait_zaporogue_femme50_plus from './img/zaporogues/portraits/F50+.jpg'
+import portrait_zaporogue_15_35_chasseur from './img/kislevites/portraits/15-35_chasseur.jpg'
+import portrait_zaporogue_20_45 from './img/kislevites/portraits/20-45.jpg'
+import portrait_zaporogue_20_45_b from './img/kislevites/portraits/20-45_2.jpg'
+import portrait_zaporogue_20_45_c from './img/kislevites/portraits/20-45_3.jpg'
+import portrait_zaporogue_20_50 from './img/kislevites/portraits/25-50.jpg'
+import portrait_zaporogue_20_50_b from './img/kislevites/portraits/25-50_2.jpg'
+import portrait_zaporogue_20_50_guerrier from './img/kislevites/portraits/25-50_guerrier.jpg'
+import portrait_zaporogue_30_60 from './img/kislevites/portraits/30-60.jpg'
+import portrait_zaporogue_30_60_b from './img/kislevites/portraits/30-60_2.jpg'
+import portrait_zaporogue_30_60_musicien from './img/kislevites/portraits/30-60_musicien.jpg'
+import portrait_zaporogue_40_60 from './img/kislevites/portraits/40-60.jpg'
+import portrait_zaporogue_40_70 from './img/kislevites/portraits/45-70.jpg'
+import portrait_zaporogue_50_plus from './img/kislevites/portraits/50+.jpg'
+import portrait_zaporogue_50_plus_b from './img/kislevites/portraits/50+_2.jpg'
+import portrait_zaporogue_65_plus from './img/kislevites/portraits/65+.jpg'
+import portrait_zaporogue_femme15_35 from './img/kislevites/portraits/F15-35.jpg'
+import portrait_zaporogue_femme20_40 from './img/kislevites/portraits/F20-40.jpg'
+import portrait_zaporogue_femme20_40_bergere from './img/kislevites/portraits/F20-40_bergere.jpg'
+import portrait_zaporogue_femme20_40_paysane from './img/kislevites/portraits/F20-40_paysane.jpg'
+import portrait_zaporogue_femme30_60 from './img/kislevites/portraits/F30-60.jpg'
+import portrait_zaporogue_femme50_plus from './img/kislevites/portraits/F50+.jpg'
 
-import portrait_transhumaniste_journaliste25_50 from './img/transhumanistes/portraits/journaliste25-50.jpg'
-import portrait_transhumaniste_10_20 from './img/transhumanistes/portraits/portrait10-20.jpg'
-import portrait_transhumaniste_15_30 from './img/transhumanistes/portraits/portrait15-30.jpg'
-import portrait_transhumaniste_15_30_2 from './img/transhumanistes/portraits/portrait15-30_2.jpg'
-import portrait_transhumaniste_15_30_3 from './img/transhumanistes/portraits/portrait15-30_3.jpg'
-import portrait_transhumaniste_20_40 from './img/transhumanistes/portraits/portrait20-40.jpg'
-import portrait_transhumaniste_20_50 from './img/transhumanistes/portraits/portrait20-50.jpg'
-import portrait_transhumaniste_20_50_b from './img/transhumanistes/portraits/portrait20-50.png'
-import portrait_transhumaniste_20_50_c from './img/transhumanistes/portraits/portrait20-50_2.jpg'
-import portrait_transhumaniste_20_50_d from './img/transhumanistes/portraits/portrait20-50_3.jpg'
-import portrait_transhumaniste_30_50 from './img/transhumanistes/portraits/portrait30-50.jpg'
-import portrait_transhumaniste_30_50_b from './img/transhumanistes/portraits/portrait30-50_2.jpg'
-import portrait_transhumaniste_30_50_c from './img/transhumanistes/portraits/portrait30-50_2.png'
-import portrait_transhumaniste_30_50_d from './img/transhumanistes/portraits/portrait30-50_3.jpg'
-import portrait_transhumaniste_35_plus from './img/transhumanistes/portraits/portrait35+.jpg'
-import portrait_transhumaniste_35_plus_b from './img/transhumanistes/portraits/portrait35+_2.jpg'
-import portrait_transhumaniste_35_plus_c from './img/transhumanistes/portraits/portrait35+_3.jpg'
-import portrait_transhumaniste_40_plus from './img/transhumanistes/portraits/portrait40+.jpg'
-import portrait_transhumaniste_50_plus from './img/transhumanistes/portraits/portrait50+.jpg'
-import portrait_transhumaniste_60_plus from './img/transhumanistes/portraits/portrait60+.jpg'
-import portrait_transhumaniste_60_plus_b from './img/transhumanistes/portraits/portrait60+_2.jpg'
-import portrait_transhumaniste_70_plus from './img/transhumanistes/portraits/portrait70+.jpg'
-
-import portrait_templier_20_40 from './img/templiers/portraits/20-40.jpg'
-import portrait_templier_femme15_30 from './img/templiers/portraits/femme15_30.jpg'
-import portrait_templier_femme20_40 from './img/templiers/portraits/femme20_40.jpg'
-import portrait_templier_femme70_plus from './img/templiers/portraits/femme70+.jpg'
-import portrait_templier_30_plus from './img/templiers/portraits/30+.jpg'
-import portrait_templier_50_plus from './img/templiers/portraits/50+.jpg'
-import portrait_templier_50_plus_b from './img/templiers/portraits/50+_b.jpg'
-import portrait_templier_60_plus from './img/templiers/portraits/60+.jpg'
+import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
+import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
+import portrait_templier_femme20_40 from './img/bretonniens/portraits/femme20_40.jpg'
+import portrait_templier_femme70_plus from './img/bretonniens/portraits/femme70+.jpg'
+import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
+import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
+import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
+import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
 
 import portrait_acheron_20_60 from './img/acheron/portraits/20_60.jpg'
 import portrait_acheron_50_plus from './img/acheron/portraits/50_plus.jpg'
@@ -294,340 +258,194 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_femme15_30,
     ageMin: 15,
     ageMax: 30,
     male: false,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_femme20_40,
     ageMin: 20,
     ageMax: 40,
     male: false,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_femme70_plus,
     ageMin: 70,
     male: false,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_20_40,
     ageMin: 20,
     ageMax: 40,
     male: true,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_30_plus,
     ageMin: 30,
     male: true,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_60_plus,
     ageMin: 60,
     male: true,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_50_plus,
     ageMin: 50,
     male: true,
   },
   {
-    coterie: nomCotTempliers,
+    coterie: nomCotBretonniens,
     image: portrait_templier_50_plus_b,
     ageMin: 50,
     male: true,
   },
   {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_70_plus,
-    ageMin: 70,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_60_plus_b,
-    ageMin: 60,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_60_plus,
-    ageMin: 60,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_50_plus,
-    ageMin: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_40_plus,
-    ageMin: 40,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_35_plus_c,
-    ageMin: 35,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_35_plus_b,
-    ageMin: 35,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_35_plus,
-    ageMin: 35,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_30_50_d,
-    ageMin: 30,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_30_50_c,
-    ageMin: 30,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_30_50_b,
-    ageMin: 30,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_30_50,
-    ageMin: 30,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_20_50_d,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_20_50_c,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_20_50_b,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_20_50,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_20_40,
-    ageMin: 20,
-    ageMax: 40,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_10_20,
-    ageMin: 10,
-    ageMax: 20,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_journaliste25_50,
-    ageMin: 25,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_15_30,
-    ageMin: 15,
-    ageMax: 30,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_15_30_3,
-    ageMin: 15,
-    ageMax: 30,
-    male: true,
-  },
-  {
-    coterie: nomCotTranshumanistes,
-    image: portrait_transhumaniste_15_30_2,
-    ageMin: 15,
-    ageMax: 30,
-    male: true,
-  },
-  {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme50_plus,
     ageMin: 50,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme30_60,
     ageMin: 30,
     ageMax: 60,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme20_40_paysane,
     ageMin: 20,
     ageMax: 40,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme20_40_bergere,
     ageMin: 20,
     ageMax: 40,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme20_40,
     ageMin: 20,
     ageMax: 40,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_femme15_35,
     ageMin: 15,
     ageMax: 35,
     male: false,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_50_plus_b,
     ageMin: 50,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_65_plus,
     ageMin: 65,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_50_plus,
     ageMin: 50,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_40_70,
     ageMin: 40,
     ageMax: 70,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_40_60,
     ageMin: 40,
     ageMax: 60,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_30_60_musicien,
     ageMin: 30,
     ageMax: 60,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_30_60_b,
     ageMin: 30,
     ageMax: 60,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_30_60,
     ageMin: 30,
     ageMax: 60,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_50_guerrier,
     ageMin: 20,
     ageMax: 50,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_50,
     ageMin: 20,
     ageMax: 50,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_50_b,
     ageMin: 20,
     ageMax: 50,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_15_35_chasseur,
     ageMin: 15,
     ageMax: 35,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_45,
     ageMin: 20,
     ageMax: 45,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_45_b,
     ageMin: 20,
     ageMax: 45,
     male: true,
   },
   {
-    coterie: nomCotZaporogues,
+    coterie: nomCotKislevites,
     image: portrait_zaporogue_20_45_c,
     ageMin: 20,
     ageMax: 45,
@@ -748,71 +566,6 @@ export const lstPortraits = [
     image: portrait_8_15,
     ageMin: 8,
     ageMax: 15,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_30_plus,
-    ageMin: 30,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_40_plus,
-    ageMin: 40,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_25_gobelin_plus,
-    ageMin: 25,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_15_gobelin_musicien_plus,
-    ageMin: 15,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_15_40,
-    ageMin: 15,
-    ageMax: 40,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_20_50,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_20_50_b,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_20_50_c,
-    ageMin: 20,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_30_50,
-    ageMin: 30,
-    ageMax: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotOrks,
-    image: portrait_ork_15_plus,
-    ageMin: 15,
     male: true,
   },
   {

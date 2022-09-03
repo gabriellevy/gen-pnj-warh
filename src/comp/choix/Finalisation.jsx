@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react'
 import { nomCotConquistadors } from '../../donnees/lstCoteries'
 import { nomCotElfes } from '../../donnees/lstCoteries'
-import { nomCotOrks } from '../../donnees/lstCoteries'
-import { nomCotTempliers } from '../../donnees/lstCoteries'
-import { nomCotZaporogues } from '../../donnees/lstCoteries'
+import { nomCotBretonniens } from '../../donnees/lstCoteries'
+import { nomCotKislevites } from '../../donnees/lstCoteries'
 import { nomCotAcheron } from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
 import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
-import { genNomOrk } from '../../donnees/coteries/orks/nomsOrks'
-import { genNomTemplier } from '../../donnees/coteries/templiers/nomsTempliers'
-import { genNomZaporogue } from '../../donnees/coteries/zaporogues/nomsZaporogues'
+import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
+import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { genNomAcheron } from '../../donnees/coteries/acheron/nomsAcheron'
 import { useContext } from 'react'
 import { calculerPoids, PersoContexte } from '../../utils/contexte/perso'
@@ -49,11 +47,11 @@ function Finalisation() {
     if (perso.coterie === nomCotConquistadors)
       nom = genNomConquistador(perso.male)
     else if (perso.coterie === nomCotElfes) nom = genNomElfe(perso.male)
-    else if (perso.coterie === nomCotOrks) nom = genNomOrk(perso.male)
-    else if (perso.coterie === nomCotTempliers) nom = genNomTemplier(perso.male)
+    else if (perso.coterie === nomCotBretonniens)
+      nom = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotAcheron) nom = genNomAcheron(perso.male)
-    else if (perso.coterie === nomCotZaporogues)
-      nom = genNomZaporogue(perso.male)
+    else if (perso.coterie === nomCotKislevites)
+      nom = genNomKislevite(perso.male)
 
     majNomLocal(nom)
   }, [perso.male])

@@ -1,6 +1,6 @@
 import { getRandomInt } from '../../../utils/rand'
 
-export function genNomZaporogue(male) {
+export function genNomKislevite(male) {
   var nom =
     PRENOMS_F_1[getRandomInt(PRENOMS_F_1.length)] +
     ' ' +
