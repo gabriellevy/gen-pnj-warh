@@ -1,14 +1,11 @@
-import portrait_conquistador from './img/conquistadors/portraits/portrait_20-50_b.jpg'
 import portrait_elfe from './img/elfes/portraits/portrait_30_50_d.jpg'
 import portrait_bretonnien from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_acheron from './img/acheron/portraits/f20_50.jpg'
-import portrait_cathare from './img/cathares/portraits/28_48.jpg'
+import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_skavens from './img/skavens/portraits/30_65.jpg'
 import portrait_empire from './img/empire/portraits/40_60.jpg'
 
-import bg_conquistador from './img/conquistadors/bg_conquistadors_priant.jpg'
-import bg_conquistador_b from './img/quartiers/bg_saint_malo.jpg'
 import bg_elfe from './img/elfes/bg_musicien.jpg'
 import bg_elfe_b from './img/quartiers/bg_saint_germain_en_laye.jpg'
 import bg_templier from './img/bretonniens/bg_priant.jpg'
@@ -86,7 +83,7 @@ export const nomCotElfes = 'Elfes'
 export const nomCotKislevites = 'Kislevites'
 export const nomCotBretonniens = 'Bretonniens'
 export const nomCotAcheron = 'Achéron'
-export const nomCotCathares = 'Cathares'
+export const nomCotNains = 'Nains'
 export const nomCotCelte = 'Celtes'
 export const nomCotSkavens = 'Skavens'
 export const nomCotEmpire = 'Empire'
@@ -192,11 +189,11 @@ export const lstCoteries = [
       'Au cours de siècles de guerres, l’Empire est devenu un vaste royaume regroupant des provinces et des cités-états unies sous la bannière de l’Empereur. Pour les habitants du Vieux Monde, la représentation habituelle de l’Empire est celle d’une contrée couverte d’immenses et sombres forêts, entourée d’impénétrables chaînes de montagnes. Une terre sur laquelle l’humanité et les autres races coexistent à l’abri des murailles de quelques îlots de civilisation dispersés, depuis lesquels ils observent d’un œil craintif les dangers qui se tapissent sous les noires frondaisons. Il y a certainement une part de vérité dans cette manière de voir, mais comme tout stéréotype, elle peint le tableau à très gros traits et simplifie à l’extrême une situation infiniment plus diverse et complexe. ',
   },
   {
-    titre: nomCotCathares,
+    titre: nomCotNains,
     deDeVie: 1,
     voies: [voieTravailleur, voiePretre],
     affiche: true,
-    portrait: portrait_cathare,
+    portrait: portrait_nains,
     fonds: [],
     evts: [
       {
@@ -220,8 +217,9 @@ export const lstCoteries = [
         bonusCompetence: nomResistance,
       },
     ],
-    page: 'https://www.notion.so/wiki-extremis/Cathares-5f56f04db3a5463cb274bc8c53054ce2',
-    description: 'Pas fait. Christianisme obligatoire.',
+    page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Nains',
+    description:
+      'À l’est de l’Empire s’élèvent les Montagnes du Bord du Monde. C’est là, entre les territoires de hommes et les régions désolées des Terres Sombres que se dresse l’une de plus ancienne race du monde : les Nains. Leurs domaines étaient jadis plus vastes, mais malheur à celui qui évoquera leur déclin en présence d’un Nain : Karaz Ankor est aussi résolu et vaillant que du temps de sa splendeur ! En cet âge de ténèbres, les Nains sont l’expression même de l’honneur, de la force et du courage dans un monde menacé par le Chaos.',
   },
   {
     titre: nomCotAcheron,

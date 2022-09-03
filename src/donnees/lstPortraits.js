@@ -3,6 +3,7 @@ import { nomCotConquistadors } from './lstCoteries'
 import { nomCotElfes } from './lstCoteries'
 import { nomCotKislevites } from './lstCoteries'
 import { nomCotAcheron } from './lstCoteries'
+import { nomCotNains } from './lstCoteries'
 
 import portrait_conquistador_25_60 from './img/conquistadors/portraits/25-60.jpg'
 import portrait_conquistador_20_50_b from './img/conquistadors/portraits/portrait_20-50_b.jpg'
@@ -165,7 +166,16 @@ import portrait_acheron_f20_60 from './img/acheron/portraits/f20_60.jpg'
 import portrait_acheron_f20_60_b from './img/acheron/portraits/f20_60_b.jpg'
 import portrait_acheron_f60_plus from './img/acheron/portraits/f60_plus.jpg'
 
+import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
+
 export const lstPortraits = [
+  {
+    coterie: nomCotNains,
+    image: portrait_nain_40_100,
+    ageMin: 40,
+    ageMax: 100,
+    male: true,
+  },
   {
     coterie: nomCotAcheron,
     image: portrait_acheron_f60_plus,
