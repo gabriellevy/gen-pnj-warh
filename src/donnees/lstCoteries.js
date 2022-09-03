@@ -5,7 +5,7 @@ import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_acheron from './img/acheron/portraits/f20_50.jpg'
 import portrait_cathare from './img/cathares/portraits/28_48.jpg'
 import portrait_skavens from './img/skavens/portraits/30_65.jpg'
-import portrait_empire from './img/empire/portraits/30_60.jpg'
+import portrait_empire from './img/empire/portraits/40_60.jpg'
 
 import bg_conquistador from './img/conquistadors/bg_conquistadors_priant.jpg'
 import bg_conquistador_b from './img/quartiers/bg_saint_malo.jpg'
