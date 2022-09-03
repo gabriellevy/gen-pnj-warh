@@ -1,7 +1,7 @@
 import portrait_elfe from './img/elfes/portraits/portrait_30_50_d.jpg'
 import portrait_bretonnien from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
-import portrait_acheron from './img/acheron/portraits/f20_50.jpg'
+import portrait_halfelins from './img/halfelins/portraits/30_50.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_skavens from './img/skavens/portraits/30_65.jpg'
 import portrait_empire from './img/empire/portraits/40_60.jpg'
@@ -82,7 +82,7 @@ export const nomCotConquistadors = 'Conquistadors'
 export const nomCotElfes = 'Elfes'
 export const nomCotKislevites = 'Kislevites'
 export const nomCotBretonniens = 'Bretonniens'
-export const nomCotAcheron = 'Achéron'
+export const nomCotHalfelins = 'Halfelins'
 export const nomCotNains = 'Nains'
 export const nomCotCelte = 'Celtes'
 export const nomCotSkavens = 'Skavens'
@@ -222,11 +222,11 @@ export const lstCoteries = [
       'À l’est de l’Empire s’élèvent les Montagnes du Bord du Monde. C’est là, entre les territoires de hommes et les régions désolées des Terres Sombres que se dresse l’une de plus ancienne race du monde : les Nains. Leurs domaines étaient jadis plus vastes, mais malheur à celui qui évoquera leur déclin en présence d’un Nain : Karaz Ankor est aussi résolu et vaillant que du temps de sa splendeur ! En cet âge de ténèbres, les Nains sont l’expression même de l’honneur, de la force et du courage dans un monde menacé par le Chaos.',
   },
   {
-    titre: nomCotAcheron,
+    titre: nomCotHalfelins,
     deDeVie: 1,
     voies: [voieHommeDuMonde, voieIntellectuel, voieMagicien],
     affiche: true,
-    portrait: portrait_acheron,
+    portrait: portrait_halfelins,
     fonds: [bg_acheron],
     evts: [
       {
@@ -258,9 +258,9 @@ export const lstCoteries = [
         bonusCompetence: nomResistance,
       },
     ],
-    page: 'https://www.notion.so/wiki-extremis/Ach-ron-acdb44a8711640f5a6d9527e5e656d5a',
+    page: 'https://bibliotheque-imperiale.com/index.php/Halfling',
     description:
-      "La coterie d'Achéron a un principe d'une terrifiante clarté : la vie est surfaite. Il est temps que l'humanité dépasse ce stade et entre dans la non vie éternelle derrière le bienveillant guide qu'est la magie des ténèbres. Tout le fonctionnement d'Achéron se base sur la magie des ténèbres. Ils sont probablement la coterie qui a le plus rapproché l'utilisation de la magie d'une science fiable. Il faut dire que c'est d'elle que dépend ce qui leur tient le plus à cœur : l'immortalité.",
+      'Peuplant le Mootland, les Halflings sont des petits humanoïdes paisibles et gloutons, peu intéressés par les choses militaires. Leur taille est souvent inférieure à un mètre et varie entre 60 cm et 1,30m. Ils sont rondelets, trapus, souvent ventripotents et en aucun cas aussi puissamment bâtis que les Nains. Ils sont glabres, à part les rouflaquettes portées par les vieux et les mâles élégants mais leurs mains et leurs pieds sont couverts de poils et sont très larges pour d’aussi petites gens. Les poils des pieds sont une constante source de fierté pour tous les Halflings et ils préfèrent généralement être pieds nus, même dehors.',
   },
   {
     titre: nomCotElfes,

@@ -3,12 +3,11 @@ import { nomCotConquistadors } from '../../donnees/lstCoteries'
 import { nomCotElfes } from '../../donnees/lstCoteries'
 import { nomCotBretonniens } from '../../donnees/lstCoteries'
 import { nomCotKislevites } from '../../donnees/lstCoteries'
-import { nomCotAcheron } from '../../donnees/lstCoteries'
+import { nomCotHalfelins } from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
 import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
-import { genNomAcheron } from '../../donnees/coteries/acheron/nomsAcheron'
 import { useContext } from 'react'
 import { calculerPoids, PersoContexte } from '../../utils/contexte/perso'
 import { PhaseChoixContexte } from '../../utils/contexte/phaseChoix'
@@ -49,7 +48,6 @@ function Finalisation() {
     else if (perso.coterie === nomCotElfes) nom = genNomElfe(perso.male)
     else if (perso.coterie === nomCotBretonniens)
       nom = genNomBretonnien(perso.male)
-    else if (perso.coterie === nomCotAcheron) nom = genNomAcheron(perso.male)
     else if (perso.coterie === nomCotKislevites)
       nom = genNomKislevite(perso.male)
 

@@ -2,7 +2,7 @@ import { nomCotBretonniens } from './lstCoteries'
 import { nomCotConquistadors } from './lstCoteries'
 import { nomCotElfes } from './lstCoteries'
 import { nomCotKislevites } from './lstCoteries'
-import { nomCotAcheron } from './lstCoteries'
+import { nomCotHalfelins } from './lstCoteries'
 import { nomCotNains } from './lstCoteries'
 
 import portrait_conquistador_25_60 from './img/conquistadors/portraits/25-60.jpg'
@@ -151,22 +151,9 @@ import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
 import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
 import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 
-import portrait_acheron_20_60 from './img/acheron/portraits/20_60.jpg'
-import portrait_acheron_50_plus from './img/acheron/portraits/50_plus.jpg'
-import portrait_acheron_50_plus_b from './img/acheron/portraits/50_plus_b.jpg'
-import portrait_acheron_60_plus from './img/acheron/portraits/60_plus.jpg'
-import portrait_acheron_70_plus from './img/acheron/portraits/70_plus.jpg'
-import portrait_acheron_70_plus_b from './img/acheron/portraits/70_plus_b.jpg'
-import portrait_acheron_f12_25 from './img/acheron/portraits/f12_25.jpg'
-import portrait_acheron_f15_30 from './img/acheron/portraits/f15_30.jpg'
-import portrait_acheron_f20_40 from './img/acheron/portraits/f20_40.jpg'
-import portrait_acheron_f20_45 from './img/acheron/portraits/f20_45.jpg'
-import portrait_acheron_f20_50 from './img/acheron/portraits/f20_50.jpg'
-import portrait_acheron_f20_60 from './img/acheron/portraits/f20_60.jpg'
-import portrait_acheron_f20_60_b from './img/acheron/portraits/f20_60_b.jpg'
-import portrait_acheron_f60_plus from './img/acheron/portraits/f60_plus.jpg'
-
 import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
+
+import portrait_halfelin_30_50 from './img/halfelins/portraits/30_50.jpg'
 
 export const lstPortraits = [
   {
@@ -177,95 +164,10 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f60_plus,
-    ageMin: 60,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f20_60_b,
-    ageMin: 20,
-    ageMax: 60,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f20_60,
-    ageMin: 20,
-    ageMax: 60,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f20_50,
-    ageMin: 20,
+    coterie: nomCotHalfelins,
+    image: portrait_halfelin_30_50,
+    ageMin: 30,
     ageMax: 50,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f20_45,
-    ageMin: 20,
-    ageMax: 45,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f20_40,
-    ageMin: 20,
-    ageMax: 40,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f15_30,
-    ageMin: 15,
-    ageMax: 30,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_f12_25,
-    ageMin: 12,
-    ageMax: 25,
-    male: false,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_70_plus_b,
-    ageMin: 70,
-    male: true,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_70_plus,
-    ageMin: 70,
-    male: true,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_60_plus,
-    ageMin: 60,
-    male: true,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_50_plus_b,
-    ageMin: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_50_plus,
-    ageMin: 50,
-    male: true,
-  },
-  {
-    coterie: nomCotAcheron,
-    image: portrait_acheron_20_60,
-    ageMin: 20,
-    ageMax: 60,
     male: true,
   },
   {
