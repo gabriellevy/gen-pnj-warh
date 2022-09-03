@@ -148,6 +148,7 @@ import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
 import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
 import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
 import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
+import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 
 import portrait_acheron_20_60 from './img/acheron/portraits/20_60.jpg'
 import portrait_acheron_50_plus from './img/acheron/portraits/50_plus.jpg'
@@ -307,6 +308,13 @@ export const lstPortraits = [
     image: portrait_templier_50_plus_b,
     ageMin: 50,
     male: true,
+  },
+  {
+    coterie: nomCotBretonniens,
+    image: portrait_f18_35_chevalier,
+    ageMin: 18,
+    ageMax: 35,
+    male: false,
   },
   {
     coterie: nomCotKislevites,

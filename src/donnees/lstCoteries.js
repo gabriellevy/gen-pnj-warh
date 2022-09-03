@@ -1,6 +1,6 @@
 import portrait_conquistador from './img/conquistadors/portraits/portrait_20-50_b.jpg'
 import portrait_elfe from './img/elfes/portraits/portrait_30_50_d.jpg'
-import portrait_templier from './img/bretonniens/portraits/20-40.jpg'
+import portrait_bretonnien from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_acheron from './img/acheron/portraits/f20_50.jpg'
 import portrait_cathare from './img/cathares/portraits/28_48.jpg'
@@ -148,7 +148,7 @@ export const lstCoteries = [
       },
     ],
     affiche: true,
-    portrait: portrait_templier,
+    portrait: portrait_bretonnien,
     fonds: [bg_templier, bg_templier_b, bg_templier_c],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:La_Bretonnie',
     description:
