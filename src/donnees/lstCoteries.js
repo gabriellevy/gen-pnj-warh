@@ -1,20 +1,19 @@
-import portrait_elfe from './img/elfes/portraits/portrait_30_50_d.jpg'
+import portrait_haut_elfe from './img/hauts_elfes/portraits/femme15-30_b.jpg'
+import portrait_elfe_sylvain from './img/elfes_sylvains/portraits/femme15_40.jpg'
 import portrait_bretonnien from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_halfelins from './img/halfelins/portraits/30_50.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
-import portrait_skavens from './img/skavens/portraits/30_65.jpg'
 import portrait_empire from './img/empire/portraits/40_60.jpg'
 
-import bg_elfe from './img/elfes/bg_musicien.jpg'
-import bg_elfe_b from './img/quartiers/bg_saint_germain_en_laye.jpg'
+import bg_elfe_sylvain from './img/elfes_sylvains/bg univ_elfes.jpg'
+import bg_elfe_sylvain_b from './img/elfes_sylvains/bg_musicien.jpg'
+import bg_haut_elfe from './img/hauts_elfes/bg poesie.jpg'
 import bg_templier from './img/bretonniens/bg_priant.jpg'
 import bg_templier_b from './img/quartiers/bg_interieur_basilique.jpg'
 import bg_templier_c from './img/quartiers/bg_saint_denis.jpg'
 import bg_zaporogue from './img/kislevites/bg_lettre_zapo.jpg'
 import bg_zaporogue_b from './img/kislevites/bg_univ_zaporogues.jpg'
-import bg_acheron from './img/acheron/bg_acheron.jpg'
-import bg_skavens from './img/skavens/bg_skavens.jpg'
 import bg_schweizer from './img/empire/bg.png'
 
 import {
@@ -79,7 +78,8 @@ import {
 import { getRandomInt } from '../utils/rand'
 
 export const nomCotConquistadors = 'Conquistadors'
-export const nomCotElfes = 'Elfes'
+export const nomCotHautsElfes = 'Haut elfes'
+export const nomCotElfesSylvains = 'Elfes sylvains'
 export const nomCotKislevites = 'Kislevites'
 export const nomCotBretonniens = 'Bretonniens'
 export const nomCotHalfelins = 'Halfelins'
@@ -227,7 +227,6 @@ export const lstCoteries = [
     voies: [voieHommeDuMonde, voieIntellectuel, voieMagicien],
     affiche: true,
     portrait: portrait_halfelins,
-    fonds: [bg_acheron],
     evts: [
       {
         description: 'Expert en potions',
@@ -263,7 +262,7 @@ export const lstCoteries = [
       'Peuplant le Mootland, les Halflings sont des petits humanoïdes paisibles et gloutons, peu intéressés par les choses militaires. Leur taille est souvent inférieure à un mètre et varie entre 60 cm et 1,30m. Ils sont rondelets, trapus, souvent ventripotents et en aucun cas aussi puissamment bâtis que les Nains. Ils sont glabres, à part les rouflaquettes portées par les vieux et les mâles élégants mais leurs mains et leurs pieds sont couverts de poils et sont très larges pour d’aussi petites gens. Les poils des pieds sont une constante source de fierté pour tous les Halflings et ils préfèrent généralement être pieds nus, même dehors.',
   },
   {
-    titre: nomCotElfes,
+    titre: nomCotHautsElfes,
     deDeVie: 1,
     voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
@@ -303,50 +302,58 @@ export const lstCoteries = [
       },
     ],
     affiche: true,
-    portrait: portrait_elfe,
-    fonds: [bg_elfe, bg_elfe_b],
-    page: 'https://www.notion.so/wiki-extremis/Elfes-233a158ae654424eaf3f2466f476e13c',
+    portrait: portrait_haut_elfe,
+    fonds: [bg_haut_elfe],
+    page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Hauts_Elfes',
     description:
-      "Les elfes  ont pour but principal de faire atteindre son potentiel maximum à tout homme qui les rejoindrait. Cette perfection étant pour eux essentielle au niveau de la beauté, de la sensibilité, de l'agrément et de la morale. Ils ont développé toute une philosophie et une magie orientée vers ce but et les ont poussées à un tel niveau qu'aucun elfe ne reste longtemps laid ou désagréable.",
+      'Les Hauts Elfes (ou Asur en Eltharin) sont un peuple antique d’une grande sagesse, dont les chroniques remontent aux temps où le monde était jeune. Leurs exploits et leur civilisation étaient déjà légendaires bien avant que les tribus humaines ne fondent les royaumes du Vieux Monde. Fiers de leur noble héritage, les Hauts Elfes sont gracieux et cultivés mais inflexibles à la bataille, car ils sont passés maîtres dans l’art des armes et dans celui de la Magie et, une fois éveillée, leur colère est terrible. Depuis leur île d’Ulthuan, ils sillonnent les mers pour commercer avec les jeunes nations et pour défendre leurs terres. Très peu d’ennemi ont jamais franchi les portes de Lothern, la plus fabuleuse cité du monde, et, de ceux qui ont jamais contemplé les secrets de l’intérieur d’Ulthuan, peu sont restés en vie pour raconter ce qu’ils y ont vu.',
   },
   {
-    titre: nomCotSkavens,
-    deDeVie: 0,
-    voies: [voieScientifique, voieIngenieur, voieMalandrin, voieEspion],
-    modifs_caracs: [],
-    modifs_comps: [{ comp: nomDetrousser, val: 1 }],
-    affiche: true,
-    portrait: portrait_skavens,
-    fonds: [bg_skavens],
+    titre: nomCotElfesSylvains,
+    deDeVie: 1,
+    voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
+    modifs_caracs: [
+      { carac: nomConstitution, val: -1 },
+      { carac: nomMagie, val: 1 },
+      { carac: nomCharisme, val: 1 },
+    ],
+    modifs_comps: [{ comp: nomAlchimie, val: 1 }],
     evts: [
       {
-        description: 'Apprenti Eshin',
-        bonusCompetence: nomDiscretion,
-      },
-      {
-        description: "Coureur d'égoûts",
+        description: 'Artiste de cirque elfique',
         bonusCompetence: nomAcrobatie,
       },
       {
-        description: 'Empoisonneur',
-        bonusCompetence: nomAlchimie,
+        description: 'Coquet comédien',
+        bonusCompetence: nomActeur,
       },
       {
-        description: 'Expériences génético magiques',
+        description: 'Lanceur de sort',
+        bonusCompetence: nomArcanes,
+      },
+      {
+        description: 'Artiste',
+        bonusCompetence: nomArt,
+      },
+      {
+        description: 'A travaillé dans une échoppe à restaurer des objets',
+        bonusCompetence: nomArtisanat,
+      },
+      {
+        description: 'Entretien du corps primordial',
         bonusCompetence: nomMedecine,
       },
       {
-        description: 'Marchand opportuniste',
-        bonusCompetence: nomNegoce,
-      },
-      {
-        description: 'Lâché en pleine nature et a du survivre',
-        bonusCompetence: nomSurvie,
+        description: 'Musicien de harpe ou de flûte',
+        bonusCompetence: nomMusique,
       },
     ],
-    page: 'https://www.notion.so/wiki-extremis/Skavens-51d5db3bea614d1abca305011d3d5d95',
+    affiche: true,
+    portrait: portrait_elfe_sylvain,
+    fonds: [bg_elfe_sylvain, bg_elfe_sylvain_b],
+    page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Elfes_Sylvains',
     description:
-      'Les skavens ont pour principe de base une énergie et une ambition démesurée. Toujours plus et en un minimum de temps est leur devise, peu importe les risques à prendre.',
+      'Sous les frondaisons d’Athel Loren, les Elfes Sylvains - ou Asrai, tels qu’ils sont nommés dans certaines légendes - observent le monde avec des yeux méfiants, sans jamais convoiter ce qui se trouve hors de leur domaine, ni nouer une quelconque amitié avec les étrangers. Ce sont des êtres mystérieux et secrets, qu’on ne rencontre que très rarement hors de leurs domaines et qui restent ainsi largement incompris par le reste du monde. Ainsi, depuis bien longtemps, les Elfes Sylvains ne prêtent attention au monde extérieur que lorsque celui-ci perturbe leur existence, et encore, cela ne concerne que les franges les plus jeunes et les plus âgées de leur population. Les plus jeunes sont en effet aventureux, et quittent parfois les frondaisons d’Athel Loren. Pour leur part, les plus âgés ont gagné en sagesse, et ont compris qu’en dépit de leurs aspirations, Athel Loren ne pouvait exister en totale autarcie.',
   },
   {
     titre: nomCotKislevites,

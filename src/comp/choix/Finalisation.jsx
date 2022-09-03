@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { nomCotConquistadors } from '../../donnees/lstCoteries'
-import { nomCotElfes } from '../../donnees/lstCoteries'
+import { nomCotHautsElfes } from '../../donnees/lstCoteries'
+import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
 import { nomCotBretonniens } from '../../donnees/lstCoteries'
 import { nomCotKislevites } from '../../donnees/lstCoteries'
 import { nomCotHalfelins } from '../../donnees/lstCoteries'
@@ -45,7 +46,8 @@ function Finalisation() {
     var nom = 'youpi pas de noms pour cette coterie'
     if (perso.coterie === nomCotConquistadors)
       nom = genNomConquistador(perso.male)
-    else if (perso.coterie === nomCotElfes) nom = genNomElfe(perso.male)
+    else if (perso.coterie === nomCotHautsElfes) nom = genNomElfe(perso.male)
+    else if (perso.coterie === nomCotElfesSylvains) nom = genNomElfe(perso.male)
     else if (perso.coterie === nomCotBretonniens)
       nom = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotKislevites)
