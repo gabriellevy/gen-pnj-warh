@@ -15,8 +15,8 @@ export function calculerPoids(perso) {
   if (perso.male) poidsVal = poidsVal + 10
   if (perso.age > 25) poidsVal = poidsVal + 5
 
-  if (perso.constitution > 12) poidsVal = poidsVal + 6
-  if (perso.dexterite > 12) poidsVal = poidsVal - 4
+  if (perso.endurance > 30) poidsVal = poidsVal + 6
+  if (perso.dexterite > 30) poidsVal = poidsVal - 4
 
   poidsVal = poidsVal + perso[getCompObjPropertyName(nomResistance)] * 3
 
@@ -26,16 +26,19 @@ export function calculerPoids(perso) {
 export const PersoProvider = ({ children }) => {
   const [perso, setPerso] = useState({
     // valeurs de base des caracs
+    cc: 0,
+    ct: 0,
+    force: 0,
+    endurance: 0,
+    initiative: 0,
+    agilete: 0,
     dexterite: 0,
-    constitution: 0,
-    charisme: 0,
     intelligence: 0,
-    sensibilite: 0,
-    magie: 0,
+    force_mentale: 0,
+    sociabilite: 0,
     niveau_richesse: 0,
     pointsDeVie: 0,
     utilisationsCapaMagique: 0,
-    initiative: 0,
     defense: 0,
     atc: 0,
     poids: 0,

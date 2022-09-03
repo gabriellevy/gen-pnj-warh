@@ -52,17 +52,25 @@ function Banniere() {
                 </td>
                 <td>
                   <div className="descriptionPerso">
+                    CC : {perso.cc}
+                    <br />
+                    CT : {perso.ct}
+                    <br />
+                    FOR : {perso.force}
+                    <br />
+                    END : {perso.endurance}
+                    <br />
+                    INIT : {perso.initiative}
+                    <br />
+                    AG : {perso.agilete}
+                    <br />
                     DEX : {perso.dexterite}
-                    <br />
-                    CON : {perso.constitution}
-                    <br />
-                    CHA : {perso.charisme}
                     <br />
                     INT : {perso.intelligence}
                     <br />
-                    SENS : {perso.sensibilite}
+                    F.M : {perso.force_mentale}
                     <br />
-                    MAG : {perso.magie}
+                    SOC : {perso.sociabilite}
                     <br />
                   </div>
                 </td>

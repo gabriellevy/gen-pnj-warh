@@ -99,6 +99,8 @@ function Finalisation() {
   }
   function validerFinalisation() {
     // calcul des caracs secondaires déduites
+    /*
+    A FAIRE : caser ici le calcul des points d blessure etc ??
     const utilCapaMag =
       perso.utilisationsCapaMagique + modificateurCarac(perso.magie) + 4
     const atcVal =
@@ -120,7 +122,7 @@ function Finalisation() {
     }
 
     var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
+    setPerso(persoFinal)*/
 
     majPhaseChoix(phaseChoix + 1)
   }

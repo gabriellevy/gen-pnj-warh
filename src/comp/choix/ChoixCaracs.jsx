@@ -39,29 +39,42 @@ function Caracs() {
 
   function validerCaracs() {
     var nouvCaracMagie =
-      dndDonnees.valeurs[dndDonnees.colonnes['magie'].valeursIds[0]].valeur
+      dndDonnees.valeurs[dndDonnees.colonnes['cc'].valeursIds[0]].valeur
     var changementsAuPerso = {
+      cc: perso.cc + nouvCaracMagie,
+      ct:
+        perso.ct +
+        dndDonnees.valeurs[dndDonnees.colonnes['ct'].valeursIds[0]].valeur,
+      force:
+        perso.force +
+        dndDonnees.valeurs[dndDonnees.colonnes['force'].valeursIds[0]].valeur,
+      endurance:
+        perso.endurance +
+        dndDonnees.valeurs[dndDonnees.colonnes['endurance'].valeursIds[0]]
+          .valeur,
+      initiative:
+        perso.initiative +
+        dndDonnees.valeurs[dndDonnees.colonnes['initiative'].valeursIds[0]]
+          .valeur,
+      agilete:
+        perso.agilete +
+        dndDonnees.valeurs[dndDonnees.colonnes['agilete'].valeursIds[0]].valeur,
       dexterite:
         perso.dexterite +
         dndDonnees.valeurs[dndDonnees.colonnes['dexterite'].valeursIds[0]]
-          .valeur,
-      constitution:
-        perso.constitution +
-        dndDonnees.valeurs[dndDonnees.colonnes['constitution'].valeursIds[0]]
-          .valeur,
-      charisme:
-        perso.charisme +
-        dndDonnees.valeurs[dndDonnees.colonnes['charisme'].valeursIds[0]]
           .valeur,
       intelligence:
         perso.intelligence +
         dndDonnees.valeurs[dndDonnees.colonnes['intelligence'].valeursIds[0]]
           .valeur,
-      sensibilite:
-        perso.sensibilite +
-        dndDonnees.valeurs[dndDonnees.colonnes['sensibilite'].valeursIds[0]]
+      force_mentale:
+        perso.force_mentale +
+        dndDonnees.valeurs[dndDonnees.colonnes['force_mentale'].valeursIds[0]]
           .valeur,
-      magie: perso.magie + nouvCaracMagie,
+      sociabilite:
+        perso.sociabilite +
+        dndDonnees.valeurs[dndDonnees.colonnes['sociabilite'].valeursIds[0]]
+          .valeur,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
