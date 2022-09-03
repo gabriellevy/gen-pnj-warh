@@ -1,21 +1,29 @@
+export const nomCC = 'Capacité de combat'
+export const nomCT = 'Capacité de tir'
+export const nomForce = 'Force'
+export const nomEndurance = 'Endurance'
+export const nomInitiative = 'Initiative'
+export const nomAgilete = 'Agileté'
 export const nomDexterite = 'Dextérité'
-export const nomConstitution = 'Constitution'
-export const nomCharisme = 'Charisme'
 export const nomIntelligence = 'Intelligence'
-export const nomSensibilite = 'Sensibilité'
-export const nomMagie = 'Magie'
+export const nomForceMentale = 'Force mentale'
+export const nomSociabilite = 'Sociabilité'
 
 /**
  * @param {*} nomCaracStr : la chaîne de caractère décrivant le champs carac à l'utilisateur
  * @returns identifiant à utiliser pour accéder aux champs carac de l'objet personnage via l'opérateur []
  */
 export function getCaracObjPropertyName(nomCaracStr) {
+  if (nomCaracStr === nomCC) return 'cc'
+  if (nomCaracStr === nomCC) return 'cc'
+  if (nomCaracStr === nomForce) return 'force'
+  if (nomCaracStr === nomEndurance) return 'endurance'
+  if (nomCaracStr === nomInitiative) return 'initiative'
+  if (nomCaracStr === nomAgilete) return 'agilete'
   if (nomCaracStr === nomDexterite) return 'dexterite'
-  if (nomCaracStr === nomConstitution) return 'constitution'
-  if (nomCaracStr === nomCharisme) return 'charisme'
   if (nomCaracStr === nomIntelligence) return 'intelligence'
-  if (nomCaracStr === nomSensibilite) return 'sensibilite'
-  if (nomCaracStr === nomMagie) return 'magie'
+  if (nomCaracStr === nomForceMentale) return 'force_mentale'
+  if (nomCaracStr === nomSociabilite) return 'sociabilite'
   return 'carac inconnue'
 }
 
@@ -34,19 +42,44 @@ export function modificateurCarac(valeurCarac) {
 
 export const lstCaracsInitial = [
   {
+    titre: nomCC,
+    valeur: -1,
+    description: 'Capacité de combat',
+  },
+  {
+    titre: nomCT,
+    valeur: -1,
+    description: 'Capacité de tir',
+  },
+  {
+    titre: nomForce,
+    valeur: -1,
+    description: 'Force',
+  },
+  {
+    titre: nomEndurance,
+    valeur: -1,
+    description: 'Endurance',
+  },
+  {
+    titre: nomInitiative,
+    valeur: -1,
+    description: 'Initiative',
+  },
+  {
+    titre: nomAgilete,
+    valeur: -1,
+    description: 'Agilete',
+  },
+  {
     titre: nomDexterite,
     valeur: -1,
     description: 'description Dextérité',
   },
   {
-    titre: nomConstitution,
+    titre: nomForceMentale,
     valeur: -1,
-    description: '(inclut la force)',
-  },
-  {
-    titre: nomCharisme,
-    valeur: -1,
-    description: 'description Charisme',
+    description: 'Force Mentale',
   },
   {
     titre: nomIntelligence,
@@ -54,14 +87,8 @@ export const lstCaracsInitial = [
     description: 'description Intelligence',
   },
   {
-    titre: nomSensibilite,
+    titre: nomSociabilite,
     valeur: -1,
-    description:
-      'Perception au sens large, inclut :\n     - la finesse des sens\n     - la perception de la magie\n     - la perception psychologique',
-  },
-  {
-    titre: nomMagie,
-    valeur: -1,
-    description: 'description Magie',
+    description: 'Sociabilite',
   },
 ]

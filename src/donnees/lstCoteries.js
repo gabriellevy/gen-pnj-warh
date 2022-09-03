@@ -17,12 +17,16 @@ import bg_zaporogue_b from './img/kislevites/bg_univ_zaporogues.jpg'
 import bg_schweizer from './img/empire/bg.png'
 
 import {
+  nomCC,
+  nomCT,
+  nomForce,
+  nomEndurance,
+  nomInitiative,
+  nomAgilete,
   nomDexterite,
-  nomConstitution,
-  nomCharisme,
   nomIntelligence,
-  nomSensibilite,
-  nomMagie,
+  nomForceMentale,
+  nomSociabilite,
 } from './lstCaracs'
 
 import {
@@ -40,7 +44,6 @@ import {
   nomDiscretion,
   nomEffort,
   nomFabricationTechnique,
-  nomForce,
   nomInformatique,
   nomIntimider,
   nomInvestigation,
@@ -161,7 +164,7 @@ export const lstCoteries = [
       voiePretre,
       voieMarchand,
     ],
-    modifs_caracs: [{ carac: nomMagie, val: -1 }],
+    modifs_caracs: [],
     evts: [
       {
         description: 'Formé à la dure quand il était étudiant',
@@ -257,6 +260,7 @@ export const lstCoteries = [
         bonusCompetence: nomResistance,
       },
     ],
+    fonds: [bg_schweizer],
     page: 'https://bibliotheque-imperiale.com/index.php/Halfling',
     description:
       'Peuplant le Mootland, les Halflings sont des petits humanoïdes paisibles et gloutons, peu intéressés par les choses militaires. Leur taille est souvent inférieure à un mètre et varie entre 60 cm et 1,30m. Ils sont rondelets, trapus, souvent ventripotents et en aucun cas aussi puissamment bâtis que les Nains. Ils sont glabres, à part les rouflaquettes portées par les vieux et les mâles élégants mais leurs mains et leurs pieds sont couverts de poils et sont très larges pour d’aussi petites gens. Les poils des pieds sont une constante source de fierté pour tous les Halflings et ils préfèrent généralement être pieds nus, même dehors.',
@@ -266,9 +270,8 @@ export const lstCoteries = [
     deDeVie: 1,
     voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
-      { carac: nomConstitution, val: -1 },
-      { carac: nomMagie, val: 1 },
-      { carac: nomCharisme, val: 1 },
+      { carac: nomEndurance, val: -1 },
+      { carac: nomCC, val: 1 },
     ],
     modifs_comps: [{ comp: nomAlchimie, val: 1 }],
     evts: [
@@ -313,9 +316,8 @@ export const lstCoteries = [
     deDeVie: 1,
     voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
-      { carac: nomConstitution, val: -1 },
-      { carac: nomMagie, val: 1 },
-      { carac: nomCharisme, val: 1 },
+      { carac: nomEndurance, val: -1 },
+      { carac: nomCC, val: 1 },
     ],
     modifs_comps: [{ comp: nomAlchimie, val: 1 }],
     evts: [

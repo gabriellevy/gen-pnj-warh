@@ -1,9 +1,13 @@
+import { nomCC } from './lstCaracs'
+import { nomCT } from './lstCaracs'
+import { nomForce } from './lstCaracs'
+import { nomEndurance } from './lstCaracs'
+import { nomInitiative } from './lstCaracs'
+import { nomAgilete } from './lstCaracs'
 import { nomDexterite } from './lstCaracs'
-import { nomCharisme } from './lstCaracs'
-import { nomConstitution } from './lstCaracs'
 import { nomIntelligence } from './lstCaracs'
-import { nomSensibilite } from './lstCaracs'
-import { nomMagie } from './lstCaracs'
+import { nomForceMentale } from './lstCaracs'
+import { nomSociabilite } from './lstCaracs'
 
 export const nomAnimaux = 'Animaux'
 export const nomCorpsACorps = 'Corps à corps'
@@ -12,7 +16,6 @@ export const nomMilieuReseau = "Réseau d'informateur"
 export const nomResistance = 'Résistance'
 export const nomSurvie = 'Survie'
 export const nomIntimider = 'Intimider'
-export const nomForce = 'Force'
 export const nomConvaincre = 'Convaincre'
 export const nomNegoce = 'Négociation, marchandage'
 export const nomInvestigation = 'Investigation'
@@ -55,7 +58,6 @@ export function getCompObjPropertyName(nomCompStr) {
   if (nomCompStr === nomResistance) return 'resistance'
   if (nomCompStr === nomSurvie) return 'survie'
   if (nomCompStr === nomIntimider) return 'intimider'
-  if (nomCompStr === nomForce) return 'force'
   if (nomCompStr === nomConvaincre) return 'convaincre'
   if (nomCompStr === nomNegoce) return 'negociation_marchandage'
   if (nomCompStr === nomInvestigation) return 'investigation'
@@ -113,7 +115,7 @@ export const lstComps = [
   {
     titre: nomActeur,
     valeur: 0,
-    carac: nomCharisme,
+    carac: nomSociabilite,
     description: [
       'Inclut le déguisement.\n',
       'Se faire passer pour un passant innocent (difficulté 8).\n',
@@ -121,15 +123,9 @@ export const lstComps = [
     ],
   },
   {
-    titre: nomAlchimie,
-    valeur: 0,
-    carac: nomMagie,
-    description: ['cf voie des elixirs p93 CoC pour des idées.\n'],
-  },
-  {
     titre: nomAnimaux,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       "Savoir s'occuper d'un animal, le dresser, le dompter.\n",
       'niveau 1 : +1 un animal dressé\n',
@@ -141,21 +137,9 @@ export const lstComps = [
     ],
   },
   {
-    titre: nomArcanes,
-    valeur: 0,
-    carac: nomMagie,
-    description: [
-      "Maîtrise une des voies d'arcanes.\n",
-      "niveau 1 : +1 une voie d'arcane\n",
-      "niveau 3 : +1 une voie d'arcane\n",
-      "niveau 6 : +1 une voie d'arcane\n",
-      'Copier grosso modo les sorts de donjons et dragons',
-    ],
-  },
-  {
     titre: nomArt,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       'Estimer une oeuvre (difficulté 9).\n',
       'Décrire une oeuvre crédiblement (difficulté 7).\n',
@@ -166,7 +150,7 @@ export const lstComps = [
   {
     titre: nomArtisanat,
     valeur: 0,
-    carac: nomConstitution,
+    carac: nomEndurance,
     description: [
       'Fabriquer un pot (difficulté 8).\n',
       'Fabriquer un meuble (difficulté 13).\n',
@@ -177,7 +161,7 @@ export const lstComps = [
   {
     titre: nomCommandement,
     valeur: 0,
-    carac: nomCharisme,
+    carac: nomSociabilite,
     description: [
       'Commander une escouade (difficulté 8).\n',
       'COmmander un navire (difficulté 13).\n',
@@ -186,13 +170,13 @@ export const lstComps = [
   {
     titre: nomConvaincre,
     valeur: 0,
-    carac: nomCharisme,
+    carac: nomSociabilite,
     description: [''],
   },
   {
     titre: nomCorpsACorps,
     valeur: 0,
-    carac: nomConstitution,
+    carac: nomEndurance,
     description: [
       '+1 arme de contact au choix :  Poing américain, lame rétractile, épée, couteau militaire',
     ],
@@ -200,7 +184,7 @@ export const lstComps = [
   {
     titre: nomDetrousser,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [''],
   },
   {
@@ -212,7 +196,7 @@ export const lstComps = [
   {
     titre: nomEffort,
     valeur: 0,
-    carac: nomConstitution,
+    carac: nomEndurance,
     description: [
       'Efforts physiques soutenus, endurance.\n',
       'Pousser une voiture en plein soleil (difficulté 8).\n',
@@ -226,15 +210,6 @@ export const lstComps = [
     description: ['Mécanique, électronique, informatique.\n'],
   },
   {
-    titre: nomForce,
-    valeur: 0,
-    carac: nomConstitution,
-    description: [
-      'Déménager une armoire (difficulté 8).\n',
-      "Soulever l'arrière d'une voiture (difficulté 16).\n",
-    ],
-  },
-  {
     titre: nomInformatique,
     valeur: 0,
     carac: nomIntelligence,
@@ -243,7 +218,7 @@ export const lstComps = [
   {
     titre: nomIntimider,
     valeur: 0,
-    carac: nomConstitution,
+    carac: nomEndurance,
     description: [
       'Pousser un videur à nous laisser entrerd ans une boîte très branchée (difficulté 9)',
     ],
@@ -251,7 +226,7 @@ export const lstComps = [
   {
     titre: nomIntuition,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       'Cette capacité doit être utilisée quand le personnage veut une aide du maître de jeu.\n',
       "Chaque point dans cette compétence permet d'utiliser la capacité une fois par session.\n",
@@ -264,7 +239,7 @@ export const lstComps = [
   {
     titre: nomInvestigation,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       'Trouver un indice facile (difficulté 8).\n',
       'Trouver un indice difficile (difficulté 16).',
@@ -304,13 +279,13 @@ export const lstComps = [
   {
     titre: nomMilieuClerge,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [''],
   },
   {
     titre: nomMilieuMonde,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       "Habitude de passer d'un pays à l'autre, d'une culture à l'autre. Facilité à s'y intégrer et débrouiller.\n",
     ],
@@ -318,13 +293,13 @@ export const lstComps = [
   {
     titre: nomMilieuHauteSociete,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [''],
   },
   {
     titre: nomMilieuRue,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: [
       'Se débrouiller dans un milieu particulier qui doit être précisé avec la compétence.\n',
       "Exemples : réseau d'Information, clergé, haute société, rue, connaissance du monde (voyage)\n",
@@ -333,17 +308,8 @@ export const lstComps = [
   {
     titre: nomMilieuReseau,
     valeur: 0,
-    carac: nomSensibilite,
+    carac: nomSociabilite,
     description: ["Réseau d'informateur."],
-  },
-  {
-    titre: nomMiracles,
-    valeur: 0,
-    carac: nomMagie,
-    description: [
-      'Soin léger (difficulté 10).\n',
-      'Ressuciter un mort (difficulté 30)\n',
-    ],
   },
   {
     titre: nomMusique,
@@ -359,7 +325,7 @@ export const lstComps = [
   {
     titre: nomNegoce,
     valeur: 0,
-    carac: nomCharisme,
+    carac: nomSociabilite,
     description: [
       "Inclut la capacité à estimer la valeur d'un objet.\n",
       'Niveau 3 ou plus : une fois apr jour peut tenter un jet de négoce contre celui du marchand. Si le joueur gagne tous les prix du marchands baissent de 10% et ses achats augmentent de 10%\n',
@@ -382,7 +348,7 @@ export const lstComps = [
   {
     titre: nomResistance,
     valeur: 0,
-    carac: nomConstitution,
+    carac: nomEndurance,
     description: ['Résister au poison, à la maladie, aux substances toxiques'],
   },
   {

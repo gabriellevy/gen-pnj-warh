@@ -1,10 +1,14 @@
 import {
-  nomCharisme,
-  nomConstitution,
+  nomCC,
+  nomCT,
+  nomForce,
+  nomEndurance,
+  nomInitiative,
+  nomAgilete,
   nomDexterite,
   nomIntelligence,
-  nomMagie,
-  nomSensibilite,
+  nomForceMentale,
+  nomSociabilite,
 } from '../../../donnees/lstCaracs'
 
 const tiragesInitiaux = {
@@ -33,44 +37,82 @@ const tiragesInitiaux = {
       id: 'tirage-6',
       valeur: -1,
     },
+    'tirage-7': {
+      id: 'tirage-7',
+      valeur: -1,
+    },
+    'tirage-8': {
+      id: 'tirage-8',
+      valeur: -1,
+    },
+    'tirage-9': {
+      id: 'tirage-9',
+      valeur: -1,
+    },
+    'tirage-10': {
+      id: 'tirage-10',
+      valeur: -1,
+    },
   },
   colonnes: {
+    cc: {
+      id: 'cc',
+      titre: nomCC,
+      description: 'Capacité de combat',
+      valeursIds: [],
+    },
+    ct: {
+      id: 'ct',
+      titre: nomCT,
+      description: 'Capacité de tir',
+      valeursIds: [],
+    },
+    force: {
+      id: 'force',
+      titre: nomForce,
+      description: 'force',
+      valeursIds: [],
+    },
+    endurance: {
+      id: 'endurance',
+      titre: nomEndurance,
+      description: 'endurance',
+      valeursIds: [],
+    },
+    initiative: {
+      id: 'initiative',
+      titre: nomInitiative,
+      description: 'initiative',
+      valeursIds: [],
+    },
+    agilete: {
+      id: 'agilete',
+      titre: nomAgilete,
+      description: 'Agileté',
+      valeursIds: [],
+    },
     dexterite: {
       id: 'dexterite',
       titre: nomDexterite,
-      description: 'description Dextérité',
-      valeursIds: [],
-    },
-    constitution: {
-      id: 'constitution',
-      titre: nomConstitution,
-      description:
-        'Puissance physique au sens large : résistance, endurance, force...',
-      valeursIds: [],
-    },
-    charisme: {
-      id: 'charisme',
-      titre: nomCharisme,
-      description: 'description Charisme',
+      description: 'Dextérité',
       valeursIds: [],
     },
     intelligence: {
       id: 'intelligence',
       titre: nomIntelligence,
-      description: 'description Intelligence',
+      description: 'intelligence',
       valeursIds: [],
     },
-    sensibilite: {
-      id: 'sensibilite',
-      titre: nomSensibilite,
-      description:
-        'Perception au sens large, inclut :\n     - la finesse des sens\n     - la perception de la magie\n     - la perception psychologique',
+    force_mentale: {
+      id: 'force_mentale',
+      titre: nomForceMentale,
+      description: 'force mentale',
       valeursIds: [],
     },
-    magie: {
-      id: 'magie',
-      titre: nomMagie,
-      description: 'description Magie',
+    sociabilite: {
+      id: 'sociabilite',
+      titre: nomSociabilite,
+      description: 'Sociabilité',
       valeursIds: [],
     },
     tirages: {
@@ -84,17 +126,24 @@ const tiragesInitiaux = {
         'tirage-4',
         'tirage-5',
         'tirage-6',
+        'tirage-7',
+        'tirage-8',
+        'tirage-9',
+        'tirage-10',
       ],
     },
   },
   ordreColonnes: [
+    'cc',
+    'ct',
+    'force',
+    'endurance',
+    'initiative',
+    'agilete',
     'dexterite',
-    'constitution',
-    'charisme',
     'intelligence',
-    'sensibilite',
-    'magie',
-    'tirages',
+    'force_mentale',
+    'sociabilite',
   ],
 }
 

@@ -3,7 +3,6 @@ import { nomSurvie } from './lstComps'
 import { nomResistance } from './lstComps'
 import { nomAnimaux } from './lstComps'
 import { nomMilieuRue } from './lstComps'
-import { nomForce } from './lstComps'
 import { nomCorpsACorps } from './lstComps'
 import { nomIntimider } from './lstComps'
 import { nomConvaincre } from './lstComps'
@@ -267,10 +266,6 @@ export const lstVoies = [
         bonusCompetence: nomFabricationTechnique,
       },
       {
-        description: 'Déménageur',
-        bonusCompetence: nomForce,
-      },
-      {
         description: 'Chauffeur poids lourd',
         bonusCompetence: nomPilotage,
       },
@@ -357,10 +352,6 @@ export const lstVoies = [
       {
         description: 'Détrousseur du public',
         bonusCompetence: nomDetrousser,
-      },
-      {
-        description: "Homme fort, porteur d'équilibristes",
-        bonusCompetence: nomForce,
       },
       {
         description: 'Déforme son visage / cheveux / corps',
@@ -464,7 +455,7 @@ export const lstVoies = [
     deDeVie: 4,
     valeur: 0,
     richesse: 0,
-    competences: [nomMilieuRue, nomCorpsACorps, nomIntimider, nomForce],
+    competences: [nomMilieuRue, nomCorpsACorps, nomIntimider],
     evts: [
       {
         description: 'Repris de justice',
@@ -678,11 +669,6 @@ export const lstVoies = [
       {
         description: 'Embuscade',
         bonusCompetence: nomDiscretion,
-      },
-      {
-        description:
-          'A bougé un paqet de trucs lourds quand il était dans la logistique',
-        bonusCompetence: nomForce,
       },
       {
         description: 'A été garde de ville dans un secteur tendu',
