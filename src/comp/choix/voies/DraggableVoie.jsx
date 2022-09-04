@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Draggable } from 'react-beautiful-dnd'
-import { interpreterNouvLigne } from '../coteries/ZoneDeValidation'
 import { getVoie } from '../../../donnees/lstVoies'
 import { getCompetence } from '../../../donnees/lstComps'
 import { typesDes } from '../../../utils/rand'
@@ -58,7 +57,7 @@ function DraggableVoie({ idVoie, idDnD, index, valide, classement }) {
           ref={provided.innerRef}
           isDragging={snapshot.isDragging}
         >
-          {interpreterNouvLigne(texte)}
+          {texte}
         </Container>
       )}
     </Draggable>

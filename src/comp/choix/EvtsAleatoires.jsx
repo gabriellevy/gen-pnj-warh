@@ -3,7 +3,6 @@ import '../../styles/Coteries.css'
 import { useContext, useEffect, useState } from 'react'
 import { PhaseChoixContexte } from '../../utils/contexte/phaseChoix'
 import { PersoContexte } from '../../utils/contexte/perso'
-import { interpreterNouvLigne } from './coteries/ZoneDeValidation'
 import { getCompObjPropertyName } from '../../donnees/lstComps'
 import { getEvtAleatoireVoie } from '../../donnees/lstVoies'
 
@@ -50,7 +49,7 @@ function EvtsAleatoires() {
       }
     })
 
-    setTexteFinal(interpreterNouvLigne(texte))
+    setTexteFinal(texte)
     setRerender(!rerender)
     setChangementsAuPerso(changementsAuPersoLocal)
   }, [])

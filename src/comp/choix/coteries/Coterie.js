@@ -9,8 +9,6 @@ function Coterie({
   niveau_richesse,
   fonds,
   description,
-  descriptionCourante,
-  majDescriptionCourante,
   page,
   voies,
   modifs_caracs,
@@ -24,27 +22,15 @@ function Coterie({
   function appliquerSelection() {
     var fond = fonds[getRandomInt(fonds.length)]
 
-    majDescriptionCourante({
-      texte: description,
-      titre: titre,
-      page: page,
-      niveau_richesse: niveau_richesse,
-      voies: voies,
-      modifs_caracs: modifs_caracs,
-      modifs_comps: modifs_comps,
-      objets: objets,
-      capacite_magique: capacite_magique,
-      deDeVie: deDeVie,
-    })
-
     var changementsAuPerso = {
       fond: fond,
+      coterie: titre, // titre de coterie
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }
 
-  var selection = descriptionCourante.titre === titre
+  var selection = true // A FAIRE : séterminer si il ya sélection ou pas
 
   return (
     <li

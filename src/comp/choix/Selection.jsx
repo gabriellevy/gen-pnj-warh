@@ -1,16 +1,9 @@
 import Coterie from './coteries/Coterie'
 import { lstCoteries } from '../../donnees/lstCoteries'
 import '../../styles/Coteries.css'
-import ZoneDeValidation from './coteries/ZoneDeValidation'
 import { useState } from 'react'
 
 function Selection() {
-  const [descriptionCourante, majDescriptionCourante] = useState({
-    texte: '',
-    fond: '',
-    titre: '',
-  })
-
   return (
     <div>
       <ul className="lstCoteries_ul">
@@ -38,8 +31,6 @@ function Selection() {
                 niveau_richesse={niveau_richesse}
                 fonds={fonds}
                 description={description}
-                descriptionCourante={descriptionCourante}
-                majDescriptionCourante={majDescriptionCourante}
                 page={page}
                 voies={voies}
                 modifs_caracs={modifs_caracs}
@@ -53,10 +44,6 @@ function Selection() {
             )
         )}
       </ul>
-      <ZoneDeValidation
-        descriptionCourante={descriptionCourante}
-        majDescriptionCourante={majDescriptionCourante}
-      />
     </div>
   )
 }
