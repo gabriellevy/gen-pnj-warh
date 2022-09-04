@@ -30,7 +30,7 @@ function Coterie({
     setPerso(persoFinal)
   }
 
-  var selection = true // A FAIRE : séterminer si il ya sélection ou pas
+  var selection = perso.coterie === titre
 
   return (
     <li
