@@ -10,7 +10,6 @@ import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonni
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { useContext } from 'react'
 import { calculerPoids, PersoContexte } from '../../utils/contexte/perso'
-import { PhaseChoixContexte } from '../../utils/contexte/phaseChoix'
 import { modificateurCarac } from '../../donnees/lstCaracs'
 import {
   getCompObjPropertyName,
@@ -24,7 +23,6 @@ import {
  */
 function Finalisation() {
   const { perso, setPerso } = useContext(PersoContexte)
-  const { phaseChoix, majPhaseChoix } = useContext(PhaseChoixContexte)
   const [age, majAge] = useState(perso.age)
   const [nom, majNom] = useState(perso.nom)
   const [poids, majPoids] = useState(calculerPoids(perso))
@@ -123,8 +121,6 @@ function Finalisation() {
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)*/
-
-    majPhaseChoix(phaseChoix + 1)
   }
 
   return (

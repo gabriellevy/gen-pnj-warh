@@ -4,7 +4,7 @@ import '../../styles/Coteries.css'
 import ZoneDeValidation from './coteries/ZoneDeValidation'
 import { useState } from 'react'
 
-function Coteries() {
+function Selection() {
   const [descriptionCourante, majDescriptionCourante] = useState({
     texte: '',
     fond: '',
@@ -61,4 +61,4 @@ function Coteries() {
   )
 }
 
-export default Coteries
+export default Selection

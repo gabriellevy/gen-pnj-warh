@@ -3,11 +3,9 @@ import '../styles/App.css'
 import ZoneDeChoix from './ZoneDeChoix'
 import { useEffect, useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
-import { PhaseChoixContexte } from '../utils/contexte/phaseChoix'
 
 function App() {
   const { perso } = useContext(PersoContexte)
-  const { phaseChoix, majPhaseChoix } = useContext(PhaseChoixContexte)
 
   useEffect(() => {
     document.title = 'Créateur de personnage Extremis'
