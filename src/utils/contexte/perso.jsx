@@ -1,4 +1,6 @@
 import React, { useState, createContext, useEffect } from 'react'
+import { nomCotHalfelins } from '../../donnees/lstCoteries'
+import { nomCotNains } from '../../donnees/lstCoteries'
 import { nomCotConquistadors } from '../../donnees/lstCoteries'
 import { nomCotHautsElfes } from '../../donnees/lstCoteries'
 import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
@@ -14,7 +16,7 @@ import {
   lstComps,
   nomResistance,
 } from '../../donnees/lstComps'
-import { resMaxDe, typesDes } from '../rand'
+import { resMaxDe, typesDes, lancerDe } from '../rand'
 
 export const PersoContexte = createContext()
 
@@ -48,7 +50,6 @@ export const PersoProvider = ({ children }) => {
     niveau_richesse: 0,
     pointsDeVie: 0,
     poids: 0,
-    description: '',
     evts: [],
     coterie: '', // titre de coterie
     nom: '',
@@ -65,23 +66,68 @@ export const PersoProvider = ({ children }) => {
   useEffect(() => {
     var changementsAuPerso = {}
     changementsAuPerso['poids'] = calculerPoids(perso)
-    changementsAuPerso['nom'] =
-      // générer un nom selon la coterie choisie :
-      changementsAuPerso['nom'] = 'youpi pas de noms pour cette coterie'
+    // générer un nom selon la coterie choisie :
+    changementsAuPerso['nom'] = 'youpi pas de noms pour cette coterie'
+    changementsAuPerso['cc'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['ct'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['force'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['endurance'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['initiative'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['agilete'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['dexterite'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['intelligence'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['force_mentale'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['sociabilite'] = 20 + lancerDe('D10') + lancerDe('D10')
+
     if (perso.coterie === nomCotConquistadors)
       changementsAuPerso['nom'] = genNomConquistador(perso.male)
-    else if (perso.coterie === nomCotHautsElfes)
+    else if (perso.coterie === nomCotHautsElfes) {
+      changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['initiative'] = 40 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['agilete'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['intelligence'] =
+        30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['force_mentale'] =
+        30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['nom'] = genNomElfe(perso.male)
-    else if (perso.coterie === nomCotElfesSylvains)
+    } else if (perso.coterie === nomCotElfesSylvains) {
+      changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['initiative'] = 40 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['agilete'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['intelligence'] =
+        30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['force_mentale'] =
+        30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['nom'] = genNomElfe(perso.male)
-    else if (perso.coterie === nomCotBretonniens)
+    } else if (perso.coterie === nomCotBretonniens)
       changementsAuPerso['nom'] = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotKislevites)
       changementsAuPerso['nom'] = genNomKislevite(perso.male)
+    else if (perso.coterie === nomCotNains) {
+      changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['endurance'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['agilete'] = 10 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['force_mentale'] =
+        40 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['sociabilite'] = 10 + lancerDe('D10') + lancerDe('D10')
+    } else if (perso.coterie === nomCotHalfelins) {
+      changementsAuPerso['cc'] = 10 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['force'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['force_mentale'] =
+        30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['sociabilite'] = 30 + lancerDe('D10') + lancerDe('D10')
+    }
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
-  }, [perso.male, perso.age, perso.coterie])
+  }, [perso.coterie])
 
   // c'est ici que je pourrais changer le bg ??
 

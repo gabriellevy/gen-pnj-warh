@@ -2,15 +2,6 @@ import Coterie from './coteries/Coterie'
 import { lstCoteries } from '../../donnees/lstCoteries'
 import '../../styles/Coteries.css'
 import { useState, useEffect } from 'react'
-import { nomCotConquistadors } from '../../donnees/lstCoteries'
-import { nomCotHautsElfes } from '../../donnees/lstCoteries'
-import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
-import { nomCotBretonniens } from '../../donnees/lstCoteries'
-import { nomCotKislevites } from '../../donnees/lstCoteries'
-import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
-import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
-import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
-import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { useContext } from 'react'
 import { calculerPoids, PersoContexte } from '../../utils/contexte/perso'
 import { modificateurCarac } from '../../donnees/lstCaracs'
@@ -24,7 +15,6 @@ function Selection() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [age, majAge] = useState(perso.age)
   const [poids, majPoids] = useState(calculerPoids(perso))
-  const [description, majDescription] = useState(perso.description)
 
   useEffect(() => {
     if (perso.poids !== poids) majPoids(perso.poids)
@@ -57,14 +47,6 @@ function Selection() {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }
-  function gererDescription(e) {
-    var changementsAuPerso = {
-      description: e.target.value,
-    }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-    majDescription(e.target.value)
-  }
 
   return (
     <div>
@@ -74,7 +56,6 @@ function Selection() {
             titre,
             portrait,
             fonds,
-            description,
             page,
             niveau_richesse,
             affiche,
@@ -90,7 +71,6 @@ function Selection() {
                 portrait={portrait}
                 niveau_richesse={niveau_richesse}
                 fonds={fonds}
-                description={description}
                 page={page}
                 voies={voies}
                 modifs_caracs={modifs_caracs}
@@ -152,16 +132,6 @@ function Selection() {
                 Femme
               </label>
             </div>
-            <br />
-            <textarea
-              type="text"
-              id="description"
-              rows={5}
-              cols={90}
-              placeholder="Entrez une description du personnage si vous le souhaitez"
-              onChange={gererDescription}
-              value={description}
-            />
           </form>
         </div>
       </div>
