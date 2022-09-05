@@ -95,7 +95,7 @@ function Banniere() {
                 <td>
                   <div className="descriptionPerso">
                     <br />
-                    Points de blessure : {perso.pointsDeVie}
+                    Points de blessure : {perso.pointsDeBlessure}
                   </div>
                 </td>
                 <td>

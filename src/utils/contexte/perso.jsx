@@ -48,7 +48,7 @@ export const PersoProvider = ({ children }) => {
     force_mentale: 0,
     sociabilite: 0,
     niveau_richesse: 0,
-    pointsDeVie: 0,
+    pointsDeBlessure: 0,
     poids: 0,
     evts: [],
     coterie: '', // titre de coterie
@@ -78,6 +78,10 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['intelligence'] = 20 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 20 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['sociabilite'] = 20 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['pointsDeBlessure'] =
+      Math.floor(changementsAuPerso['force'] / 10) +
+      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+      Math.floor(changementsAuPerso['force_mentale'] / 10)
 
     if (perso.coterie === nomCotConquistadors)
       changementsAuPerso['nom'] = genNomConquistador(perso.male)
@@ -92,6 +96,10 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['force_mentale'] =
         30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['nom'] = genNomElfe(perso.male)
+      changementsAuPerso['pointsDeBlessure'] =
+        Math.floor(changementsAuPerso['force'] / 10) +
+        2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+        Math.floor(changementsAuPerso['force_mentale'] / 10)
     } else if (perso.coterie === nomCotElfesSylvains) {
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -103,6 +111,10 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['force_mentale'] =
         30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['nom'] = genNomElfe(perso.male)
+      changementsAuPerso['pointsDeBlessure'] =
+        Math.floor(changementsAuPerso['force'] / 10) +
+        2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+        Math.floor(changementsAuPerso['force_mentale'] / 10)
     } else if (perso.coterie === nomCotBretonniens)
       changementsAuPerso['nom'] = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotKislevites)
@@ -115,6 +127,10 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['force_mentale'] =
         40 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['sociabilite'] = 10 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['pointsDeBlessure'] =
+        Math.floor(changementsAuPerso['force'] / 10) +
+        2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+        Math.floor(changementsAuPerso['force_mentale'] / 10)
     } else if (perso.coterie === nomCotHalfelins) {
       changementsAuPerso['cc'] = 10 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -123,6 +139,9 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['force_mentale'] =
         30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['sociabilite'] = 30 + lancerDe('D10') + lancerDe('D10')
+      changementsAuPerso['pointsDeBlessure'] =
+        2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+        Math.floor(changementsAuPerso['force_mentale'] / 10)
     }
 
     var persoFinal = { ...perso, ...changementsAuPerso }
