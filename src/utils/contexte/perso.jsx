@@ -39,14 +39,10 @@ export const PersoProvider = ({ children }) => {
     niveau_richesse: 0,
     pointsDeVie: 0,
     utilisationsCapaMagique: 0,
-    defense: 0,
-    atc: 0,
     poids: 0,
-    atd: 0,
     description: '',
     evts: [],
     coterie: '', // titre de coterie
-    deDeVie: 0, // stocké par index du tableau 'typesDes' => quand une coterie ou autre qu'on choisit a une valeur supérieure, alors on prend cette valeur supérieure
   })
 
   useEffect(() => {
@@ -56,14 +52,6 @@ export const PersoProvider = ({ children }) => {
       perso[idComp] = 0
     })
   }, [])
-
-  useEffect(() => {
-    var changementsAuPerso = {}
-    changementsAuPerso['pointsDeVie'] = resMaxDe(typesDes[perso.deDeVie])
-
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }, [perso.deDeVie])
 
   useEffect(() => {
     var changementsAuPerso = {}

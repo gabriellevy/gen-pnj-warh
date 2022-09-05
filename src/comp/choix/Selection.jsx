@@ -111,8 +111,6 @@ function Selection() {
             modifs_caracs,
             modifs_comps,
             objets,
-            capacite_magique,
-            deDeVie,
           }) =>
             affiche ? (
               <Coterie
@@ -127,8 +125,6 @@ function Selection() {
                 modifs_caracs={modifs_caracs}
                 modifs_comps={modifs_comps}
                 objets={objets}
-                capacite_magique={capacite_magique}
-                deDeVie={deDeVie}
               />
             ) : (
               ''

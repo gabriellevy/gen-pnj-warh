@@ -97,19 +97,8 @@ function Banniere() {
                 </td>
                 <td>
                   <div className="descriptionPerso">
-                    <b>Combat : </b>
-                    <br />
-                    Initiative : {perso.initiative}
-                    <br />
-                    Attaque corps à corps : {perso.atc}
-                    <br />
-                    Attaque à distance : {perso.atd}
-                    <br />
-                    Défense : {perso.defense}
                     <br />
                     Points de vie : {perso.pointsDeVie}
-                    <br />
-                    Dé de vie : {typesDes[perso.deDeVie]}
                   </div>
                 </td>
                 <td>

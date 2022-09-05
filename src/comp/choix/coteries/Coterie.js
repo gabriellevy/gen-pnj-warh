@@ -14,8 +14,6 @@ function Coterie({
   modifs_caracs,
   modifs_comps,
   objets,
-  capacite_magique,
-  deDeVie,
 }) {
   const { perso, setPerso } = useContext(PersoContexte)
 

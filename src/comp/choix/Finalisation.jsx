@@ -95,33 +95,6 @@ function Finalisation() {
     setPerso(persoFinal)
     majDescription(e.target.value)
   }
-  function validerFinalisation() {
-    // calcul des caracs secondaires déduites
-    /*
-    A FAIRE : caser ici le calcul des points d blessure etc ??
-    const utilCapaMag =
-      perso.utilisationsCapaMagique + modificateurCarac(perso.magie) + 4
-    const atcVal =
-      perso.atc +
-      perso[getCompObjPropertyName(nomCorpsACorps)] +
-      modificateurCarac(perso.constitution)
-    const atdVal =
-      perso.atd +
-      perso[getCompObjPropertyName(nomTir)] +
-      modificateurCarac(perso.dexterite)
-
-    // nb utilisation de capas magiques
-    var changementsAuPerso = {
-      utilisationsCapaMagique: utilCapaMag,
-      initiative: perso.dexterite,
-      defense: 10 + modificateurCarac(perso.dexterite),
-      atc: atcVal,
-      atd: atdVal,
-    }
-
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)*/
-  }
 
   return (
     <div style={{ padding: '0px 15px 0px 15px' }}>

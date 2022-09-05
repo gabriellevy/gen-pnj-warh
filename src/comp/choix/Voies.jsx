@@ -91,10 +91,6 @@ export default function Voies() {
     // MAJ métier
     changementsAuPerso['metier'] = voieMetier.titre
 
-    // MAJ dé de vie (si supérieur à celui que le perso a déjà)
-    if (voieMetier.deDeVie > perso['deDeVie'])
-      changementsAuPerso['deDeVie'] = voieMetier.deDeVie
-
     // ----------------------- passion
     const idVoiePassion =
       dndDonnees.valeurs[[dndDonnees.colonnes[[idPassion]].valeursIds[0]]]

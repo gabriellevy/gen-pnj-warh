@@ -40,8 +40,6 @@ function DraggableVoie({ idVoie, idDnD, index, valide, classement }) {
         compObj.carac +
         ')'
     })
-    if (classement === 1 || classement === 4)
-      texte = texte + '\nDé de vie minimum : ' + typesDes[voie.deDeVie]
 
     if (voie.description !== '') {
       texte = texte + '\n' + voie.description

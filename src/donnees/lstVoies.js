@@ -76,7 +76,6 @@ export function getEvtAleatoireVoie(idVoie, nb) {
 export const lstVoies = [
   {
     titre: voieMarchand,
-    deDeVie: 0,
     valeur: 0,
     richesse: 2,
     competences: [nomConvaincre, nomNegoce],
@@ -130,7 +129,6 @@ export const lstVoies = [
   },
   {
     titre: voieMalandrin,
-    deDeVie: 0,
     valeur: 0,
     richesse: 0,
     competences: [nomDetrousser, nomDiscretion, nomSIntroduire],
@@ -184,7 +182,6 @@ export const lstVoies = [
   },
   {
     titre: voieAventurier,
-    deDeVie: 3,
     valeur: 0,
     richesse: 0,
     competences: [nomSurvie, nomAnimaux, nomResistance],
@@ -244,7 +241,6 @@ export const lstVoies = [
   },
   {
     titre: voieTravailleur,
-    deDeVie: 3,
     valeur: 0,
     richesse: 1,
     competences: [nomArtisanat, nomEffort],
@@ -290,7 +286,6 @@ export const lstVoies = [
   },
   {
     titre: voieScientifique,
-    deDeVie: 0,
     valeur: 0,
     richesse: 1,
     competences: [nomScience, nomMedecine],
@@ -320,7 +315,6 @@ export const lstVoies = [
   },
   {
     titre: voieSaltimbanque,
-    deDeVie: 0,
     valeur: 0,
     richesse: 0,
     competences: [nomAcrobatie, nomActeur, nomMusique],
@@ -366,7 +360,6 @@ export const lstVoies = [
   },
   {
     titre: voieHommeDuMonde,
-    deDeVie: 0,
     valeur: 0,
     richesse: 3,
     competences: [nomMilieuHauteSociete],
@@ -418,7 +411,6 @@ export const lstVoies = [
   },
   {
     titre: voiePretre,
-    deDeVie: 0,
     valeur: 0,
     richesse: 0,
     competences: [nomMiracles, nomMilieuClerge],
@@ -452,7 +444,6 @@ export const lstVoies = [
   },
   {
     titre: voieBrute,
-    deDeVie: 4,
     valeur: 0,
     richesse: 0,
     competences: [nomMilieuRue, nomCorpsACorps, nomIntimider],
@@ -508,7 +499,6 @@ export const lstVoies = [
   },
   {
     titre: voieEspion,
-    deDeVie: 1,
     valeur: 0,
     richesse: 0,
     competences: [nomIntuition, nomInvestigation, nomMilieuReseau],
@@ -554,7 +544,6 @@ export const lstVoies = [
   },
   {
     titre: voieIngenieur,
-    deDeVie: 0,
     valeur: 0,
     richesse: 1,
     competences: [nomInformatique, nomFabricationTechnique, nomReparer],
@@ -589,7 +578,6 @@ export const lstVoies = [
   },
   {
     titre: voieIntellectuel,
-    deDeVie: 0,
     valeur: 0,
     richesse: 1,
     competences: [nomLangues, nomLoi, nomArt],
@@ -619,7 +607,6 @@ export const lstVoies = [
   },
   {
     titre: voieMagicien,
-    deDeVie: 0,
     valeur: 0,
     richesse: 0,
     competences: [nomArcanes, nomAlchimie],
@@ -645,7 +632,6 @@ export const lstVoies = [
   },
   {
     titre: voieSoldat,
-    deDeVie: 3,
     valeur: 0,
     richesse: 0,
     competences: [nomCommandement, nomTir],
@@ -693,7 +679,6 @@ export const lstVoies = [
   },
   {
     titre: voieVoyageur,
-    deDeVie: 1,
     valeur: 0,
     richesse: 1,
     competences: [nomPilotage, nomMilieuMonde],

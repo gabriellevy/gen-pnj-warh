@@ -115,7 +115,6 @@ export function getEvtAleatoireCoterie(idCoterie, nb) {
 export const lstCoteries = [
   {
     titre: nomCotBretonniens,
-    deDeVie: 1,
     voies: [
       voieAventurier,
       voieSoldat,
@@ -156,7 +155,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotEmpire,
-    deDeVie: 1,
     voies: [
       voieTravailleur,
       voieScientifique,
@@ -193,7 +191,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotNains,
-    deDeVie: 1,
     voies: [voieTravailleur, voiePretre],
     affiche: true,
     portrait: portrait_nains,
@@ -226,7 +223,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotHalfelins,
-    deDeVie: 1,
     voies: [voieHommeDuMonde, voieIntellectuel, voieMagicien],
     affiche: true,
     portrait: portrait_halfelins,
@@ -267,7 +263,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotHautsElfes,
-    deDeVie: 1,
     voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
       { carac: nomEndurance, val: -1 },
@@ -313,7 +308,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotElfesSylvains,
-    deDeVie: 1,
     voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
       { carac: nomEndurance, val: -1 },
@@ -359,7 +353,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotKislevites,
-    deDeVie: 1,
     voies: [
       voieAventurier,
       voieSaltimbanque,
