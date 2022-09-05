@@ -1,4 +1,13 @@
 import React, { useState, createContext, useEffect } from 'react'
+import { nomCotConquistadors } from '../../donnees/lstCoteries'
+import { nomCotHautsElfes } from '../../donnees/lstCoteries'
+import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
+import { nomCotBretonniens } from '../../donnees/lstCoteries'
+import { nomCotKislevites } from '../../donnees/lstCoteries'
+import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
+import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
+import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
+import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 
 import {
   getCompObjPropertyName,
@@ -38,11 +47,11 @@ export const PersoProvider = ({ children }) => {
     sociabilite: 0,
     niveau_richesse: 0,
     pointsDeVie: 0,
-    utilisationsCapaMagique: 0,
     poids: 0,
     description: '',
     evts: [],
     coterie: '', // titre de coterie
+    nom: '',
   })
 
   useEffect(() => {
@@ -56,10 +65,23 @@ export const PersoProvider = ({ children }) => {
   useEffect(() => {
     var changementsAuPerso = {}
     changementsAuPerso['poids'] = calculerPoids(perso)
+    changementsAuPerso['nom'] =
+      // générer un nom selon la coterie choisie :
+      changementsAuPerso['nom'] = 'youpi pas de noms pour cette coterie'
+    if (perso.coterie === nomCotConquistadors)
+      changementsAuPerso['nom'] = genNomConquistador(perso.male)
+    else if (perso.coterie === nomCotHautsElfes)
+      changementsAuPerso['nom'] = genNomElfe(perso.male)
+    else if (perso.coterie === nomCotElfesSylvains)
+      changementsAuPerso['nom'] = genNomElfe(perso.male)
+    else if (perso.coterie === nomCotBretonniens)
+      changementsAuPerso['nom'] = genNomBretonnien(perso.male)
+    else if (perso.coterie === nomCotKislevites)
+      changementsAuPerso['nom'] = genNomKislevite(perso.male)
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
-  }, [perso.male, perso.age])
+  }, [perso.male, perso.age, perso.coterie])
 
   // c'est ici que je pourrais changer le bg ??
 

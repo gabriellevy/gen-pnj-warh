@@ -23,42 +23,13 @@ import {
 function Selection() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [age, majAge] = useState(perso.age)
-  const [nom, majNom] = useState(perso.nom)
   const [poids, majPoids] = useState(calculerPoids(perso))
   const [description, majDescription] = useState(perso.description)
-
-  function majNomLocal(nom) {
-    majNom(nom)
-    var changementsAuPerso = {
-      age: age,
-      nom: nom,
-    }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }
-
-  useEffect(() => {
-    // générer un nom selon la coterie choisie :
-    var nom = 'youpi pas de noms pour cette coterie'
-    if (perso.coterie === nomCotConquistadors)
-      nom = genNomConquistador(perso.male)
-    else if (perso.coterie === nomCotHautsElfes) nom = genNomElfe(perso.male)
-    else if (perso.coterie === nomCotElfesSylvains) nom = genNomElfe(perso.male)
-    else if (perso.coterie === nomCotBretonniens)
-      nom = genNomBretonnien(perso.male)
-    else if (perso.coterie === nomCotKislevites)
-      nom = genNomKislevite(perso.male)
-
-    majNomLocal(nom)
-  }, [perso.male])
 
   useEffect(() => {
     if (perso.poids !== poids) majPoids(perso.poids)
   }, [perso.poids, poids, majPoids])
 
-  function gererNom(e) {
-    majNomLocal(e.target.value)
-  }
   function gererAge(e) {
     majAge(e.target.value)
 
@@ -135,16 +106,6 @@ function Selection() {
       <div style={{ padding: '0px 15px 0px 15px' }}>
         <div className="texteStandard">
           <form>
-            Nom :
-            <input
-              type="text"
-              id="nom"
-              placeholder="Nom du perso"
-              onChange={gererNom}
-              value={nom}
-            />
-            <br />
-            <br />
             Âge :
             <input
               type="text"

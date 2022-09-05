@@ -82,9 +82,6 @@ function Banniere() {
                     <br />
                     {perso.metier}
                     <br />
-                    Utilisations de capa magique :{' '}
-                    {perso.utilisationsCapaMagique}
-                    <br />
                     {perso.age} ans
                     <br />
                     {perso.poids} kg
