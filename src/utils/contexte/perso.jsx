@@ -7,6 +7,7 @@ import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
 import { nomCotBretonniens } from '../../donnees/lstCoteries'
 import { nomCotKislevites } from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
+import { genNomNain } from '../../donnees/coteries/nains/nomsNains'
 import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
@@ -120,6 +121,7 @@ export const PersoProvider = ({ children }) => {
     else if (perso.coterie === nomCotKislevites)
       changementsAuPerso['nom'] = genNomKislevite(perso.male)
     else if (perso.coterie === nomCotNains) {
+      changementsAuPerso['nom'] = genNomNain(perso.male)
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['endurance'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['agilete'] = 10 + lancerDe('D10') + lancerDe('D10')
