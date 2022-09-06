@@ -1,18 +1,43 @@
 import * as React from 'react'
-import { lstClasses } from '../../donnees/lstClasses'
-import { useContext } from 'react'
+import { lstClasses, getClasseObj } from '../../donnees/lstClasses'
+import { useContext, useEffect } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
+import { getRandomInt } from '../../utils/rand'
 
 const ChoixClasse = () => {
   const { perso, setPerso } = useContext(PersoContexte)
-  const [classe, setClasse] = React.useState('Citadins')
-  const [carriere, setCarriere] = React.useState('Agitateur')
+  const [classe, setClasse] = React.useState(perso.classe)
+  const [carriere, setCarriere] = React.useState(perso.metier)
+
+  useEffect(() => {
+    // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
+    var indexClasse = getRandomInt(lstClasses.length)
+    var ClasseObj = lstClasses[indexClasse]
+    setClasse(ClasseObj.titre)
+
+    var indexCarriere = getRandomInt(ClasseObj.carrieres.length)
+    var carriereObj = ClasseObj.carrieres[indexCarriere]
+    setCarriere(carriereObj.titre)
+
+    var changementsAuPerso = {
+      classe: ClasseObj.titre,
+      metier: carriereObj.titre,
+    }
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+  }, [])
 
   const changeClasse = (event) => {
     setClasse(event.target.value)
 
+    var classeObjCourant = getClasseObj(event.target.value)
+    var indexCarriere = getRandomInt(classeObjCourant.carrieres.length)
+    var carriereObj = classeObjCourant.carrieres[indexCarriere]
+    setCarriere(carriereObj.titre)
+
     var changementsAuPerso = {
       classe: event.target.value,
+      metier: carriereObj.titre,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)

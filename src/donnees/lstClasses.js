@@ -81,6 +81,16 @@ export const nomMystique = 'Mystique'
 export const nomSorcierDeVillage = 'Sorcier de village'
 export const nomVillageois = 'Villageois'
 
+export function getClasseObj(idClasse) {
+  var coterieObj
+  lstClasses.forEach((classe) => {
+    if (classe.titre === idClasse) {
+      coterieObj = classe
+    }
+  })
+  return coterieObj
+}
+
 export const lstClasses = [
   {
     titre: nomCitadins,
