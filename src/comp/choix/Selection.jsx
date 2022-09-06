@@ -1,4 +1,5 @@
 import Coterie from './coteries/Coterie'
+import ChoixClasse from './ChoixClasse'
 import { lstCoteries } from '../../donnees/lstCoteries'
 import '../../styles/Coteries.css'
 import { useState, useEffect } from 'react'
@@ -132,6 +133,7 @@ function Selection() {
                 Femme
               </label>
             </div>
+            <ChoixClasse />
           </form>
         </div>
       </div>

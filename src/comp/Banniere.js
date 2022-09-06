@@ -32,6 +32,9 @@ function Banniere() {
     if (perso.metier === undefined) {
       perso.metier = ''
     }
+    if (perso.classe === undefined) {
+      perso.classe = ''
+    }
     if (perso.age === undefined) {
       const age = getRandomInt(60) + 15
       perso.age = age
@@ -80,7 +83,7 @@ function Banniere() {
                     <br />
                     {perso.coterie}
                     <br />
-                    {perso.metier}
+                    {perso.metier} ({perso.classe})
                     <br />
                     {perso.age} ans
                     <br />

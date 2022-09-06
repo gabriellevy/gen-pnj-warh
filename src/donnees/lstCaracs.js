@@ -15,7 +15,7 @@ export const nomSociabilite = 'Sociabilité'
  */
 export function getCaracObjPropertyName(nomCaracStr) {
   if (nomCaracStr === nomCC) return 'cc'
-  if (nomCaracStr === nomCC) return 'cc'
+  if (nomCaracStr === nomCT) return 'ct'
   if (nomCaracStr === nomForce) return 'force'
   if (nomCaracStr === nomEndurance) return 'endurance'
   if (nomCaracStr === nomInitiative) return 'initiative'

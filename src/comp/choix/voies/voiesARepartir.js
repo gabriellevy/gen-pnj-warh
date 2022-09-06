@@ -6,6 +6,7 @@ export const idVoie5 = 'voie-5'
 export const idVoie6 = 'voie-6'
 
 export const idMetier = 'metier'
+export const idClasse = 'classe'
 export const titreMetier = 'Spécialité'
 export const idPassion = 'passion'
 export const titrePassion = 'Passion'
