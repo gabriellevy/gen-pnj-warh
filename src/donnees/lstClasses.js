@@ -8,7 +8,7 @@ export const nomRiverains = 'Riverains'
 export const nomRoublards = 'Roublards'
 export const nomRuraux = 'Ruraux'
 
-// carrières
+// -------------- carrières
 export const nomAgitateur = 'Agitateur'
 export const nomArtisan = 'Artisan'
 export const nomBourgeois = 'Bourgeois'
@@ -54,6 +54,7 @@ export const nomNonne = 'Nonne'
 export const nomPretre = 'Prêtre'
 export const nomSorcier = 'Sorcier'
 
+// carrières de riverains
 export const nomBatelier = 'Batelier'
 export const nomContrebandier = 'Contrebandier'
 export const nomDebardeur = 'Débardeur'

@@ -29,8 +29,8 @@ function Banniere() {
     if (perso.nom === undefined) {
       perso.nom = ''
     }
-    if (perso.metier === undefined) {
-      perso.metier = ''
+    if (perso.carriere === undefined) {
+      perso.carriere = ''
     }
     if (perso.classe === undefined) {
       perso.classe = ''
@@ -83,7 +83,7 @@ function Banniere() {
                     <br />
                     {perso.coterie}
                     <br />
-                    {perso.metier} ({perso.classe})
+                    {perso.carriere} ({perso.classe})
                     <br />
                     {perso.age} ans
                     <br />

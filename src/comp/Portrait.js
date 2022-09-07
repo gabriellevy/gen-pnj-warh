@@ -4,7 +4,12 @@ import { getRandomInt } from '../utils/rand'
 import { useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
 
-function getPortraits(perso, prendreEnCompteCoterie, prendreEnCompteCarriere) {
+function getPortraits(
+  perso,
+  prendreEnCompteCoterie,
+  prendreEnCompteClasse,
+  prendreEnCompteCarriere
+) {
   console.log('perso.classe : ' + perso.classe)
   const portraitsRestants = lstPortraits
     .filter(
@@ -23,10 +28,17 @@ function getPortraits(perso, prendreEnCompteCoterie, prendreEnCompteCarriere) {
     )
     .filter(
       (portrait) =>
-        !prendreEnCompteCarriere ||
+        !prendreEnCompteClasse ||
         (portrait.classes !== undefined &&
           perso.classe !== undefined &&
           portrait.classes.includes(perso.classe))
+    )
+    .filter(
+      (portrait) =>
+        !prendreEnCompteCarriere ||
+        (portrait.carrieres !== undefined &&
+          perso.carriere !== undefined &&
+          portrait.carrieres.includes(perso.carriere))
     )
   return portraitsRestants
 }
@@ -37,13 +49,17 @@ function Portrait() {
 
   // filtrage des portraits dispos selon les caracs de persos
 
-  var portraitsRestants = getPortraits(perso, true, true)
+  var portraitsRestants = getPortraits(perso, true, false, true)
   if (portraitsRestants.length === 0) {
     // on n'a rien trouvé qui corresponde aux carrieres
-    portraitsRestants = getPortraits(perso, true, false)
+    portraitsRestants = getPortraits(perso, true, true, false)
     if (portraitsRestants.length === 0) {
-      // on n'a rien trouvé qui corresponde a la faction
-      portraitsRestants = getPortraits(perso, false, false)
+      // on n'a rien trouvé qui corresponde aux classes
+      portraitsRestants = getPortraits(perso, true, false, false)
+      if (portraitsRestants.length === 0) {
+        // on n'a rien trouvé qui corresponde a la faction
+        portraitsRestants = getPortraits(perso, false, false, false)
+      }
     }
   }
 

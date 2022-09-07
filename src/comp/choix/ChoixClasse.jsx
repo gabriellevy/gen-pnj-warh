@@ -7,25 +7,28 @@ import { getRandomInt } from '../../utils/rand'
 const ChoixClasse = () => {
   const { perso, setPerso } = useContext(PersoContexte)
   const [classe, setClasse] = React.useState(perso.classe)
-  const [carriere, setCarriere] = React.useState(perso.metier)
+  const [carriere, setCarriere] = React.useState(perso.carriere)
 
+  // manière détournée bancale de faire l'initialisation mais bon je fais ce que je peux
   useEffect(() => {
-    // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
-    var indexClasse = getRandomInt(lstClasses.length)
-    var ClasseObj = lstClasses[indexClasse]
-    setClasse(ClasseObj.titre)
+    if (perso.classe === undefined || perso.classe === '') {
+      // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
+      var indexClasse = getRandomInt(lstClasses.length)
+      var ClasseObj = lstClasses[indexClasse]
+      setClasse(ClasseObj.titre)
 
-    var indexCarriere = getRandomInt(ClasseObj.carrieres.length)
-    var carriereObj = ClasseObj.carrieres[indexCarriere]
-    setCarriere(carriereObj.titre)
+      var indexCarriere = getRandomInt(ClasseObj.carrieres.length)
+      var carriereObj = ClasseObj.carrieres[indexCarriere]
+      setCarriere(carriereObj.titre)
 
-    var changementsAuPerso = {
-      classe: ClasseObj.titre,
-      metier: carriereObj.titre,
+      var changementsAuPerso = {
+        classe: ClasseObj.titre,
+        carriere: carriereObj.titre,
+      }
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
     }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }, [])
+  }, [perso, setPerso])
 
   const changeClasse = (event) => {
     setClasse(event.target.value)
@@ -37,7 +40,7 @@ const ChoixClasse = () => {
 
     var changementsAuPerso = {
       classe: event.target.value,
-      metier: carriereObj.titre,
+      carriere: carriereObj.titre,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
@@ -47,7 +50,7 @@ const ChoixClasse = () => {
     setCarriere(event.target.value)
 
     var changementsAuPerso = {
-      metier: event.target.value,
+      carriere: event.target.value,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)

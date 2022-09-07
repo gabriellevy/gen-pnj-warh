@@ -29,7 +29,7 @@ function EvtsAleatoires() {
     })
 
     texte = texte + '\n\n\nÉvénements de voie : \n'
-    const evtsAleatoiresVoie = getEvtAleatoireVoie(perso.metier, 1)
+    const evtsAleatoiresVoie = getEvtAleatoireVoie(perso.carriere, 1)
     evtsAleatoiresVoie.forEach((evt) => {
       if (evt.bonusCompetence !== undefined) {
         texte =
