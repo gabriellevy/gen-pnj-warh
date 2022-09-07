@@ -15,7 +15,9 @@ function getPortraits(
     .filter(
       (portrait) =>
         (!prendreEnCompteCoterie && portrait.coterie === undefined) ||
-        (portrait.coterie !== undefined && perso.coterie === portrait.coterie)
+        (portrait.coteries !== undefined &&
+          perso.coterie !== undefined &&
+          portrait.coteries.includes(perso.coterie))
     )
     .filter((portrait) => perso.male === portrait.male)
     .filter(
