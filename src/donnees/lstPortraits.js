@@ -5,6 +5,17 @@ import { nomCotElfesSylvains } from './lstCoteries'
 import { nomCotKislevites } from './lstCoteries'
 import { nomCotHalfelins } from './lstCoteries'
 import { nomCotNains } from './lstCoteries'
+import { nomCotEmpire } from './lstCoteries'
+import {
+  nomCourtisans,
+  nomLettres,
+  nomCitadins,
+  nomGuerriers,
+  nomItinerants,
+  nomRiverains,
+  nomRoublards,
+  nomRuraux,
+} from './lstClasses'
 
 import portrait_conquistador_25_60 from './img/conquistadors/portraits/25-60.jpg'
 import portrait_conquistador_20_50_b from './img/conquistadors/portraits/portrait_20-50_b.jpg'
@@ -141,7 +152,26 @@ import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
 
 import portrait_halfelin_30_50 from './img/halfelins/portraits/30_50.jpg'
 
+import portrait_empire30_60_courtisans from './img/empire/portraits/30_60_courtisans.jpg'
+import portrait_empire30_60_lettres from './img/empire/portraits/30_60_lettres.jpg'
+
 export const lstPortraits = [
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_60_courtisans,
+    ageMin: 40,
+    ageMax: 60,
+    classes: [nomCourtisans, nomCitadins],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_60_lettres,
+    ageMin: 30,
+    ageMax: 60,
+    classes: [nomLettres],
+    male: true,
+  },
   {
     coterie: nomCotNains,
     image: portrait_nain_40_100,

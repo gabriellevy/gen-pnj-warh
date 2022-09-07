@@ -4,7 +4,8 @@ import { getRandomInt } from '../utils/rand'
 import { useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
 
-function getPortraits(perso, prendreEnCompteCoterie) {
+function getPortraits(perso, prendreEnCompteCoterie, prendreEnCompteCarriere) {
+  console.log('perso.classe : ' + perso.classe)
   const portraitsRestants = lstPortraits
     .filter(
       (portrait) =>
@@ -20,6 +21,13 @@ function getPortraits(perso, prendreEnCompteCoterie) {
       (portrait) =>
         portrait.ageMax === undefined || perso.age <= portrait.ageMax
     )
+    .filter(
+      (portrait) =>
+        !prendreEnCompteCarriere ||
+        (portrait.classes !== undefined &&
+          perso.classe !== undefined &&
+          portrait.classes.includes(perso.classe))
+    )
   return portraitsRestants
 }
 
@@ -29,9 +37,15 @@ function Portrait() {
 
   // filtrage des portraits dispos selon les caracs de persos
 
-  var portraitsRestants = getPortraits(perso, true)
-  if (portraitsRestants.length === 0)
-    portraitsRestants = getPortraits(perso, false)
+  var portraitsRestants = getPortraits(perso, true, true)
+  if (portraitsRestants.length === 0) {
+    // on n'a rien trouvé qui corresponde aux carrieres
+    portraitsRestants = getPortraits(perso, true, false)
+    if (portraitsRestants.length === 0) {
+      // on n'a rien trouvé qui corresponde a la faction
+      portraitsRestants = getPortraits(perso, false, false)
+    }
+  }
 
   var portrait
   if (portraitsRestants.length > 0)
