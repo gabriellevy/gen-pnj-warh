@@ -219,8 +219,98 @@ import portrait_halfelin_30_50 from './img/halfelins/portraits/30_50.jpg'
 import portrait_empire30_60_courtisans from './img/empire/portraits/30_60_courtisans.jpg'
 import portrait_empire30_60_lettres from './img/empire/portraits/30_60_lettres.jpg'
 import portrait_empire30_60_naufrageur from './img/empire/portraits/30_60_naufrageur.jpg'
+import portrait_empire15_35_villageoise from './img/empire/portraits/15_35_villageoise.jpg'
+import portrait_empire40_65_garde from './img/empire/portraits/40_65_garde.jpg'
+import portrait_empire25_45_chasseur_primes from './img/empire/portraits/25_45_chasseur_primes.jpg'
+import portrait_empire45_75_agitateur from './img/empire/portraits/45_75_agitateur.jpg'
+import portrait_empire30_50_villageois from './img/empire/portraits/30_50_villageois.jpg'
+import portrait_empire20_45_naufrageuse from './img/empire/portraits/20_45_naufrageuse.jpg'
+import portrait_empire30_plus_repurgateur from './img/empire/portraits/30+_repurgateur.jpg'
+import portrait_empire30_60_saltimbanque from './img/empire/portraits/30_60_saltimbanque.jpg'
+import portrait_empire45_70_courtisans from './img/empire/portraits/45_70_courtisans.jpg'
+import portrait_empire30_55_gladiateur from './img/empire/portraits/30_55_gladiateur.jpg'
 
 export const lstPortraits = [
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_55_gladiateur,
+    ageMin: 30,
+    ageMax: 55,
+    carrieres: [nomGladiateur],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire45_70_courtisans,
+    ageMin: 45,
+    ageMax: 70,
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_60_saltimbanque,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomSaltimbanque],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_plus_repurgateur,
+    ageMin: 30,
+    carrieres: [nomRepurgateur],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire20_45_naufrageuse,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomNaufrageur],
+    male: false,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire30_50_villageois,
+    ageMin: 30,
+    ageMax: 50,
+    carrieres: [nomVillageois],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire45_75_agitateur,
+    ageMin: 45,
+    ageMax: 75,
+    carrieres: [nomAgitateur],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire25_45_chasseur_primes,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [nomChasseurDePrimes, nomDuelliste],
+    classes: [nomCourtisans, nomCitadins],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire40_65_garde,
+    ageMin: 40,
+    ageMax: 65,
+    carrieres: [nomGarde, nomSoldat],
+    male: true,
+  },
+  {
+    coterie: nomCotEmpire,
+    image: portrait_empire15_35_villageoise,
+    ageMin: 15,
+    ageMax: 45,
+    carrieres: [nomVillageois, nomHerboriste],
+    male: false,
+  },
   {
     coterie: nomCotEmpire,
     image: portrait_empire30_60_naufrageur,
