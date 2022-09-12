@@ -229,8 +229,17 @@ import portrait_empire30_plus_repurgateur from './img/empire/portraits/30+_repur
 import portrait_empire30_60_saltimbanque from './img/empire/portraits/30_60_saltimbanque.jpg'
 import portrait_empire45_70_courtisans from './img/empire/portraits/45_70_courtisans.jpg'
 import portrait_empire30_55_gladiateur from './img/empire/portraits/30_55_gladiateur.jpg'
+import portrait_empire25_50_ratier from './img/empire/portraits/25_50_ratier.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_50_ratier,
+    ageMin: 25,
+    ageMax: 50,
+    carrieres: [nomRatier],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_gladiateur,
