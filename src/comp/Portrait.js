@@ -10,7 +10,6 @@ function getPortraits(
   prendreEnCompteClasse,
   prendreEnCompteCarriere
 ) {
-  console.log('perso.classe : ' + perso.classe)
   const portraitsRestants = lstPortraits
     .filter(
       (portrait) =>

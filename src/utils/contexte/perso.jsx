@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react'
-import { nomCotHalfelins } from '../../donnees/lstCoteries'
+import { nomCotEmpire, nomCotHalfelins } from '../../donnees/lstCoteries'
 import { nomCotNains } from '../../donnees/lstCoteries'
 import { nomCotConquistadors } from '../../donnees/lstCoteries'
 import { nomCotHautsElfes } from '../../donnees/lstCoteries'
@@ -7,6 +7,7 @@ import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
 import { nomCotBretonniens } from '../../donnees/lstCoteries'
 import { nomCotKislevites } from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
+import { genNomEmpire } from '../../donnees/coteries/empire/nomsEmpire'
 import { genNomNain } from '../../donnees/coteries/nains/nomsNains'
 import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
@@ -120,6 +121,8 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['nom'] = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotKislevites)
       changementsAuPerso['nom'] = genNomKislevite(perso.male)
+    else if (perso.coterie === nomCotEmpire)
+      changementsAuPerso['nom'] = genNomEmpire(perso.male)
     else if (perso.coterie === nomCotNains) {
       changementsAuPerso['nom'] = genNomNain(perso.male)
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -148,7 +151,7 @@ export const PersoProvider = ({ children }) => {
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
-  }, [perso.coterie])
+  }, [perso.coterie, perso.male])
 
   // c'est ici que je pourrais changer le bg ??
 

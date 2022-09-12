@@ -122,7 +122,7 @@ function Banniere() {
           </table>
         </div>
       ) : (
-        <h1>Création de personnage Extremis</h1>
+        <h1>Création de personnage Warhammer</h1>
       )}
     </div>
   )
