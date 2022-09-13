@@ -9,9 +9,10 @@ import portrait_empire from './img/empire/portraits/standard.jpg'
 import bg_elfe_sylvain from './img/elfes_sylvains/bg univ_elfes.jpg'
 import bg_elfe_sylvain_b from './img/elfes_sylvains/bg_musicien.jpg'
 import bg_haut_elfe from './img/hauts_elfes/bg poesie.jpg'
-import bg_templier from './img/bretonniens/bg_priant.jpg'
-import bg_templier_b from './img/quartiers/bg_interieur_basilique.jpg'
-import bg_templier_c from './img/quartiers/bg_saint_denis.jpg'
+import bg_bretonnien_a from './img/bretonniens/bg1.jpg'
+import bg_bretonnien_b from './img/bretonniens/bg2.jpg'
+import bg_bretonnien_c from './img/bretonniens/bg3.jpg'
+import bg_bretonnien_d from './img/bretonniens/bg4.jpg'
 import bg_zaporogue from './img/kislevites/bg_lettre_zapo.jpg'
 import bg_zaporogue_b from './img/kislevites/bg_univ_zaporogues.jpg'
 import bg_schweizer from './img/empire/bg.png'
@@ -148,7 +149,7 @@ export const lstCoteries = [
     ],
     affiche: true,
     portrait: portrait_bretonnien,
-    fonds: [bg_templier, bg_templier_b, bg_templier_c],
+    fonds: [bg_bretonnien_a, bg_bretonnien_b, bg_bretonnien_c, bg_bretonnien_d],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:La_Bretonnie',
     description:
       "La Bretonnie est l'un des plus grands royaumes du Vieux Monde. Son nom vient de celui de la plus puissante de ces tribus, les Bretonni. Sous la conduite de leur chef de guerre, Gilles le Breton, les Bretonni se regroupèrent en une seule nation. Ils s’établirent et cultivèrent les terres, sous la menace constante des tribus Orques et Gobelines. Après des siècles de luttes incessantes, les Bretonniens prirent le contrôle des vallées et des plaines fertiles, et repoussèrent leurs ennemis dans les forêts et sur les plateaux désolés, mais les guerres continuèrent contre de nouveaux ennemis. Des flottes de Morts-Vivants ravagèrent les régions côtières à l'ouest, des Skavens désolèrent les terres du sud, des pillards nordiques vinrent par-delà la Mer des Griffes et s'enfoncèrent dans les terres en remontant les fleuves, détruisant tout sur leur passage. À travers ces générations de guerres continuelles contre divers ennemis, les Bretonniens se forgèrent une héroïque tradition de chevalerie. Ce sont les Chevaliers de Bretonnie qui repoussent les forces destructrices de leurs terres paisibles. ",
