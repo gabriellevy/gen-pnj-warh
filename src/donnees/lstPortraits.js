@@ -240,8 +240,77 @@ import portrait_empire25_60_f_herboriste from './img/empire/portraits/25_60_f_he
 import portrait_empire30_60_spadassin from './img/empire/portraits/30_60_spadassin.jpg'
 import portrait_empire20_45_flagellant from './img/empire/portraits/20_45_flagellant.jpg'
 import portrait_empire20_45_mineuse from './img/empire/portraits/20_45_mineuse.jpg'
+import portrait_empire20_45_f_juriste from './img/empire/portraits/20_45_f_juriste.jpg'
+import portrait_empire20_50_chasseur_de_primes from './img/empire/portraits/20_50_chasseur_de_primes.jpg'
+import portrait_empire20_40_bourgeoise from './img/empire/portraits/20_40_bourgeoise.jpg'
+import portrait_empire15_40_bourgeoise from './img/empire/portraits/15_40_bourgeoise.jpg'
+import portrait_empire50_plus_patrouilleurFluvial from './img/empire/portraits/50_plus_patrouilleurFluvial.jpg'
+import portrait_empire30_60_garde from './img/empire/portraits/30_60_garde.jpg'
+import portrait_empire20_45_roublard from './img/empire/portraits/20_45_roublard.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_roublard,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [],
+    classes: [nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_garde,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomGarde, nomMilicien],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_patrouilleurFluvial,
+    ageMin: 50,
+    carrieres: [nomPatrouilleurFluvial, nomMilicien],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_40_bourgeoise,
+    ageMin: 15,
+    ageMax: 40,
+    carrieres: [nomBourgeois],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_40_bourgeoise,
+    ageMin: 20,
+    ageMax: 40,
+    carrieres: [nomBourgeois],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_50_chasseur_de_primes,
+    ageMin: 20,
+    ageMax: 50,
+    carrieres: [nomChasseurDePrimes, nomRepurgateur, nomDuelliste],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_f_juriste,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomJuriste],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_mineuse,
