@@ -234,8 +234,67 @@ import portrait_empire50_plus_guerrier from './img/empire/portraits/50+_guerrier
 import portrait_empire30_plus_flagellant from './img/empire/portraits/30+_flagellant.png'
 import portrait_empire50_plus_erudit from './img/empire/portraits/50+_erudit.jpg'
 import portrait_empire40_plus_duelliste from './img/empire/portraits/40_plus_duelliste.jpg'
+import portrait_empire30_plus_garde from './img/empire/portraits/30_plus_garde.jpg'
+import portrait_empire15_45_f_artisan from './img/empire/portraits/15_45_f_artisan.jpg'
+import portrait_empire25_60_f_herboriste from './img/empire/portraits/25_60_f_herboriste.jpg'
+import portrait_empire30_60_spadassin from './img/empire/portraits/30_60_spadassin.jpg'
+import portrait_empire20_45_flagellant from './img/empire/portraits/20_45_flagellant.jpg'
+import portrait_empire20_45_mineuse from './img/empire/portraits/20_45_mineuse.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_mineuse,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomMineur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_flagellant,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomFlagellant, nomSorcierDissident],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_spadassin,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomSpadassin, nomSoldat, nomGarde],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_60_f_herboriste,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [nomHerboriste, nomSorcierDeVillage],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_45_f_artisan,
+    ageMin: 15,
+    ageMax: 45,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_plus_garde,
+    ageMin: 30,
+    carrieres: [nomGarde],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_duelliste,
