@@ -9,7 +9,7 @@ const ChoixClasse = () => {
   const [classe, setClasse] = React.useState(perso.classe)
   const [carriere, setCarriere] = React.useState(perso.carriere)
 
-  // manière détournée bancale de faire l'initialisation mais bon je fais ce que je peux
+  // manière détournée bancale de faire l'initialisation aléatoire mais bon je fais ce que je peux
   useEffect(() => {
     if (perso.classe === undefined || perso.classe === '') {
       // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement

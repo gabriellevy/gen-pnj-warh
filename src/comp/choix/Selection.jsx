@@ -11,11 +11,29 @@ import {
   nomCorpsACorps,
   nomTir,
 } from '../../donnees/lstComps'
+import { getRandomInt } from '../../utils/rand'
 
 function Selection() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [age, majAge] = useState(perso.age)
   const [poids, majPoids] = useState(calculerPoids(perso))
+
+  // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
+  useEffect(() => {
+    if (perso.coterie === undefined || perso.coterie === '') {
+      // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
+      var indexCoterie = getRandomInt(lstCoteries.length)
+      var coterieObj = lstCoteries[indexCoterie]
+      var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]
+
+      var changementsAuPerso = {
+        coterie: coterieObj.titre,
+        fond: fond,
+      }
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
+    }
+  }, [perso, setPerso])
 
   useEffect(() => {
     if (perso.poids !== poids) majPoids(perso.poids)
@@ -85,8 +103,8 @@ function Selection() {
       </ul>
 
       <div style={{ padding: '0px 15px 0px 15px' }}>
-        <div className="texteStandard">
-          <form>
+        <form>
+          <div className="texteStandard">
             Âge :
             <input
               type="text"
@@ -97,8 +115,9 @@ function Selection() {
               onChange={gererAge}
               value={age}
             />
-            <br />
-            <br />
+          </div>
+
+          <div className="texteStandard">
             Poids :
             <input
               type="text"
@@ -109,33 +128,34 @@ function Selection() {
               onChange={gererPoids}
               value={poids}
             />
-            <br />
-            <br />
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  checked={perso.male}
-                  onChange={gererSexe}
-                  value="male"
-                  name="gender"
-                />
-                Homme
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  checked={!perso.male}
-                  onChange={gererSexe}
-                  value="femelle"
-                  name="gender"
-                />
-                Femme
-              </label>
-            </div>
+          </div>
+
+          <div className="texteStandard">
+            <label>
+              <input
+                type="radio"
+                checked={perso.male}
+                onChange={gererSexe}
+                value="male"
+                name="gender"
+              />
+              Homme
+            </label>
+            <label>
+              <input
+                type="radio"
+                checked={!perso.male}
+                onChange={gererSexe}
+                value="femelle"
+                name="gender"
+              />
+              Femme
+            </label>
+          </div>
+          <div className="texteStandard">
             <ChoixClasse />
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   )
