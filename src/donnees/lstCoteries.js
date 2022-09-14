@@ -15,7 +15,10 @@ import bg_bretonnien_c from './img/bretonniens/bg3.jpg'
 import bg_bretonnien_d from './img/bretonniens/bg4.jpg'
 import bg_zaporogue from './img/kislevites/bg_lettre_zapo.jpg'
 import bg_zaporogue_b from './img/kislevites/bg_univ_zaporogues.jpg'
-import bg_schweizer from './img/empire/bg.png'
+import bg_empire_a from './img/empire/bg4.png'
+import bg_empire_b from './img/empire/bg1.png'
+import bg_empire_c from './img/empire/bg2.png'
+import bg_empire_d from './img/empire/bg3.png'
 
 import {
   nomCC,
@@ -185,7 +188,7 @@ export const lstCoteries = [
     affiche: true,
     niveau_richesse: 2,
     portrait: portrait_empire,
-    fonds: [bg_schweizer],
+    fonds: [bg_empire_a, bg_empire_b, bg_empire_c, bg_empire_d],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:L%27Empire',
     description:
       'Au cours de siècles de guerres, l’Empire est devenu un vaste royaume regroupant des provinces et des cités-états unies sous la bannière de l’Empereur. Pour les habitants du Vieux Monde, la représentation habituelle de l’Empire est celle d’une contrée couverte d’immenses et sombres forêts, entourée d’impénétrables chaînes de montagnes. Une terre sur laquelle l’humanité et les autres races coexistent à l’abri des murailles de quelques îlots de civilisation dispersés, depuis lesquels ils observent d’un œil craintif les dangers qui se tapissent sous les noires frondaisons. Il y a certainement une part de vérité dans cette manière de voir, mais comme tout stéréotype, elle peint le tableau à très gros traits et simplifie à l’extrême une situation infiniment plus diverse et complexe. ',
@@ -257,7 +260,7 @@ export const lstCoteries = [
         bonusCompetence: nomResistance,
       },
     ],
-    fonds: [bg_schweizer],
+    fonds: [bg_empire_a],
     page: 'https://bibliotheque-imperiale.com/index.php/Halfling',
     description:
       'Peuplant le Mootland, les Halflings sont des petits humanoïdes paisibles et gloutons, peu intéressés par les choses militaires. Leur taille est souvent inférieure à un mètre et varie entre 60 cm et 1,30m. Ils sont rondelets, trapus, souvent ventripotents et en aucun cas aussi puissamment bâtis que les Nains. Ils sont glabres, à part les rouflaquettes portées par les vieux et les mâles élégants mais leurs mains et leurs pieds sont couverts de poils et sont très larges pour d’aussi petites gens. Les poils des pieds sont une constante source de fierté pour tous les Halflings et ils préfèrent généralement être pieds nus, même dehors.',
