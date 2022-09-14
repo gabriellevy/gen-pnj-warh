@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <Banniere perso={perso} />
       <div
         style={{
           backgroundImage: `url(${perso.fond})`,
@@ -23,6 +22,7 @@ function App() {
           height: 720,
         }}
       >
+        <Banniere perso={perso} />
         <ZoneDeChoix />
       </div>
     </div>

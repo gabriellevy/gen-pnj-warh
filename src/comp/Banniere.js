@@ -54,28 +54,50 @@ function Banniere() {
                   <Portrait className="descriptionPerso" perso={perso} />
                 </td>
                 <td>
-                  <div className="descriptionPerso">
-                    CC : {perso.cc}
-                    <br />
-                    CT : {perso.ct}
-                    <br />
-                    FOR : {perso.force}
-                    <br />
-                    END : {perso.endurance}
-                    <br />
-                    INIT : {perso.initiative}
-                    <br />
-                    AG : {perso.agilete}
-                    <br />
-                    DEX : {perso.dexterite}
-                    <br />
-                    INT : {perso.intelligence}
-                    <br />
-                    F.M : {perso.force_mentale}
-                    <br />
-                    SOC : {perso.sociabilite}
-                    <br />
-                  </div>
+                  <table className="descriptionPerso">
+                    <tbody>
+                      <tr>
+                        <td>CC </td>
+                        <td>{perso.cc}</td>
+                      </tr>
+                      <tr>
+                        <td>CT </td>
+                        <td> {perso.ct}</td>
+                      </tr>
+                      <tr>
+                        <td>FOR </td>
+                        <td> {perso.force}</td>
+                      </tr>
+                      <tr>
+                        <td>END </td>
+                        <td> {perso.endurance}</td>
+                      </tr>
+                      <tr>
+                        <td>INIT </td>
+                        <td> {perso.initiative}</td>
+                      </tr>
+                      <tr>
+                        <td>AG </td>
+                        <td> {perso.agilete}</td>
+                      </tr>
+                      <tr>
+                        <td>DEX </td>
+                        <td> {perso.dexterite}</td>
+                      </tr>
+                      <tr>
+                        <td>INT </td>
+                        <td> {perso.intelligence}</td>
+                      </tr>
+                      <tr>
+                        <td>F.M </td>
+                        <td> {perso.force_mentale}</td>
+                      </tr>
+                      <tr>
+                        <td>SOC </td>
+                        <td> {perso.sociabilite}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
                 <td>
                   <div className="descriptionPerso">
