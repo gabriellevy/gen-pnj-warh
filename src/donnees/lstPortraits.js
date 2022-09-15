@@ -266,10 +266,100 @@ import portrait_empire20_40_spadassin from './img/empire/portraits/20_40_spadass
 import portrait_empire30_60_intendant from './img/empire/portraits/30_60_intendant.jpg'
 import portrait_empire30_plus_pilleuseTombe from './img/empire/portraits/30_plus_pilleuseTombe.jpg'
 import portrait_empire20_40_chasseusePrimes from './img/empire/portraits/20_40_chasseusePrimes.jpg'
+import portrait_empire30_55_naufrageur from './img/empire/portraits/30_55_naufrageur.jpg'
+import portrait_empire30_55_conseiller from './img/empire/portraits/30_55_conseiller.jpg'
+import portrait_empire20_50_f_saltimbanque from './img/empire/portraits/20_50_f_saltimbanque.jpg'
+import portrait_empire20_50_voleur from './img/empire/portraits/20_50_voleur.jpg'
+import portrait_empire30_70_charlatan from './img/empire/portraits/30_70_charlatan.jpg'
+import portrait_empire40_70_charlatane from './img/empire/portraits/40_70_charlatane.jpg'
+import portrait_empire16_35_sorcierDissident from './img/empire/portraits/16_35_sorcierDissident.jpg'
+import portrait_empire25_40_bailli from './img/empire/portraits/25_40_bailli.jpg'
+import portrait_empire25_45_soldat from './img/empire/portraits/25_45_soldat.jpg'
 
 export const lstPortraits = [
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_45_soldat,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [nomSoldat],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_40_bailli,
+    ageMin: 25,
+    ageMax: 40,
+    carrieres: [nomBailli, nomNoble, nomEspion],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire16_35_sorcierDissident,
+    ageMin: 16,
+    ageMax: 35,
+    carrieres: [nomSorcierDissident],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_70_charlatane,
+    ageMin: 40,
+    ageMax: 70,
+    carrieres: [nomCharlatan, nomMystique],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_70_charlatan,
+    ageMin: 30,
+    ageMax: 70,
+    carrieres: [nomCharlatan],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_50_voleur,
+    ageMin: 20,
+    ageMax: 50,
+    carrieres: [nomVoleur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_50_f_saltimbanque,
+    ageMin: 20,
+    ageMax: 50,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_55_conseiller,
+    ageMin: 30,
+    ageMax: 55,
+    carrieres: [nomConseiller, nomIntendant],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_55_naufrageur,
+    ageMin: 30,
+    ageMax: 55,
+    carrieres: [nomNaufrageur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_chasseusePrimes,
     ageMin: 20,
     ageMax: 40,
@@ -278,7 +368,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_pilleuseTombe,
     ageMin: 30,
     carrieres: [nomPilleurDeTombes],
@@ -286,7 +376,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_intendant,
     ageMin: 30,
     ageMax: 60,
