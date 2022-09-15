@@ -258,8 +258,87 @@ import portrait_empire15_35_villageoise_2 from './img/empire/portraits/15_35_vil
 import portrait_empire15_35_f_saltimbanque from './img/empire/portraits/15_35_f_saltimbanque.jpg'
 import portrait_empire20_45_f_saltimbanque from './img/empire/portraits/20_45_f_saltimbanque.jpg'
 import portrait_empire25_45_enqueteur from './img/empire/portraits/25_45_enqueteur.jpg'
+import portrait_empire25_50_artisan from './img/empire/portraits/25_50_artisan.jpg'
+import portrait_empire30_60_colporteur from './img/empire/portraits/30_60_colporteur.jpg'
+import portrait_empire25_50_villageois from './img/empire/portraits/25_50_villageois.jpg'
+import portrait_empire30_60_ranconneur from './img/empire/portraits/30_60_ranconneur.jpg'
+import portrait_empire20_40_spadassin from './img/empire/portraits/20_40_spadassin.jpg'
+import portrait_empire30_60_intendant from './img/empire/portraits/30_60_intendant.jpg'
+import portrait_empire30_plus_pilleuseTombe from './img/empire/portraits/30_plus_pilleuseTombe.jpg'
+import portrait_empire20_40_chasseusePrimes from './img/empire/portraits/20_40_chasseusePrimes.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire20_40_chasseusePrimes,
+    ageMin: 20,
+    ageMax: 40,
+    carrieres: [nomChasseurDePrimes],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire30_plus_pilleuseTombe,
+    ageMin: 30,
+    carrieres: [nomPilleurDeTombes],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire30_60_intendant,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomIntendant, nomBailli],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire20_40_spadassin,
+    ageMin: 20,
+    ageMax: 40,
+    carrieres: [nomRanconneur, nomSpadassin, nomSoldat],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_ranconneur,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomRanconneur, nomSpadassin],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_50_villageois,
+    ageMin: 25,
+    ageMax: 50,
+    carrieres: [nomVillageois],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_colporteur,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_50_artisan,
+    ageMin: 25,
+    ageMax: 50,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_enqueteur,
