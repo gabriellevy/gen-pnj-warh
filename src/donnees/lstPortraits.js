@@ -253,8 +253,58 @@ import portrait_empire30_50_soldat from './img/empire/portraits/30_50_soldat.jpg
 import portrait_empire45_plus_chevalier from './img/empire/portraits/45_plus_chevalier.jpg'
 import portrait_empire30_55_emissaire from './img/empire/portraits/30_55_emissaire.jpg'
 import portrait_empire40_60_noble from './img/empire/portraits/40_60_noble.jpg'
+import portrait_empire40_75_guerrier from './img/empire/portraits/40_75_guerrier.jpg'
+import portrait_empire15_35_villageoise_2 from './img/empire/portraits/15_35_villageoise_2.jpg'
+import portrait_empire15_35_f_saltimbanque from './img/empire/portraits/15_35_f_saltimbanque.jpg'
+import portrait_empire20_45_f_saltimbanque from './img/empire/portraits/20_45_f_saltimbanque.jpg'
+import portrait_empire25_45_enqueteur from './img/empire/portraits/25_45_enqueteur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_45_enqueteur,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [nomEnqueteur, nomContrebandier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_f_saltimbanque,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_35_f_saltimbanque,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_35_villageoise_2,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [nomVillageois],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_75_guerrier,
+    ageMin: 40,
+    ageMax: 75,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_60_noble,
