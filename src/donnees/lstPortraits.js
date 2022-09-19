@@ -300,8 +300,112 @@ import portrait_empire25_40_agitateur from './img/empire/portraits/25_40_agitate
 import portrait_empire60_plus_milicien from './img/empire/portraits/60_plus_milicien.jpg'
 import portrait_empire35_60_guerrier from './img/empire/portraits/35_60_guerrier.jpg'
 import portrait_empire25_55_courtisan from './img/empire/portraits/25_55_courtisan.jpg'
+import portrait_empire20_40_saltimbanque from './img/empire/portraits/20_40_saltimbanque.jpg'
+import portrait_empire15_35_chevaliere from './img/empire/portraits/15_35_chevaliere.jpg'
+import portrait_empire30_50_charlatan from './img/empire/portraits/30_50_charlatan.jpg'
+import portrait_empire30_60_espion from './img/empire/portraits/30_60_espion.jpg'
+import portrait_empire15_35_espionne from './img/empire/portraits/15_35_espionne.jpg'
+import portrait_empire30_60_cocher from './img/empire/portraits/30_60_cocher.jpg'
+import portrait_empire15_25_lettres from './img/empire/portraits/15_25_lettres.jpg'
+import portrait_empire50_plus_entremetteur from './img/empire/portraits/50_plus_entremetteur.jpg'
+import portrait_empire35_65_f_bailli from './img/empire/portraits/35_65_f_bailli.jpg'
+import portrait_empire50_plus_erudit_2 from './img/empire/portraits/50_plus_erudit.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_erudit_2,
+    ageMin: 50,
+    carrieres: [nomErudit, nomConseiller],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire35_65_f_bailli,
+    ageMin: 35,
+    ageMax: 65,
+    carrieres: [nomBailli],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_entremetteur,
+    ageMin: 50,
+    carrieres: [nomEntremetteur, nomBourgeois, nomBailli],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_25_lettres,
+    ageMin: 15,
+    ageMax: 25,
+    carrieres: [],
+    classes: [nomLettres],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_cocher,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomCocher],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_35_espionne,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [nomEspion],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_60_espion,
+    ageMin: 30,
+    ageMax: 60,
+    carrieres: [nomEspion],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_50_charlatan,
+    ageMin: 30,
+    ageMax: 50,
+    carrieres: [
+      nomCharlatan,
+      nomEntremetteur,
+      nomReceleur,
+      nomRanconneur,
+      nomPilleurDeTombes,
+    ],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_35_chevaliere,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [nomChevalier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_40_saltimbanque,
+    ageMin: 20,
+    ageMax: 40,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_55_courtisan,
