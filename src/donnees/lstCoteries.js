@@ -19,6 +19,10 @@ import bg_empire_a from './img/empire/bg4.png'
 import bg_empire_b from './img/empire/bg1.png'
 import bg_empire_c from './img/empire/bg2.png'
 import bg_empire_d from './img/empire/bg3.png'
+import bg_nains_a from './img/nains/bg4.png'
+import bg_nains_b from './img/nains/bg1.png'
+import bg_nains_c from './img/nains/bg2.png'
+import bg_nains_d from './img/nains/bg3.png'
 
 import {
   nomCC,
@@ -198,7 +202,7 @@ export const lstCoteries = [
     voies: [voieTravailleur, voiePretre],
     affiche: true,
     portrait: portrait_nains,
-    fonds: [],
+    fonds: [bg_nains_a, bg_nains_b, bg_nains_c, bg_nains_d],
     evts: [
       {
         description: 'Humilité et autosuffisance',

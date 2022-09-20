@@ -212,8 +212,6 @@ import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
 import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
 import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 
-import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
-
 import portrait_halfelin_30_50 from './img/halfelins/portraits/30_50.jpg'
 
 import portrait_empire30_60_courtisans from './img/empire/portraits/30_60_courtisans.jpg'
@@ -337,7 +335,16 @@ import portrait_empire30_55_milicien from './img/empire/portraits/30_55_milicien
 import portrait_empire55_plus_pretreGuerrier from './img/empire/portraits/55_plus_pretreGuerrier.jpg'
 import portrait_empire25_45_repurgateur from './img/empire/portraits/25_45_repurgateur.jpg'
 
+import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
+
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_100,
+    ageMin: 40,
+    ageMax: 100,
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_repurgateur,
@@ -1382,13 +1389,6 @@ export const lstPortraits = [
     ageMin: 30,
     ageMax: 60,
     classes: [nomLettres],
-    male: true,
-  },
-  {
-    coteries: [nomCotNains],
-    image: portrait_nain_40_100,
-    ageMin: 40,
-    ageMax: 100,
     male: true,
   },
   {
