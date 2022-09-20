@@ -336,13 +336,33 @@ import portrait_empire55_plus_pretreGuerrier from './img/empire/portraits/55_plu
 import portrait_empire25_45_repurgateur from './img/empire/portraits/25_45_repurgateur.jpg'
 
 import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
+import portrait_nain_40_plus from './img/nains/portraits/40_plus.jpg'
+import portrait_nain_60_plus_tueur from './img/nains/portraits/60_plus_tueur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_plus,
+    ageMin: 40,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_60_plus_tueur,
+    ageMin: 60,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_40_100,
     ageMin: 40,
     ageMax: 100,
+    carrieres: [],
+    classes: [],
     male: true,
   },
   {

@@ -2,6 +2,16 @@ import '../../../styles/Coterie.css'
 import { getRandomInt } from '../../../utils/rand'
 import { useContext } from 'react'
 import { PersoContexte } from '../../../utils/contexte/perso'
+import {
+  nomCotBretonniens,
+  nomCotConquistadors,
+  nomCotHautsElfes,
+  nomCotElfesSylvains,
+  nomCotKislevites,
+  nomCotHalfelins,
+  nomCotNains,
+  nomCotEmpire,
+} from '../../../donnees/lstCoteries'
 
 function Coterie({
   titre,
@@ -20,8 +30,15 @@ function Coterie({
   function appliquerSelection() {
     var fond = fonds[getRandomInt(fonds.length)]
 
+    // mettre à jour des caracs selon la coterie actuelle
+    var age = getRandomInt(60) + 15 // pour un humain classique
+    if (titre === nomCotNains) {
+      age = getRandomInt(600) + 15
+    }
+
     var changementsAuPerso = {
       fond: fond,
+      age: age,
       coterie: titre, // titre de coterie
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
