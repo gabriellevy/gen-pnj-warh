@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.984971c8.css",
-    "main.js": "/gen-pnj-warh/static/js/main.9131d600.js",
-    "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.71fdaa30b4fdc75cf442.png",
+    "main.js": "/gen-pnj-warh/static/js/main.06f4c1c0.js",
+    "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/bg2.png": "/gen-pnj-warh/static/media/bg2.9a3d175d7c0b222499b1.png",
-    "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.23abd135e5a426c8931f.png",
+    "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
     "static/media/bg3.png": "/gen-pnj-warh/static/media/bg3.f0d0410b6de78d423103.png",
     "static/media/bg_lettre_zapo.jpg": "/gen-pnj-warh/static/media/bg_lettre_zapo.d63e86ecf62d58aac7f0.jpg",
     "static/media/bg2.jpg": "/gen-pnj-warh/static/media/bg2.79677eda5ebad8f1dc2e.jpg",
@@ -113,6 +113,7 @@
     "static/media/15_35_villageoise.jpg": "/gen-pnj-warh/static/media/15_35_villageoise.126bb05dc0a3a3eefa1d.jpg",
     "static/media/pretre_20-50.jpg": "/gen-pnj-warh/static/media/pretre_20-50.db040e61f947fd1d4dc6.jpg",
     "static/media/femme15-30_c.jpg": "/gen-pnj-warh/static/media/femme15-30_c.0ceb2acb24e4c9d041ec.jpg",
+    "static/media/60_plus_tueur.jpg": "/gen-pnj-warh/static/media/60_plus_tueur.ba4d75be7eefac0c30c9.jpg",
     "static/media/35_60_gladiateur.jpg": "/gen-pnj-warh/static/media/35_60_gladiateur.9e8bace90f4f0bc433ff.jpg",
     "static/media/femme30+_b.jpg": "/gen-pnj-warh/static/media/femme30+_b.ceb145b0202e3a1c2611.jpg",
     "static/media/15_35_espionne.jpg": "/gen-pnj-warh/static/media/15_35_espionne.dd50a5710d84861b98be.jpg",
@@ -166,6 +167,7 @@
     "static/media/standard.jpg": "/gen-pnj-warh/static/media/standard.db7ef3ad819e80ed3e2f.jpg",
     "static/media/portrait_20-50_d.jpg": "/gen-pnj-warh/static/media/portrait_20-50_d.be2cb54431fb317a1834.jpg",
     "static/media/50_plus_entremetteur.jpg": "/gen-pnj-warh/static/media/50_plus_entremetteur.31c890ee345659078a25.jpg",
+    "static/media/40_plus.jpg": "/gen-pnj-warh/static/media/40_plus.637f469b419529f563cc.jpg",
     "static/media/30_50_soldat.jpg": "/gen-pnj-warh/static/media/30_50_soldat.336f507908550c2943d0.jpg",
     "static/media/portrait_30_70_d.jpg": "/gen-pnj-warh/static/media/portrait_30_70_d.24e5f6bb6ead03bffa5c.jpg",
     "static/media/15_35_villageoise_2.jpg": "/gen-pnj-warh/static/media/15_35_villageoise_2.fd2a3fbc61a5dc47cfd5.jpg",
@@ -245,10 +247,10 @@
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
     "main.984971c8.css.map": "/gen-pnj-warh/static/css/main.984971c8.css.map",
-    "main.9131d600.js.map": "/gen-pnj-warh/static/js/main.9131d600.js.map"
+    "main.06f4c1c0.js.map": "/gen-pnj-warh/static/js/main.06f4c1c0.js.map"
   },
   "entrypoints": [
     "static/css/main.984971c8.css",
-    "static/js/main.9131d600.js"
+    "static/js/main.06f4c1c0.js"
   ]
 }
