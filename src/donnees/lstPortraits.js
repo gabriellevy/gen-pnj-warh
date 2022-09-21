@@ -361,8 +361,77 @@ import portrait_nain_35_100_f_ruraux from './img/nains/portraits/35_100_f_ruraux
 import portrait_nain_300_plus_f from './img/nains/portraits/300_plus_f.jpg'
 import portrait_nain_40_190_saltimbanque from './img/nains/portraits/40_190_saltimbanque.jpg'
 import portrait_nain_120_plus_mineur from './img/nains/portraits/120_plus_mineur.jpg'
+import portrait_nain_40_180_saltimbanque from './img/nains/portraits/40_180_saltimbanque.jpg'
+import portrait_nain_50_160 from './img/nains/portraits/50_160.jpg'
+import portrait_nain_70_plus_tueur from './img/nains/portraits/70_plus_tueur.jpg'
+import portrait_nain_40_130_gladiateur from './img/nains/portraits/40_130_gladiateur.jpg'
+import portrait_nain_100_250 from './img/nains/portraits/100_250.jpg'
+import portrait_nain_20_45_ingenieure from './img/nains/portraits/20_45_ingenieure.jpg'
+import portrait_nain_40_110_chasseur from './img/nains/portraits/40_110_chasseur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_110_chasseur,
+    ageMin: 40,
+    ageMiax: 110,
+    carrieres: [nomChasseur, nomChasseurDePrimes],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_45_ingenieure,
+    ageMin: 20,
+    ageMiax: 45,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_100_250,
+    ageMin: 100,
+    ageMiax: 250,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_130_gladiateur,
+    ageMin: 40,
+    ageMiax: 130,
+    carrieres: [nomGladiateur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_70_plus_tueur,
+    ageMin: 70,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_160,
+    ageMin: 50,
+    ageMax: 160,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_180_saltimbanque,
+    ageMin: 40,
+    ageMax: 180,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_120_plus_mineur,
@@ -385,7 +454,7 @@ export const lstPortraits = [
     image: portrait_nain_35_100_f_ruraux,
     ageMin: 35,
     ageMax: 100,
-    carrieres: [],
+    carrieres: [nomHorsLaLoi, nomChasseur, nomEclaireur],
     classes: [],
     male: false,
   },
