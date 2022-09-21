@@ -368,8 +368,112 @@ import portrait_nain_40_130_gladiateur from './img/nains/portraits/40_130_gladia
 import portrait_nain_100_250 from './img/nains/portraits/100_250.jpg'
 import portrait_nain_20_45_ingenieure from './img/nains/portraits/20_45_ingenieure.jpg'
 import portrait_nain_40_110_chasseur from './img/nains/portraits/40_110_chasseur.jpg'
+import portrait_nain_80_duelliste from './img/nains/portraits/80_duelliste.jpg'
+import portrait_nain_80_plus_tueur from './img/nains/portraits/80_plus_tueur.jpg'
+import portrait_nain_15_60_f from './img/nains/portraits/15_60_f.jpg'
+import portrait_nain_15_60_artisane from './img/nains/portraits/15_60_artisane.jpg'
+import portrait_nain_320_plus_f from './img/nains/portraits/320_plus_f.jpg'
+import portrait_nain_50_160_rural from './img/nains/portraits/50_160_rural.jpg'
+import portrait_nain_200_plus_soldat from './img/nains/portraits/200_plus_soldat.jpg'
+import portrait_nain_200_plus_rurale from './img/nains/portraits/200_plus_rurale.jpg'
+import portrait_nain_200_plus_noble from './img/nains/portraits/200_plus_noble.jpg'
+import portrait_nain_150_plus_receleur from './img/nains/portraits/150_plus_receleur.jpg'
+import portrait_nain_20_50_soldate from './img/nains/portraits/20_50_soldate.jpg'
+import portrait_nain_300_plus_f_2 from './img/nains/portraits/300_plus_f_2.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_50_soldate,
+    ageMin: 20,
+    ageMax: 50,
+    carrieres: [nomSoldat, nomMilicien, nomGarde, nomGladiateur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_150_plus_receleur,
+    ageMin: 150,
+    carrieres: [nomReceleur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_200_plus_rurale,
+    ageMin: 200,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_200_plus_noble,
+    ageMin: 200,
+    carrieres: [nomNoble],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_200_plus_soldat,
+    ageMin: 200,
+    carrieres: [nomSoldat],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_160_rural,
+    ageMin: 50,
+    ageMax: 160,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_320_plus_f,
+    ageMin: 320,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_60_artisane,
+    ageMin: 15,
+    ageMax: 60,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_60_f,
+    ageMin: 15,
+    ageMax: 60,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_plus_tueur,
+    ageMin: 80,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_duelliste,
+    ageMin: 80,
+    carrieres: [nomDuelliste, nomChasseurDePrimes],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_40_110_chasseur,
@@ -465,6 +569,14 @@ export const lstPortraits = [
     carrieres: [],
     classes: [],
     male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_300_plus_f_2,
+    ageMin: 300,
+    carrieres: [],
+    classes: [],
+    male: false,
   },
   {
     coteries: [nomCotNains],
