@@ -344,8 +344,87 @@ import portrait_nain_25_100_f_tueur from './img/nains/portraits/25_plus_f_tueur.
 import portrait_nain_50_plus_ingenieur from './img/nains/portraits/50_plus_ingenieur.jpg'
 import portrait_nain_40_plus_soldat from './img/nains/portraits/40_plus_soldat.jpg'
 import portrait_nain_60_plus_chasseur from './img/nains/portraits/60_plus_chasseur.jpg'
+import portrait_nain_40_150_eclaireuse from './img/nains/portraits/40_150_eclaireuse.jpg'
+import portrait_nain_40_150_eclaireur from './img/nains/portraits/40_150_eclaireur.jpg'
+import portrait_nain_50_150_f from './img/nains/portraits/50_150_f.jpg'
+import portrait_nain_25_90_f_colporteur from './img/nains/portraits/25_90_f_colporteur.jpg'
+import portrait_nain_40_180_mineur from './img/nains/portraits/40_180_mineur.jpg'
+import portrait_nain_80_200 from './img/nains/portraits/80_200.jpg'
+import portrait_nain_120_plus_bourgeois from './img/nains/portraits/120_plus_bourgeois.jpg'
+import portrait_nain_40_150_recelleur from './img/nains/portraits/40_150_recelleur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_150_recelleur,
+    ageMin: 40,
+    ageMax: 150,
+    carrieres: [nomReceleur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_120_plus_bourgeois,
+    ageMin: 120,
+    carrieres: [nomBourgeois],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_200,
+    ageMin: 80,
+    ageMax: 200,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_180_mineur,
+    ageMin: 40,
+    ageMax: 180,
+    carrieres: [nomMineur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_25_90_f_colporteur,
+    ageMin: 25,
+    ageMax: 90,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_150_f,
+    ageMin: 50,
+    ageMax: 150,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_150_eclaireur,
+    ageMin: 40,
+    ageMax: 150,
+    carrieres: [nomEclaireur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_150_eclaireuse,
+    ageMin: 40,
+    ageMax: 150,
+    carrieres: [nomEclaireur],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_60_plus_chasseur,
