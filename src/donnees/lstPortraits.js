@@ -338,8 +338,63 @@ import portrait_empire25_45_repurgateur from './img/empire/portraits/25_45_repur
 import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
 import portrait_nain_40_plus from './img/nains/portraits/40_plus.jpg'
 import portrait_nain_60_plus_tueur from './img/nains/portraits/60_plus_tueur.jpg'
+import portrait_nain_35_plus_tueur from './img/nains/portraits/35_plus_tueur.jpg'
+import portrait_nain_140_plus from './img/nains/portraits/140_plus.jpg'
+import portrait_nain_25_100_f_tueur from './img/nains/portraits/25_plus_f_tueur.jpg'
+import portrait_nain_50_plus_ingenieur from './img/nains/portraits/50_plus_ingenieur.jpg'
+import portrait_nain_40_plus_soldat from './img/nains/portraits/40_plus_soldat.jpg'
+import portrait_nain_60_plus_chasseur from './img/nains/portraits/60_plus_chasseur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_60_plus_chasseur,
+    ageMin: 60,
+    carrieres: [nomChasseur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_plus_soldat,
+    ageMin: 40,
+    carrieres: [nomSoldat],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_plus_ingenieur,
+    ageMin: 50,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_25_100_f_tueur,
+    ageMin: 25,
+    ageMax: 100,
+    carrieres: [nomTueur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_35_plus_tueur,
+    ageMin: 35,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_140_plus,
+    ageMin: 140,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_40_plus,
