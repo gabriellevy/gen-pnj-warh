@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.984971c8.css",
-    "main.js": "/gen-pnj-warh/static/js/main.c4b7cc8a.js",
+    "main.js": "/gen-pnj-warh/static/js/main.407f20b1.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/bg2.png": "/gen-pnj-warh/static/media/bg2.9a3d175d7c0b222499b1.png",
     "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
@@ -38,6 +38,7 @@
     "static/media/40_150_chasseuse.jpg": "/gen-pnj-warh/static/media/40_150_chasseuse.1fb173fea9cb9c81ad0c.jpg",
     "static/media/50_plus_f_mystique.jpg": "/gen-pnj-warh/static/media/50_plus_f_mystique.8e2887ec334c367550f2.jpg",
     "static/media/30_55_conseiller.jpg": "/gen-pnj-warh/static/media/30_55_conseiller.4b1ec2e24a1dd8584cb8.jpg",
+    "static/media/45_190_ingenieur.jpg": "/gen-pnj-warh/static/media/45_190_ingenieur.3906287ec5c307464f9a.jpg",
     "static/media/35_plus_tueur.jpg": "/gen-pnj-warh/static/media/35_plus_tueur.6617fd33999d6ba88581.jpg",
     "static/media/25_90_f_colporteur.jpg": "/gen-pnj-warh/static/media/25_90_f_colporteur.35b065e75de6396a99fd.jpg",
     "static/media/femme15-30.jpg": "/gen-pnj-warh/static/media/femme15-30.18dacac5f3e5a044b75b.jpg",
@@ -50,6 +51,7 @@
     "static/media/20_50_f_saltimbanque.jpg": "/gen-pnj-warh/static/media/20_50_f_saltimbanque.a51847a6277719c952ae.jpg",
     "static/media/20_50_voleur.jpg": "/gen-pnj-warh/static/media/20_50_voleur.dfbef85b5f7082addb99.jpg",
     "static/media/55_plus_soldat.jpg": "/gen-pnj-warh/static/media/55_plus_soldat.be4d531150905a8d9ce9.jpg",
+    "static/media/25_95_eclaireur.jpg": "/gen-pnj-warh/static/media/25_95_eclaireur.e123f28476611f227957.jpg",
     "static/media/150_plus_receleur.jpg": "/gen-pnj-warh/static/media/150_plus_receleur.cfb2fe6407864bcf4f99.jpg",
     "static/media/50+_erudit.jpg": "/gen-pnj-warh/static/media/50+_erudit.b692b9d8e2c5e0b99508.jpg",
     "static/media/40_65_pilleurDeTombe.jpg": "/gen-pnj-warh/static/media/40_65_pilleurDeTombe.8e21d8054dbcf3c5ad19.jpg",
@@ -70,10 +72,12 @@
     "static/media/portrait_20-50_f.jpg": "/gen-pnj-warh/static/media/portrait_20-50_f.024908695c1dc702ab5a.jpg",
     "static/media/140_plus.jpg": "/gen-pnj-warh/static/media/140_plus.e41c5ca755ea083fc02e.jpg",
     "static/media/femme20-50_b.jpg": "/gen-pnj-warh/static/media/femme20-50_b.ce2d4aa186c64291806d.jpg",
+    "static/media/35_130_nautonniere.jpg": "/gen-pnj-warh/static/media/35_130_nautonniere.acb5c7f609f0b2333c19.jpg",
     "static/media/25_45_bourgeoise.jpg": "/gen-pnj-warh/static/media/25_45_bourgeoise.8775cc5357411a03a510.jpg",
     "static/media/30_70_charlatan.jpg": "/gen-pnj-warh/static/media/30_70_charlatan.1d20090c85ff6c44f376.jpg",
     "static/media/30_60_cavalier.jpg": "/gen-pnj-warh/static/media/30_60_cavalier.24ceec02945f8e398738.jpg",
     "static/media/20_40_saltimbanque.jpg": "/gen-pnj-warh/static/media/20_40_saltimbanque.b9ff603ab913737607ec.jpg",
+    "static/media/60_200_bourgeois.jpg": "/gen-pnj-warh/static/media/60_200_bourgeois.9d7492b4f04f196185f0.jpg",
     "static/media/20_45_naufrageuse.jpg": "/gen-pnj-warh/static/media/20_45_naufrageuse.2b751e2a56db746185a1.jpg",
     "static/media/40_190_saltimbanque.jpg": "/gen-pnj-warh/static/media/40_190_saltimbanque.89eb0b452696e027d2fe.jpg",
     "static/media/20_45_mineuse.jpg": "/gen-pnj-warh/static/media/20_45_mineuse.8d6686d655a4bc0029b9.jpg",
@@ -121,6 +125,7 @@
     "static/media/30_50_entremetteur.jpg": "/gen-pnj-warh/static/media/30_50_entremetteur.13c37eb8d3f59acc79ca.jpg",
     "static/media/femme50+.jpg": "/gen-pnj-warh/static/media/femme50+.dd1c69cbc93174505b51.jpg",
     "static/media/80_200.jpg": "/gen-pnj-warh/static/media/80_200.00b4c849c3a3f34e8bc3.jpg",
+    "static/media/40_200_citadin.jpg": "/gen-pnj-warh/static/media/40_200_citadin.1ee1bd771ce711cd95cf.jpg",
     "static/media/300_plus_f_2.jpg": "/gen-pnj-warh/static/media/300_plus_f_2.6ac29f875b992d6ae01a.jpg",
     "static/media/50_150_f.jpg": "/gen-pnj-warh/static/media/50_150_f.95666c399165afef5f11.jpg",
     "static/media/200_plus_rurale.jpg": "/gen-pnj-warh/static/media/200_plus_rurale.27dea6ad88183674e9cc.jpg",
@@ -153,7 +158,9 @@
     "static/media/40_70_contrebandiere.jpg": "/gen-pnj-warh/static/media/40_70_contrebandiere.182809dcc2b122beeecf.jpg",
     "static/media/35_70_sorcierVillage.jpg": "/gen-pnj-warh/static/media/35_70_sorcierVillage.3b0ae67d1dc6c145c464.jpg",
     "static/media/20_40_spadassin.jpg": "/gen-pnj-warh/static/media/20_40_spadassin.4c9f886cd60a00f94151.jpg",
+    "static/media/80_200_guerrier.jpg": "/gen-pnj-warh/static/media/80_200_guerrier.ad587fade6b58ce69cd6.jpg",
     "static/media/portrait_30_70_b.jpg": "/gen-pnj-warh/static/media/portrait_30_70_b.e2004c1e657f5aba65ac.jpg",
+    "static/media/25_90_artisane.jpg": "/gen-pnj-warh/static/media/25_90_artisane.e12d37e5bc5823e2c7b3.jpg",
     "static/media/femme15_35_e.jpg": "/gen-pnj-warh/static/media/femme15_35_e.8ab524cb74ac6f8e5edd.jpg",
     "static/media/femme20_40.jpg": "/gen-pnj-warh/static/media/femme20_40.d46ea15558537cdf8c36.jpg",
     "static/media/15_60_artisane.jpg": "/gen-pnj-warh/static/media/15_60_artisane.729d95f96a4673aafe9d.jpg",
@@ -184,6 +191,7 @@
     "static/media/femme20_35.jpg": "/gen-pnj-warh/static/media/femme20_35.0a569c5f1bd337516869.jpg",
     "static/media/30+_repurgateur.jpg": "/gen-pnj-warh/static/media/30+_repurgateur.706d9274932fdc313a0b.jpg",
     "static/media/30_50_villageois.jpg": "/gen-pnj-warh/static/media/30_50_villageois.580cd94b7ba4f20c26f7.jpg",
+    "static/media/30_180_mineur.jpg": "/gen-pnj-warh/static/media/30_180_mineur.9f7460b7b48a5008338f.jpg",
     "static/media/25_45_chasseur_primes.jpg": "/gen-pnj-warh/static/media/25_45_chasseur_primes.e5f28f82016778ac2c4a.jpg",
     "static/media/40_100.jpg": "/gen-pnj-warh/static/media/40_100.f014ecf61b53f6b1f9ac.jpg",
     "static/media/25_40_bailli.jpg": "/gen-pnj-warh/static/media/25_40_bailli.ed1e3b129ce45e43295c.jpg",
@@ -194,6 +202,7 @@
     "static/media/15_40_bourgeoise.jpg": "/gen-pnj-warh/static/media/15_40_bourgeoise.4d82840d3b9e0d209426.jpg",
     "static/media/40_180_mineur.jpg": "/gen-pnj-warh/static/media/40_180_mineur.3af2ee09084035d3c17e.jpg",
     "static/media/40_75_guerrier.jpg": "/gen-pnj-warh/static/media/40_75_guerrier.38332c472268ea207013.jpg",
+    "static/media/40_150_tueur.jpg": "/gen-pnj-warh/static/media/40_150_tueur.e5413c5ba96d99a744e2.jpg",
     "static/media/15_45_chasseusePrimes.jpg": "/gen-pnj-warh/static/media/15_45_chasseusePrimes.dd3e709f240d1e407b58.jpg",
     "static/media/portrait_40_60.jpg": "/gen-pnj-warh/static/media/portrait_40_60.e4ac999024fd78abd74a.jpg",
     "static/media/50_150.jpg": "/gen-pnj-warh/static/media/50_150.534cbc10f5c804cd78cf.jpg",
@@ -289,10 +298,10 @@
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
     "main.984971c8.css.map": "/gen-pnj-warh/static/css/main.984971c8.css.map",
-    "main.c4b7cc8a.js.map": "/gen-pnj-warh/static/js/main.c4b7cc8a.js.map"
+    "main.407f20b1.js.map": "/gen-pnj-warh/static/js/main.407f20b1.js.map"
   },
   "entrypoints": [
     "static/css/main.984971c8.css",
-    "static/js/main.c4b7cc8a.js"
+    "static/js/main.407f20b1.js"
   ]
 }
