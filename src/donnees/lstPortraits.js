@@ -388,8 +388,18 @@ import portrait_nain_45_190_ingenieur from './img/nains/portraits/45_190_ingenie
 import portrait_nain_25_95_eclaireur from './img/nains/portraits/25_95_eclaireur.jpg'
 import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg'
 import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
+import portrait_nain_80_200_guerrier from './img/nains/portraits/80_200_guerrier.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_200_guerrier,
+    ageMin: 80,
+    ageMax: 200,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_60_200_bourgeois,

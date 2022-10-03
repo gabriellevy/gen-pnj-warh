@@ -12,6 +12,7 @@ import {
   nomCotNains,
   nomCotEmpire,
 } from '../../../donnees/lstCoteries'
+import { genCarriere } from './CarriereGen'
 
 function Coterie({
   titre,
@@ -27,18 +28,28 @@ function Coterie({
 }) {
   const { perso, setPerso } = useContext(PersoContexte)
 
+  /**
+   * application de tous les changements lors de la sélection d'une coterie
+   */
   function appliquerSelection() {
     var fond = fonds[getRandomInt(fonds.length)]
 
     // mettre à jour des caracs selon la coterie actuelle
+    // --------- age
     var age = getRandomInt(60) + 15 // pour un humain classique
     if (titre === nomCotNains) {
       age = getRandomInt(600) + 15
     }
+    // ----------- classe et carrère aleatoires
+    var classeCarriereObj = genCarriere(titre)
+    var classeStr = classeCarriereObj.classeStr
+    var carriereStr = classeCarriereObj.carriereStr
 
     var changementsAuPerso = {
       fond: fond,
       age: age,
+      carriere: carriereStr,
+      classe: classeStr,
       coterie: titre, // titre de coterie
     }
     var persoFinal = { ...perso, ...changementsAuPerso }

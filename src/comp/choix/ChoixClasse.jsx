@@ -3,6 +3,7 @@ import { lstClasses, getClasseObj } from '../../donnees/lstClasses'
 import { useContext, useEffect } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
+import { nomCotNains } from '../../donnees/lstCoteries'
 
 const ChoixClasse = () => {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -12,7 +13,9 @@ const ChoixClasse = () => {
   // manière détournée bancale de faire l'initialisation aléatoire mais bon je fais ce que je peux
   useEffect(() => {
     if (perso.classe === undefined || perso.classe === '') {
-      // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
+      // A FAIRE : virer toute cette sélection aléatoire une fois que les sélection aléatoires spécifques aux races
+      // auront été faites dans CarriereGen.js : genCarriere
+
       var indexClasse = getRandomInt(lstClasses.length)
       var ClasseObj = lstClasses[indexClasse]
       setClasse(ClasseObj.titre)
@@ -27,6 +30,9 @@ const ChoixClasse = () => {
       }
       var persoFinal = { ...perso, ...changementsAuPerso }
       setPerso(persoFinal)
+    } else {
+      setClasse(perso.classe)
+      setCarriere(perso.carriere)
     }
   }, [perso, setPerso])
 
