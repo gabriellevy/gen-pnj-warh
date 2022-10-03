@@ -380,8 +380,88 @@ import portrait_nain_200_plus_noble from './img/nains/portraits/200_plus_noble.j
 import portrait_nain_150_plus_receleur from './img/nains/portraits/150_plus_receleur.jpg'
 import portrait_nain_20_50_soldate from './img/nains/portraits/20_50_soldate.jpg'
 import portrait_nain_300_plus_f_2 from './img/nains/portraits/300_plus_f_2.jpg'
+import portrait_nain_40_150_tueur from './img/nains/portraits/40_150_tueur.jpg'
+import portrait_nain_40_200_citadin from './img/nains/portraits/40_200_citadin.jpg'
+import portrait_nain_25_90_artisane from './img/nains/portraits/25_90_artisane.jpg'
+import portrait_nain_35_130_nautonniere from './img/nains/portraits/35_130_nautonniere.jpg'
+import portrait_nain_45_190_ingenieur from './img/nains/portraits/45_190_ingenieur.jpg'
+import portrait_nain_25_95_eclaireur from './img/nains/portraits/25_95_eclaireur.jpg'
+import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg'
+import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_60_200_bourgeois,
+    ageMin: 60,
+    ageMax: 200,
+    carrieres: [nomBourgeois],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_180_mineur,
+    ageMin: 30,
+    ageMax: 180,
+    carrieres: [nomMineur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_25_95_eclaireur,
+    ageMin: 25,
+    ageMax: 95,
+    carrieres: [nomEclaireur, nomChasseur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_45_190_ingenieur,
+    ageMin: 45,
+    ageMax: 190,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_35_130_nautonniere,
+    ageMin: 35,
+    ageMax: 130,
+    carrieres: [nomNautonnier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_25_90_artisane,
+    ageMin: 25,
+    ageMax: 90,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_200_citadin,
+    ageMin: 40,
+    ageMax: 200,
+    carrieres: [],
+    classes: [nomCitadins],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_150_tueur,
+    ageMin: 40,
+    ageMax: 150,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_20_50_soldate,
