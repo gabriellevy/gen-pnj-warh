@@ -1,5 +1,5 @@
 import portrait_haut_elfe from './img/hauts_elfes/portraits/femme15-30_b.jpg'
-import portrait_elfe_sylvain from './img/elfes_sylvains/portraits/femme15_40.jpg'
+import portrait_elfe_sylvain from './img/elfes_sylvains/portraits/f_15-30_c.jpg'
 import portrait_bretonnien from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_halfelins from './img/halfelins/portraits/30_50.jpg'

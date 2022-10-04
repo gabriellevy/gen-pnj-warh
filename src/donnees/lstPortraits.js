@@ -158,6 +158,7 @@ import portrait_elfe_sylvain_30_50_d from './img/elfes_sylvains/portraits/portra
 import portrait_elfe_sylvain_40_60 from './img/elfes_sylvains/portraits/portrait_40_60.jpg'
 import portrait_elfe_sylvain_40_plus_b from './img/elfes_sylvains/portraits/portrait_40+_b.jpg'
 import portrait_elfe_sylvain_20_50_b from './img/elfes_sylvains/portraits/portrait20_50_b.jpg'
+import portrait_elfe_sylvain_f_15_30_c from './img/elfes_sylvains/portraits/f_15-30_c.jpg'
 
 import portrait_8_15 from './img/portraits/8-15.jpg'
 import portrait_femme13_20 from './img/portraits/F13-20.jpg'
@@ -2400,6 +2401,13 @@ export const lstPortraits = [
     ageMin: 20,
     ageMax: 50,
     male: true,
+  },
+  {
+    coteries: [nomCotElfesSylvains],
+    image: portrait_elfe_sylvain_f_15_30_c,
+    ageMin: 15,
+    ageMax: 30,
+    male: false,
   },
   {
     coteries: [nomCotElfesSylvains],
