@@ -1,5 +1,6 @@
 import {
   nomCotBretonniens,
+  nomCotElfesSylvains,
   nomCotEmpire,
   nomCotEstalie,
   nomCotHalfelins,
@@ -589,6 +590,85 @@ export function genCarriere(nomCoterie) {
     } else if (scoreCarriere <= 100) {
       classeStr = nomRuraux
       carriereStr = nomVillageois
+    }
+  } else if (
+    // ------------ELFES SYLVAINS -----------------
+    nomCoterie === nomCotElfesSylvains
+  ) {
+    // ---------- citadins ---------//
+    if (scoreCarriere <= 5) {
+      classeStr = nomCitadins
+      carriereStr = nomArtisan
+      // ---------- courtisans ---------//
+    } else if (scoreCarriere <= 9) {
+      classeStr = nomCourtisans
+      carriereStr = nomArtiste
+    } else if (scoreCarriere <= 13) {
+      classeStr = nomCourtisans
+      carriereStr = nomConseiller
+    } else if (scoreCarriere <= 20) {
+      classeStr = nomCourtisans
+      carriereStr = nomEmissaire
+    } else if (scoreCarriere <= 24) {
+      classeStr = nomCourtisans
+      carriereStr = nomEspion
+    } else if (scoreCarriere <= 30) {
+      classeStr = nomCourtisans
+      carriereStr = nomNoble
+      // ---------- guerriers ---------//
+    } else if (scoreCarriere <= 35) {
+      classeStr = nomGuerriers
+      carriereStr = nomCavalier
+    } else if (scoreCarriere <= 37) {
+      classeStr = nomGuerriers
+      carriereStr = nomChevalier
+    } else if (scoreCarriere <= 39) {
+      classeStr = nomGuerriers
+      carriereStr = nomGarde
+    } else if (scoreCarriere <= 41) {
+      classeStr = nomGuerriers
+      carriereStr = nomGladiateur
+    } else if (scoreCarriere <= 45) {
+      classeStr = nomGuerriers
+      carriereStr = nomSoldat
+      // ---------- itinérants ---------//
+    } else if (scoreCarriere <= 47) {
+      classeStr = nomItinerants
+      carriereStr = nomChasseurDePrimes
+    } else if (scoreCarriere <= 50) {
+      classeStr = nomItinerants
+      carriereStr = nomMessager
+    } else if (scoreCarriere <= 55) {
+      classeStr = nomItinerants
+      carriereStr = nomSaltimbanque
+      // ---------- lettrés ---------//
+    } else if (scoreCarriere <= 56) {
+      classeStr = nomLettres
+      carriereStr = nomErudit
+    } else if (scoreCarriere <= 60) {
+      classeStr = nomLettres
+      carriereStr = nomSorcier
+      // ---------- riverains ---------//
+    } else if (scoreCarriere <= 61) {
+      classeStr = nomRiverains
+      carriereStr = nomNaufrageur
+      // ---------- roublards ---------//
+    } else if (scoreCarriere <= 67) {
+      classeStr = nomRoublards
+      carriereStr = nomHorsLaLoi
+      // ---------- ruraux ---------//
+    } else if (scoreCarriere <= 77) {
+      classeStr = nomRuraux
+      carriereStr = nomChasseur
+    } else if (scoreCarriere <= 88) {
+      classeStr = nomRuraux
+      carriereStr = nomEclaireur
+    } else if (scoreCarriere <= 95) {
+      classeStr = nomRuraux
+      carriereStr = nomHerboriste
+    } else if (scoreCarriere <= 100) {
+      classeStr = nomRuraux
+      carriereStr = nomMystique
     }
   }
   var classeCarriereObj = {}
