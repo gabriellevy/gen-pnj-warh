@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.984971c8.css",
-    "main.js": "/gen-pnj-warh/static/js/main.407f20b1.js",
+    "main.js": "/gen-pnj-warh/static/js/main.9069e052.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/bg2.png": "/gen-pnj-warh/static/media/bg2.9a3d175d7c0b222499b1.png",
     "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
@@ -123,6 +123,7 @@
     "static/media/30_60_ranconneur.jpg": "/gen-pnj-warh/static/media/30_60_ranconneur.f8b2bb3a8e26d896e09b.jpg",
     "static/media/50_plus_patrouilleurFluvial.jpg": "/gen-pnj-warh/static/media/50_plus_patrouilleurFluvial.7f8bf743f8f243411e5f.jpg",
     "static/media/30_50_entremetteur.jpg": "/gen-pnj-warh/static/media/30_50_entremetteur.13c37eb8d3f59acc79ca.jpg",
+    "static/media/f_15-30_c.jpg": "/gen-pnj-warh/static/media/f_15-30_c.fbb8bc2e661c942cd77d.jpg",
     "static/media/femme50+.jpg": "/gen-pnj-warh/static/media/femme50+.dd1c69cbc93174505b51.jpg",
     "static/media/80_200.jpg": "/gen-pnj-warh/static/media/80_200.00b4c849c3a3f34e8bc3.jpg",
     "static/media/40_200_citadin.jpg": "/gen-pnj-warh/static/media/40_200_citadin.1ee1bd771ce711cd95cf.jpg",
@@ -298,10 +299,10 @@
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
     "main.984971c8.css.map": "/gen-pnj-warh/static/css/main.984971c8.css.map",
-    "main.407f20b1.js.map": "/gen-pnj-warh/static/js/main.407f20b1.js.map"
+    "main.9069e052.js.map": "/gen-pnj-warh/static/js/main.9069e052.js.map"
   },
   "entrypoints": [
     "static/css/main.984971c8.css",
-    "static/js/main.407f20b1.js"
+    "static/js/main.9069e052.js"
   ]
 }
