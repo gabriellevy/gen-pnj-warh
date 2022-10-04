@@ -88,14 +88,14 @@ import {
 } from './lstVoies'
 import { getRandomInt } from '../utils/rand'
 
-export const nomCotConquistadors = 'Conquistadors'
+export const nomCotEstalie = 'Estaliens'
 export const nomCotHautsElfes = 'Haut elfes'
 export const nomCotElfesSylvains = 'Elfes sylvains'
 export const nomCotKislevites = 'Kislevites'
 export const nomCotBretonniens = 'Bretonniens'
 export const nomCotHalfelins = 'Halfelins'
 export const nomCotNains = 'Nains'
-export const nomCotCelte = 'Celtes'
+export const nomCotAlbion = 'Albionais'
 export const nomCotSkavens = 'Skavens'
 export const nomCotEmpire = 'Empire'
 

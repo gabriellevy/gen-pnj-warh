@@ -2,16 +2,7 @@ import '../../../styles/Coterie.css'
 import { getRandomInt } from '../../../utils/rand'
 import { useContext } from 'react'
 import { PersoContexte } from '../../../utils/contexte/perso'
-import {
-  nomCotBretonniens,
-  nomCotConquistadors,
-  nomCotHautsElfes,
-  nomCotElfesSylvains,
-  nomCotKislevites,
-  nomCotHalfelins,
-  nomCotNains,
-  nomCotEmpire,
-} from '../../../donnees/lstCoteries'
+import { nomCotNains } from '../../../donnees/lstCoteries'
 import { genCarriere } from './CarriereGen'
 
 function Coterie({

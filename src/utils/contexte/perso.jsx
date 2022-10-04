@@ -1,7 +1,7 @@
 import React, { useState, createContext, useEffect } from 'react'
 import { nomCotEmpire, nomCotHalfelins } from '../../donnees/lstCoteries'
 import { nomCotNains } from '../../donnees/lstCoteries'
-import { nomCotConquistadors } from '../../donnees/lstCoteries'
+import { nomCotEstalie } from '../../donnees/lstCoteries'
 import { nomCotHautsElfes } from '../../donnees/lstCoteries'
 import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
 import { nomCotBretonniens } from '../../donnees/lstCoteries'
@@ -85,7 +85,7 @@ export const PersoProvider = ({ children }) => {
       2 * Math.floor(changementsAuPerso['endurance'] / 10) +
       Math.floor(changementsAuPerso['force_mentale'] / 10)
 
-    if (perso.coterie === nomCotConquistadors)
+    if (perso.coterie === nomCotEstalie)
       changementsAuPerso['nom'] = genNomConquistador(perso.male)
     else if (perso.coterie === nomCotHautsElfes) {
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
