@@ -12,6 +12,7 @@ import { genNomNain } from '../../donnees/coteries/nains/nomsNains'
 import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
+import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 
 import {
   getCompObjPropertyName,
@@ -121,6 +122,8 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso['nom'] = genNomBretonnien(perso.male)
     else if (perso.coterie === nomCotKislevites)
       changementsAuPerso['nom'] = genNomKislevite(perso.male)
+    else if (perso.coterie === nomCotHalfelins)
+      changementsAuPerso['nom'] = genNomHalfelin(perso.male)
     else if (perso.coterie === nomCotEmpire)
       changementsAuPerso['nom'] = genNomEmpire(perso.male)
     else if (perso.coterie === nomCotNains) {
