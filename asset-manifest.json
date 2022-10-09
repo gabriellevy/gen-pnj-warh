@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.984971c8.css",
-    "main.js": "/gen-pnj-warh/static/js/main.721433b8.js",
+    "main.js": "/gen-pnj-warh/static/js/main.c328b8b5.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/bg2.png": "/gen-pnj-warh/static/media/bg2.9a3d175d7c0b222499b1.png",
     "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
@@ -299,10 +299,10 @@
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
     "main.984971c8.css.map": "/gen-pnj-warh/static/css/main.984971c8.css.map",
-    "main.721433b8.js.map": "/gen-pnj-warh/static/js/main.721433b8.js.map"
+    "main.c328b8b5.js.map": "/gen-pnj-warh/static/js/main.c328b8b5.js.map"
   },
   "entrypoints": [
     "static/css/main.984971c8.css",
-    "static/js/main.721433b8.js"
+    "static/js/main.c328b8b5.js"
   ]
 }
