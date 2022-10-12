@@ -393,8 +393,108 @@ import portrait_halfelin_30_85 from './img/halfelins/portraits/30_85.jpg'
 import portrait_halfelin_45_100 from './img/halfelins/portraits/45_100.jpg'
 import portrait_halfelin_artisan_45_120 from './img/halfelins/portraits/artisan_45_120.jpg'
 import portrait_halfelin_saltimbanque_20_90 from './img/halfelins/portraits/saltimbanque_20_90.jpg'
+import portrait_halfelin_chasseurDePrimes_40_90 from './img/halfelins/portraits/chasseurDePrimes_40_90.jpg'
+import portrait_halfelin_courtisan_40_100 from './img/halfelins/portraits/courtisan_40_100.jpg'
+import portrait_halfelin_saltimbanque_f_40_100 from './img/halfelins/portraits/saltimbanque_f_40_100.jpg'
+import portrait_halfelin_guerrier_40_120 from './img/halfelins/portraits/guerrier_40_120.jpg'
+import portrait_halfelin_serviteur_40_160 from './img/halfelins/portraits/serviteur_40_160.jpg'
+import portrait_halfelin_cocher_40_90 from './img/halfelins/portraits/cocher_40_90.jpg'
+import portrait_halfelin_saltimbanque_f_80_200 from './img/halfelins/portraits/saltimbanque_f_80_200.jpg'
+import portrait_halfelin_citadins_70_130 from './img/halfelins/portraits/citadins_70_130.jpg'
+import portrait_halfelin_voleur_70_140 from './img/halfelins/portraits/voleur_70_140.jpg'
+import portrait_halfelin_eclaireur_70_120 from './img/halfelins/portraits/eclaireur_70_120.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_eclaireur_70_120,
+    ageMin: 70,
+    ageMax: 120,
+    carrieres: [nomEclaireur, nomChasseur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_voleur_70_140,
+    ageMin: 70,
+    ageMax: 140,
+    carrieres: [],
+    classes: [nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_citadins_70_130,
+    ageMin: 70,
+    ageMax: 130,
+    carrieres: [],
+    classes: [nomCitadins],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_saltimbanque_f_80_200,
+    ageMin: 80,
+    ageMax: 200,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_cocher_40_90,
+    ageMin: 40,
+    ageMax: 90,
+    carrieres: [nomCocher, nomColporteur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_serviteur_40_160,
+    ageMin: 40,
+    ageMax: 160,
+    carrieres: [nomServiteur, nomVillageois],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_guerrier_40_120,
+    ageMin: 40,
+    ageMax: 120,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_saltimbanque_f_40_100,
+    ageMin: 40,
+    ageMax: 100,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_courtisan_40_100,
+    ageMin: 40,
+    ageMax: 100,
+    carrieres: [],
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_chasseurDePrimes_40_90,
+    ageMin: 40,
+    ageMax: 90,
+    carrieres: [nomChasseurDePrimes],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotHalfelins],
     image: portrait_halfelin_saltimbanque_20_90,
