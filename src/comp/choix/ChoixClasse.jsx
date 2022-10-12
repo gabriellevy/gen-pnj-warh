@@ -3,7 +3,6 @@ import { lstClasses, getClasseObj } from '../../donnees/lstClasses'
 import { useContext, useEffect } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
-import { nomCotNains } from '../../donnees/lstCoteries'
 
 const ChoixClasse = () => {
   const { perso, setPerso } = useContext(PersoContexte)

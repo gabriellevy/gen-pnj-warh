@@ -8,7 +8,7 @@ function App() {
   const { perso } = useContext(PersoContexte)
 
   useEffect(() => {
-    document.title = 'Créateur de personnage Extremis'
+    document.title = 'Générateur de personnage warhammer'
   }, [])
 
   return (

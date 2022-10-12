@@ -213,8 +213,6 @@ import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
 import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
 import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 
-import portrait_halfelin_30_50 from './img/halfelins/portraits/30_50.jpg'
-
 import portrait_empire30_60_courtisans from './img/empire/portraits/30_60_courtisans.jpg'
 import portrait_empire30_60_lettres from './img/empire/portraits/30_60_lettres.jpg'
 import portrait_empire30_60_naufrageur from './img/empire/portraits/30_60_naufrageur.jpg'
@@ -391,7 +389,44 @@ import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg
 import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
 import portrait_nain_80_200_guerrier from './img/nains/portraits/80_200_guerrier.jpg'
 
+import portrait_halfelin_30_85 from './img/halfelins/portraits/30_85.jpg'
+import portrait_halfelin_45_100 from './img/halfelins/portraits/45_100.jpg'
+import portrait_halfelin_artisan_45_120 from './img/halfelins/portraits/artisan_45_120.jpg'
+import portrait_halfelin_saltimbanque_20_90 from './img/halfelins/portraits/saltimbanque_20_90.jpg'
+
 export const lstPortraits = [
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_saltimbanque_20_90,
+    ageMin: 20,
+    ageMax: 90,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_artisan_45_120,
+    ageMin: 45,
+    ageMax: 120,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_30_85,
+    ageMin: 30,
+    ageMax: 85,
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_45_100,
+    ageMin: 45,
+    ageMax: 100,
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_80_200_guerrier,
@@ -1900,13 +1935,6 @@ export const lstPortraits = [
     ageMin: 30,
     ageMax: 60,
     classes: [nomLettres],
-    male: true,
-  },
-  {
-    coteries: [nomCotHalfelins],
-    image: portrait_halfelin_30_50,
-    ageMin: 30,
-    ageMax: 50,
     male: true,
   },
   {

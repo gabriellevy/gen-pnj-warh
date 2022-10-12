@@ -2,7 +2,7 @@ import '../../../styles/Coterie.css'
 import { getRandomInt } from '../../../utils/rand'
 import { useContext } from 'react'
 import { PersoContexte } from '../../../utils/contexte/perso'
-import { nomCotNains } from '../../../donnees/lstCoteries'
+import { nomCotHalfelins, nomCotNains } from '../../../donnees/lstCoteries'
 import { genCarriere } from './CarriereGen'
 
 function Coterie({
@@ -30,6 +30,9 @@ function Coterie({
     var age = getRandomInt(60) + 15 // pour un humain classique
     if (titre === nomCotNains) {
       age = getRandomInt(600) + 15
+    }
+    if (titre === nomCotHalfelins) {
+      age = age * 2
     }
     // ----------- classe et carrère aleatoires
     var classeCarriereObj = genCarriere(titre)
