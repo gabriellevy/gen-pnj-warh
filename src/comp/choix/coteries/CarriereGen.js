@@ -85,7 +85,6 @@ import {
 
 /**
  * génère une carrière aléatoire selon la coterie sélectionnée
- * A FAIRE : classes et carrières aléatoires des autres races (empire, halfelins, elfes...)
  */
 export function genCarriere(nomCoterie) {
   var scoreCarriere = getRandomInt(100) + 1 // selon p30 des règels officielles
