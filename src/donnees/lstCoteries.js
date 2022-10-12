@@ -88,15 +88,15 @@ import {
 } from './lstVoies'
 import { getRandomInt } from '../utils/rand'
 
-export const nomCotEstalie = 'Estaliens'
-export const nomCotHautsElfes = 'Haut elfes'
-export const nomCotElfesSylvains = 'Elfes sylvains'
-export const nomCotKislevites = 'Kislevites'
-export const nomCotBretonniens = 'Bretonniens'
-export const nomCotHalfelins = 'Halfelins'
-export const nomCotNains = 'Nains'
+export const nomCotEstalie = 'Estalien'
+export const nomCotHautsElfes = 'Haut elfe'
+export const nomCotElfesSylvains = 'Elfe sylvain'
+export const nomCotKislevites = 'Kislevite'
+export const nomCotBretonniens = 'Bretonnien'
+export const nomCotHalfelins = 'Halfelin'
+export const nomCotNains = 'Nain'
 export const nomCotAlbion = 'Albionais'
-export const nomCotSkavens = 'Skavens'
+export const nomCotSkavens = 'Skaven'
 export const nomCotEmpire = 'Empire'
 
 export function getCoterieObj(idCoterie) {

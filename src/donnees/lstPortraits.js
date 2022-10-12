@@ -395,6 +395,7 @@ import portrait_halfelin_artisan_45_120 from './img/halfelins/portraits/artisan_
 import portrait_halfelin_saltimbanque_20_90 from './img/halfelins/portraits/saltimbanque_20_90.jpg'
 import portrait_halfelin_chasseurDePrimes_40_90 from './img/halfelins/portraits/chasseurDePrimes_40_90.jpg'
 import portrait_halfelin_courtisan_40_100 from './img/halfelins/portraits/courtisan_40_100.jpg'
+import portrait_halfelin_courtisan_40_100_b from './img/halfelins/portraits/courtisan_40_100_b.jpg'
 import portrait_halfelin_saltimbanque_f_40_100 from './img/halfelins/portraits/saltimbanque_f_40_100.jpg'
 import portrait_halfelin_guerrier_40_120 from './img/halfelins/portraits/guerrier_40_120.jpg'
 import portrait_halfelin_serviteur_40_160 from './img/halfelins/portraits/serviteur_40_160.jpg'
@@ -408,8 +409,39 @@ import portrait_halfelin_courtisan_90_180 from './img/halfelins/portraits/courti
 import portrait_halfelin_colporteuse_70_150 from './img/halfelins/portraits/colporteuse_70_150.jpg'
 import portrait_halfelin_messager_60_110 from './img/halfelins/portraits/messager_60_110.jpg'
 import portrait_halfelin_citadine_35_100 from './img/halfelins/portraits/citadine_35_100.jpg'
+import portrait_halfelin_rural_40_120 from './img/halfelins/portraits/rural_40_120.jpg'
+import portrait_halfelin_gladiateur_40_110 from './img/halfelins/portraits/gladiateur_40_110.jpg'
+import portrait_halfelin_juriste_40_110 from './img/halfelins/portraits/juriste_40_110.jpg'
+import portrait_halfelin_eclaireur_90_160 from './img/halfelins/portraits/eclaireur_90_160.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_juriste_40_110,
+    ageMin: 40,
+    ageMax: 110,
+    carrieres: [nomJuriste],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_gladiateur_40_110,
+    ageMin: 40,
+    ageMax: 110,
+    carrieres: [nomGladiateur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_rural_40_120,
+    ageMin: 40,
+    ageMax: 120,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
   {
     coteries: [nomCotHalfelins],
     image: portrait_halfelin_citadine_35_100,
@@ -460,6 +492,15 @@ export const lstPortraits = [
     image: portrait_halfelin_eclaireur_70_120,
     ageMin: 70,
     ageMax: 120,
+    carrieres: [nomEclaireur, nomChasseur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_eclaireur_90_160,
+    ageMin: 90,
+    ageMax: 160,
     carrieres: [nomEclaireur, nomChasseur],
     classes: [],
     male: true,
@@ -530,6 +571,15 @@ export const lstPortraits = [
   {
     coteries: [nomCotHalfelins],
     image: portrait_halfelin_courtisan_40_100,
+    ageMin: 40,
+    ageMax: 100,
+    carrieres: [],
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_courtisan_40_100_b,
     ageMin: 40,
     ageMax: 100,
     carrieres: [],
