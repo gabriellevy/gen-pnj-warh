@@ -403,8 +403,58 @@ import portrait_halfelin_saltimbanque_f_80_200 from './img/halfelins/portraits/s
 import portrait_halfelin_citadins_70_130 from './img/halfelins/portraits/citadins_70_130.jpg'
 import portrait_halfelin_voleur_70_140 from './img/halfelins/portraits/voleur_70_140.jpg'
 import portrait_halfelin_eclaireur_70_120 from './img/halfelins/portraits/eclaireur_70_120.jpg'
+import portrait_halfelin_cuisinier_70_130 from './img/halfelins/portraits/cuisinier_70_130.jpg'
+import portrait_halfelin_courtisan_90_180 from './img/halfelins/portraits/courtisan_90_180.jpg'
+import portrait_halfelin_colporteuse_70_150 from './img/halfelins/portraits/colporteuse_70_150.jpg'
+import portrait_halfelin_messager_60_110 from './img/halfelins/portraits/messager_60_110.jpg'
+import portrait_halfelin_citadine_35_100 from './img/halfelins/portraits/citadine_35_100.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_citadine_35_100,
+    ageMin: 35,
+    ageMax: 100,
+    carrieres: [],
+    classes: [nomCitadins, nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_messager_60_110,
+    ageMin: 60,
+    ageMax: 110,
+    carrieres: [nomMessager],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_colporteuse_70_150,
+    ageMin: 70,
+    ageMax: 150,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_courtisan_90_180,
+    ageMin: 90,
+    ageMax: 180,
+    carrieres: [],
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_cuisinier_70_130,
+    ageMin: 70,
+    ageMax: 130,
+    carrieres: [nomBourgeois],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotHalfelins],
     image: portrait_halfelin_eclaireur_70_120,
