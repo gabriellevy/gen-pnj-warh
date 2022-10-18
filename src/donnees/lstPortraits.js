@@ -429,8 +429,104 @@ import portrait_empire15_plus_medecin from './img/empire/portraits/15_plus_medec
 import portrait_empire40_plus_repurgateur from './img/empire/portraits/40_plus_repurgateur.jpg'
 import portrait_empire40_plus_magicien_cieux from './img/empire/portraits/40_plus_magicien_cieux.jpg'
 import portrait_empire40_plus_marchand_emissaire from './img/empire/portraits/40_plus_marchand_emissaire.jpg'
+import portrait_empire28_60_debardeur from './img/empire/portraits/28_60_debardeur.jpg'
+import portrait_empire30_50_guerrier from './img/empire/portraits/30_50_guerrier.jpg'
+import portrait_empire40_plus_magicien_lumiere from './img/empire/portraits/40_plus_magicien_lumiere.jpg'
+import portrait_empire40_plus_noble_duelliste from './img/empire/portraits/40_plus_noble_duelliste.jpg'
+import portrait_empire40_plus_noble_emissaire from './img/empire/portraits/40_plus_noble_emissaire.jpg'
+import portrait_empire25_60_magicien_feu from './img/empire/portraits/25_60_magicien_feu.jpg'
+import portrait_empire25_60_magicien from './img/empire/portraits/25_60_magicien.jpg'
+import portrait_empire25_60_magicien_bete from './img/empire/portraits/25_60_magicien_bete.jpg'
+import portrait_empire25_60_magicien_mort from './img/empire/portraits/25_60_magicien_mort.jpg'
+import portrait_empire35_plus_magicien_metal from './img/empire/portraits/25_60_magicien_metal.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire35_plus_magicien_metal,
+    ageMin: 35,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire25_60_magicien_mort,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire25_60_magicien_bete,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire25_60_magicien,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire25_60_magicien_feu,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotKislevites],
+    image: portrait_empire40_plus_noble_emissaire,
+    ageMin: 40,
+    carrieres: [nomNoble, nomEmissaire],
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotKislevites],
+    image: portrait_empire40_plus_noble_duelliste,
+    ageMin: 40,
+    carrieres: [nomNoble, nomEmissaire, nomDuelliste],
+    classes: [nomCourtisans],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire40_plus_magicien_lumiere,
+    ageMin: 40,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_50_guerrier,
+    ageMin: 30,
+    ageMax: 50,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire28_60_debardeur,
+    ageMin: 28,
+    ageMax: 60,
+    carrieres: [nomDebardeur],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_marchand_emissaire,
