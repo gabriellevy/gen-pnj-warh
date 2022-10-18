@@ -213,6 +213,95 @@ import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
 import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
 import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
 
+import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
+import portrait_nain_40_plus from './img/nains/portraits/40_plus.jpg'
+import portrait_nain_60_plus_tueur from './img/nains/portraits/60_plus_tueur.jpg'
+import portrait_nain_35_plus_tueur from './img/nains/portraits/35_plus_tueur.jpg'
+import portrait_nain_140_plus from './img/nains/portraits/140_plus.jpg'
+import portrait_nain_25_100_f_tueur from './img/nains/portraits/25_plus_f_tueur.jpg'
+import portrait_nain_50_plus_ingenieur from './img/nains/portraits/50_plus_ingenieur.jpg'
+import portrait_nain_40_plus_soldat from './img/nains/portraits/40_plus_soldat.jpg'
+import portrait_nain_60_plus_chasseur from './img/nains/portraits/60_plus_chasseur.jpg'
+import portrait_nain_40_150_eclaireuse from './img/nains/portraits/40_150_eclaireuse.jpg'
+import portrait_nain_40_150_eclaireur from './img/nains/portraits/40_150_eclaireur.jpg'
+import portrait_nain_50_150_f from './img/nains/portraits/50_150_f.jpg'
+import portrait_nain_25_90_f_colporteur from './img/nains/portraits/25_90_f_colporteur.jpg'
+import portrait_nain_40_180_mineur from './img/nains/portraits/40_180_mineur.jpg'
+import portrait_nain_80_200 from './img/nains/portraits/80_200.jpg'
+import portrait_nain_120_plus_bourgeois from './img/nains/portraits/120_plus_bourgeois.jpg'
+import portrait_nain_40_150_recelleur from './img/nains/portraits/40_150_recelleur.jpg'
+import portrait_nain_40_150_chasseuse from './img/nains/portraits/40_150_chasseuse.jpg'
+import portrait_nain_50_150 from './img/nains/portraits/50_150.jpg'
+import portrait_nain_110_plus_eclaireuse from './img/nains/portraits/110_plus_eclaireuse.jpg'
+import portrait_nain_200_plus_f from './img/nains/portraits/200_plus_f.jpg'
+import portrait_nain_200_plus from './img/nains/portraits/200_plus.jpg'
+import portrait_nain_35_100_f_ruraux from './img/nains/portraits/35_100_f_ruraux.jpg'
+import portrait_nain_300_plus_f from './img/nains/portraits/300_plus_f.jpg'
+import portrait_nain_40_190_saltimbanque from './img/nains/portraits/40_190_saltimbanque.jpg'
+import portrait_nain_120_plus_mineur from './img/nains/portraits/120_plus_mineur.jpg'
+import portrait_nain_40_180_saltimbanque from './img/nains/portraits/40_180_saltimbanque.jpg'
+import portrait_nain_50_160 from './img/nains/portraits/50_160.jpg'
+import portrait_nain_70_plus_tueur from './img/nains/portraits/70_plus_tueur.jpg'
+import portrait_nain_40_130_gladiateur from './img/nains/portraits/40_130_gladiateur.jpg'
+import portrait_nain_100_250 from './img/nains/portraits/100_250.jpg'
+import portrait_nain_20_45_ingenieure from './img/nains/portraits/20_45_ingenieure.jpg'
+import portrait_nain_40_110_chasseur from './img/nains/portraits/40_110_chasseur.jpg'
+import portrait_nain_80_duelliste from './img/nains/portraits/80_duelliste.jpg'
+import portrait_nain_80_plus_tueur from './img/nains/portraits/80_plus_tueur.jpg'
+import portrait_nain_15_60_f from './img/nains/portraits/15_60_f.jpg'
+import portrait_nain_15_60_artisane from './img/nains/portraits/15_60_artisane.jpg'
+import portrait_nain_320_plus_f from './img/nains/portraits/320_plus_f.jpg'
+import portrait_nain_50_160_rural from './img/nains/portraits/50_160_rural.jpg'
+import portrait_nain_200_plus_soldat from './img/nains/portraits/200_plus_soldat.jpg'
+import portrait_nain_200_plus_rurale from './img/nains/portraits/200_plus_rurale.jpg'
+import portrait_nain_200_plus_noble from './img/nains/portraits/200_plus_noble.jpg'
+import portrait_nain_150_plus_receleur from './img/nains/portraits/150_plus_receleur.jpg'
+import portrait_nain_20_50_soldate from './img/nains/portraits/20_50_soldate.jpg'
+import portrait_nain_300_plus_f_2 from './img/nains/portraits/300_plus_f_2.jpg'
+import portrait_nain_40_150_tueur from './img/nains/portraits/40_150_tueur.jpg'
+import portrait_nain_40_200_citadin from './img/nains/portraits/40_200_citadin.jpg'
+import portrait_nain_25_90_artisane from './img/nains/portraits/25_90_artisane.jpg'
+import portrait_nain_35_130_nautonniere from './img/nains/portraits/35_130_nautonniere.jpg'
+import portrait_nain_45_190_ingenieur from './img/nains/portraits/45_190_ingenieur.jpg'
+import portrait_nain_25_95_eclaireur from './img/nains/portraits/25_95_eclaireur.jpg'
+import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg'
+import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
+import portrait_nain_80_200_guerrier from './img/nains/portraits/80_200_guerrier.jpg'
+
+import portrait_halfelin_30_85 from './img/halfelins/portraits/30_85.jpg'
+import portrait_halfelin_45_100 from './img/halfelins/portraits/45_100.jpg'
+import portrait_halfelin_artisan_45_120 from './img/halfelins/portraits/artisan_45_120.jpg'
+import portrait_halfelin_saltimbanque_20_90 from './img/halfelins/portraits/saltimbanque_20_90.jpg'
+import portrait_halfelin_chasseurDePrimes_40_90 from './img/halfelins/portraits/chasseurDePrimes_40_90.jpg'
+import portrait_halfelin_courtisan_40_100 from './img/halfelins/portraits/courtisan_40_100.jpg'
+import portrait_halfelin_courtisan_40_100_b from './img/halfelins/portraits/courtisan_40_100_b.jpg'
+import portrait_halfelin_saltimbanque_f_40_100 from './img/halfelins/portraits/saltimbanque_f_40_100.jpg'
+import portrait_halfelin_guerrier_40_120 from './img/halfelins/portraits/guerrier_40_120.jpg'
+import portrait_halfelin_serviteur_40_160 from './img/halfelins/portraits/serviteur_40_160.jpg'
+import portrait_halfelin_cocher_40_90 from './img/halfelins/portraits/cocher_40_90.jpg'
+import portrait_halfelin_saltimbanque_f_80_200 from './img/halfelins/portraits/saltimbanque_f_80_200.jpg'
+import portrait_halfelin_citadins_70_130 from './img/halfelins/portraits/citadins_70_130.jpg'
+import portrait_halfelin_voleur_70_140 from './img/halfelins/portraits/voleur_70_140.jpg'
+import portrait_halfelin_eclaireur_70_120 from './img/halfelins/portraits/eclaireur_70_120.jpg'
+import portrait_halfelin_cuisinier_70_130 from './img/halfelins/portraits/cuisinier_70_130.jpg'
+import portrait_halfelin_courtisan_90_180 from './img/halfelins/portraits/courtisan_90_180.jpg'
+import portrait_halfelin_colporteuse_70_150 from './img/halfelins/portraits/colporteuse_70_150.jpg'
+import portrait_halfelin_messager_60_110 from './img/halfelins/portraits/messager_60_110.jpg'
+import portrait_halfelin_citadine_35_100 from './img/halfelins/portraits/citadine_35_100.jpg'
+import portrait_halfelin_rural_40_120 from './img/halfelins/portraits/rural_40_120.jpg'
+import portrait_halfelin_gladiateur_40_110 from './img/halfelins/portraits/gladiateur_40_110.jpg'
+import portrait_halfelin_juriste_40_110 from './img/halfelins/portraits/juriste_40_110.jpg'
+import portrait_halfelin_eclaireur_90_160 from './img/halfelins/portraits/eclaireur_90_160.jpg'
+import portrait_halfelin_ruraux_20_90 from './img/halfelins/portraits/ruraux_20_90.jpg'
+import portrait_halfelin_roublard_75_100 from './img/halfelins/portraits/roublard_75_100.jpg'
+import portrait_halfelin_citadin_40_120 from './img/halfelins/portraits/citadin_40_120.jpg'
+import portrait_halfelin_ruraux_90_200 from './img/halfelins/portraits/ruraux_90_200.jpg'
+import portrait_halfelin_colporteur_65_110 from './img/halfelins/portraits/colporteur_65_110.jpg'
+import portrait_halfelin_colporteur_65_140 from './img/halfelins/portraits/colporteur_65_140.jpg'
+import portrait_halfelin_guerriere_30_85 from './img/halfelins/portraits/guerriere_30_85.jpg'
+import portrait_halfelin_55_120 from './img/halfelins/portraits/55_120.jpg'
+import portrait_halfelin_serviteuse_80_120 from './img/halfelins/portraits/serviteuse_80_120.jpg'
+
 import portrait_empire30_60_courtisans from './img/empire/portraits/30_60_courtisans.jpg'
 import portrait_empire30_60_lettres from './img/empire/portraits/30_60_lettres.jpg'
 import portrait_empire30_60_naufrageur from './img/empire/portraits/30_60_naufrageur.jpg'
@@ -333,88 +422,163 @@ import portrait_empire25_50_soldat from './img/empire/portraits/25_50_soldat.jpg
 import portrait_empire30_55_milicien from './img/empire/portraits/30_55_milicien.jpg'
 import portrait_empire55_plus_pretreGuerrier from './img/empire/portraits/55_plus_pretreGuerrier.jpg'
 import portrait_empire25_45_repurgateur from './img/empire/portraits/25_45_repurgateur.jpg'
-
-import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
-import portrait_nain_40_plus from './img/nains/portraits/40_plus.jpg'
-import portrait_nain_60_plus_tueur from './img/nains/portraits/60_plus_tueur.jpg'
-import portrait_nain_35_plus_tueur from './img/nains/portraits/35_plus_tueur.jpg'
-import portrait_nain_140_plus from './img/nains/portraits/140_plus.jpg'
-import portrait_nain_25_100_f_tueur from './img/nains/portraits/25_plus_f_tueur.jpg'
-import portrait_nain_50_plus_ingenieur from './img/nains/portraits/50_plus_ingenieur.jpg'
-import portrait_nain_40_plus_soldat from './img/nains/portraits/40_plus_soldat.jpg'
-import portrait_nain_60_plus_chasseur from './img/nains/portraits/60_plus_chasseur.jpg'
-import portrait_nain_40_150_eclaireuse from './img/nains/portraits/40_150_eclaireuse.jpg'
-import portrait_nain_40_150_eclaireur from './img/nains/portraits/40_150_eclaireur.jpg'
-import portrait_nain_50_150_f from './img/nains/portraits/50_150_f.jpg'
-import portrait_nain_25_90_f_colporteur from './img/nains/portraits/25_90_f_colporteur.jpg'
-import portrait_nain_40_180_mineur from './img/nains/portraits/40_180_mineur.jpg'
-import portrait_nain_80_200 from './img/nains/portraits/80_200.jpg'
-import portrait_nain_120_plus_bourgeois from './img/nains/portraits/120_plus_bourgeois.jpg'
-import portrait_nain_40_150_recelleur from './img/nains/portraits/40_150_recelleur.jpg'
-import portrait_nain_40_150_chasseuse from './img/nains/portraits/40_150_chasseuse.jpg'
-import portrait_nain_50_150 from './img/nains/portraits/50_150.jpg'
-import portrait_nain_110_plus_eclaireuse from './img/nains/portraits/110_plus_eclaireuse.jpg'
-import portrait_nain_200_plus_f from './img/nains/portraits/200_plus_f.jpg'
-import portrait_nain_200_plus from './img/nains/portraits/200_plus.jpg'
-import portrait_nain_35_100_f_ruraux from './img/nains/portraits/35_100_f_ruraux.jpg'
-import portrait_nain_300_plus_f from './img/nains/portraits/300_plus_f.jpg'
-import portrait_nain_40_190_saltimbanque from './img/nains/portraits/40_190_saltimbanque.jpg'
-import portrait_nain_120_plus_mineur from './img/nains/portraits/120_plus_mineur.jpg'
-import portrait_nain_40_180_saltimbanque from './img/nains/portraits/40_180_saltimbanque.jpg'
-import portrait_nain_50_160 from './img/nains/portraits/50_160.jpg'
-import portrait_nain_70_plus_tueur from './img/nains/portraits/70_plus_tueur.jpg'
-import portrait_nain_40_130_gladiateur from './img/nains/portraits/40_130_gladiateur.jpg'
-import portrait_nain_100_250 from './img/nains/portraits/100_250.jpg'
-import portrait_nain_20_45_ingenieure from './img/nains/portraits/20_45_ingenieure.jpg'
-import portrait_nain_40_110_chasseur from './img/nains/portraits/40_110_chasseur.jpg'
-import portrait_nain_80_duelliste from './img/nains/portraits/80_duelliste.jpg'
-import portrait_nain_80_plus_tueur from './img/nains/portraits/80_plus_tueur.jpg'
-import portrait_nain_15_60_f from './img/nains/portraits/15_60_f.jpg'
-import portrait_nain_15_60_artisane from './img/nains/portraits/15_60_artisane.jpg'
-import portrait_nain_320_plus_f from './img/nains/portraits/320_plus_f.jpg'
-import portrait_nain_50_160_rural from './img/nains/portraits/50_160_rural.jpg'
-import portrait_nain_200_plus_soldat from './img/nains/portraits/200_plus_soldat.jpg'
-import portrait_nain_200_plus_rurale from './img/nains/portraits/200_plus_rurale.jpg'
-import portrait_nain_200_plus_noble from './img/nains/portraits/200_plus_noble.jpg'
-import portrait_nain_150_plus_receleur from './img/nains/portraits/150_plus_receleur.jpg'
-import portrait_nain_20_50_soldate from './img/nains/portraits/20_50_soldate.jpg'
-import portrait_nain_300_plus_f_2 from './img/nains/portraits/300_plus_f_2.jpg'
-import portrait_nain_40_150_tueur from './img/nains/portraits/40_150_tueur.jpg'
-import portrait_nain_40_200_citadin from './img/nains/portraits/40_200_citadin.jpg'
-import portrait_nain_25_90_artisane from './img/nains/portraits/25_90_artisane.jpg'
-import portrait_nain_35_130_nautonniere from './img/nains/portraits/35_130_nautonniere.jpg'
-import portrait_nain_45_190_ingenieur from './img/nains/portraits/45_190_ingenieur.jpg'
-import portrait_nain_25_95_eclaireur from './img/nains/portraits/25_95_eclaireur.jpg'
-import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg'
-import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
-import portrait_nain_80_200_guerrier from './img/nains/portraits/80_200_guerrier.jpg'
-
-import portrait_halfelin_30_85 from './img/halfelins/portraits/30_85.jpg'
-import portrait_halfelin_45_100 from './img/halfelins/portraits/45_100.jpg'
-import portrait_halfelin_artisan_45_120 from './img/halfelins/portraits/artisan_45_120.jpg'
-import portrait_halfelin_saltimbanque_20_90 from './img/halfelins/portraits/saltimbanque_20_90.jpg'
-import portrait_halfelin_chasseurDePrimes_40_90 from './img/halfelins/portraits/chasseurDePrimes_40_90.jpg'
-import portrait_halfelin_courtisan_40_100 from './img/halfelins/portraits/courtisan_40_100.jpg'
-import portrait_halfelin_courtisan_40_100_b from './img/halfelins/portraits/courtisan_40_100_b.jpg'
-import portrait_halfelin_saltimbanque_f_40_100 from './img/halfelins/portraits/saltimbanque_f_40_100.jpg'
-import portrait_halfelin_guerrier_40_120 from './img/halfelins/portraits/guerrier_40_120.jpg'
-import portrait_halfelin_serviteur_40_160 from './img/halfelins/portraits/serviteur_40_160.jpg'
-import portrait_halfelin_cocher_40_90 from './img/halfelins/portraits/cocher_40_90.jpg'
-import portrait_halfelin_saltimbanque_f_80_200 from './img/halfelins/portraits/saltimbanque_f_80_200.jpg'
-import portrait_halfelin_citadins_70_130 from './img/halfelins/portraits/citadins_70_130.jpg'
-import portrait_halfelin_voleur_70_140 from './img/halfelins/portraits/voleur_70_140.jpg'
-import portrait_halfelin_eclaireur_70_120 from './img/halfelins/portraits/eclaireur_70_120.jpg'
-import portrait_halfelin_cuisinier_70_130 from './img/halfelins/portraits/cuisinier_70_130.jpg'
-import portrait_halfelin_courtisan_90_180 from './img/halfelins/portraits/courtisan_90_180.jpg'
-import portrait_halfelin_colporteuse_70_150 from './img/halfelins/portraits/colporteuse_70_150.jpg'
-import portrait_halfelin_messager_60_110 from './img/halfelins/portraits/messager_60_110.jpg'
-import portrait_halfelin_citadine_35_100 from './img/halfelins/portraits/citadine_35_100.jpg'
-import portrait_halfelin_rural_40_120 from './img/halfelins/portraits/rural_40_120.jpg'
-import portrait_halfelin_gladiateur_40_110 from './img/halfelins/portraits/gladiateur_40_110.jpg'
-import portrait_halfelin_juriste_40_110 from './img/halfelins/portraits/juriste_40_110.jpg'
-import portrait_halfelin_eclaireur_90_160 from './img/halfelins/portraits/eclaireur_90_160.jpg'
+import portrait_empire55_plus_ingenieur from './img/empire/portraits/55_plus_ingenieur.jpg'
+import portrait_empire20_60_magicienne_feu from './img/empire/portraits/20_60_magicienne_feu.jpg'
+import portrait_empire20_45_roublard_b from './img/empire/portraits/20_45_roublard_b.jpg'
+import portrait_empire15_plus_medecin from './img/empire/portraits/15_plus_medecin.jpg'
+import portrait_empire40_plus_repurgateur from './img/empire/portraits/40_plus_repurgateur.jpg'
+import portrait_empire40_plus_magicien_cieux from './img/empire/portraits/40_plus_magicien_cieux.jpg'
+import portrait_empire40_plus_marchand_emissaire from './img/empire/portraits/40_plus_marchand_emissaire.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_plus_marchand_emissaire,
+    ageMin: 40,
+    carrieres: [nomMarchand, nomEmissaire],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire40_plus_magicien_cieux,
+    ageMin: 40,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_plus_repurgateur,
+    ageMin: 40,
+    carrieres: [nomRepurgateur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_plus_medecin,
+    ageMin: 15,
+    carrieres: [nomMedecin],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_roublard_b,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [],
+    classes: [nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire20_60_magicienne_feu,
+    ageMin: 20,
+    ageMax: 60,
+    carrieres: [nomSorcier],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire55_plus_ingenieur,
+    ageMin: 55,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire25_45_repurgateur,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [nomRepurgateur, nomChasseurDePrimes],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_serviteuse_80_120,
+    ageMin: 80,
+    ageMax: 120,
+    carrieres: [nomServiteur, nomVillageois],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_55_120,
+    ageMin: 55,
+    ageMax: 120,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_guerriere_30_85,
+    ageMin: 30,
+    ageMax: 85,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: false,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_colporteur_65_140,
+    ageMin: 65,
+    ageMax: 140,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_colporteur_65_110,
+    ageMin: 65,
+    ageMax: 110,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_ruraux_90_200,
+    ageMin: 90,
+    ageMax: 200,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_citadin_40_120,
+    ageMin: 40,
+    ageMax: 120,
+    carrieres: [],
+    classes: [nomCitadins],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_roublard_75_100,
+    ageMin: 70,
+    ageMax: 100,
+    carrieres: [],
+    classes: [nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotHalfelins],
+    image: portrait_halfelin_ruraux_20_90,
+    ageMin: 20,
+    ageMax: 90,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
   {
     coteries: [nomCotHalfelins],
     image: portrait_halfelin_juriste_40_110,
@@ -1088,15 +1252,6 @@ export const lstPortraits = [
     ageMin: 40,
     ageMax: 100,
     carrieres: [],
-    classes: [],
-    male: true,
-  },
-  {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
-    image: portrait_empire25_45_repurgateur,
-    ageMin: 25,
-    ageMax: 45,
-    carrieres: [nomRepurgateur, nomChasseurDePrimes],
     classes: [],
     male: true,
   },
