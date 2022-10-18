@@ -439,15 +439,81 @@ import portrait_empire25_60_magicien from './img/empire/portraits/25_60_magicien
 import portrait_empire25_60_magicien_bete from './img/empire/portraits/25_60_magicien_bete.jpg'
 import portrait_empire25_60_magicien_mort from './img/empire/portraits/25_60_magicien_mort.jpg'
 import portrait_empire35_plus_magicien_metal from './img/empire/portraits/25_60_magicien_metal.jpg'
+import portrait_empire50_plus_lettre from './img/empire/portraits/50_plus_lettre.jpg'
+import portrait_empire50_plus_chevalier from './img/empire/portraits/50_plus_chevalier.jpg'
+import portrait_empire50_plus_sorcier_dissident from './img/empire/portraits/50_plus_sorcier_dissident.jpg'
+import portrait_empire40_plus_pretre_guerrier from './img/empire/portraits/40_plus_pretre_guerrier.jpg'
+import portrait_empire20_45_riveraine from './img/empire/portraits/20_45_riveraine.jpg'
+import portrait_empire30_55_chasseur_primes from './img/empire/portraits/30_55_chasseur_primes.jpg'
+import portrait_empire18_40_marchande from './img/empire/portraits/18_40_marchande.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire18_40_marchande,
+    ageMin: 18,
+    ageMax: 40,
+    carrieres: [nomMarchand],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_55_chasseur_primes,
+    ageMin: 30,
+    ageMax: 55,
+    carrieres: [nomChasseurDePrimes],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_45_riveraine,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [],
+    classes: [nomRiverains],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_plus_pretre_guerrier,
+    ageMin: 40,
+    carrieres: [nomPretreGuerrier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_sorcier_dissident,
+    ageMin: 50,
+    carrieres: [nomSorcierDissident],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_chevalier,
+    ageMin: 50,
+    carrieres: [nomChevalier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_lettre,
+    ageMin: 50,
+    carrieres: [nomLettres, nomIngenieur],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotEmpire],
     image: portrait_empire35_plus_magicien_metal,
     ageMin: 35,
     carrieres: [nomSorcier],
     classes: [],
-    male: false,
+    male: true,
   },
   {
     coteries: [nomCotEmpire],
