@@ -446,8 +446,67 @@ import portrait_empire40_plus_pretre_guerrier from './img/empire/portraits/40_pl
 import portrait_empire20_45_riveraine from './img/empire/portraits/20_45_riveraine.jpg'
 import portrait_empire30_55_chasseur_primes from './img/empire/portraits/30_55_chasseur_primes.jpg'
 import portrait_empire18_40_marchande from './img/empire/portraits/18_40_marchande.jpg'
+import portrait_empire30_55_guerrier from './img/empire/portraits/30_55_guerrier.jpg'
+import portrait_empire30_65_roublard from './img/empire/portraits/30_65_roublard.jpg'
+import portrait_empire30_45_bailli from './img/empire/portraits/30_45_bailli.jpg'
+import portrait_empire30_45_itinerant from './img/empire/portraits/30_45_itinerant.jpg'
+import portrait_empire30_45_horslaloi from './img/empire/portraits/30_45_horslaloi.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_45_horslaloi,
+    ageMin: 30,
+    ageMax: 45,
+    carrieres: [
+      nomHorsLaLoi,
+      nomPilleurDeTombes,
+      nomRanconneur,
+      nomContrebandier,
+      nomFemmeDuFleuve,
+      nomNautonnier,
+      nomCocher,
+      nomAgitateur,
+    ],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_45_itinerant,
+    ageMin: 30,
+    ageMax: 45,
+    carrieres: [],
+    classes: [nomItinerants],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_45_bailli,
+    ageMin: 30,
+    ageMax: 45,
+    carrieres: [nomBailli],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_65_roublard,
+    ageMin: 30,
+    ageMax: 65,
+    carrieres: [],
+    classes: [nomRoublards],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire30_55_guerrier,
+    ageMin: 30,
+    ageMax: 55,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire18_40_marchande,
