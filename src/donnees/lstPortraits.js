@@ -707,7 +707,7 @@ export const lstPortraits = [
     ageMax: 35,
     carrieres: [nomChasseur],
     classes: [],
-    male: true,
+    male: false,
   },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
