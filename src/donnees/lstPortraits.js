@@ -476,8 +476,72 @@ import portrait_bretonnien_15_30_noble from './img/bretonniens/portraits/15_30_n
 import portrait_bretonnien_15_35_guerrier from './img/bretonniens/portraits/15_35_guerrier.jpg'
 import portrait_bretonnien_45_75_bailli from './img/bretonniens/portraits/45_75_bailli.jpg'
 import portrait_bretonnien_25_45_guerrier from './img/bretonniens/portraits/25_45_guerrier.jpg'
+import portrait_bretonnien_15_35_guerriere from './img/bretonniens/portraits/15_35_guerriere.jpg'
+import portrait_bretonnien_15_25_serviteuse_messagere from './img/bretonniens/portraits/15_25_serviteuse_messagere.jpg'
+import portrait_bretonnien_50_75_rural from './img/bretonniens/portraits/50_75_rural.jpg'
+import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_plus_rural.jpg'
+import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
+import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_35_60_agitateur,
+    ageMin: 35,
+    ageMax: 60,
+    carrieres: [
+      nomAgitateur,
+      nomMilicien,
+      nomDebardeur,
+      nomPatrouilleurFluvial,
+    ],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_40_60_saltimbanque,
+    ageMin: 40,
+    ageMax: 60,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_65_plus_rural,
+    ageMin: 65,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_50_75_rural,
+    ageMin: 50,
+    ageMax: 75,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_15_25_serviteuse_messagere,
+    ageMin: 15,
+    ageMax: 25,
+    carrieres: [nomServiteur, nomMessager],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_15_35_guerriere,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: false,
+  },
   {
     coteries: [nomCotBretonniens],
     image: portrait_bretonnien_45_75_bailli,
