@@ -203,16 +203,6 @@ import portrait_zaporogue_femme20_40_paysane from './img/kislevites/portraits/F2
 import portrait_zaporogue_femme30_60 from './img/kislevites/portraits/F30-60.jpg'
 import portrait_zaporogue_femme50_plus from './img/kislevites/portraits/F50+.jpg'
 
-import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
-import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
-import portrait_templier_femme20_40 from './img/bretonniens/portraits/femme20_40.jpg'
-import portrait_templier_femme70_plus from './img/bretonniens/portraits/femme70+.jpg'
-import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
-import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
-import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
-import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
-import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
-
 import portrait_nain_40_100 from './img/nains/portraits/40_100.jpg'
 import portrait_nain_40_plus from './img/nains/portraits/40_plus.jpg'
 import portrait_nain_60_plus_tueur from './img/nains/portraits/60_plus_tueur.jpg'
@@ -470,7 +460,95 @@ import portrait_empire40_60_espion_messager from './img/empire/portraits/40_60_e
 import portrait_empire30_60_magicien_ombre from './img/empire/portraits/30_60_magicien_ombre.jpg'
 import portrait_empire35_65_marin from './img/empire/portraits/35_65_marin.jpg'
 
+import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
+import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
+import portrait_templier_femme20_40 from './img/bretonniens/portraits/femme20_40.jpg'
+import portrait_templier_femme70_plus from './img/bretonniens/portraits/femme70+.jpg'
+import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
+import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
+import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
+import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
+import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
+import portrait_35_60_chevalier from './img/bretonniens/portraits/35_60_chevalier.jpg'
+import portrait_bretonniens_50_plus_intendant from './img/bretonniens/portraits/50_plus_intendant.jpg'
+import portrait_bretonniens_25_45_saltimbanque from './img/bretonniens/portraits/25_45_saltimbanque.jpg'
+import portrait_bretonnien_15_30_noble from './img/bretonniens/portraits/15_30_noble.jpg'
+import portrait_bretonnien_15_35_guerrier from './img/bretonniens/portraits/15_35_guerrier.jpg'
+import portrait_bretonnien_45_75_bailli from './img/bretonniens/portraits/45_75_bailli.jpg'
+import portrait_bretonnien_25_45_guerrier from './img/bretonniens/portraits/25_45_guerrier.jpg'
+
 export const lstPortraits = [
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_45_75_bailli,
+    ageMin: 45,
+    ageMax: 75,
+    carrieres: [nomBailli, nomMarchand],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_25_45_guerrier,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_15_35_guerrier,
+    ageMin: 15,
+    ageMax: 35,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_15_30_noble,
+    ageMin: 15,
+    ageMax: 30,
+    carrieres: [nomNoble],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonniens_25_45_saltimbanque,
+    ageMin: 25,
+    ageMax: 45,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonniens_50_plus_intendant,
+    ageMin: 50,
+    carrieres: [nomIntendant],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_35_60_chevalier,
+    ageMin: 35,
+    ageMax: 60,
+    carrieres: [nomChevalier],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_f18_35_chevalier,
+    ageMin: 18,
+    ageMax: 35,
+    carrieres: [nomChevalier],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotEmpire],
     image: portrait_empire35_65_marin,
@@ -2737,13 +2815,6 @@ export const lstPortraits = [
     image: portrait_templier_50_plus_b,
     ageMin: 50,
     male: true,
-  },
-  {
-    coteries: [nomCotBretonniens],
-    image: portrait_f18_35_chevalier,
-    ageMin: 18,
-    ageMax: 35,
-    male: false,
   },
   {
     coteries: [nomCotKislevites],
