@@ -16,6 +16,7 @@ import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 
 import { getCompObjPropertyName, lstComps } from '../../donnees/lstComps'
 import { resMaxDe, typesDes, lancerDe, getRandomInt } from '../rand'
+import { genCarriere } from '../../comp/choix/coteries/CarriereGen'
 
 export const PersoContexte = createContext()
 
@@ -157,6 +158,23 @@ export const PersoProvider = ({ children }) => {
     }
 
     changementsAuPerso['male'] = maleVal
+
+    // mettre à jour des caracs selon la coterie actuelle
+    // --------- age
+    var age = getRandomInt(60) + 15 // pour un humain classique
+    if (perso.coterie === nomCotNains) {
+      age = getRandomInt(600) + 15
+    }
+    if (perso.coterie === nomCotHalfelins) {
+      age = age * 2
+    }
+    // ----------- classe et carrère aleatoires
+    var classeCarriereObj = genCarriere(perso.coterie)
+    var classeStr = classeCarriereObj.classeStr
+    var carriereStr = classeCarriereObj.carriereStr
+    changementsAuPerso['age'] = age
+    changementsAuPerso['carriere'] = carriereStr
+    changementsAuPerso['classe'] = classeStr
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)

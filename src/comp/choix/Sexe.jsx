@@ -34,8 +34,6 @@ const ButtonGroup = styled.div`
 function Sexe() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [maleVal, majMale] = useState(perso.male)
-  const sexes = [true, false]
-  const [active, setActive] = useState(sexes[0])
 
   function gererSexe(male) {
     var changementsAuPerso = {
@@ -46,18 +44,19 @@ function Sexe() {
     majMale(male)
   }
 
+  useEffect(() => {
+    majMale(perso.male)
+  }, [perso.male])
+
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
       <ButtonGroup>
-        {sexes.map((male) => (
-          <ButtonToggle
-            key={male}
-            active={active === (male === maleVal)}
-            onClick={() => gererSexe(male)}
-          >
-            {male ? 'Homme' : 'Femme'}
-          </ButtonToggle>
-        ))}
+        <ButtonToggle active={maleVal} onClick={() => gererSexe(true)}>
+          Homme
+        </ButtonToggle>
+        <ButtonToggle active={!maleVal} onClick={() => gererSexe(false)}>
+          Femme
+        </ButtonToggle>
       </ButtonGroup>
     </div>
   )
