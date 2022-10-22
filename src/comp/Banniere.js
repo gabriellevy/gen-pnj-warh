@@ -102,7 +102,7 @@ function Banniere() {
                 <td>
                   <div className="descriptionPerso">
                     <h3>{perso.nom}</h3>
-                    {perso.coterie}
+                    {perso.coterie} ({perso.region})
                     <br />
                     {perso.evolution} ({perso.carriere})
                     <br />
