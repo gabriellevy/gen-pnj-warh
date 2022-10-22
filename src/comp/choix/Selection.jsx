@@ -57,15 +57,6 @@ function Selection() {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }
-  function gererSexe(e) {
-    const male = e.target.value === 'male'
-
-    var changementsAuPerso = {
-      male: male,
-    }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }
 
   return (
     <div>
@@ -130,28 +121,6 @@ function Selection() {
             />
           </div>
 
-          <div className="texteStandard">
-            <label>
-              <input
-                type="radio"
-                checked={perso.male}
-                onChange={gererSexe}
-                value="male"
-                name="gender"
-              />
-              Homme
-            </label>
-            <label>
-              <input
-                type="radio"
-                checked={!perso.male}
-                onChange={gererSexe}
-                value="femelle"
-                name="gender"
-              />
-              Femme
-            </label>
-          </div>
           <div className="texteStandard">
             <ChoixClasse />
           </div>
