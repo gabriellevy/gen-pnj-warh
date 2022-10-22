@@ -4,19 +4,12 @@ import { lstCoteries } from '../../donnees/lstCoteries'
 import '../../styles/Coteries.css'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
-import { calculerPoids, PersoContexte } from '../../utils/contexte/perso'
-import { modificateurCarac } from '../../donnees/lstCaracs'
-import {
-  getCompObjPropertyName,
-  nomCorpsACorps,
-  nomTir,
-} from '../../donnees/lstComps'
+import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
 
 function Selection() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [age, majAge] = useState(perso.age)
-  const [poids, majPoids] = useState(calculerPoids(perso))
 
   // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
   useEffect(() => {
@@ -35,24 +28,11 @@ function Selection() {
     }
   }, [perso, setPerso])
 
-  useEffect(() => {
-    if (perso.poids !== poids) majPoids(perso.poids)
-  }, [perso.poids, poids, majPoids])
-
   function gererAge(e) {
     majAge(e.target.value)
 
     var changementsAuPerso = {
       age: e.target.value,
-    }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }
-  function gererPoids(e) {
-    majPoids(e.target.value)
-
-    var changementsAuPerso = {
-      poids: e.target.value,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
@@ -105,19 +85,6 @@ function Selection() {
               placeholder="Âge du perso"
               onChange={gererAge}
               value={age}
-            />
-          </div>
-
-          <div className="texteStandard">
-            Poids :
-            <input
-              type="text"
-              id="poids"
-              maxLength={3}
-              pattern="[+-]?\d+(?:[.,]\d+)?"
-              placeholder="Poids du perso"
-              onChange={gererPoids}
-              value={poids}
             />
           </div>
 

@@ -2814,7 +2814,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire],
     image: portrait_empire30_60_courtisans,
     ageMin: 30,
     ageMax: 60,
