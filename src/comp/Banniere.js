@@ -104,7 +104,7 @@ function Banniere() {
                     <h3>{perso.nom}</h3>
                     {perso.coterie}
                     <br />
-                    {perso.carriere} ({perso.classe})
+                    {perso.evolution} ({perso.carriere})
                     <br />
                     {perso.age} ans
                     <br />

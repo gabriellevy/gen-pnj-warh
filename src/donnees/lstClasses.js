@@ -1,3 +1,5 @@
+import { bronze, argent, or } from './lstNiveauDeVie'
+
 // classes
 export const nomCitadins = 'Citadins'
 export const nomCourtisans = 'Courtisans'
@@ -92,6 +94,10 @@ export function getClasseObj(idClasse) {
   return coterieObj
 }
 
+export const nomPamphletaire = 'Pamphlétaire'
+export const nomFauteurTrouble = 'Fauteur de trouble'
+export const nomDemagogue = 'Démagogue'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -100,6 +106,36 @@ export const lstClasses = [
       {
         titre: nomAgitateur,
         description: 'Agitateur',
+        evolutions: [
+          {
+            titre: nomPamphletaire,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomAgitateur,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomFauteurTrouble,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomDemagogue,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomArtisan,
