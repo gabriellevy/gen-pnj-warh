@@ -37,37 +37,7 @@ import {
   nomSociabilite,
 } from './lstCaracs'
 
-import {
-  nomAcrobatie,
-  nomActeur,
-  nomAlchimie,
-  nomAnimaux,
-  nomArcanes,
-  nomArt,
-  nomArtisanat,
-  nomCommandement,
-  nomConvaincre,
-  nomCorpsACorps,
-  nomDetrousser,
-  nomDiscretion,
-  nomEffort,
-  nomFabricationTechnique,
-  nomInformatique,
-  nomIntimider,
-  nomInvestigation,
-  nomLoi,
-  nomMedecine,
-  nomMiracles,
-  nomMusique,
-  nomNegoce,
-  nomPilotage,
-  nomReparer,
-  nomResistance,
-  nomScience,
-  nomSIntroduire,
-  nomSurvie,
-  nomTir,
-} from './lstComps'
+import { nomArt } from './lstComps'
 
 import { getRandomInt } from '../utils/rand'
 
@@ -106,30 +76,6 @@ export function getEvtAleatoireCoterie(idCoterie, nb) {
 export const lstCoteries = [
   {
     titre: nomCotBretonniens,
-    objets: ['Épée rituelle'],
-    modifs_caracs: [{ carac: nomCorpsACorps, val: 2 }],
-    evts: [
-      {
-        description: 'Pénitence par le travail gratuit',
-        bonusCompetence: nomEffort,
-      },
-      {
-        description: 'Pauvre mais construit ses propres objets',
-        bonusCompetence: nomArtisanat,
-      },
-      {
-        description: 'Paladin',
-        bonusCompetence: nomMiracles,
-      },
-      {
-        description: 'Banquiers',
-        bonusCompetence: nomNegoce,
-      },
-      {
-        description: 'Volonté surnaturelle',
-        bonusCompetence: nomResistance,
-      },
-    ],
     affiche: true,
     portrait: portrait_bretonnien,
     fonds: [bg_bretonnien_a, bg_bretonnien_b, bg_bretonnien_c, bg_bretonnien_d],
@@ -139,25 +85,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotEmpire,
-    modifs_caracs: [],
-    evts: [
-      {
-        description: 'Formé à la dure quand il était étudiant',
-        bonusCompetence: nomEffort,
-      },
-      {
-        description: 'Fabricants de meubles en sapin',
-        bonusCompetence: nomArtisanat,
-      },
-      {
-        description: 'Bourgeois responsable',
-        bonusCompetence: nomLoi,
-      },
-      {
-        description: 'Service militaire',
-        bonusCompetence: nomTir,
-      },
-    ],
     affiche: true,
     niveau_richesse: 2,
     portrait: portrait_empire,
@@ -171,28 +98,6 @@ export const lstCoteries = [
     affiche: true,
     portrait: portrait_nains,
     fonds: [bg_nains_a, bg_nains_b, bg_nains_c, bg_nains_d],
-    evts: [
-      {
-        description: 'Humilité et autosuffisance',
-        bonusCompetence: nomArtisanat,
-      },
-      {
-        description: 'Aura de saint',
-        bonusCompetence: nomIntimider,
-      },
-      {
-        description: 'Saint',
-        bonusCompetence: nomMiracles,
-      },
-      {
-        description: "Choeur de l'église",
-        bonusCompetence: nomMusique,
-      },
-      {
-        description: 'Insensibilité mystique',
-        bonusCompetence: nomResistance,
-      },
-    ],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Nains',
     description:
       'À l’est de l’Empire s’élèvent les Montagnes du Bord du Monde. C’est là, entre les territoires de hommes et les régions désolées des Terres Sombres que se dresse l’une de plus ancienne race du monde : les Nains. Leurs domaines étaient jadis plus vastes, mais malheur à celui qui évoquera leur déclin en présence d’un Nain : Karaz Ankor est aussi résolu et vaillant que du temps de sa splendeur ! En cet âge de ténèbres, les Nains sont l’expression même de l’honneur, de la force et du courage dans un monde menacé par le Chaos.',
@@ -201,36 +106,6 @@ export const lstCoteries = [
     titre: nomCotHalfelins,
     affiche: true,
     portrait: portrait_halfelins,
-    evts: [
-      {
-        description: 'Expert en potions',
-        bonusCompetence: nomAlchimie,
-      },
-      {
-        description: "Si vieux qu'il sait tout",
-        bonusCompetence: nomConvaincre,
-      },
-      {
-        description: "Expériences sur le téléchargement de l'âme",
-        bonusCompetence: nomInformatique,
-      },
-      {
-        description: 'Déformations nécromantiques',
-        bonusCompetence: nomIntimider,
-      },
-      {
-        description: 'Étude du corps humain',
-        bonusCompetence: nomMedecine,
-      },
-      {
-        description: 'Adorateur de la mort',
-        bonusCompetence: nomMiracles,
-      },
-      {
-        description: 'Corps à moitié mort',
-        bonusCompetence: nomResistance,
-      },
-    ],
     fonds: [bg_empire_a],
     page: 'https://bibliotheque-imperiale.com/index.php/Halfling',
     description:
@@ -241,37 +116,6 @@ export const lstCoteries = [
     modifs_caracs: [
       { carac: nomEndurance, val: -1 },
       { carac: nomCC, val: 1 },
-    ],
-    modifs_comps: [{ comp: nomAlchimie, val: 1 }],
-    evts: [
-      {
-        description: 'Artiste de cirque elfique',
-        bonusCompetence: nomAcrobatie,
-      },
-      {
-        description: 'Coquet comédien',
-        bonusCompetence: nomActeur,
-      },
-      {
-        description: 'Lanceur de sort',
-        bonusCompetence: nomArcanes,
-      },
-      {
-        description: 'Artiste',
-        bonusCompetence: nomArt,
-      },
-      {
-        description: 'A travaillé dans une échoppe à restaurer des objets',
-        bonusCompetence: nomArtisanat,
-      },
-      {
-        description: 'Entretien du corps primordial',
-        bonusCompetence: nomMedecine,
-      },
-      {
-        description: 'Musicien de harpe ou de flûte',
-        bonusCompetence: nomMusique,
-      },
     ],
     affiche: true,
     portrait: portrait_haut_elfe,
@@ -286,37 +130,6 @@ export const lstCoteries = [
       { carac: nomEndurance, val: -1 },
       { carac: nomCC, val: 1 },
     ],
-    modifs_comps: [{ comp: nomAlchimie, val: 1 }],
-    evts: [
-      {
-        description: 'Artiste de cirque elfique',
-        bonusCompetence: nomAcrobatie,
-      },
-      {
-        description: 'Coquet comédien',
-        bonusCompetence: nomActeur,
-      },
-      {
-        description: 'Lanceur de sort',
-        bonusCompetence: nomArcanes,
-      },
-      {
-        description: 'Artiste',
-        bonusCompetence: nomArt,
-      },
-      {
-        description: 'A travaillé dans une échoppe à restaurer des objets',
-        bonusCompetence: nomArtisanat,
-      },
-      {
-        description: 'Entretien du corps primordial',
-        bonusCompetence: nomMedecine,
-      },
-      {
-        description: 'Musicien de harpe ou de flûte',
-        bonusCompetence: nomMusique,
-      },
-    ],
     affiche: true,
     portrait: portrait_elfe_sylvain,
     fonds: [bg_elfe_sylvain, bg_elfe_sylvain_b],
@@ -327,40 +140,6 @@ export const lstCoteries = [
   {
     titre: nomCotKislevites,
     affiche: true,
-    evts: [
-      {
-        description: 'pasteur / éleveur',
-        bonusCompetence: nomAnimaux,
-      },
-      {
-        description: 'Fils de chef de clan',
-        bonusCompetence: nomCommandement,
-      },
-      {
-        description: 'Bagarreur ivrogne',
-        bonusCompetence: nomCorpsACorps,
-      },
-      {
-        description: 'Prêtre multireligion',
-        bonusCompetence: nomMiracles,
-      },
-      {
-        description: 'Réutilisateur de matos de seconde main',
-        bonusCompetence: nomReparer,
-      },
-      {
-        description: 'Vie à la dure à la belle étoile',
-        bonusCompetence: nomResistance,
-      },
-      {
-        description: "Chasseur à l'arc",
-        bonusCompetence: nomTir,
-      },
-      {
-        description: 'Sait tout préparer avec peu',
-        bonusCompetence: nomSurvie,
-      },
-    ],
     portrait: portrait_zaporogue,
     fonds: [bg_zaporogue, bg_zaporogue_b],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Le_Tsarat_de_Kislev',

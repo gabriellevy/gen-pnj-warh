@@ -14,17 +14,13 @@ import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonni
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 
-import {
-  getCompObjPropertyName,
-  lstComps,
-  nomResistance,
-} from '../../donnees/lstComps'
+import { getCompObjPropertyName, lstComps } from '../../donnees/lstComps'
 import { resMaxDe, typesDes, lancerDe } from '../rand'
 
 export const PersoContexte = createContext()
 
 export function calculerPoids(perso) {
-  var poidsVal = 39
+  var poidsVal = 35
 
   if (perso.male) poidsVal = poidsVal + 10
   if (perso.age > 25) poidsVal = poidsVal + 5
@@ -32,7 +28,7 @@ export function calculerPoids(perso) {
   if (perso.endurance > 30) poidsVal = poidsVal + 6
   if (perso.dexterite > 30) poidsVal = poidsVal - 4
 
-  poidsVal = poidsVal + perso[getCompObjPropertyName(nomResistance)] * 3
+  poidsVal = poidsVal + perso.endurance
 
   return poidsVal
 }
