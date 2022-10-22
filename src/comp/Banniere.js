@@ -47,11 +47,11 @@ function Banniere() {
     <div className="banniere">
       {persoSelectionne ? (
         <div>
-          <table>
+          <table className="tableSansBord">
             <tbody>
               <tr>
                 <td>
-                  <Portrait className="descriptionPerso" perso={perso} />
+                  <Portrait perso={perso} />
                 </td>
                 <td>
                   <table className="descriptionPerso">
@@ -116,10 +116,6 @@ function Banniere() {
                     <br />
                     {perso.male ? 'Homme' : 'Femme'}
                     {afficheObjets(perso)}
-                  </div>
-                </td>
-                <td>
-                  <div className="descriptionPerso">
                     <br />
                     Points de blessure : {perso.pointsDeBlessure}
                   </div>

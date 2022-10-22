@@ -1,14 +1,36 @@
 .banniere {
   display: flex;
   align-items: left;
-  border-bottom: solid 5px black;
+}
+
+.portrait_img {
+  border: solid 5px black;
+  border-radius: 5px;
+  width: 165px;
+  height: 195px;
+  display: flex;
+  align-items: left;
 }
 
 .descriptionPerso {
   display: flex;
   align-items: left;
   display: inline-block;
-  background-color: white;
-  color: black;
-  opacity: 0.65;
+  background-color: black;
+  color: white;
+  padding: 4px 4px;
+  border-radius: 4px;
+  margin: 0px 0px;
+  font-size: 13px;
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.tableSansBord {
+  margin: 0px 0px;
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  padding: 0px 0px;
 }

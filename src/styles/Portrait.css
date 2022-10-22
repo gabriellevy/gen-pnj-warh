@@ -1,31 +1,18 @@
-.portrait_img {
-    border-radius: 5px;
-    width: 150px;
-    height: 180px;
-    display: flex;
-    align-items: left;
-  }
+.aligneDroite {
+  float: right;
+}
 
-  .zonePortrait {
-    width: 150px;
-    height: 180px;
-  }
+.bouton {
+  color: rgb(1, 18, 32);
+  background-color: rgb(225, 235, 243);
+  text-align: center;
+  width: 150px;
+  font-size: 14px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-  .aligneDroite {
-    float: right;
-  }
-
-  .bouton {
-    color: rgb(1, 18, 32);
-    background-color: rgb(225, 235, 243);
-    text-align: center;
-    width: 150px;
-    font-size: 14px;
-    border-radius: 10px;
-    transition-duration: 0.4s;
-    cursor:pointer;
-    }
-    
-    .bouton:hover {
-    background-color: #a7bbbe;
-    }
+.bouton:hover {
+  background-color: #a7bbbe;
+}

@@ -6,6 +6,16 @@ import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
+import styled from 'styled-components'
+
+const SpanNoir = styled.span`
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 4px 30px;
+  border-radius: 4px;
+  margin: 5px 0px;
+`
 
 function Selection() {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -73,9 +83,9 @@ function Selection() {
         )}
       </ul>
 
-      <div style={{ padding: '0px 15px 0px 15px' }}>
-        <form>
-          <div className="texteStandard">
+      <form>
+        <div style={{ padding: '5px 15px 5px 15px' }}>
+          <SpanNoir>
             Âge :
             <input
               type="text"
@@ -86,13 +96,12 @@ function Selection() {
               onChange={gererAge}
               value={age}
             />
-          </div>
-
-          <div className="texteStandard">
-            <ChoixClasse />
-          </div>
-        </form>
-      </div>
+          </SpanNoir>
+        </div>
+        <div style={{ padding: '15px 15px 15px 15px' }}>
+          <ChoixClasse />
+        </div>
+      </form>
     </div>
   )
 }

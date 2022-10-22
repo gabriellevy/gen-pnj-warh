@@ -8,12 +8,6 @@
   margin: 0px;
 }
 
-.texteStandard {
-  background-color: white;
-  color: black;
-  opacity: 0.65;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

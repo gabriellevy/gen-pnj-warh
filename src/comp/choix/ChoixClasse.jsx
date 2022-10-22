@@ -3,6 +3,16 @@ import { lstClasses, getClasseObj } from '../../donnees/lstClasses'
 import { useContext, useEffect } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
+import styled from 'styled-components'
+
+const SpanNoir = styled.span`
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 8px 30px;
+  border-radius: 6px;
+  margin: 5px 0px;
+`
 
 const ChoixClasse = () => {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -105,58 +115,60 @@ const ChoixClasse = () => {
 
   return (
     <div>
-      <label>
-        Classe :
-        <select value={classe} onChange={changeClasse}>
-          {lstClasses.map((classeObj) => (
-            <option key={classeObj.titre} value={classeObj.titre}>
-              {classeObj.titre}
-            </option>
-          ))}
-        </select>
-      </label>
-      -&gt;
-      {lstClasses.map((classeObj) =>
-        classeObj.titre === classe ? (
-          <label>
-            Carrière :
-            <select value={carriere} onChange={changeCarriere}>
-              {classeObj.carrieres.map((carriereObj) => (
-                <option key={carriereObj.titre} value={carriereObj.titre}>
-                  {carriereObj.titre}
-                </option>
-              ))}
-            </select>
-          </label>
-        ) : (
-          ''
-        )
-      )}
-      -&gt;
-      {lstClasses.map((classeObj) =>
-        classeObj.titre === classe
-          ? classeObj.carrieres.map((carriereObj) =>
-              carriereObj.titre === carriere &&
-              carriereObj.evolutions !== undefined ? (
-                <label>
-                  Évolution :
-                  <select value={evolution} onChange={changeEvolution}>
-                    {carriereObj.evolutions.map((evolutionObj) => (
-                      <option
-                        key={evolutionObj.titre}
-                        value={evolutionObj.titre}
-                      >
-                        {evolutionObj.titre}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              ) : (
-                ''
+      <SpanNoir>
+        <label>
+          Classe :
+          <select value={classe} onChange={changeClasse}>
+            {lstClasses.map((classeObj) => (
+              <option key={classeObj.titre} value={classeObj.titre}>
+                {classeObj.titre}
+              </option>
+            ))}
+          </select>
+        </label>
+        -&gt;
+        {lstClasses.map((classeObj) =>
+          classeObj.titre === classe ? (
+            <label>
+              Carrière :
+              <select value={carriere} onChange={changeCarriere}>
+                {classeObj.carrieres.map((carriereObj) => (
+                  <option key={carriereObj.titre} value={carriereObj.titre}>
+                    {carriereObj.titre}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : (
+            ''
+          )
+        )}
+        -&gt;
+        {lstClasses.map((classeObj) =>
+          classeObj.titre === classe
+            ? classeObj.carrieres.map((carriereObj) =>
+                carriereObj.titre === carriere &&
+                carriereObj.evolutions !== undefined ? (
+                  <label>
+                    Évolution :
+                    <select value={evolution} onChange={changeEvolution}>
+                      {carriereObj.evolutions.map((evolutionObj) => (
+                        <option
+                          key={evolutionObj.titre}
+                          value={evolutionObj.titre}
+                        >
+                          {evolutionObj.titre}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                ) : (
+                  ''
+                )
               )
-            )
-          : ''
-      )}
+            : ''
+        )}
+      </SpanNoir>
     </div>
   )
 }

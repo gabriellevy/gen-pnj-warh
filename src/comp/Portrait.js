@@ -69,7 +69,7 @@ function Portrait() {
     portrait = portraitsRestants[getRandomInt(portraitsRestants.length)].image
 
   return (
-    <div className="zonePortrait">
+    <div>
       {portraitsRestants.length > 0 ? (
         <img className="portrait_img" src={portrait} alt="portrait" />
       ) : (
