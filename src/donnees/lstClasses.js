@@ -98,6 +98,19 @@ export const nomPamphletaire = 'Pamphlétaire'
 export const nomFauteurTrouble = 'Fauteur de trouble'
 export const nomDemagogue = 'Démagogue'
 
+export function getCarriere(idCarr) {
+  for (let i = 0; i < lstClasses.length; i++) {
+    const classeObj = lstClasses[i]
+    for (let j = 0; j < classeObj.carrieres.length; j++) {
+      const carriereObj = classeObj.carrieres[j]
+      if (carriereObj.titre === idCarr) {
+        return carriereObj
+      }
+    }
+  }
+  return null
+}
+
 export const lstClasses = [
   {
     titre: nomCitadins,

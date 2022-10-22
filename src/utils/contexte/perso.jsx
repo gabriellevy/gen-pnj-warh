@@ -17,6 +17,7 @@ import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 import { getCompObjPropertyName, lstComps } from '../../donnees/lstComps'
 import { lancerDe, getRandomInt } from '../rand'
 import { genCarriere } from '../../comp/choix/coteries/CarriereGen'
+import { getCarriere } from '../../donnees/lstClasses'
 
 export const PersoContexte = createContext()
 
@@ -191,8 +192,9 @@ export const PersoProvider = ({ children }) => {
   }, [perso.male])
 
   useEffect(() => {
+    if (perso.carriere === undefined || perso.carriere === '') return
     // récupérer la carrière du joueur en tant qu'objet à partir de la str
-    var carriereObj = {}
+    var carriereObj = getCarriere(perso.carriere)
 
     // l'utiliser pour déterminer l'évolution de carrière
     var evolutionObj = {}
