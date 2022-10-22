@@ -1,13 +1,13 @@
-export const nomCotReikland = 'Reikland'
-export const nomCotMiddleland = 'Middleland'
+export const nomRegReikland = 'Reikland'
+export const nomRegMontagnesGrises = 'Montagnes grises'
 
 export const lstRegions = [
   {
-    titre: nomCotReikland,
+    titre: nomRegReikland,
     description: '',
   },
   {
-    titre: nomCotMiddleland,
+    titre: nomRegMontagnesGrises,
     description: '',
   },
 ]
