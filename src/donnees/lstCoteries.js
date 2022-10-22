@@ -69,23 +69,6 @@ import {
   nomTir,
 } from './lstComps'
 
-import {
-  voieIngenieur,
-  voieMagicien,
-  voieScientifique,
-  voieSoldat,
-  voieVoyageur,
-  voieIntellectuel,
-  voieHommeDuMonde,
-  voieAventurier,
-  voieMalandrin,
-  voieMarchand,
-  voieTravailleur,
-  voiePretre,
-  voieBrute,
-  voieSaltimbanque,
-  voieEspion,
-} from './lstVoies'
 import { getRandomInt } from '../utils/rand'
 
 export const nomCotEstalie = 'Estalien'
@@ -123,13 +106,6 @@ export function getEvtAleatoireCoterie(idCoterie, nb) {
 export const lstCoteries = [
   {
     titre: nomCotBretonniens,
-    voies: [
-      voieAventurier,
-      voieSoldat,
-      voieTravailleur,
-      voiePretre,
-      voieVoyageur,
-    ],
     objets: ['Épée rituelle'],
     modifs_caracs: [{ carac: nomCorpsACorps, val: 2 }],
     evts: [
@@ -163,13 +139,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotEmpire,
-    voies: [
-      voieTravailleur,
-      voieScientifique,
-      voieIngenieur,
-      voiePretre,
-      voieMarchand,
-    ],
     modifs_caracs: [],
     evts: [
       {
@@ -199,7 +168,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotNains,
-    voies: [voieTravailleur, voiePretre],
     affiche: true,
     portrait: portrait_nains,
     fonds: [bg_nains_a, bg_nains_b, bg_nains_c, bg_nains_d],
@@ -231,7 +199,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotHalfelins,
-    voies: [voieHommeDuMonde, voieIntellectuel, voieMagicien],
     affiche: true,
     portrait: portrait_halfelins,
     evts: [
@@ -271,7 +238,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotHautsElfes,
-    voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
       { carac: nomEndurance, val: -1 },
       { carac: nomCC, val: 1 },
@@ -316,7 +282,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotElfesSylvains,
-    voies: [voieSaltimbanque, voieMagicien, voieHommeDuMonde, voieIntellectuel],
     modifs_caracs: [
       { carac: nomEndurance, val: -1 },
       { carac: nomCC, val: 1 },
@@ -361,14 +326,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotKislevites,
-    voies: [
-      voieAventurier,
-      voieSaltimbanque,
-      voieBrute,
-      voieVoyageur,
-      voiePretre,
-      voieTravailleur,
-    ],
     affiche: true,
     evts: [
       {

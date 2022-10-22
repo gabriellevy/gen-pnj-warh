@@ -880,7 +880,7 @@ export const lstPortraits = [
     ageMin: 50,
     carrieres: [nomLettres, nomIngenieur],
     classes: [],
-    male: false,
+    male: true,
   },
   {
     coteries: [nomCotEmpire],
