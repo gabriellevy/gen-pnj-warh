@@ -73,7 +73,7 @@ export const PersoProvider = ({ children }) => {
   useEffect(() => {
     const maleVal = getRandomInt(2) === 0
     var changementsAuPerso = {}
-    changementsAuPerso['poids'] = calculerPoids(perso)
+
     // générer un nom selon la coterie choisie :
     changementsAuPerso['nom'] = 'youpi pas de noms pour cette coterie'
     changementsAuPerso['cc'] = 20 + lancerDe('D10') + lancerDe('D10')
@@ -179,6 +179,13 @@ export const PersoProvider = ({ children }) => {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.coterie])
+
+  useEffect(() => {
+    var changementsAuPerso = {}
+    changementsAuPerso['poids'] = calculerPoids(perso)
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+  }, [perso.male])
 
   return (
     <PersoContexte.Provider value={{ perso, setPerso }}>
