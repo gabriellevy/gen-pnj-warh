@@ -7,10 +7,10 @@ import styled from 'styled-components'
 const Button = styled.button`
   background-color: black;
   color: white;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
+  font-size: 14px;
+  padding: 4px 30px;
+  border-radius: 4px;
+  margin: 5px 0px;
   cursor: pointer;
   &:disabled {
     color: grey;
