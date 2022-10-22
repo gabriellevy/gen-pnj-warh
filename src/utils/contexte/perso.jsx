@@ -15,15 +15,15 @@ import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevite
 import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 
 import { getCompObjPropertyName, lstComps } from '../../donnees/lstComps'
-import { resMaxDe, typesDes, lancerDe, getRandomInt } from '../rand'
+import { lancerDe, getRandomInt } from '../rand'
 import { genCarriere } from '../../comp/choix/coteries/CarriereGen'
 
 export const PersoContexte = createContext()
 
 export function calculerPoids(perso) {
-  var poidsVal = 4
+  var poidsVal = getRandomInt(8)
 
-  if (perso.male) poidsVal = poidsVal + 10
+  if (perso.male) poidsVal = poidsVal + getRandomInt(13)
   if (perso.age > 25) poidsVal = poidsVal + 5
 
   poidsVal = poidsVal + perso.endurance + perso.force
@@ -57,6 +57,9 @@ export const PersoProvider = ({ children }) => {
     evts: [],
     coterie: '', // titre de coterie
     nom: '',
+    classe: '',
+    carriere: '',
+    evolution: '',
   })
 
   useEffect(() => {
@@ -186,6 +189,25 @@ export const PersoProvider = ({ children }) => {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.male])
+
+  useEffect(() => {
+    // récupérer la carrière du joueur en tant qu'objet à partir de la str
+    var carriereObj = {}
+
+    // l'utiliser pour déterminer l'évolution de carrière
+    var evolutionObj = {}
+    if (carriereObj.evolutions !== undefined) {
+      var indexEvolution = getRandomInt(carriereObj.evolutions.length) // A FAIRE : changer probas d'évolution
+      evolutionObj = carriereObj.evolutions[indexEvolution]
+    } else {
+      evolutionObj.titre = ''
+    }
+
+    var changementsAuPerso = {}
+    changementsAuPerso['evolution'] = evolutionObj.titre
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+  }, [perso.carriere])
 
   return (
     <PersoContexte.Provider value={{ perso, setPerso }}>

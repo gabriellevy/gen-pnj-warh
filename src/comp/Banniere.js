@@ -104,7 +104,9 @@ function Banniere() {
                     <h3>{perso.nom}</h3>
                     {perso.coterie} ({perso.region})
                     <br />
-                    {perso.evolution} ({perso.carriere})
+                    {perso.evolution !== undefined && perso.evolution !== ''
+                      ? perso.evolution
+                      : perso.carriere}
                     <br />
                     {perso.age} ans
                     <br />

@@ -12,11 +12,7 @@ const ChoixClasse = () => {
 
   // manière détournée bancale de faire l'initialisation aléatoire mais bon je fais ce que je peux
   useEffect(() => {
-    if (
-      perso.classe === undefined ||
-      perso.classe === '' ||
-      perso.evolution === ''
-    ) {
+    if (perso.classe === undefined || perso.classe === '') {
       // A FAIRE : virer toute cette sélection aléatoire une fois que les sélection aléatoires spécifques aux races
       // auront été faites dans CarriereGen.js : genCarriere
 
@@ -34,7 +30,7 @@ const ChoixClasse = () => {
         evolutionObj = carriereObj.evolutions[indexEvolution]
         setEvolution(evolutionObj.titre)
       } else {
-        evolutionObj.titre = "indéfini pour l'instant"
+        evolutionObj.titre = ''
       }
 
       var changementsAuPerso = {
@@ -65,7 +61,7 @@ const ChoixClasse = () => {
       evolutionObj = carriereObj.evolutions[indexEvolution]
       setEvolution(evolutionObj.titre)
     } else {
-      evolutionObj.titre = "indéfini pour l'instant"
+      evolutionObj.titre = ''
     }
 
     var changementsAuPerso = {
@@ -86,7 +82,7 @@ const ChoixClasse = () => {
       evolutionObj = carriere.evolutions[indexEvolution]
       setEvolution(evolutionObj.titre)
     } else {
-      evolutionObj.titre = "indéfini pour l'instant"
+      evolutionObj.titre = ''
     }
 
     var changementsAuPerso = {
