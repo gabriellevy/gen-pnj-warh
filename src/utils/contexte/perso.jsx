@@ -20,15 +20,19 @@ import { resMaxDe, typesDes, lancerDe } from '../rand'
 export const PersoContexte = createContext()
 
 export function calculerPoids(perso) {
-  var poidsVal = 35
+  var poidsVal = 4
 
   if (perso.male) poidsVal = poidsVal + 10
   if (perso.age > 25) poidsVal = poidsVal + 5
 
-  if (perso.endurance > 30) poidsVal = poidsVal + 6
-  if (perso.dexterite > 30) poidsVal = poidsVal - 4
+  poidsVal = poidsVal + perso.endurance + perso.force
 
-  poidsVal = poidsVal + perso.endurance
+  if (perso.coterie === nomCotHalfelins) poidsVal = poidsVal - 20
+  if (
+    perso.coterie === nomCotElfesSylvains ||
+    perso.coterie === nomCotHautsElfes
+  )
+    poidsVal = poidsVal - 5
 
   return poidsVal
 }
