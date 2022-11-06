@@ -86,7 +86,6 @@ export const lstCoteries = [
   {
     titre: nomCotEmpire,
     affiche: true,
-    niveau_richesse: 2,
     portrait: portrait_empire,
     fonds: [bg_empire_a, bg_empire_b, bg_empire_c, bg_empire_d],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:L%27Empire',

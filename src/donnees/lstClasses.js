@@ -139,6 +139,10 @@ export const nomChasseurRat = 'Chasseur de rat'
 export const nomEgoutier = 'Égoutier'
 export const nomExterminateur = 'Exterminateur'
 
+export const nomArtisteApprenti = 'Artiste apprenti'
+export const nomArtisteRenom = 'Artiste de renom'
+export const nomMaestro = 'Maestro'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -425,34 +429,274 @@ export const lstClasses = [
       {
         titre: nomArtiste,
         description: 'Artiste',
+        evolutions: [
+          {
+            titre: nomArtisteApprenti,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomArtiste,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomArtisteRenom,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomMaestro,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomConseiller,
         description: 'Conseiller',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomDuelliste,
         description: 'Duelliste',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomEmissaire,
         description: 'Emissaire',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomEspion,
         description: 'Espion',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomIntendant,
         description: 'Intendant',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomNoble,
         description: 'Noble',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomServiteur,
         description: 'Serviteur',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
     ],
   },

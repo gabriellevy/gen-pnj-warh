@@ -7,7 +7,6 @@ import { nomCotHalfelins, nomCotNains } from '../../../donnees/lstCoteries'
 function Coterie({
   titre,
   portrait,
-  niveau_richesse,
   fonds,
   description,
   page,

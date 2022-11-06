@@ -112,9 +112,7 @@ function Banniere() {
                     <br />
                     {perso.poids} kg
                     <br />
-                    Niveau de richesse : {niveauxDeVie[perso.niveau_richesse]}
-                    <br />
-                    {perso.male ? 'Homme' : 'Femme'}
+                    Statut : {niveauxDeVie[perso.niveau_richesse]}
                     {afficheObjets(perso)}
                     <br />
                     Points de blessure : {perso.pointsDeBlessure}
