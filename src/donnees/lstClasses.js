@@ -191,6 +191,14 @@ export const nomNovice = 'Novice'
 export const nomPretreSergent = 'Prêtre sergent'
 export const nomPretreCapitaine = 'Prêtre capitaine'
 
+export const nomRecrue = 'Recrue'
+export const nomSergent = 'Sergent'
+export const nomOfficier = 'Officier'
+
+export const nomMatamore = 'Matamore'
+export const nomTueurAGage = 'Tueur à gage'
+export const nomAssassin = 'Assassin'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -927,28 +935,28 @@ export const lstClasses = [
         description: 'Soldat',
         evolutions: [
           {
-            titre: nomDomestique,
+            titre: nomRecrue,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomServiteur,
+            titre: nomSoldat,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomValet,
+            titre: nomSergent,
             statut: {
               echelon: argent,
               standing: 5,
             },
           },
           {
-            titre: nomRegisseur,
+            titre: nomOfficier,
             statut: {
               echelon: or,
               standing: 1,
@@ -961,28 +969,28 @@ export const lstClasses = [
         description: 'Spadassin',
         evolutions: [
           {
-            titre: nomDomestique,
+            titre: nomMatamore,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomSpadassin,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomServiteur,
+            titre: nomTueurAGage,
             statut: {
               echelon: argent,
-              standing: 3,
+              standing: 4,
             },
           },
           {
-            titre: nomValet,
-            statut: {
-              echelon: argent,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomRegisseur,
+            titre: nomAssassin,
             statut: {
               echelon: or,
               standing: 1,
