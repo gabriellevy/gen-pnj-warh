@@ -39,6 +39,31 @@ export function calculerPoids(perso) {
   return poidsVal
 }
 
+export function genererNom(perso) {
+  /**
+   * régénération du nom selon sexe et coterie
+   */
+  if (perso.coterie === nomCotEstalie) return genNomConquistador(perso.male)
+  else if (perso.coterie === nomCotHautsElfes) {
+    return genNomElfe(perso.male)
+  } else if (perso.coterie === nomCotHautsElfes) {
+    return genNomElfe(perso.male)
+  } else if (perso.coterie === nomCotElfesSylvains) {
+    return genNomElfe(perso.male)
+  } else if (perso.coterie === nomCotBretonniens)
+    return genNomBretonnien(perso.male)
+  else if (perso.coterie === nomCotKislevites)
+    return genNomKislevite(perso.male)
+  else if (perso.coterie === nomCotHalfelins) return genNomHalfelin(perso.male)
+  else if (perso.coterie === nomCotEmpire) return genNomEmpire(perso.male)
+  else if (perso.coterie === nomCotNains) {
+    return genNomNain(perso.male)
+  } else if (perso.coterie === nomCotHalfelins) {
+    return genNomHalfelin(perso.male)
+  }
+  return 'pas de nom pour lui'
+}
+
 export const PersoProvider = ({ children }) => {
   const [perso, setPerso] = useState({
     // valeurs de base des caracs
@@ -72,14 +97,11 @@ export const PersoProvider = ({ children }) => {
   }, [])
 
   // le changement de coterie implique un recalcul de presque tout :
-  // âge, sexe, métier, portrait
+  // âge, métier, portrait
   // mais pas la région car au contraire c'est le changemnt de région qui implique le changement de coterie
   useEffect(() => {
-    const maleVal = getRandomInt(2) === 0
     var changementsAuPerso = {}
 
-    // générer un nom selon la coterie choisie :
-    changementsAuPerso['nom'] = 'youpi pas de noms pour cette coterie'
     changementsAuPerso['cc'] = 20 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['ct'] = 20 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force'] = 20 + lancerDe('D10') + lancerDe('D10')
@@ -95,9 +117,7 @@ export const PersoProvider = ({ children }) => {
       2 * Math.floor(changementsAuPerso['endurance'] / 10) +
       Math.floor(changementsAuPerso['force_mentale'] / 10)
 
-    if (perso.coterie === nomCotEstalie)
-      changementsAuPerso['nom'] = genNomConquistador(maleVal)
-    else if (perso.coterie === nomCotHautsElfes) {
+    if (perso.coterie === nomCotHautsElfes) {
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['initiative'] = 40 + lancerDe('D10') + lancerDe('D10')
@@ -107,7 +127,6 @@ export const PersoProvider = ({ children }) => {
         30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['force_mentale'] =
         30 + lancerDe('D10') + lancerDe('D10')
-      changementsAuPerso['nom'] = genNomElfe(maleVal)
       changementsAuPerso['pointsDeBlessure'] =
         Math.floor(changementsAuPerso['force'] / 10) +
         2 * Math.floor(changementsAuPerso['endurance'] / 10) +
@@ -122,21 +141,11 @@ export const PersoProvider = ({ children }) => {
         30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['force_mentale'] =
         30 + lancerDe('D10') + lancerDe('D10')
-      changementsAuPerso['nom'] = genNomElfe(maleVal)
       changementsAuPerso['pointsDeBlessure'] =
         Math.floor(changementsAuPerso['force'] / 10) +
         2 * Math.floor(changementsAuPerso['endurance'] / 10) +
         Math.floor(changementsAuPerso['force_mentale'] / 10)
-    } else if (perso.coterie === nomCotBretonniens)
-      changementsAuPerso['nom'] = genNomBretonnien(maleVal)
-    else if (perso.coterie === nomCotKislevites)
-      changementsAuPerso['nom'] = genNomKislevite(maleVal)
-    else if (perso.coterie === nomCotHalfelins)
-      changementsAuPerso['nom'] = genNomHalfelin(maleVal)
-    else if (perso.coterie === nomCotEmpire)
-      changementsAuPerso['nom'] = genNomEmpire(maleVal)
-    else if (perso.coterie === nomCotNains) {
-      changementsAuPerso['nom'] = genNomNain(maleVal)
+    } else if (perso.coterie === nomCotNains) {
       changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['endurance'] = 30 + lancerDe('D10') + lancerDe('D10')
       changementsAuPerso['agilete'] = 10 + lancerDe('D10') + lancerDe('D10')
@@ -161,8 +170,6 @@ export const PersoProvider = ({ children }) => {
         Math.floor(changementsAuPerso['force_mentale'] / 10)
     }
 
-    changementsAuPerso['male'] = maleVal
-
     // mettre à jour des caracs selon la coterie actuelle
     // --------- age
     var age = getRandomInt(60) + 15 // pour un humain classique
@@ -179,18 +186,26 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['age'] = age
     changementsAuPerso['carriere'] = carriereStr
     changementsAuPerso['classe'] = classeStr
+    changementsAuPerso['nom'] = genererNom(perso)
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.coterie])
 
+  /**
+   * régénération du poids
+   */
   useEffect(() => {
     var changementsAuPerso = {}
     changementsAuPerso['poids'] = calculerPoids(perso)
+    changementsAuPerso['nom'] = genererNom(perso)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.male])
 
+  /**
+   * régénération du niveau de carrière
+   */
   useEffect(() => {
     if (perso.carriere === undefined || perso.carriere === '') return
     // récupérer la carrière du joueur en tant qu'objet à partir de la str
