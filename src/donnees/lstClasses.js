@@ -216,6 +216,26 @@ export const nomVagabond = 'Vagabond'
 export const nomMaitreColporteur = 'Maître colporteur'
 export const nomNegociantItinerant = 'Négociant itinérant'
 
+export const nomZelote = 'Zélote'
+export const nomPenitent = 'Pénitent'
+export const nomPropheteDuDestin = 'Prophète du destin'
+
+export const nomCoureur = 'Coureur'
+export const nomEstafette = 'Estafette'
+export const nomMessagerVeteran = 'Messager vétéran'
+
+export const nomPeager = 'Péager'
+export const nomSergentPatrouilleur = 'Sergent patrouilleur'
+export const nomCapitainePatrouilleur = 'Capitaine patrouilleur'
+
+export const nomInterrogateur = 'Interrogateur'
+export const nomInquisiteur = 'Inquisiteur'
+export const nomRepurgateurVeteran = 'Répurgateur vétéran'
+
+export const nomMusicienDesRues = 'Musicien des rues'
+export const nomTroubadour = 'Troubadour'
+export const nomChefTroupe = 'Chef de troupe'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1162,31 +1182,31 @@ export const lstClasses = [
         description: 'Flagellant',
         evolutions: [
           {
-            titre: nomTueurTroll,
+            titre: nomZelote,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 0,
             },
           },
           {
-            titre: nomTueurGeant,
+            titre: nomFlagellant,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 0,
             },
           },
           {
-            titre: nomTueurDragons,
+            titre: nomPenitent,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 0,
             },
           },
           {
-            titre: nomTueurDemons,
+            titre: nomPropheteDuDestin,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 0,
             },
           },
         ],
@@ -1196,31 +1216,31 @@ export const lstClasses = [
         description: 'Messager',
         evolutions: [
           {
-            titre: nomTueurTroll,
+            titre: nomCoureur,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 3,
             },
           },
           {
-            titre: nomTueurGeant,
+            titre: nomMessager,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 1,
             },
           },
           {
-            titre: nomTueurDragons,
+            titre: nomEstafette,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 3,
             },
           },
           {
-            titre: nomTueurDemons,
+            titre: nomMessagerVeteran,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 5,
             },
           },
         ],
@@ -1230,31 +1250,31 @@ export const lstClasses = [
         description: 'Patrouilleur routier',
         evolutions: [
           {
-            titre: nomTueurTroll,
+            titre: nomPeager,
             statut: {
               echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomPatrouilleurRoutier,
+            statut: {
+              echelon: argent,
               standing: 2,
             },
           },
           {
-            titre: nomTueurGeant,
+            titre: nomSergentPatrouilleur,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 4,
             },
           },
           {
-            titre: nomTueurDragons,
+            titre: nomCapitainePatrouilleur,
             statut: {
-              echelon: bronze,
-              standing: 2,
-            },
-          },
-          {
-            titre: nomTueurDemons,
-            statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: or,
+              standing: 1,
             },
           },
         ],
@@ -1264,31 +1284,31 @@ export const lstClasses = [
         description: 'Repurgateur',
         evolutions: [
           {
-            titre: nomTueurTroll,
+            titre: nomInterrogateur,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 1,
             },
           },
           {
-            titre: nomTueurGeant,
+            titre: nomRepurgateur,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 3,
             },
           },
           {
-            titre: nomTueurDragons,
+            titre: nomInquisiteur,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 5,
             },
           },
           {
-            titre: nomTueurDemons,
+            titre: nomRepurgateurVeteran,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: or,
+              standing: 1,
             },
           },
         ],
@@ -1298,31 +1318,31 @@ export const lstClasses = [
         description: 'Saltimbanque',
         evolutions: [
           {
-            titre: nomTueurTroll,
+            titre: nomMusicienDesRues,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 3,
             },
           },
           {
-            titre: nomTueurGeant,
+            titre: nomSaltimbanque,
             statut: {
               echelon: bronze,
-              standing: 2,
+              standing: 5,
             },
           },
           {
-            titre: nomTueurDragons,
+            titre: nomTroubadour,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: argent,
+              standing: 3,
             },
           },
           {
-            titre: nomTueurDemons,
+            titre: nomChefTroupe,
             statut: {
-              echelon: bronze,
-              standing: 2,
+              echelon: or,
+              standing: 1,
             },
           },
         ],
