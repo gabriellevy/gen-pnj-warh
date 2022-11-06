@@ -220,7 +220,15 @@ export const PersoProvider = ({ children }) => {
     // l'utiliser pour déterminer l'évolution de carrière
     var evolutionObj = {}
     if (carriereObj.evolutions !== undefined) {
-      var indexEvolution = getRandomInt(carriereObj.evolutions.length) // A FAIRE : changer probas d'évolution
+      var indexEvolution = 0
+
+      if (carriereObj.evolutions.length === 4) {
+        var randPercentIndex = getRandomInt(100)
+        if (randPercentIndex < 30) indexEvolution = 0
+        else if (randPercentIndex < 88) indexEvolution = 1
+        else if (randPercentIndex < 98) indexEvolution = 2
+        else indexEvolution = 2
+      }
       evolutionObj = carriereObj.evolutions[indexEvolution]
     } else {
       evolutionObj.titre = ''
