@@ -199,6 +199,23 @@ export const nomMatamore = 'Matamore'
 export const nomTueurAGage = 'Tueur à gage'
 export const nomAssassin = 'Assassin'
 
+export const nomTueurTroll = 'Tueur de troll'
+export const nomTueurGeant = 'Tueur de géants'
+export const nomTueurDragons = 'Tueur de dragons'
+export const nomTueurDemons = 'Tueur de démons'
+
+export const nomChasseurVoleurs = 'Chasseur de voleurs'
+export const nomMaitreChasseurPrimes = 'Maître chasseur de primes'
+export const nomChasseurPrimesVeteran = 'Chasseur de primes vétéran'
+
+export const nomPostillon = 'Postillon'
+export const nomMaitreCocher = 'Maître cocher'
+export const nomMaitreRoutes = 'Maître des routes'
+
+export const nomVagabond = 'Vagabond'
+export const nomMaitreColporteur = 'Maître colporteur'
+export const nomNegociantItinerant = 'Négociant itinérant'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1003,31 +1020,31 @@ export const lstClasses = [
         description: 'Tueur',
         evolutions: [
           {
-            titre: nomDomestique,
+            titre: nomTueurTroll,
             statut: {
-              echelon: argent,
-              standing: 1,
+              echelon: bronze,
+              standing: 2,
             },
           },
           {
-            titre: nomServiteur,
+            titre: nomTueurGeant,
             statut: {
-              echelon: argent,
-              standing: 3,
+              echelon: bronze,
+              standing: 2,
             },
           },
           {
-            titre: nomValet,
+            titre: nomTueurDragons,
             statut: {
-              echelon: argent,
-              standing: 5,
+              echelon: bronze,
+              standing: 2,
             },
           },
           {
-            titre: nomRegisseur,
+            titre: nomTueurDemons,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: bronze,
+              standing: 2,
             },
           },
         ],
@@ -1041,34 +1058,274 @@ export const lstClasses = [
       {
         titre: nomChasseurDePrimes,
         description: 'ChasseurDePrimes',
+        evolutions: [
+          {
+            titre: nomChasseurVoleurs,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomChasseurDePrimes,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreChasseurPrimes,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomChasseurPrimesVeteran,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomCocher,
         description: 'Cocher',
+        evolutions: [
+          {
+            titre: nomPostillon,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomCocher,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMaitreCocher,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreRoutes,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomColporteur,
         description: 'Colporteur',
+        evolutions: [
+          {
+            titre: nomVagabond,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomColporteur,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomMaitreColporteur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomNegociantItinerant,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomFlagellant,
         description: 'Flagellant',
+        evolutions: [
+          {
+            titre: nomTueurTroll,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurGeant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDragons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDemons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomMessager,
         description: 'Messager',
+        evolutions: [
+          {
+            titre: nomTueurTroll,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurGeant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDragons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDemons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomPatrouilleurRoutier,
         description: 'Patrouilleur routier',
+        evolutions: [
+          {
+            titre: nomTueurTroll,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurGeant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDragons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDemons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomRepurgateur,
         description: 'Repurgateur',
+        evolutions: [
+          {
+            titre: nomTueurTroll,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurGeant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDragons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDemons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomSaltimbanque,
         description: 'Saltimbanque',
+        evolutions: [
+          {
+            titre: nomTueurTroll,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurGeant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDragons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomTueurDemons,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+        ],
       },
     ],
   },
