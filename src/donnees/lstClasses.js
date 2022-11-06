@@ -94,10 +94,6 @@ export function getClasseObj(idClasse) {
   return coterieObj
 }
 
-export const nomPamphletaire = 'Pamphlétaire'
-export const nomFauteurTrouble = 'Fauteur de trouble'
-export const nomDemagogue = 'Démagogue'
-
 export function getCarriere(idCarr) {
   for (let i = 0; i < lstClasses.length; i++) {
     const classeObj = lstClasses[i]
@@ -110,6 +106,18 @@ export function getCarriere(idCarr) {
   }
   return null
 }
+
+export const nomPamphletaire = 'Pamphlétaire'
+export const nomFauteurTrouble = 'Fauteur de trouble'
+export const nomDemagogue = 'Démagogue'
+
+export const nomApprentiArtisan = 'Apprenti artisan'
+export const nomMaitreArtisan = 'Maître artisan'
+export const nomMaitreGuilde = 'Maître de guilde'
+
+export const nomEmploye = 'Employé'
+export const nomConseillerMunicipal = 'Conseiller municipal'
+export const nomBourgmestre = 'Bourgmestre'
 
 export const lstClasses = [
   {
@@ -153,10 +161,70 @@ export const lstClasses = [
       {
         titre: nomArtisan,
         description: 'Artisan',
+        evolutions: [
+          {
+            titre: nomApprentiArtisan,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomArtisan,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreArtisan,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreGuilde,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomBourgeois,
         description: 'Bourgeois',
+        evolutions: [
+          {
+            titre: nomEmploye,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomBourgeois,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomConseillerMunicipal,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomBourgmestre,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomEnqueteur,

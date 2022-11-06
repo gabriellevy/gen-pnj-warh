@@ -1,11 +1,14 @@
 import React, { useState, createContext, useEffect } from 'react'
-import { nomCotEmpire, nomCotHalfelins } from '../../donnees/lstCoteries'
-import { nomCotNains } from '../../donnees/lstCoteries'
-import { nomCotEstalie } from '../../donnees/lstCoteries'
-import { nomCotHautsElfes } from '../../donnees/lstCoteries'
-import { nomCotElfesSylvains } from '../../donnees/lstCoteries'
-import { nomCotBretonniens } from '../../donnees/lstCoteries'
-import { nomCotKislevites } from '../../donnees/lstCoteries'
+import {
+  nomCotEmpire,
+  nomCotHalfelins,
+  nomCotNains,
+  nomCotEstalie,
+  nomCotHautsElfes,
+  nomCotElfesSylvains,
+  nomCotBretonniens,
+  nomCotKislevites,
+} from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
 import { genNomEmpire } from '../../donnees/coteries/empire/nomsEmpire'
 import { genNomNain } from '../../donnees/coteries/nains/nomsNains'
@@ -25,7 +28,7 @@ export function calculerPoids(perso) {
   var poidsVal = getRandomInt(8)
 
   if (perso.male) poidsVal = poidsVal + getRandomInt(13)
-  if (perso.age > 25) poidsVal = poidsVal + 5
+  if (perso.age > 25) poidsVal = poidsVal + getRandomInt(7)
 
   poidsVal = poidsVal + perso.endurance + perso.force
 
@@ -187,6 +190,7 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['carriere'] = carriereStr
     changementsAuPerso['classe'] = classeStr
     changementsAuPerso['nom'] = genererNom(perso)
+    changementsAuPerso['poids'] = calculerPoids(perso)
 
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
