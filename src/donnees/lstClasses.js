@@ -151,6 +151,46 @@ export const nomEscrimeur = 'Escrimeur'
 export const nomMaitreDuelliste = 'Maître duelliste'
 export const nomChampionJustice = 'Champion de justice'
 
+export const nomHeraut = 'Héraut'
+export const nomDiplomate = 'Diplomate'
+export const nomAmbassadeur = 'Ambassadeur'
+
+export const nomInformateur = 'Informateur'
+export const nomAgentSecret = 'Agent secret'
+export const nomMaitreEspion = 'Maître espion'
+
+export const nomGardien = 'Gardien'
+export const nomSenechal = 'Sénéchal'
+export const nomGouverneur = 'Gouverneur'
+
+export const nomHeritier = 'Héritier'
+export const nomMagnat = 'Magnat'
+export const nomNobleSeigneur = 'Noble seigneur'
+
+export const nomDomestique = 'Domestique'
+export const nomValet = 'Valet'
+export const nomRegisseur = 'Régisseur'
+
+export const nomApprentiCavalier = 'Apprenti cavalier'
+export const nomSergentCavalerie = 'Sergent de cavalerie légère'
+export const nomOfficierCavalerie = 'Officier de cavalerie légère'
+
+export const nomEcuyer = 'Écuyer'
+export const nomChevalierCommandeur = 'Chevalier commandeur'
+export const nomChevalierCercleInterieur = 'Chevalier du crecle intérieur'
+
+export const nomSentinelle = 'Sentinelle'
+export const nomGardeHonneur = "Garde d'honneur"
+export const nomGardeOfficier = 'Garde officier'
+
+export const nomPugiliste = 'Pugiliste'
+export const nomChampionFosse = 'Champion de Fosse'
+export const nomLegendeFosse = 'Légende de la fosse'
+
+export const nomNovice = 'Novice'
+export const nomPretreSergent = 'Prêtre sergent'
+export const nomPretreCapitaine = 'Prêtre capitaine'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -541,31 +581,31 @@ export const lstClasses = [
         description: 'Emissaire',
         evolutions: [
           {
-            titre: nomChasseurRat,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomRatier,
-            statut: {
-              echelon: argent,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomEgoutier,
+            titre: nomHeraut,
             statut: {
               echelon: argent,
               standing: 2,
             },
           },
           {
-            titre: nomExterminateur,
+            titre: nomEmissaire,
             statut: {
               echelon: argent,
-              standing: 3,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomDiplomate,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAmbassadeur,
+            statut: {
+              echelon: or,
+              standing: 5,
             },
           },
         ],
@@ -575,31 +615,31 @@ export const lstClasses = [
         description: 'Espion',
         evolutions: [
           {
-            titre: nomChasseurRat,
+            titre: nomInformateur,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomRatier,
+            titre: nomEspion,
             statut: {
               echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomAgentSecret,
+            statut: {
+              echelon: or,
               standing: 1,
             },
           },
           {
-            titre: nomEgoutier,
+            titre: nomMaitreEspion,
             statut: {
-              echelon: argent,
-              standing: 2,
-            },
-          },
-          {
-            titre: nomExterminateur,
-            statut: {
-              echelon: argent,
-              standing: 3,
+              echelon: or,
+              standing: 4,
             },
           },
         ],
@@ -609,30 +649,30 @@ export const lstClasses = [
         description: 'Intendant',
         evolutions: [
           {
-            titre: nomChasseurRat,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomRatier,
+            titre: nomGardien,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomEgoutier,
+            titre: nomIntendant,
             statut: {
               echelon: argent,
-              standing: 2,
+              standing: 3,
             },
           },
           {
-            titre: nomExterminateur,
+            titre: nomSenechal,
             statut: {
-              echelon: argent,
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomGouverneur,
+            statut: {
+              echelon: or,
               standing: 3,
             },
           },
@@ -643,31 +683,31 @@ export const lstClasses = [
         description: 'Noble',
         evolutions: [
           {
-            titre: nomChasseurRat,
+            titre: nomHeritier,
             statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomRatier,
-            statut: {
-              echelon: argent,
+              echelon: or,
               standing: 1,
             },
           },
           {
-            titre: nomEgoutier,
+            titre: nomNoble,
             statut: {
-              echelon: argent,
-              standing: 2,
+              echelon: or,
+              standing: 3,
             },
           },
           {
-            titre: nomExterminateur,
+            titre: nomMagnat,
             statut: {
-              echelon: argent,
-              standing: 3,
+              echelon: or,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomNobleSeigneur,
+            statut: {
+              echelon: or,
+              standing: 7,
             },
           },
         ],
@@ -677,31 +717,31 @@ export const lstClasses = [
         description: 'Serviteur',
         evolutions: [
           {
-            titre: nomChasseurRat,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomRatier,
+            titre: nomDomestique,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomEgoutier,
-            statut: {
-              echelon: argent,
-              standing: 2,
-            },
-          },
-          {
-            titre: nomExterminateur,
+            titre: nomServiteur,
             statut: {
               echelon: argent,
               standing: 3,
+            },
+          },
+          {
+            titre: nomValet,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomRegisseur,
+            statut: {
+              echelon: or,
+              standing: 1,
             },
           },
         ],
@@ -715,34 +755,274 @@ export const lstClasses = [
       {
         titre: nomCavalier,
         description: 'Cavalier',
+        evolutions: [
+          {
+            titre: nomApprentiCavalier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomCavalier,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomSergentCavalerie,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomOfficierCavalerie,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomChevalier,
         description: 'Chevalier',
+        evolutions: [
+          {
+            titre: nomEcuyer,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChevalier,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomChevalierCommandeur,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomChevalierCercleInterieur,
+            statut: {
+              echelon: or,
+              standing: 4,
+            },
+          },
+        ],
       },
       {
         titre: nomGarde,
         description: 'Garde',
+        evolutions: [
+          {
+            titre: nomSentinelle,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomGarde,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomGardeHonneur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomGardeOfficier,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomGladiateur,
         description: 'Gladiateur',
+        evolutions: [
+          {
+            titre: nomPugiliste,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomGladiateur,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomChampionFosse,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomLegendeFosse,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomPretreGuerrier,
         description: 'nomPretreGuerrier',
+        evolutions: [
+          {
+            titre: nomNovice,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomPretreGuerrier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomPretreSergent,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomPretreCapitaine,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+          },
+        ],
       },
       {
         titre: nomSoldat,
         description: 'Soldat',
+        evolutions: [
+          {
+            titre: nomDomestique,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomServiteur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomValet,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomRegisseur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomSpadassin,
         description: 'Spadassin',
+        evolutions: [
+          {
+            titre: nomDomestique,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomServiteur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomValet,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomRegisseur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomTueur,
         description: 'Tueur',
+        evolutions: [
+          {
+            titre: nomDomestique,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomServiteur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomValet,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomRegisseur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
     ],
   },
