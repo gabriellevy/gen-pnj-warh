@@ -182,7 +182,7 @@ export const PersoProvider = ({ children }) => {
     if (perso.coterie === nomCotHalfelins) {
       age = age * 2
     }
-    // ----------- classe et carrère aleatoires
+    // ----------- classe et carrière aleatoires
     var classeCarriereObj = genCarriere(perso.coterie)
     var classeStr = classeCarriereObj.classeStr
     var carriereStr = classeCarriereObj.carriereStr

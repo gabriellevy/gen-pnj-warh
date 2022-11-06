@@ -119,6 +119,26 @@ export const nomEmploye = 'Employé'
 export const nomConseillerMunicipal = 'Conseiller municipal'
 export const nomBourgmestre = 'Bourgmestre'
 
+export const nomLimier = 'Limier'
+export const nomMaitreEnqueteur = 'Maître enquêteur'
+export const nomDetective = 'Détective'
+
+export const nomNegociant = 'Négociant'
+export const nomMaitreMarchand = 'Maître marchand'
+export const nomPrinceMarchand = 'Prince marchand'
+
+export const nomIndigent = 'Indigent'
+export const nomMaitreMendiant = 'Maître mendiant'
+export const nomRoiMendiant = 'Roi des mendiants'
+
+export const nomRecrueMilice = 'Recrue de la milice'
+export const nomSergentMilice = 'Sergent de la milice'
+export const nomCapitaineMilice = 'Capitaine de la milice'
+
+export const nomChasseurRat = 'Chasseur de rat'
+export const nomEgoutier = 'Égoutier'
+export const nomExterminateur = 'Exterminateur'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -229,22 +249,172 @@ export const lstClasses = [
       {
         titre: nomEnqueteur,
         description: 'Enquêteur',
+        evolutions: [
+          {
+            titre: nomLimier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEnqueteur,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMaitreEnqueteur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomDetective,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomMarchand,
         description: 'Marchand',
+        evolutions: [
+          {
+            titre: nomNegociant,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMarchand,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomMaitreMarchand,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPrinceMarchand,
+            statut: {
+              echelon: or,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomMendiant,
         description: 'Mendiant',
+        evolutions: [
+          {
+            titre: nomIndigent,
+            statut: {
+              echelon: bronze,
+              standing: 0,
+            },
+          },
+          {
+            titre: nomMendiant,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMaitreMendiant,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomRoiMendiant,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomMilicien,
         description: 'Milicien',
+        evolutions: [
+          {
+            titre: nomRecrueMilice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMilicien,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSergentMilice,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomCapitaineMilice,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomRatier,
         description: 'Ratier',
+        evolutions: [
+          {
+            titre: nomChasseurRat,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomRatier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEgoutier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomExterminateur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
     ],
   },
