@@ -89,6 +89,8 @@ export const PersoProvider = ({ children }) => {
     classe: '',
     carriere: '',
     evolution: '',
+    statut_echelon: '',
+    statut_standing: '',
   })
 
   useEffect(() => {
@@ -226,6 +228,10 @@ export const PersoProvider = ({ children }) => {
 
     var changementsAuPerso = {}
     changementsAuPerso['evolution'] = evolutionObj.titre
+    if (evolutionObj.statut !== undefined) {
+      changementsAuPerso.statut_echelon = evolutionObj.statut.echelon
+      changementsAuPerso.statut_standing = evolutionObj.statut.standing
+    }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.carriere])

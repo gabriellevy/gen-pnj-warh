@@ -143,6 +143,14 @@ export const nomArtisteApprenti = 'Artiste apprenti'
 export const nomArtisteRenom = 'Artiste de renom'
 export const nomMaestro = 'Maestro'
 
+export const nomAssistant = 'Assistant'
+export const nomConsultant = 'Consultant'
+export const nomChancelier = 'Chancelier'
+
+export const nomEscrimeur = 'Escrimeur'
+export const nomMaitreDuelliste = 'Maître duelliste'
+export const nomChampionJustice = 'Champion de justice'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -465,30 +473,30 @@ export const lstClasses = [
         description: 'Conseiller',
         evolutions: [
           {
-            titre: nomChasseurRat,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomRatier,
-            statut: {
-              echelon: argent,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomEgoutier,
+            titre: nomAssistant,
             statut: {
               echelon: argent,
               standing: 2,
             },
           },
           {
-            titre: nomExterminateur,
+            titre: nomConseiller,
             statut: {
               echelon: argent,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomConsultant,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomChancelier,
+            statut: {
+              echelon: or,
               standing: 3,
             },
           },
@@ -499,30 +507,30 @@ export const lstClasses = [
         description: 'Duelliste',
         evolutions: [
           {
-            titre: nomChasseurRat,
+            titre: nomEscrimeur,
             statut: {
-              echelon: bronze,
+              echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomRatier,
+            titre: nomDuelliste,
             statut: {
               echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomMaitreDuelliste,
+            statut: {
+              echelon: or,
               standing: 1,
             },
           },
           {
-            titre: nomEgoutier,
+            titre: nomChampionJustice,
             statut: {
-              echelon: argent,
-              standing: 2,
-            },
-          },
-          {
-            titre: nomExterminateur,
-            statut: {
-              echelon: argent,
+              echelon: or,
               standing: 3,
             },
           },

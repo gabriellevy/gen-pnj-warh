@@ -112,7 +112,7 @@ function Banniere() {
                     <br />
                     {perso.poids} kg
                     <br />
-                    Statut : {niveauxDeVie[perso.niveau_richesse]}
+                    Statut : {perso.statut_echelon} {perso.statut_standing}
                     {afficheObjets(perso)}
                     <br />
                     Points de blessure : {perso.pointsDeBlessure}
