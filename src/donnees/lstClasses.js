@@ -279,6 +279,26 @@ export const nomPorteur = 'Porteur'
 export const nomContremaitre = 'Contremaître'
 export const nomMaitreDocks = 'Maître des docks'
 
+export const nomAlevin = 'Alevin'
+export const nomSageRives = 'Sage des rives'
+export const nomAncienneFleuve = 'Ancienne du fleuve'
+
+export const nomMarinEauDouce = "Marin d'eau douce"
+export const nomMaitreEquipage = "Maître d'équipage"
+export const nomCapitaineNavire = 'Capitaine de navire'
+
+export const nomPilleurEpaves = "Pilleur d'épaves"
+export const nomPirateRivieres = 'Pirate des rivières'
+export const nomCapitaineNaufrageur = 'Capitaine naufrageur'
+
+export const nomGuideFluvial = 'Guide fluvial'
+export const nomPilote = 'Pilote'
+export const nomMaitreNocher = 'Maître nocher'
+
+export const nomRecrueFluviale = 'Recrue fluviale'
+export const nomAbordeur = 'Abordeur'
+export const nomMaitreAbordeur = 'Maître Abordeur'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1781,30 +1801,30 @@ export const lstClasses = [
         description: 'Femme du fleuve',
         evolutions: [
           {
-            titre: nomSorcierNovice,
+            titre: nomAlevin,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomFemmeDuFleuve,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomSorcier,
+            titre: nomSageRives,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomAncienneFleuve,
             statut: {
               echelon: argent,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomMaitreSorcier,
-            statut: {
-              echelon: or,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomSeigneurSorcier,
-            statut: {
-              echelon: or,
               standing: 2,
             },
           },
@@ -1815,28 +1835,28 @@ export const lstClasses = [
         description: 'Marin',
         evolutions: [
           {
-            titre: nomSorcierNovice,
+            titre: nomMarinEauDouce,
             statut: {
-              echelon: bronze,
-              standing: 3,
+              echelon: argent,
+              standing: 1,
             },
           },
           {
-            titre: nomSorcier,
+            titre: nomMarin,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomMaitreSorcier,
+            titre: nomMaitreEquipage,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 5,
             },
           },
           {
-            titre: nomSeigneurSorcier,
+            titre: nomCapitaineNavire,
             statut: {
               echelon: or,
               standing: 2,
@@ -1849,30 +1869,30 @@ export const lstClasses = [
         description: 'Naufrageur',
         evolutions: [
           {
-            titre: nomSorcierNovice,
+            titre: nomPilleurEpaves,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomNaufrageur,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomSorcier,
+            titre: nomPirateRivieres,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCapitaineNaufrageur,
             statut: {
               echelon: argent,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomMaitreSorcier,
-            statut: {
-              echelon: or,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomSeigneurSorcier,
-            statut: {
-              echelon: or,
               standing: 2,
             },
           },
@@ -1883,31 +1903,31 @@ export const lstClasses = [
         description: 'Nautonnier',
         evolutions: [
           {
-            titre: nomSorcierNovice,
+            titre: nomGuideFluvial,
             statut: {
               echelon: bronze,
-              standing: 3,
+              standing: 4,
             },
           },
           {
-            titre: nomSorcier,
+            titre: nomNautonnier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPilote,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomMaitreSorcier,
+            titre: nomMaitreNocher,
             statut: {
-              echelon: or,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomSeigneurSorcier,
-            statut: {
-              echelon: or,
-              standing: 2,
+              echelon: argent,
+              standing: 5,
             },
           },
         ],
@@ -1917,31 +1937,31 @@ export const lstClasses = [
         description: 'Patrouilleur fluvial',
         evolutions: [
           {
-            titre: nomSorcierNovice,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomSorcier,
+            titre: nomRecrueFluviale,
             statut: {
               echelon: argent,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomMaitreSorcier,
-            statut: {
-              echelon: or,
               standing: 1,
             },
           },
           {
-            titre: nomSeigneurSorcier,
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
             statut: {
               echelon: or,
-              standing: 2,
+              standing: 1,
             },
           },
         ],
