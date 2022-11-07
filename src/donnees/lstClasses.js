@@ -299,6 +299,10 @@ export const nomRecrueFluviale = 'Recrue fluviale'
 export const nomAbordeur = 'Abordeur'
 export const nomMaitreAbordeur = 'Maître Abordeur'
 
+export const nomFilou = 'Filou'
+export const nomArnaqueur = 'Arnaqueur'
+export const nomEscroc = 'Escroc'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1975,34 +1979,274 @@ export const lstClasses = [
       {
         titre: nomCharlatan,
         description: 'Charlatan',
+        evolutions: [
+          {
+            titre: nomFilou,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomCharlatan,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomArnaqueur,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomEscroc,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+          },
+        ],
       },
       {
         titre: nomEntremetteur,
         description: 'Entremetteur',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomHorsLaLoi,
         description: 'Hors-la-loi',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomPilleurDeTombes,
         description: 'nomPilleurDeTombes',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomRanconneur,
         description: 'Rançonneur',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomReceleur,
         description: 'Receleur',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomSorcierDissident,
         description: 'Sorcier dissident',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomVoleur,
         description: 'Voleur',
+        evolutions: [
+          {
+            titre: nomRecrueFluviale,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomPatrouilleurFluvial,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomAbordeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreAbordeur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
     ],
   },
