@@ -319,6 +319,18 @@ export const nomCoupeJarret = 'Coupe-jarret'
 export const nomChefGang = 'Chef de gang'
 export const nomBaronCrime = 'Baron du crime'
 
+export const nomBrocanteur = 'Brocanteur'
+export const nomMaitreReceleur = 'Maître receleur'
+export const nomProfessionnelMarcheNoir = 'Professionnel du marché noir'
+
+export const nomEnsorceleur = 'Ensorceleur'
+export const nomDevin = 'Devin'
+export const nomDemoniste = 'Démoniste'
+
+export const nomRodeur = 'Rôdeur'
+export const nomMaitreVoleur = 'Maître voleur'
+export const nomCambrioleur = 'Cambrioleur'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -2167,31 +2179,31 @@ export const lstClasses = [
         description: 'Receleur',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomBrocanteur,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomReceleur,
             statut: {
               echelon: argent,
               standing: 2,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomMaitreReceleur,
             statut: {
               echelon: argent,
-              standing: 1,
+              standing: 3,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomProfessionnelMarcheNoir,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 4,
             },
           },
         ],
@@ -2201,31 +2213,31 @@ export const lstClasses = [
         description: 'Sorcier dissident',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomEnsorceleur,
             statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 1,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomSorcierDissident,
             statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 2,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomDevin,
             statut: {
-              echelon: argent,
-              standing: 1,
+              echelon: bronze,
+              standing: 3,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomDemoniste,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: bronze,
+              standing: 5,
             },
           },
         ],
@@ -2235,31 +2247,31 @@ export const lstClasses = [
         description: 'Voleur',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomRodeur,
             statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 1,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomVoleur,
             statut: {
-              echelon: argent,
-              standing: 2,
+              echelon: bronze,
+              standing: 3,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomMaitreVoleur,
             statut: {
-              echelon: argent,
-              standing: 1,
+              echelon: bronze,
+              standing: 5,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomCambrioleur,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 3,
             },
           },
         ],
