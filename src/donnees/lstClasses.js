@@ -236,6 +236,18 @@ export const nomMusicienDesRues = 'Musicien des rues'
 export const nomTroubadour = 'Troubadour'
 export const nomChefTroupe = 'Chef de troupe'
 
+export const nomApprentiApothicaire = 'Apprenti apothicaire'
+export const nomMaitreApothicaire = 'Maître apothicaire'
+export const nomApothicaireRenom = 'Apothicaire de renom'
+
+export const nomEtudiant = 'Étudiant'
+export const nomChercheur = 'Chercheur'
+export const nomProfesseur = 'Professeur'
+
+export const nomEtudiantIngenieur = 'Étudiant ingénieur'
+export const nomMaitreIngenieur = 'Maître ingénieur'
+export const nomIngenieurAgree = 'Ingénieur agréé'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1356,34 +1368,274 @@ export const lstClasses = [
       {
         titre: nomApothicaire,
         description: 'Apothicaire',
+        evolutions: [
+          {
+            titre: nomApprentiApothicaire,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomApothicaire,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreApothicaire,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomApothicaireRenom,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomErudit,
         description: 'Erudit',
+        evolutions: [
+          {
+            titre: nomEtudiant,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomErudit,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomChercheur,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomProfesseur,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomIngenieur,
         description: 'Ingénieur',
+        evolutions: [
+          {
+            titre: nomEtudiantIngenieur,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomIngenieur,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMaitreIngenieur,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomIngenieurAgree,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomJuriste,
         description: 'Juriste',
+        evolutions: [
+          {
+            titre: nomMusicienDesRues,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSaltimbanque,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomTroubadour,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChefTroupe,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomSorcier,
         description: 'Sorcier',
+        evolutions: [
+          {
+            titre: nomMusicienDesRues,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSaltimbanque,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomTroubadour,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChefTroupe,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomMedecin,
         description: 'nomMedecin',
+        evolutions: [
+          {
+            titre: nomMusicienDesRues,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSaltimbanque,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomTroubadour,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChefTroupe,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomNonne,
         description: 'Nonne',
+        evolutions: [
+          {
+            titre: nomMusicienDesRues,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSaltimbanque,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomTroubadour,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChefTroupe,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
       {
         titre: nomPretre,
         description: 'nomPretre',
+        evolutions: [
+          {
+            titre: nomMusicienDesRues,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSaltimbanque,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomTroubadour,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomChefTroupe,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+        ],
       },
     ],
   },
