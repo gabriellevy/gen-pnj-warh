@@ -248,6 +248,25 @@ export const nomEtudiantIngenieur = 'Étudiant ingénieur'
 export const nomMaitreIngenieur = 'Maître ingénieur'
 export const nomIngenieurAgree = 'Ingénieur agréé'
 
+export const nomEtudiantDroit = 'Étudiant en droit'
+export const nomMaitreBarreau = 'Maître du barreau'
+export const nomJuge = 'Juge'
+
+export const nomEtudiantMedecine = 'Étudiant en médecine'
+export const nomDocteurMedecine = 'Docteur en médecine'
+export const nomMedecinCour = 'Médecin de la cour'
+
+export const nomAbbesse = 'Abbesse'
+export const nomPrieureGenerale = 'Prieure générale'
+
+export const nomInitie = 'Initié'
+export const nomGrandPretre = 'Grand prêtre'
+export const nomLecteur = 'Lecteur'
+
+export const nomSorcierNovice = 'Sorcier novice'
+export const nomMaitreSorcier = 'Maître sorcier'
+export const nomSeigneurSorcier = 'Seigneur sorcier'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1472,65 +1491,31 @@ export const lstClasses = [
         description: 'Juriste',
         evolutions: [
           {
-            titre: nomMusicienDesRues,
+            titre: nomEtudiantDroit,
             statut: {
               echelon: bronze,
-              standing: 3,
+              standing: 4,
             },
           },
           {
-            titre: nomSaltimbanque,
-            statut: {
-              echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomTroubadour,
+            titre: nomJuriste,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomChefTroupe,
+            titre: nomMaitreBarreau,
             statut: {
               echelon: or,
               standing: 1,
             },
           },
-        ],
-      },
-      {
-        titre: nomSorcier,
-        description: 'Sorcier',
-        evolutions: [
           {
-            titre: nomMusicienDesRues,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomSaltimbanque,
-            statut: {
-              echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomTroubadour,
-            statut: {
-              echelon: argent,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomChefTroupe,
+            titre: nomJuge,
             statut: {
               echelon: or,
-              standing: 1,
+              standing: 2,
             },
           },
         ],
@@ -1540,28 +1525,28 @@ export const lstClasses = [
         description: 'nomMedecin',
         evolutions: [
           {
-            titre: nomMusicienDesRues,
+            titre: nomEtudiantMedecine,
             statut: {
               echelon: bronze,
-              standing: 3,
+              standing: 4,
             },
           },
           {
-            titre: nomSaltimbanque,
-            statut: {
-              echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomTroubadour,
+            titre: nomMedecin,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomChefTroupe,
+            titre: nomDocteurMedecine,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomMedecinCour,
             statut: {
               echelon: or,
               standing: 1,
@@ -1574,31 +1559,31 @@ export const lstClasses = [
         description: 'Nonne',
         evolutions: [
           {
-            titre: nomMusicienDesRues,
+            titre: nomNovice,
             statut: {
               echelon: bronze,
-              standing: 3,
+              standing: 1,
             },
           },
           {
-            titre: nomSaltimbanque,
+            titre: nomNonne,
             statut: {
               echelon: bronze,
-              standing: 5,
+              standing: 4,
             },
           },
           {
-            titre: nomTroubadour,
+            titre: nomAbbesse,
             statut: {
               echelon: argent,
-              standing: 3,
+              standing: 2,
             },
           },
           {
-            titre: nomChefTroupe,
+            titre: nomPrieureGenerale,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 5,
             },
           },
         ],
@@ -1608,31 +1593,65 @@ export const lstClasses = [
         description: 'nomPretre',
         evolutions: [
           {
-            titre: nomMusicienDesRues,
+            titre: nomInitie,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomPretre,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomGrandPretre,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomLecteur,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
+      },
+      {
+        titre: nomSorcier,
+        description: 'Sorcier',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomSaltimbanque,
-            statut: {
-              echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomTroubadour,
+            titre: nomSorcier,
             statut: {
               echelon: argent,
               standing: 3,
             },
           },
           {
-            titre: nomChefTroupe,
+            titre: nomMaitreSorcier,
             statut: {
               echelon: or,
               standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
             },
           },
         ],
