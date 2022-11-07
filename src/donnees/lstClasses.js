@@ -267,6 +267,18 @@ export const nomSorcierNovice = 'Sorcier novice'
 export const nomMaitreSorcier = 'Maître sorcier'
 export const nomSeigneurSorcier = 'Seigneur sorcier'
 
+export const nomCanotier = 'Canotier'
+export const nomChefBord = 'Chef de bord'
+export const nomCapitaine = 'Capitaine'
+
+export const nomCoureurRivieres = 'Coureur de rivières'
+export const nomMaitreContrebandier = 'Maître contrebandier'
+export const nomRoiContrebandiers = 'Roi des contrebandiers'
+
+export const nomPorteur = 'Porteur'
+export const nomContremaitre = 'Contremaître'
+export const nomMaitreDocks = 'Maître des docks'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -1665,34 +1677,274 @@ export const lstClasses = [
       {
         titre: nomBatelier,
         description: 'Batelier',
+        evolutions: [
+          {
+            titre: nomCanotier,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomBatelier,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomChefBord,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomCapitaine,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomContrebandier,
         description: 'Contrebandier',
+        evolutions: [
+          {
+            titre: nomCoureurRivieres,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomContrebandier,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreContrebandier,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomRoiContrebandiers,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomDebardeur,
         description: 'nomDebardeur',
+        evolutions: [
+          {
+            titre: nomPorteur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomDebardeur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomContremaitre,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreDocks,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomFemmeDuFleuve,
         description: 'Femme du fleuve',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSorcier,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreSorcier,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomMarin,
         description: 'Marin',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSorcier,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreSorcier,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomNaufrageur,
         description: 'Naufrageur',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSorcier,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreSorcier,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomNautonnier,
         description: 'Nautonnier',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSorcier,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreSorcier,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
       {
         titre: nomPatrouilleurFluvial,
         description: 'Patrouilleur fluvial',
+        evolutions: [
+          {
+            titre: nomSorcierNovice,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSorcier,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreSorcier,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomSeigneurSorcier,
+            statut: {
+              echelon: or,
+              standing: 2,
+            },
+          },
+        ],
       },
     ],
   },
