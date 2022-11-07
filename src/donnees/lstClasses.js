@@ -303,6 +303,22 @@ export const nomFilou = 'Filou'
 export const nomArnaqueur = 'Arnaqueur'
 export const nomEscroc = 'Escroc'
 
+export const nomProstitue = 'Prostitué'
+export const nomSouteneur = 'Souteneur'
+export const nomMeneur = 'Meneur'
+
+export const nomBandit = 'Bandit'
+export const nomChefBande = 'Chef de bande'
+export const nomRoiBandits = 'Roi des bandits'
+
+export const nomTrafiquantCadavres = 'Trafiquant de cadavres'
+export const nomPilleurTombeaux = 'Pilleur de tombeaux'
+export const nomChasseurTresors = 'Chasseur de trésors'
+
+export const nomCoupeJarret = 'Coupe-jarret'
+export const nomChefGang = 'Chef de gang'
+export const nomBaronCrime = 'Baron du crime'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -2015,31 +2031,31 @@ export const lstClasses = [
         description: 'Entremetteur',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomProstitue,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomEntremetteur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomSouteneur,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomMeneur,
             statut: {
               echelon: argent,
-              standing: 2,
-            },
-          },
-          {
-            titre: nomAbordeur,
-            statut: {
-              echelon: argent,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomMaitreAbordeur,
-            statut: {
-              echelon: or,
-              standing: 1,
+              standing: 3,
             },
           },
         ],
@@ -2049,31 +2065,31 @@ export const lstClasses = [
         description: 'Hors-la-loi',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomBandit,
             statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 1,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomHorsLaLoi,
             statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 2,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomChefBande,
             statut: {
-              echelon: argent,
-              standing: 1,
+              echelon: bronze,
+              standing: 4,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomRoiBandits,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 2,
             },
           },
         ],
@@ -2083,31 +2099,31 @@ export const lstClasses = [
         description: 'nomPilleurDeTombes',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomTrafiquantCadavres,
             statut: {
-              echelon: argent,
-              standing: 1,
-            },
-          },
-          {
-            titre: nomPatrouilleurFluvial,
-            statut: {
-              echelon: argent,
+              echelon: bronze,
               standing: 2,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomPilleurDeTombes,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomPilleurTombeaux,
             statut: {
               echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomChasseurTresors,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 5,
             },
           },
         ],
@@ -2117,31 +2133,31 @@ export const lstClasses = [
         description: 'Rançonneur',
         evolutions: [
           {
-            titre: nomRecrueFluviale,
+            titre: nomCoupeJarret,
             statut: {
-              echelon: argent,
-              standing: 1,
+              echelon: bronze,
+              standing: 3,
             },
           },
           {
-            titre: nomPatrouilleurFluvial,
+            titre: nomRanconneur,
             statut: {
-              echelon: argent,
-              standing: 2,
+              echelon: bronze,
+              standing: 5,
             },
           },
           {
-            titre: nomAbordeur,
+            titre: nomChefGang,
             statut: {
               echelon: argent,
-              standing: 1,
+              standing: 3,
             },
           },
           {
-            titre: nomMaitreAbordeur,
+            titre: nomBaronCrime,
             statut: {
-              echelon: or,
-              standing: 1,
+              echelon: argent,
+              standing: 5,
             },
           },
         ],
