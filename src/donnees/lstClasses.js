@@ -343,6 +343,26 @@ export const nomCoureurBois = 'Coureur des bois'
 export const nomGuide = 'Guide'
 export const nomExplorateur = 'Explorateur'
 
+export const nomCueilleur = 'Cueilleur'
+export const nomMaitreHerboriste = 'Maître herboriste'
+export const nomHerbalisteRenom = 'Herbaliste de renom'
+
+export const nomProspecteur = 'Prospecteur'
+export const nomMaitreMineur = 'Maître mineur'
+export const nomContremaitreMine = 'Contremaître de la mine'
+
+export const nomVoyant = 'Voyant'
+export const nomSage = 'Sage'
+export const nomProphete = 'Prophète'
+
+export const nomApprentiSorcierVillage = 'Apprenti sorcier de village'
+export const nomMaitreSorcierVillage = 'Maître sorcier de village'
+export const nomSageVillage = 'Sage de village'
+
+export const nomPaysan = 'Paysan'
+export const nomEchevin = 'Échevin'
+export const nomDoyen = 'Doyen'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -2401,28 +2421,28 @@ export const lstClasses = [
         description: 'Herboriste',
         evolutions: [
           {
-            titre: nomRodeur,
+            titre: nomCueilleur,
             statut: {
               echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomHerboriste,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomMaitreHerboriste,
+            statut: {
+              echelon: argent,
               standing: 1,
             },
           },
           {
-            titre: nomVoleur,
-            statut: {
-              echelon: bronze,
-              standing: 3,
-            },
-          },
-          {
-            titre: nomMaitreVoleur,
-            statut: {
-              echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomCambrioleur,
+            titre: nomHerbalisteRenom,
             statut: {
               echelon: argent,
               standing: 3,
@@ -2435,31 +2455,31 @@ export const lstClasses = [
         description: 'Mineur',
         evolutions: [
           {
-            titre: nomRodeur,
+            titre: nomProspecteur,
             statut: {
               echelon: bronze,
-              standing: 1,
+              standing: 2,
             },
           },
           {
-            titre: nomVoleur,
+            titre: nomMineur,
             statut: {
               echelon: bronze,
-              standing: 3,
+              standing: 4,
             },
           },
           {
-            titre: nomMaitreVoleur,
+            titre: nomMaitreMineur,
             statut: {
               echelon: bronze,
               standing: 5,
             },
           },
           {
-            titre: nomCambrioleur,
+            titre: nomContremaitreMine,
             statut: {
               echelon: argent,
-              standing: 3,
+              standing: 4,
             },
           },
         ],
@@ -2469,31 +2489,31 @@ export const lstClasses = [
         description: 'Mystique',
         evolutions: [
           {
-            titre: nomRodeur,
+            titre: nomVoyant,
             statut: {
               echelon: bronze,
               standing: 1,
             },
           },
           {
-            titre: nomVoleur,
+            titre: nomMystique,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomSage,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomMaitreVoleur,
+            titre: nomProphete,
             statut: {
               echelon: bronze,
-              standing: 5,
-            },
-          },
-          {
-            titre: nomCambrioleur,
-            statut: {
-              echelon: argent,
-              standing: 3,
+              standing: 4,
             },
           },
         ],
@@ -2503,31 +2523,31 @@ export const lstClasses = [
         description: 'nomSorcierDeVillage',
         evolutions: [
           {
-            titre: nomRodeur,
+            titre: nomApprentiSorcierVillage,
             statut: {
               echelon: bronze,
               standing: 1,
             },
           },
           {
-            titre: nomVoleur,
+            titre: nomSorcierDeVillage,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomMaitreSorcierVillage,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomMaitreVoleur,
+            titre: nomSageVillage,
             statut: {
               echelon: bronze,
               standing: 5,
-            },
-          },
-          {
-            titre: nomCambrioleur,
-            statut: {
-              echelon: argent,
-              standing: 3,
             },
           },
         ],
@@ -2537,31 +2557,31 @@ export const lstClasses = [
         description: 'Villageois',
         evolutions: [
           {
-            titre: nomRodeur,
+            titre: nomPaysan,
             statut: {
               echelon: bronze,
-              standing: 1,
+              standing: 2,
             },
           },
           {
-            titre: nomVoleur,
+            titre: nomVillageois,
             statut: {
               echelon: bronze,
               standing: 3,
             },
           },
           {
-            titre: nomMaitreVoleur,
+            titre: nomEchevin,
             statut: {
               echelon: bronze,
-              standing: 5,
+              standing: 4,
             },
           },
           {
-            titre: nomCambrioleur,
+            titre: nomDoyen,
             statut: {
               echelon: argent,
-              standing: 3,
+              standing: 2,
             },
           },
         ],
