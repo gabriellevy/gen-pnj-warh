@@ -6,9 +6,11 @@ import portrait_halfelins from './img/halfelins/portraits/30_85.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_empire from './img/empire/portraits/standard.jpg'
 
+import bg_hauts_elfes from './img/hauts_elfes/bg_poesie.jpg'
+import bg_hauts_elfes_b from './img/hauts_elfes/bg1.png'
+import bg_hauts_elfes_c from './img/hauts_elfes/bg2.png'
 import bg_elfe_sylvain from './img/elfes_sylvains/bg univ_elfes.jpg'
 import bg_elfe_sylvain_b from './img/elfes_sylvains/bg_musicien.jpg'
-import bg_haut_elfe from './img/hauts_elfes/bg poesie.jpg'
 import bg_bretonnien_a from './img/bretonniens/bg1.jpg'
 import bg_bretonnien_b from './img/bretonniens/bg2.jpg'
 import bg_bretonnien_c from './img/bretonniens/bg3.jpg'
@@ -118,7 +120,7 @@ export const lstCoteries = [
     ],
     affiche: true,
     portrait: portrait_haut_elfe,
-    fonds: [bg_haut_elfe],
+    fonds: [bg_hauts_elfes, bg_hauts_elfes_b, bg_hauts_elfes_c],
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:Hauts_Elfes',
     description:
       'Les Hauts Elfes (ou Asur en Eltharin) sont un peuple antique d’une grande sagesse, dont les chroniques remontent aux temps où le monde était jeune. Leurs exploits et leur civilisation étaient déjà légendaires bien avant que les tribus humaines ne fondent les royaumes du Vieux Monde. Fiers de leur noble héritage, les Hauts Elfes sont gracieux et cultivés mais inflexibles à la bataille, car ils sont passés maîtres dans l’art des armes et dans celui de la Magie et, une fois éveillée, leur colère est terrible. Depuis leur île d’Ulthuan, ils sillonnent les mers pour commercer avec les jeunes nations et pour défendre leurs terres. Très peu d’ennemi ont jamais franchi les portes de Lothern, la plus fabuleuse cité du monde, et, de ceux qui ont jamais contemplé les secrets de l’intérieur d’Ulthuan, peu sont restés en vie pour raconter ce qu’ils y ont vu.',
