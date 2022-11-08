@@ -331,6 +331,18 @@ export const nomRodeur = 'Rôdeur'
 export const nomMaitreVoleur = 'Maître voleur'
 export const nomCambrioleur = 'Cambrioleur'
 
+export const nomPercepteur = 'Percepteur'
+export const nomPrefet = 'Préfet'
+export const nomMagistrat = 'Magistrat'
+
+export const nomTraqueur = 'Traqueur'
+export const nomPisteur = 'Pisteur'
+export const nomMaitreChasse = 'Maître de la chasse'
+
+export const nomCoureurBois = 'Coureur des bois'
+export const nomGuide = 'Guide'
+export const nomExplorateur = 'Explorateur'
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -2285,34 +2297,274 @@ export const lstClasses = [
       {
         titre: nomBailli,
         description: 'Bailli',
+        evolutions: [
+          {
+            titre: nomPercepteur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomBailli,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomPrefet,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMagistrat,
+            statut: {
+              echelon: or,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomChasseur,
         description: 'Chasseur',
+        evolutions: [
+          {
+            titre: nomTraqueur,
+            statut: {
+              echelon: bronze,
+              standing: 2,
+            },
+          },
+          {
+            titre: nomChasseur,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+          },
+          {
+            titre: nomPisteur,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomMaitreChasse,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomEclaireur,
         description: 'Eclaireur',
+        evolutions: [
+          {
+            titre: nomCoureurBois,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomEclaireur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomGuide,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomExplorateur,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+          },
+        ],
       },
       {
         titre: nomHerboriste,
         description: 'Herboriste',
+        evolutions: [
+          {
+            titre: nomRodeur,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCambrioleur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomMineur,
         description: 'Mineur',
+        evolutions: [
+          {
+            titre: nomRodeur,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCambrioleur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomMystique,
         description: 'Mystique',
+        evolutions: [
+          {
+            titre: nomRodeur,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCambrioleur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomSorcierDeVillage,
         description: 'nomSorcierDeVillage',
+        evolutions: [
+          {
+            titre: nomRodeur,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCambrioleur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
       {
         titre: nomVillageois,
         description: 'Villageois',
+        evolutions: [
+          {
+            titre: nomRodeur,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+          },
+          {
+            titre: nomVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+          },
+          {
+            titre: nomMaitreVoleur,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+          },
+          {
+            titre: nomCambrioleur,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+          },
+        ],
       },
     ],
   },
