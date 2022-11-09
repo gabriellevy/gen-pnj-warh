@@ -17,6 +17,11 @@ export const nomCharme = 'Charme'
 export const nomChevaucher = 'Chevaucher'
 export const nomCommandement = 'Commandement'
 export const nomConduiteAttelage = "Conduite d'attelage"
+export const nomCorpsACorps = 'Corps à corps'
+export const nomCrochetage = 'Crochetage'
+export const nomDiscretion = 'Discrétion'
+export const nomDivertissement = 'Divertissement'
+export const nomDressage = 'Dressage'
 
 /**
  * @param {*} nomCompStr : la chaîne de caractère décrivant le champs compétence à l'utilisateur
@@ -27,6 +32,31 @@ export function getCompObjPropertyName(nomCompStr) {
 }
 
 export const lstComps = [
+  {
+    titre: nomDressage,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomDivertissement,
+    carac: nomSociabilite,
+    description: [''],
+  },
+  {
+    titre: nomDiscretion,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomCrochetage,
+    carac: nomDexterite,
+    description: [''],
+  },
+  {
+    titre: nomCorpsACorps,
+    carac: nomCC,
+    description: [''],
+  },
   {
     titre: nomConduiteAttelage,
     carac: nomAgilete,
