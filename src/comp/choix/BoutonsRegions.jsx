@@ -4,6 +4,9 @@ import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import {
   lstRegions,
+  nomBretonnie,
+  nomKislev,
+  nomMootland,
   nomRegMontagnesGrises,
   nomRegReikland,
 } from '../../donnees/lstRegions'
@@ -22,10 +25,10 @@ import {
 const Button = styled.button`
   background-color: black;
   color: white;
-  font-size: 20px;
-  padding: 10px 60px;
+  font-size: 15px;
+  padding: 6px 20px;
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 6px 0px;
   cursor: pointer;
   &:disabled {
     color: grey;
@@ -76,7 +79,7 @@ function BoutonsRegions() {
       if (rand === 0) nouvCoterie = nomCotHautsElfes
       else if (rand === 1) nouvCoterie = nomCotElfesSylvains
       else if (rand <= 4) nouvCoterie = nomCotBretonniens
-      else if (rand <= 6) nouvCoterie = nomCotEstalie
+      //else if (rand <= 6) nouvCoterie = nomCotEstalie
       else if (rand <= 9) nouvCoterie = nomCotHalfelins
       else if (rand <= 10) nouvCoterie = nomCotKislevites
       else if (rand <= 13) nouvCoterie = nomCotNains
@@ -84,10 +87,37 @@ function BoutonsRegions() {
       if (rand === 0) nouvCoterie = nomCotHautsElfes
       else if (rand === 1) nouvCoterie = nomCotElfesSylvains
       else if (rand <= 6) nouvCoterie = nomCotBretonniens
-      else if (rand <= 7) nouvCoterie = nomCotEstalie
+      //else if (rand <= 7) nouvCoterie = nomCotEstalie
       else if (rand <= 11) nouvCoterie = nomCotHalfelins
       else if (rand <= 12) nouvCoterie = nomCotKislevites
       else if (rand <= 70) nouvCoterie = nomCotNains
+    } else if (region.titre === nomBretonnie) {
+      if (rand === 0) nouvCoterie = nomCotHautsElfes
+      else if (rand <= 5) nouvCoterie = nomCotElfesSylvains
+      //else if (rand <= 11) nouvCoterie = nomCotEstalie
+      else if (rand <= 12) nouvCoterie = nomCotHalfelins
+      else if (rand <= 13) nouvCoterie = nomCotKislevites
+      else if (rand <= 17) nouvCoterie = nomCotNains
+      else if (rand <= 30) nouvCoterie = nomCotEmpire
+      else nouvCoterie = nomCotBretonniens
+    } else if (region.titre === nomKislev) {
+      if (rand === 0) nouvCoterie = nomCotHautsElfes
+      else if (rand <= 1) nouvCoterie = nomCotElfesSylvains
+      //else if (rand <= 3) nouvCoterie = nomCotEstalie
+      else if (rand <= 4) nouvCoterie = nomCotHalfelins
+      else if (rand <= 10) nouvCoterie = nomCotBretonniens
+      else if (rand <= 13) nouvCoterie = nomCotNains
+      else if (rand <= 26) nouvCoterie = nomCotEmpire
+      else nouvCoterie = nomCotKislevites
+    } else if (region.titre === nomMootland) {
+      if (rand === 0) nouvCoterie = nomCotHautsElfes
+      else if (rand <= 1) nouvCoterie = nomCotElfesSylvains
+      //else if (rand <= 4) nouvCoterie = nomCotEstalie
+      else if (rand <= 9) nouvCoterie = nomCotKislevites
+      else if (rand <= 13) nouvCoterie = nomCotBretonniens
+      else if (rand <= 19) nouvCoterie = nomCotNains
+      else if (rand <= 45) nouvCoterie = nomCotEmpire
+      else nouvCoterie = nomCotHalfelins
     }
 
     var changementsAuPerso = {

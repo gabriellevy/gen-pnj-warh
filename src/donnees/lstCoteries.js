@@ -6,6 +6,9 @@ import portrait_halfelins from './img/halfelins/portraits/30_85.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_empire from './img/empire/portraits/standard.jpg'
 
+import bg_halfelins_a from './img/halfelins/bg1.png'
+import bg_halfelins_b from './img/halfelins/bg2.png'
+import bg_halfelins_c from './img/halfelins/bg3.png'
 import bg_hauts_elfes from './img/hauts_elfes/bg_poesie.jpg'
 import bg_hauts_elfes_b from './img/hauts_elfes/bg1.png'
 import bg_hauts_elfes_c from './img/hauts_elfes/bg2.png'
@@ -25,21 +28,6 @@ import bg_nains_a from './img/nains/bg4.png'
 import bg_nains_b from './img/nains/bg1.png'
 import bg_nains_c from './img/nains/bg2.png'
 import bg_nains_d from './img/nains/bg3.png'
-
-import {
-  nomCC,
-  nomCT,
-  nomForce,
-  nomEndurance,
-  nomInitiative,
-  nomAgilete,
-  nomDexterite,
-  nomIntelligence,
-  nomForceMentale,
-  nomSociabilite,
-} from './lstCaracs'
-
-import { nomArt } from './lstComps'
 
 import { getRandomInt } from '../utils/rand'
 
@@ -107,17 +95,13 @@ export const lstCoteries = [
     titre: nomCotHalfelins,
     affiche: true,
     portrait: portrait_halfelins,
-    fonds: [bg_empire_a],
+    fonds: [bg_halfelins_a, bg_halfelins_b, bg_halfelins_c],
     page: 'https://bibliotheque-imperiale.com/index.php/Halfling',
     description:
       'Peuplant le Mootland, les Halflings sont des petits humanoïdes paisibles et gloutons, peu intéressés par les choses militaires. Leur taille est souvent inférieure à un mètre et varie entre 60 cm et 1,30m. Ils sont rondelets, trapus, souvent ventripotents et en aucun cas aussi puissamment bâtis que les Nains. Ils sont glabres, à part les rouflaquettes portées par les vieux et les mâles élégants mais leurs mains et leurs pieds sont couverts de poils et sont très larges pour d’aussi petites gens. Les poils des pieds sont une constante source de fierté pour tous les Halflings et ils préfèrent généralement être pieds nus, même dehors.',
   },
   {
     titre: nomCotHautsElfes,
-    modifs_caracs: [
-      { carac: nomEndurance, val: -1 },
-      { carac: nomCC, val: 1 },
-    ],
     affiche: true,
     portrait: portrait_haut_elfe,
     fonds: [bg_hauts_elfes, bg_hauts_elfes_b, bg_hauts_elfes_c],
@@ -127,10 +111,6 @@ export const lstCoteries = [
   },
   {
     titre: nomCotElfesSylvains,
-    modifs_caracs: [
-      { carac: nomEndurance, val: -1 },
-      { carac: nomCC, val: 1 },
-    ],
     affiche: true,
     portrait: portrait_elfe_sylvain,
     fonds: [bg_elfe_sylvain, bg_elfe_sylvain_b],
