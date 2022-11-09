@@ -10,6 +10,9 @@ import { nomForceMentale } from './lstCaracs'
 import { nomSociabilite } from './lstCaracs'
 
 export const nomArt = 'Art'
+export const nomAthletisme = 'Athlétisme'
+export const nomCalme = 'Calme'
+export const nomCharme = 'Charme'
 
 /**
  * @param {*} nomCompStr : la chaîne de caractère décrivant le champs compétence à l'utilisateur
@@ -17,17 +20,10 @@ export const nomArt = 'Art'
  */
 export function getCompObjPropertyName(nomCompStr) {
   if (nomCompStr === nomArt) return 'art'
+  if (nomCompStr === nomAthletisme) return 'athletisme'
+  if (nomCompStr === nomCalme) return 'calme'
+  if (nomCompStr === nomCharme) return 'charme'
   return 'compétence inconnue'
-}
-
-export function getCompetence(idComp) {
-  for (let i = 0; i < lstComps.length; i++) {
-    const comp = lstComps[i]
-    if (comp.titre === idComp) {
-      return comp
-    }
-  }
-  return null
 }
 
 export const lstComps = [
@@ -38,4 +34,29 @@ export const lstComps = [
       "Créez une oeuvre d'art avec le moyen d'expression de votre choix.",
     ],
   },
+  {
+    titre: nomAthletisme,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomCalme,
+    carac: nomForceMentale,
+    description: [''],
+  },
+  {
+    titre: nomCharme,
+    carac: nomSociabilite,
+    description: [''],
+  },
 ]
+
+export function getCompetence(idComp) {
+  for (let i = 0; i < lstComps.length; i++) {
+    const comp = lstComps[i]
+    if (comp.titre === idComp) {
+      return comp
+    }
+  }
+  return null
+}
