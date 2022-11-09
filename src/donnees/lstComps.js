@@ -1,4 +1,4 @@
-import { retireAccents } from '../utils/retireAccents'
+import { normalizeCaracteres, retireAccents } from '../utils/retireAccents'
 import { nomCC } from './lstCaracs'
 import { nomCT } from './lstCaracs'
 import { nomForce } from './lstCaracs'
@@ -15,16 +15,28 @@ export const nomAthletisme = 'Athlétisme'
 export const nomCalme = 'Calme'
 export const nomCharme = 'Charme'
 export const nomChevaucher = 'Chevaucher'
+export const nomCommandement = 'Commandement'
+export const nomConduiteAttelage = "Conduite d'attelage"
 
 /**
  * @param {*} nomCompStr : la chaîne de caractère décrivant le champs compétence à l'utilisateur
  * @returns identifiant à utiliser pour accéder aux champs compétence de l'objet personnage via l'opérateur []
  */
 export function getCompObjPropertyName(nomCompStr) {
-  return retireAccents(nomCompStr).toLowerCase()
+  return normalizeCaracteres(retireAccents(nomCompStr)).toLowerCase()
 }
 
 export const lstComps = [
+  {
+    titre: nomConduiteAttelage,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomCommandement,
+    carac: nomSociabilite,
+    description: [''],
+  },
   {
     titre: nomChevaucher,
     carac: nomAgilete,

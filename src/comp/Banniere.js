@@ -2,12 +2,8 @@ import '../styles/Banniere.css'
 import Portrait from './Portrait'
 import { useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
-import { getRandomInt, typesDes } from '../utils/rand'
-import {
-  getCompObjPropertyName,
-  lstComps,
-  nomAthletisme,
-} from '../donnees/lstComps'
+import { getRandomInt } from '../utils/rand'
+import { getCompObjPropertyName, lstComps } from '../donnees/lstComps'
 
 function afficheObjets(perso) {
   if (perso.objets === undefined || perso.objets.length === 0) return ''

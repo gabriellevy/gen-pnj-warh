@@ -828,7 +828,14 @@ Latinise.latin_map = {
 }
 
 export function retireAccents(str) {
-  return str.replace(/[^A-Za-z0-9\[\] ]/g, function (a) {
+  return str.replace(/[^A-Za-z0-9[\] ]/g, function (a) {
     return Latinise.latin_map[a] || a
   })
+}
+
+export function normalizeCaracteres(str) {
+  str = str.replace(/ /g, '_')
+  str = str.replace(/'/g, '_')
+  str = str.replace(/"/g, '_')
+  return str
 }
