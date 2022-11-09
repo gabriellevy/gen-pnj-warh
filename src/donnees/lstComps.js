@@ -1,3 +1,4 @@
+import { retireAccents } from '../utils/retireAccents'
 import { nomCC } from './lstCaracs'
 import { nomCT } from './lstCaracs'
 import { nomForce } from './lstCaracs'
@@ -13,20 +14,22 @@ export const nomArt = 'Art'
 export const nomAthletisme = 'Athlétisme'
 export const nomCalme = 'Calme'
 export const nomCharme = 'Charme'
+export const nomChevaucher = 'Chevaucher'
 
 /**
  * @param {*} nomCompStr : la chaîne de caractère décrivant le champs compétence à l'utilisateur
  * @returns identifiant à utiliser pour accéder aux champs compétence de l'objet personnage via l'opérateur []
  */
 export function getCompObjPropertyName(nomCompStr) {
-  if (nomCompStr === nomArt) return 'art'
-  if (nomCompStr === nomAthletisme) return 'athletisme'
-  if (nomCompStr === nomCalme) return 'calme'
-  if (nomCompStr === nomCharme) return 'charme'
-  return 'compétence inconnue'
+  return retireAccents(nomCompStr).toLowerCase()
 }
 
 export const lstComps = [
+  {
+    titre: nomChevaucher,
+    carac: nomAgilete,
+    description: [''],
+  },
   {
     titre: nomArt,
     carac: nomDexterite,
