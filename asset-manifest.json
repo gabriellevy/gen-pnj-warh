@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/gen-pnj-warh/static/css/main.0ba4e871.css",
-    "main.js": "/gen-pnj-warh/static/js/main.0bbf4c94.js",
+    "main.css": "/gen-pnj-warh/static/css/main.0c56d14b.css",
+    "main.js": "/gen-pnj-warh/static/js/main.ca99a73e.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/bg2.png": "/gen-pnj-warh/static/media/bg2.9a3d175d7c0b222499b1.png",
-    "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
     "static/media/bg3.png": "/gen-pnj-warh/static/media/bg3.f0d0410b6de78d423103.png",
+    "static/media/bg4.png": "/gen-pnj-warh/static/media/bg4.07a121a89ce2ba91fd79.png",
     "static/media/bg_lettre_zapo.jpg": "/gen-pnj-warh/static/media/bg_lettre_zapo.d63e86ecf62d58aac7f0.jpg",
     "static/media/bg2.jpg": "/gen-pnj-warh/static/media/bg2.79677eda5ebad8f1dc2e.jpg",
     "static/media/bg_univ_zaporogues.jpg": "/gen-pnj-warh/static/media/bg_univ_zaporogues.c6d193c1dd5fc983d6c7.jpg",
@@ -390,11 +390,11 @@
     "static/media/F50+.jpg": "/gen-pnj-warh/static/media/F50+.6ac7205212a9ca1b6220.jpg",
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
-    "main.0ba4e871.css.map": "/gen-pnj-warh/static/css/main.0ba4e871.css.map",
-    "main.0bbf4c94.js.map": "/gen-pnj-warh/static/js/main.0bbf4c94.js.map"
+    "main.0c56d14b.css.map": "/gen-pnj-warh/static/css/main.0c56d14b.css.map",
+    "main.ca99a73e.js.map": "/gen-pnj-warh/static/js/main.ca99a73e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ba4e871.css",
-    "static/js/main.0bbf4c94.js"
+    "static/css/main.0c56d14b.css",
+    "static/js/main.ca99a73e.js"
   ]
 }
