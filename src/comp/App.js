@@ -14,12 +14,9 @@ function App() {
   return (
     <div className="App">
       <div
+        className="bgImg"
         style={{
           backgroundImage: `url(${perso.fond})`,
-          backgroundColor: 'transparent',
-          opacity: 0.9,
-          width: 1280,
-          height: 720,
         }}
       >
         <Banniere perso={perso} />
