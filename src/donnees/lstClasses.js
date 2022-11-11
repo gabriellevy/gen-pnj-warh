@@ -1,3 +1,11 @@
+import {
+  nomAgilete,
+  nomCC,
+  nomCT,
+  nomInitiative,
+  nomIntelligence,
+  nomSociabilite,
+} from './lstCaracs'
 import { bronze, argent, or } from './lstNiveauDeVie'
 
 // classes
@@ -389,6 +397,34 @@ export function getEvolutionObjFromCarriereAndEvolutionStr(
   return evolutionObj
 }
 
+export function getIndexEvolutionObjFromCarriereAndEvolutionStr(
+  nomClasseStr,
+  nomCarriereStr,
+  nomEvolutionStr
+) {
+  var indexEvolution = 0
+  lstClasses.forEach((classe) => {
+    if (nomClasseStr === classe.titre) {
+      // classe trouvée
+      classe.carrieres.forEach((carriere) => {
+        if (nomCarriereStr === carriere.titre) {
+          // carrière trouvée
+          var i = 0
+          carriere.evolutions.forEach((evol) => {
+            if (nomEvolutionStr === evol.titre) {
+              // évolution trouvée
+              indexEvolution = i
+            }
+            i++
+          })
+        }
+      })
+    }
+  })
+
+  return indexEvolution
+}
+
 export const lstClasses = [
   {
     titre: nomCitadins,
@@ -404,6 +440,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 1,
             },
+            caracs: [nomCT, nomIntelligence, nomSociabilite],
           },
           {
             titre: nomAgitateur,
@@ -411,6 +448,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 2,
             },
+            caracs: [nomAgilete],
           },
           {
             titre: nomFauteurTrouble,
@@ -418,6 +456,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 3,
             },
+            caracs: [nomCC],
           },
           {
             titre: nomDemagogue,
@@ -425,6 +464,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 5,
             },
+            caracs: [nomInitiative],
           },
         ],
       },
