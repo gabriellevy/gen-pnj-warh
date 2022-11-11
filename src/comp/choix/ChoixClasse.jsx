@@ -1,5 +1,9 @@
 import * as React from 'react'
-import { lstClasses, getClasseObj } from '../../donnees/lstClasses'
+import {
+  lstClasses,
+  getClasseObj,
+  getEvolutionObjFromCarriereAndEvolutionStr,
+} from '../../donnees/lstClasses'
 import { useContext, useEffect } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
@@ -78,6 +82,8 @@ const ChoixClasse = () => {
       classe: event.target.value,
       carriere: carriereObj.titre,
       evolution: evolutionObj.titre,
+      statut_echelon: evolutionObj.statut.echelon,
+      statut_standing: evolutionObj.statut.standing,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
@@ -98,6 +104,8 @@ const ChoixClasse = () => {
     var changementsAuPerso = {
       carriere: event.target.value,
       evolution: evolutionObj.titre,
+      statut_echelon: evolutionObj.statut.echelon,
+      statut_standing: evolutionObj.statut.standing,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
@@ -106,8 +114,16 @@ const ChoixClasse = () => {
   const changeEvolution = (event) => {
     setEvolution(event.target.value)
 
+    var evolutionObj = getEvolutionObjFromCarriereAndEvolutionStr(
+      perso.classe,
+      perso.carriere,
+      event.target.value
+    )
+
     var changementsAuPerso = {
       evolution: event.target.value,
+      statut_echelon: evolutionObj.statut.echelon,
+      statut_standing: evolutionObj.statut.standing,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)

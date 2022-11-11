@@ -363,6 +363,32 @@ export const nomPaysan = 'Paysan'
 export const nomEchevin = 'Échevin'
 export const nomDoyen = 'Doyen'
 
+export function getEvolutionObjFromCarriereAndEvolutionStr(
+  nomClasseStr,
+  nomCarriereStr,
+  nomEvolutionStr
+) {
+  var evolutionObj = {}
+  lstClasses.forEach((classe) => {
+    if (nomClasseStr === classe.titre) {
+      // classe trouvée
+      classe.carrieres.forEach((carriere) => {
+        if (nomCarriereStr === carriere.titre) {
+          // carrière trouvée
+          carriere.evolutions.forEach((evol) => {
+            if (nomEvolutionStr === evol.titre) {
+              // évolution trouvée
+              evolutionObj = evol
+            }
+          })
+        }
+      })
+    }
+  })
+
+  return evolutionObj
+}
+
 export const lstClasses = [
   {
     titre: nomCitadins,
