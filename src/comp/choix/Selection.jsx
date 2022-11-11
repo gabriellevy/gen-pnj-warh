@@ -48,6 +48,10 @@ function Selection() {
     setPerso(persoFinal)
   }
 
+  useEffect(() => {
+    majAge(perso.age)
+  }, [perso.age])
+
   return (
     <div>
       <ul className="lstCoteries_ul">
