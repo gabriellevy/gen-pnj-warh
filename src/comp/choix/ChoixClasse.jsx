@@ -60,20 +60,8 @@ const ChoixClasse = () => {
   const changeCarriere = (event) => {
     setCarriere(event.target.value)
 
-    var evolutionObj = {}
-    if (carriere.evolutions !== undefined) {
-      var indexEvolution = getRandomInt(carriere.evolutions.length) // A FAIRE : changer probas d'évolution
-      evolutionObj = carriere.evolutions[indexEvolution]
-      setEvolution(evolutionObj.titre)
-    } else {
-      evolutionObj.titre = ''
-    }
-
     var changementsAuPerso = {
       carriere: event.target.value,
-      evolution: evolutionObj.titre,
-      statut_echelon: evolutionObj.statut.echelon,
-      statut_standing: evolutionObj.statut.standing,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
@@ -96,6 +84,18 @@ const ChoixClasse = () => {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }
+
+  useEffect(() => {
+    setClasse(perso.classe)
+  }, [perso.classe])
+
+  useEffect(() => {
+    setCarriere(perso.carriere)
+  }, [perso.carriere])
+
+  useEffect(() => {
+    setEvolution(perso.evolution)
+  }, [perso.evolution])
 
   return (
     <div>
