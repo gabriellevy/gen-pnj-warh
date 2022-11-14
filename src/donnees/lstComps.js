@@ -51,8 +51,80 @@ export const nomPiegeage = 'Piégeage'
 export const nomPistage = 'Pistage'
 export const nomPriere = 'Prière'
 export const nomProjectiles = 'Projectiles'
+export const nomRagot = 'Ragot'
+export const nomRamer = 'Ramer'
+export const nomRecherche = 'Recherche'
+export const nomRepresentation = 'Représentation'
+export const nomResistance = 'Résistance'
+export const nomResistanceAlcool = "Résistance à l'alcool"
+export const nomSavoir = 'Savoir'
+export const nomSignesSecrets = 'Signes secrets'
+export const nomSoinsAnimaux = 'Soins aux animaux'
+export const nomSubornation = 'Subornation'
+export const nomSurvieExterieur = 'Survie en extérieur'
+export const nomVoile = 'Voile'
 
 export const lstComps = [
+  {
+    titre: nomVoile,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomSurvieExterieur,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSubornation,
+    carac: nomSociabilite,
+    description: [''],
+  },
+  {
+    titre: nomSoinsAnimaux,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSignesSecrets,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSavoir,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomResistanceAlcool,
+    carac: nomEndurance,
+    description: [''],
+  },
+  {
+    titre: nomResistance,
+    carac: nomEndurance,
+    description: [''],
+  },
+  {
+    titre: nomRepresentation,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomRecherche,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomRamer,
+    carac: nomForce,
+    description: [''],
+  },
+  {
+    titre: nomRagot,
+    carac: nomSociabilite,
+    description: [''],
+  },
   {
     titre: nomProjectiles,
     carac: nomCT,
