@@ -391,7 +391,7 @@ import portrait_empire15_35_artiste from './img/empire/portraits/15_35_artiste.j
 import portrait_empire40_60_spadassin from './img/empire/portraits/40_60_spadassin.jpg'
 import portrait_empire45_plus_villageoise from './img/empire/portraits/45_plus_villageoise.jpg'
 import portrait_empire45_plus_villageois from './img/empire/portraits/45_plus_villageois.jpg'
-import portrait_empire15_35_noble from './img/empire/portraits/15_35_noble.jpg'
+import portrait_empire15_35_f_noble from './img/empire/portraits/15_35_f_noble.jpg'
 import portrait_empire45_plus_bailli from './img/empire/portraits/45_plus_bailli.jpg'
 import portrait_empire25_45_bourgeoise from './img/empire/portraits/25_45_bourgeoise.jpg'
 import portrait_empire35_60_gladiateur from './img/empire/portraits/35_60_gladiateur.jpg'
@@ -1958,12 +1958,12 @@ export const lstPortraits = [
   },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
-    image: portrait_empire15_35_noble,
+    image: portrait_empire15_35_f_noble,
     ageMin: 15,
     ageMax: 35,
     carrieres: [nomNoble],
     classes: [],
-    male: true,
+    male: false,
   },
   {
     coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
