@@ -2,6 +2,10 @@ import {
   nomAgilete,
   nomCC,
   nomCT,
+  nomDexterite,
+  nomEndurance,
+  nomForce,
+  nomForceMentale,
   nomInitiative,
   nomIntelligence,
   nomSociabilite,
@@ -478,6 +482,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 2,
             },
+            caracs: [nomForce, nomEndurance, nomDexterite],
           },
           {
             titre: nomArtisan,
@@ -485,6 +490,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomMaitreArtisan,
@@ -492,6 +498,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomForceMentale],
           },
           {
             titre: nomMaitreGuilde,
@@ -499,6 +506,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomIntelligence],
           },
         ],
       },
@@ -512,6 +520,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomAgilete, nomIntelligence, nomSociabilite],
           },
           {
             titre: nomBourgeois,
@@ -519,6 +528,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomConseillerMunicipal,
@@ -526,6 +536,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomDexterite],
           },
           {
             titre: nomBourgmestre,
@@ -533,6 +544,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
