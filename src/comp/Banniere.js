@@ -125,7 +125,7 @@ function Banniere() {
                       const valeur = perso[idComp]
                       return valeur > 0 ? (
                         <span key={titre} title={description}>
-                          {titre} ({valeur}),
+                          {titre}({valeur}),&nbsp;
                         </span>
                       ) : (
                         ''

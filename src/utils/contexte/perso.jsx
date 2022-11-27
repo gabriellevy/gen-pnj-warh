@@ -17,7 +17,11 @@ import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonni
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
 
-import { getCompObjPropertyName, lstComps } from '../../donnees/lstComps'
+import {
+  getCompetence,
+  getCompObjPropertyName,
+  lstComps,
+} from '../../donnees/lstComps'
 import { lancerDe, getRandomInt } from '../rand'
 import { genCarriere } from '../../comp/choix/coteries/CarriereGen'
 import {
@@ -141,6 +145,14 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
   }
 }
 
+export function setCompetencesAZero(perso, changementsAuPerso) {
+  for (let i = 0; i < lstComps.length; i++) {
+    const compPropertyName = getCompObjPropertyName(lstComps[i].titre)
+    changementsAuPerso[compPropertyName] = 0
+    console.log(compPropertyName + ' : ' + changementsAuPerso[compPropertyName])
+  }
+}
+
 /**
  * maj les caracs en fonction de la carrière et des niveaux d'évolution du personnage
  */
@@ -186,6 +198,74 @@ export function majCaracs(perso, changementsAuPerso, carriereObj, nivCarriere) {
             )
             changementsAuPerso[caracStr] =
               changementsAuPerso[caracStr] + getRandomInt(6) * (nivCarriere - 2)
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * maj les compétences en fonction de la carrière et des niveaux d'évolution du personnage
+ */
+export function majCompetences(
+  perso,
+  changementsAuPerso,
+  carriereObj,
+  nivCarriere
+) {
+  // les compétences initiales sont d'abord resettées à 0
+  // elles devraient l'être selon la coterie mais on verra plus tard (A FAIRE)
+  setCompetencesAZero(perso, changementsAuPerso)
+  if (carriereObj.evolutions[0].competences !== undefined) {
+    // augmentations de compétences de niveau '0' :
+    for (let i = 0; i < carriereObj.evolutions[0].competences.length; ++i) {
+      var compPropertyName = getCompObjPropertyName(
+        carriereObj.evolutions[0].competences[i]
+      )
+      changementsAuPerso[compPropertyName] =
+        changementsAuPerso[compPropertyName] +
+        getRandomInt(6) * (nivCarriere + 1) +
+        5 * nivCarriere
+      console.log(
+        compPropertyName + ' : ' + changementsAuPerso[compPropertyName]
+      )
+    }
+    // augmentations de caracs de niveau '1' :
+    if (nivCarriere > 0) {
+      for (let i = 0; i < carriereObj.evolutions[1].competences.length; ++i) {
+        compPropertyName = getCompObjPropertyName(
+          carriereObj.evolutions[1].competences[i]
+        )
+        changementsAuPerso[compPropertyName] =
+          changementsAuPerso[compPropertyName] +
+          getRandomInt(6) * nivCarriere +
+          5 * (nivCarriere - 1)
+      }
+      // augmentations de caracs de niveau '2' :
+      if (nivCarriere > 1) {
+        for (let i = 0; i < carriereObj.evolutions[2].competences.length; ++i) {
+          compPropertyName = getCompObjPropertyName(
+            carriereObj.evolutions[2].competences[i]
+          )
+          changementsAuPerso[compPropertyName] =
+            changementsAuPerso[compPropertyName] +
+            getRandomInt(6) * (nivCarriere - 1) +
+            5 * (nivCarriere - 2)
+        }
+        // augmentations de caracs de niveau '3' :
+        if (nivCarriere > 2) {
+          for (
+            let i = 0;
+            i < carriereObj.evolutions[3].competences.length;
+            ++i
+          ) {
+            compPropertyName = getCompObjPropertyName(
+              carriereObj.evolutions[3].competences[i]
+            )
+            changementsAuPerso[compPropertyName] =
+              changementsAuPerso[compPropertyName] +
+              getRandomInt(6) * (nivCarriere - 2)
           }
         }
       }
@@ -300,6 +380,7 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso.statut_standing = evolutionObj.statut.standing
     }
     majCaracs(perso, changementsAuPerso, carriereObj, indexEvolution)
+    majCompetences(perso, changementsAuPerso, carriereObj, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.carriere])
@@ -330,8 +411,9 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso.statut_standing = evolutionObj.statut.standing
     }
     // A FAIRE : les caracs du perso devrait être resettées (en fonction de la coterie) avant la fonction suivante
-    // (ou alors il faut séparer "caracs initiales" des caracs améliorées apr la carrière)
+    // (ou alors il faut séparer "caracs initiales" des caracs améliorées par la carrière)
     majCaracs(perso, changementsAuPerso, carriereObj, indexEvolution)
+    majCompetences(perso, changementsAuPerso, carriereObj, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.evolution])

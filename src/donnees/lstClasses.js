@@ -10,6 +10,27 @@ import {
   nomIntelligence,
   nomSociabilite,
 } from './lstCaracs'
+import {
+  nomArt,
+  nomAthletisme,
+  nomCalme,
+  nomCharme,
+  nomChevaucher,
+  nomCommandement,
+  nomCorpsACorps,
+  nomDivertissement,
+  nomEsquive,
+  nomIntimidation,
+  nomIntuition,
+  nomMarchandage,
+  nomMetier,
+  nomPari,
+  nomPerception,
+  nomRagot,
+  nomResistanceAlcool,
+  nomSavoir,
+  nomSubornation,
+} from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
 
 // classes
@@ -445,6 +466,16 @@ export const lstClasses = [
               standing: 1,
             },
             caracs: [nomCT, nomIntelligence, nomSociabilite],
+            competences: [
+              nomArt,
+              nomCharme,
+              nomMarchandage,
+              nomMetier,
+              nomRagot,
+              nomResistanceAlcool,
+              nomSavoir,
+              nomSubornation,
+            ],
           },
           {
             titre: nomAgitateur,
@@ -453,6 +484,14 @@ export const lstClasses = [
               standing: 2,
             },
             caracs: [nomAgilete],
+            competences: [
+              nomCalme,
+              nomCommandement,
+              nomDivertissement,
+              nomEsquive,
+              nomIntuition,
+              nomPari,
+            ],
           },
           {
             titre: nomFauteurTrouble,
@@ -461,6 +500,12 @@ export const lstClasses = [
               standing: 3,
             },
             caracs: [nomCC],
+            competences: [
+              nomAthletisme,
+              nomCorpsACorps,
+              nomIntimidation,
+              nomPerception,
+            ],
           },
           {
             titre: nomDemagogue,
@@ -469,6 +514,7 @@ export const lstClasses = [
               standing: 5,
             },
             caracs: [nomInitiative],
+            competences: [nomChevaucher, nomSavoir],
           },
         ],
       },
