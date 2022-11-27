@@ -754,6 +754,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomForce, nomInitiative, nomDexterite],
           },
           {
             titre: nomArtiste,
@@ -761,6 +762,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomArtisteRenom,
@@ -768,6 +770,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomForceMentale],
           },
           {
             titre: nomMaestro,
@@ -775,6 +778,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomIntelligence],
           },
         ],
       },
@@ -788,6 +792,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomEndurance, nomInitiative, nomAgilete],
           },
           {
             titre: nomConseiller,
@@ -795,6 +800,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 4,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomConsultant,
@@ -802,6 +808,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomIntelligence],
           },
           {
             titre: nomChancelier,
@@ -809,6 +816,7 @@ export const lstClasses = [
               echelon: or,
               standing: 3,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -822,6 +830,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomCC, nomInitiative, nomAgilete],
           },
           {
             titre: nomDuelliste,
@@ -829,6 +838,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomCT],
           },
           {
             titre: nomMaitreDuelliste,
@@ -836,6 +846,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomForce],
           },
           {
             titre: nomChampionJustice,
@@ -843,6 +854,7 @@ export const lstClasses = [
               echelon: or,
               standing: 3,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -856,6 +868,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomEndurance, nomAgilete, nomSociabilite],
           },
           {
             titre: nomEmissaire,
@@ -863,6 +876,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 4,
             },
+            caracs: [nomIntelligence],
           },
           {
             titre: nomDiplomate,
@@ -870,6 +884,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomAmbassadeur,
@@ -877,6 +892,7 @@ export const lstClasses = [
               echelon: or,
               standing: 5,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -890,6 +906,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 3,
             },
+            caracs: [nomAgilete, nomForceMentale, nomSociabilite],
           },
           {
             titre: nomEspion,
@@ -897,6 +914,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomCC],
           },
           {
             titre: nomAgentSecret,
@@ -904,6 +922,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomMaitreEspion,
@@ -911,6 +930,7 @@ export const lstClasses = [
               echelon: or,
               standing: 4,
             },
+            caracs: [nomIntelligence],
           },
         ],
       },
@@ -924,6 +944,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomForce, nomEndurance, nomForceMentale],
           },
           {
             titre: nomIntendant,
@@ -931,6 +952,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomCC],
           },
           {
             titre: nomSenechal,
@@ -938,6 +960,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomGouverneur,
@@ -945,6 +968,7 @@ export const lstClasses = [
               echelon: or,
               standing: 3,
             },
+            caracs: [nomIntelligence],
           },
         ],
       },
@@ -958,6 +982,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomCC, nomInitiative, nomDexterite],
           },
           {
             titre: nomNoble,
@@ -965,6 +990,7 @@ export const lstClasses = [
               echelon: or,
               standing: 3,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomMagnat,
@@ -972,6 +998,7 @@ export const lstClasses = [
               echelon: or,
               standing: 5,
             },
+            caracs: [nomIntelligence],
           },
           {
             titre: nomNobleSeigneur,
@@ -979,6 +1006,7 @@ export const lstClasses = [
               echelon: or,
               standing: 7,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -992,6 +1020,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomForce, nomEndurance, nomAgilete],
           },
           {
             titre: nomServiteur,
@@ -999,6 +1028,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomValet,
@@ -1006,6 +1036,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomIntelligence],
           },
           {
             titre: nomRegisseur,
@@ -1013,6 +1044,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomSociabilite],
           },
         ],
       },
