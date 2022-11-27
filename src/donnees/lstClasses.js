@@ -1684,6 +1684,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 3,
             },
+            caracs: [nomEndurance, nomDexterite, nomIntelligence],
           },
           {
             titre: nomApothicaire,
@@ -1691,6 +1692,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomMaitreApothicaire,
@@ -1698,6 +1700,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomApothicaireRenom,
@@ -1705,6 +1708,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -1718,6 +1722,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 3,
             },
+            caracs: [nomEndurance, nomForceMentale, nomIntelligence],
           },
           {
             titre: nomErudit,
@@ -1725,6 +1730,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomChercheur,
@@ -1732,6 +1738,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomProfesseur,
@@ -1739,6 +1746,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomDexterite],
           },
         ],
       },
@@ -1752,6 +1760,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 4,
             },
+            caracs: [nomCT, nomDexterite, nomIntelligence],
           },
           {
             titre: nomIngenieur,
@@ -1759,6 +1768,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomMaitreIngenieur,
@@ -1766,6 +1776,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 4,
             },
+            caracs: [nomEndurance],
           },
           {
             titre: nomIngenieurAgree,
@@ -1773,6 +1784,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomForceMentale],
           },
         ],
       },
@@ -1786,6 +1798,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 4,
             },
+            caracs: [nomInitiative, nomDexterite, nomIntelligence],
           },
           {
             titre: nomJuriste,
@@ -1793,6 +1806,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomMaitreBarreau,
@@ -1800,6 +1814,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomForceMentale],
           },
           {
             titre: nomJuge,
@@ -1807,6 +1822,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomEndurance],
           },
         ],
       },
@@ -1820,6 +1836,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 4,
             },
+            caracs: [nomDexterite, nomForceMentale, nomIntelligence],
           },
           {
             titre: nomMedecin,
@@ -1827,6 +1844,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomDocteurMedecine,
@@ -1834,6 +1852,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomMedecinCour,
@@ -1841,6 +1860,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomAgilete],
           },
         ],
       },
@@ -1854,6 +1874,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 1,
             },
+            caracs: [nomDexterite, nomSociabilite, nomIntelligence],
           },
           {
             titre: nomNonne,
@@ -1861,6 +1882,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 4,
             },
+            caracs: [nomForceMentale],
           },
           {
             titre: nomAbbesse,
@@ -1868,6 +1890,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomPrieureGenerale,
@@ -1875,6 +1898,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 5,
             },
+            caracs: [nomEndurance],
           },
         ],
       },
@@ -1888,6 +1912,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 2,
             },
+            caracs: [nomEndurance, nomForceMentale, nomAgilete],
           },
           {
             titre: nomPretre,
@@ -1895,6 +1920,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 1,
             },
+            caracs: [nomSociabilite],
           },
           {
             titre: nomGrandPretre,
@@ -1902,6 +1928,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomIntelligence],
           },
           {
             titre: nomLecteur,
@@ -1909,6 +1936,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomInitiative],
           },
         ],
       },
@@ -1922,6 +1950,7 @@ export const lstClasses = [
               echelon: bronze,
               standing: 3,
             },
+            caracs: [nomCC, nomForceMentale, nomIntelligence],
           },
           {
             titre: nomSorcier,
@@ -1929,6 +1958,7 @@ export const lstClasses = [
               echelon: argent,
               standing: 3,
             },
+            caracs: [nomAgilete],
           },
           {
             titre: nomMaitreSorcier,
@@ -1936,6 +1966,7 @@ export const lstClasses = [
               echelon: or,
               standing: 1,
             },
+            caracs: [nomInitiative],
           },
           {
             titre: nomSeigneurSorcier,
@@ -1943,6 +1974,7 @@ export const lstClasses = [
               echelon: or,
               standing: 2,
             },
+            caracs: [nomSociabilite],
           },
         ],
       },
