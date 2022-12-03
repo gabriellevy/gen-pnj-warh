@@ -3,7 +3,12 @@ import Portrait from './Portrait'
 import { useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
 import { getRandomInt } from '../utils/rand'
-import { getCompObjPropertyName, lstComps } from '../donnees/lstComps'
+import {
+  getCompetence,
+  getCompObjPropertyName,
+  lstComps,
+} from '../donnees/lstComps'
+import { getCaracObjPropertyName } from '../donnees/lstCaracs'
 
 function afficheObjets(perso) {
   if (perso.objets === undefined || perso.objets.length === 0) return ''
@@ -122,14 +127,21 @@ function Banniere() {
                     <b>Compétences : </b>
                     {lstComps.map(({ titre, description }) => {
                       const idComp = getCompObjPropertyName(titre)
-                      const valeur = perso[idComp]
-                      return valeur > 0 ? (
-                        <span key={titre} title={description}>
-                          {titre}({valeur}),&nbsp;
-                        </span>
-                      ) : (
-                        ''
-                      )
+                      // la valeur finale dépend de la compétence mais aussi de la valeur de la carac liée :
+                      const valeurComp = perso[idComp]
+                      if (valeurComp > 0) {
+                        const compObj = getCompetence(titre)
+                        const idCarac = getCaracObjPropertyName(compObj.carac)
+                        const valeurCarac = perso[idCarac]
+                        const valeur = valeurComp + valeurCarac
+                        return (
+                          <span key={titre} title={description}>
+                            {titre}({valeur}),&nbsp;
+                          </span>
+                        )
+                      } else {
+                        return ''
+                      }
                     })}
                   </div>
                 </td>
