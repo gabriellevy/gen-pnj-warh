@@ -27,11 +27,15 @@ export const nomCommandement = 'Commandement'
 export const nomConduiteAttelage = "Conduite d'attelage"
 export const nomCorpsACorpsBagarre = 'Bagarre'
 export const nomCorpsACorpsBase = 'Corps à corps (base)'
+export const nomCorpsACorpsAuChoix = 'Corps à corps (au choix)'
 export const nomCrochetage = 'Crochetage'
 export const nomDiscretionUrbaine = 'Discrétion Urbaine'
 export const nomDiscretionSouterraine = 'Discrétion Souterraine'
 export const nomDivertissementNarration = 'Narration'
+export const nomDivertissementInterpretation = 'Interprétation'
+export const nomDivertissementAuChoix1 = 'Divertissement (au choix)'
 export const nomDressage = 'Dressage'
+export const nomDressageChien = 'Dressage de chien'
 export const nomEmpriseSurAnimaux = 'Emprise sur les animaux'
 export const nomEscalade = 'Escalade'
 export const nomEscamotage = 'Escamotage'
@@ -55,7 +59,8 @@ export const nomPerception = 'Perception'
 export const nomPiegeage = 'Piégeage'
 export const nomPistage = 'Pistage'
 export const nomPriere = 'Prière'
-export const nomProjectiles = 'Projectiles'
+export const nomProjectilesFronde = 'Fronde'
+export const nomProjectilesArbaletePoing = 'Arbalète de poig'
 export const nomRagot = 'Ragot'
 export const nomRamer = 'Ramer'
 export const nomRecherche = 'Recherche'
@@ -66,9 +71,11 @@ export const nomSavoirRegion = 'Savoir région'
 export const nomSavoirChoix1 = 'Savoir (au choix)'
 export const nomSavoirChoix2 = 'Savoir (au choix)'
 export const nomSavoirLoi = 'Savoir (loi)'
+export const nomSavoirPoison = 'Savoir (poison)'
 export const nomSavoirPolitique = 'Savoir politique'
 export const nomSavoirHeradilque = 'Héraldique'
 export const nomSignesSecretsGuilde = 'Signes secrets de guilde'
+export const nomSignesSecretsVagabond = 'Signes secrets de vagabond'
 export const nomSoinsAnimaux = 'Soins aux animaux'
 export const nomSubornation = 'Subornation'
 export const nomSurvieExterieur = 'Survie en extérieur'
@@ -101,7 +108,17 @@ export const lstComps = [
     description: [''],
   },
   {
+    titre: nomSignesSecretsVagabond,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
     titre: nomSavoirRegion,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSavoirPoison,
     carac: nomIntelligence,
     description: [''],
   },
@@ -151,7 +168,12 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomProjectiles,
+    titre: nomProjectilesFronde,
+    carac: nomCT,
+    description: [''],
+  },
+  {
+    titre: nomProjectilesArbaletePoing,
     carac: nomCT,
     description: [''],
   },
@@ -266,7 +288,22 @@ export const lstComps = [
     description: [''],
   },
   {
+    titre: nomDressageChien,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
     titre: nomDivertissementNarration,
+    carac: nomSociabilite,
+    description: [''],
+  },
+  {
+    titre: nomDivertissementInterpretation,
+    carac: nomSociabilite,
+    description: [''],
+  },
+  {
+    titre: nomDivertissementAuChoix1,
     carac: nomSociabilite,
     description: [''],
   },
@@ -292,6 +329,11 @@ export const lstComps = [
   },
   {
     titre: nomCorpsACorpsBase,
+    carac: nomCC,
+    description: [''],
+  },
+  {
+    titre: nomCorpsACorpsAuChoix,
     carac: nomCC,
     description: [''],
   },
