@@ -18,17 +18,19 @@ export function getCompObjPropertyName(nomCompStr) {
   return normalizeCaracteres(retireAccents(nomCompStr)).toLowerCase()
 }
 
-export const nomArt = 'Art'
+export const nomArtEcriture = 'Caligraphie'
 export const nomAthletisme = 'Athlétisme'
 export const nomCalme = 'Calme'
 export const nomCharme = 'Charme'
 export const nomChevaucher = 'Chevaucher'
 export const nomCommandement = 'Commandement'
 export const nomConduiteAttelage = "Conduite d'attelage"
-export const nomCorpsACorps = 'Corps à corps'
+export const nomCorpsACorpsBagarre = 'Bagarre'
+export const nomCorpsACorpsBase = 'Corps à corps (base)'
 export const nomCrochetage = 'Crochetage'
-export const nomDiscretion = 'Discrétion'
-export const nomDivertissement = 'Divertissement'
+export const nomDiscretionUrbaine = 'Discrétion Urbaine'
+export const nomDiscretionSouterraine = 'Discrétion Souterraine'
+export const nomDivertissementNarration = 'Narration'
 export const nomDressage = 'Dressage'
 export const nomEmpriseSurAnimaux = 'Emprise sur les animaux'
 export const nomEscalade = 'Escalade'
@@ -39,9 +41,12 @@ export const nomFocalisation = 'Focalisation'
 export const nomGuerison = 'Guérison'
 export const nomIntimidation = 'Intimidation'
 export const nomIntuition = 'Intuition'
-export const nomLangue = 'Langue'
+export const nomLangueClassique = 'Langue classique'
+export const nomLangueGuilde = 'Langue (guilde)'
+export const nomLangueAuChoix1 = 'Langue au choix'
 export const nomMarchandage = 'Marchandage'
-export const nomMetier = 'Métier'
+export const nomMetier = 'Métier (au choix)'
+export const nomMetierImprimerie = 'Imprimerie'
 export const nomMusicien = 'Musicien'
 export const nomNatation = 'Natation'
 export const nomOrientation = 'Orientation'
@@ -57,8 +62,13 @@ export const nomRecherche = 'Recherche'
 export const nomRepresentation = 'Représentation'
 export const nomResistance = 'Résistance'
 export const nomResistanceAlcool = "Résistance à l'alcool"
-export const nomSavoir = 'Savoir'
-export const nomSignesSecrets = 'Signes secrets'
+export const nomSavoirRegion = 'Savoir région'
+export const nomSavoirChoix1 = 'Savoir (au choix)'
+export const nomSavoirChoix2 = 'Savoir (au choix)'
+export const nomSavoirLoi = 'Savoir (loi)'
+export const nomSavoirPolitique = 'Savoir politique'
+export const nomSavoirHeradilque = 'Héraldique'
+export const nomSignesSecretsGuilde = 'Signes secrets de guilde'
 export const nomSoinsAnimaux = 'Soins aux animaux'
 export const nomSubornation = 'Subornation'
 export const nomSurvieExterieur = 'Survie en extérieur'
@@ -86,12 +96,27 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomSignesSecrets,
+    titre: nomSignesSecretsGuilde,
     carac: nomIntelligence,
     description: [''],
   },
   {
-    titre: nomSavoir,
+    titre: nomSavoirRegion,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSavoirChoix1,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSavoirLoi,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomSavoirPolitique,
     carac: nomIntelligence,
     description: [''],
   },
@@ -176,7 +201,17 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomLangue,
+    titre: nomLangueClassique,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomLangueGuilde,
+    carac: nomIntelligence,
+    description: [''],
+  },
+  {
+    titre: nomLangueAuChoix1,
     carac: nomIntelligence,
     description: [''],
   },
@@ -236,7 +271,12 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomDiscretion,
+    titre: nomDiscretionUrbaine,
+    carac: nomAgilete,
+    description: [''],
+  },
+  {
+    titre: nomDiscretionSouterraine,
     carac: nomAgilete,
     description: [''],
   },
@@ -246,7 +286,12 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomCorpsACorps,
+    titre: nomCorpsACorpsBagarre,
+    carac: nomCC,
+    description: [''],
+  },
+  {
+    titre: nomCorpsACorpsBase,
     carac: nomCC,
     description: [''],
   },
