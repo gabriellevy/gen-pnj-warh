@@ -124,25 +124,34 @@ function Banniere() {
                 </td>
                 <td>
                   <div className="descriptionPerso">
-                    <b>Compétences : </b>
-                    {lstComps.map(({ titre, description }) => {
-                      const idComp = getCompObjPropertyName(titre)
-                      // la valeur finale dépend de la compétence mais aussi de la valeur de la carac liée :
-                      const valeurComp = perso[idComp]
-                      if (valeurComp > 0) {
-                        const compObj = getCompetence(titre)
-                        const idCarac = getCaracObjPropertyName(compObj.carac)
-                        const valeurCarac = perso[idCarac]
-                        const valeur = valeurComp + valeurCarac
-                        return (
-                          <span key={titre} title={description}>
-                            {titre}({valeur}),&nbsp;
-                          </span>
-                        )
-                      } else {
-                        return ''
-                      }
-                    })}
+                    <h4>Compétences</h4>
+                    <ul>
+                      {lstComps.map(({ titre, description }) => {
+                        const idComp = getCompObjPropertyName(titre)
+                        // la valeur finale dépend de la compétence mais aussi de la valeur de la carac liée :
+                        const valeurComp = perso[idComp]
+                        if (valeurComp > 0) {
+                          const compObj = getCompetence(titre)
+                          const idCarac = getCaracObjPropertyName(compObj.carac)
+                          const valeurCarac = perso[idCarac]
+                          const valeur = valeurComp + valeurCarac
+                          return (
+                            <span key={titre} title={description}>
+                              <li>
+                                {titre}({valeur})
+                              </li>
+                            </span>
+                          )
+                        } else {
+                          return ''
+                        }
+                      })}
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <div className="descriptionPerso">
+                    <h4>Talents</h4>
                   </div>
                 </td>
               </tr>

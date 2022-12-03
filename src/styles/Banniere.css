@@ -27,10 +27,22 @@
   border-collapse: collapse;
 }
 
+h4 {
+  padding: 0px;
+  margin: 0px;
+  line-height: 100%;
+}
+
 .tableSansBord {
   margin: 0px 0px;
   width: 100%;
   margin: auto;
   border-collapse: collapse;
   padding: 0px 0px;
+}
+
+ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }

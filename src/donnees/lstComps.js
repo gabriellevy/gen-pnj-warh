@@ -266,7 +266,7 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomDivertissement,
+    titre: nomDivertissementNarration,
     carac: nomSociabilite,
     description: [''],
   },
@@ -311,7 +311,7 @@ export const lstComps = [
     description: [''],
   },
   {
-    titre: nomArt,
+    titre: nomArtEcriture,
     carac: nomDexterite,
     description: [
       "Créez une oeuvre d'art avec le moyen d'expression de votre choix.",
