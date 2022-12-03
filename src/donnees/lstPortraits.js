@@ -483,7 +483,67 @@ import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_pl
 import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
 import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
 
+import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
+import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
+import portrait_nain_30_160_charpentier from './img/nains/portraits/30_160_charpentier.png'
+import portrait_nain_30_160_saltimbanque from './img/nains/portraits/30_160_saltimbanque.png'
+import portrait_nain_80_280_moine from './img/nains/portraits/80_280_moine.png'
+import portrait_nain_100_plus_pretre from './img/nains/portraits/100_plus_pretre.png'
+
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_100_plus_pretre,
+    ageMin: 100,
+    carrieres: [nomPretre],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_280_moine,
+    ageMin: 80,
+    ageMax: 280,
+    carrieres: [nomNonne],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_160_saltimbanque,
+    ageMin: 30,
+    ageMax: 160,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_160_charpentier,
+    ageMin: 30,
+    ageMax: 160,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_100_chasseuse,
+    ageMin: 20,
+    ageMax: 100,
+    carrieres: [nomChasseur, nomEclaireur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_100_200,
+    ageMin: 100,
+    ageMax: 200,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotBretonniens],
     image: portrait_bretonnien_35_60_agitateur,
