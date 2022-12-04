@@ -494,8 +494,47 @@ import portrait_nain_12_40_guerriere from './img/nains/portraits/12_40_guerriere
 import portrait_nain_30_150 from './img/nains/portraits/30_150.png'
 import portrait_nain_20_70_forgeronne from './img/nains/portraits/20_70_forgeronne.png'
 import portrait_nain_15_50_rurale from './img/nains/portraits/15_50_rurale.png'
+import portrait_nain_50_200_apothicaire from './img/nains/portraits/50_200_apothicaire.png'
+import portrait_nain_20_110_f from './img/nains/portraits/20_110_f.png'
+import portrait_nain_70_plus_receleur from './img/nains/portraits/70_plus_receleur.png'
+import portrait_nain_50_250_colporteur from './img/nains/portraits/50_250_colporteur.png'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_250_colporteur,
+    ageMin: 50,
+    ageMax: 250,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_70_plus_receleur,
+    ageMin: 70,
+    carrieres: [nomReceleur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_110_f,
+    ageMin: 20,
+    ageMax: 110,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_50_200_apothicaire,
+    ageMin: 50,
+    ageMax: 200,
+    carrieres: [nomApothicaire, nomHerboriste],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_15_50_rurale,
