@@ -489,8 +489,58 @@ import portrait_nain_30_160_charpentier from './img/nains/portraits/30_160_charp
 import portrait_nain_30_160_saltimbanque from './img/nains/portraits/30_160_saltimbanque.png'
 import portrait_nain_80_280_moine from './img/nains/portraits/80_280_moine.png'
 import portrait_nain_100_plus_pretre from './img/nains/portraits/100_plus_pretre.png'
+import portrait_nain_6_30_f from './img/nains/portraits/6_30_f.png'
+import portrait_nain_12_40_guerriere from './img/nains/portraits/12_40_guerriere.png'
+import portrait_nain_30_150 from './img/nains/portraits/30_150.png'
+import portrait_nain_20_70_forgeronne from './img/nains/portraits/20_70_forgeronne.png'
+import portrait_nain_15_50_rurale from './img/nains/portraits/15_50_rurale.png'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_50_rurale,
+    ageMin: 15,
+    ageMax: 50,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_70_forgeronne,
+    ageMin: 20,
+    ageMax: 70,
+    carrieres: [nomArtisan],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_150,
+    ageMin: 30,
+    ageMax: 150,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_12_40_guerriere,
+    ageMin: 12,
+    ageMax: 40,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_6_30_f,
+    ageMin: 6,
+    ageMax: 30,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_100_plus_pretre,
