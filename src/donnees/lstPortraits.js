@@ -498,8 +498,76 @@ import portrait_nain_50_200_apothicaire from './img/nains/portraits/50_200_apoth
 import portrait_nain_20_110_f from './img/nains/portraits/20_110_f.png'
 import portrait_nain_70_plus_receleur from './img/nains/portraits/70_plus_receleur.png'
 import portrait_nain_50_250_colporteur from './img/nains/portraits/50_250_colporteur.png'
+import portrait_nain_20_85_f from './img/nains/portraits/20_85_f.png'
+import portrait_nain_45_140_rural from './img/nains/portraits/45_140_rural.png'
+import portrait_nain_15_85_gladiatrice from './img/nains/portraits/15_85_gladiatrice.png'
+import portrait_nain_40_220_tueur from './img/nains/portraits/40_220_tueur.png'
+import portrait_nain_20_100_noble_f from './img/nains/portraits/20_100_noble_f.png'
+import portrait_nain_140_plus_guerrier from './img/nains/portraits/140_plus_guerrier.png'
+import portrait_nain_120_plus from './img/nains/portraits/120_plus.png'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_120_plus,
+    ageMin: 120,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_140_plus_guerrier,
+    ageMin: 140,
+    carrieres: [],
+    classes: [nomGuerriers],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_100_noble_f,
+    ageMin: 20,
+    ageMax: 100,
+    carrieres: [nomNoble],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_40_220_tueur,
+    ageMin: 40,
+    ageMax: 220,
+    carrieres: [nomTueur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_85_gladiatrice,
+    ageMin: 15,
+    ageMax: 85,
+    carrieres: [nomGladiateur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_45_140_rural,
+    ageMin: 45,
+    ageMax: 140,
+    carrieres: [],
+    classes: [nomRuraux],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_20_85_f,
+    ageMin: 20,
+    ageMax: 85,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_50_250_colporteur,
