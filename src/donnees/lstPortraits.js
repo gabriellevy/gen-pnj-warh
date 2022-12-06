@@ -509,8 +509,57 @@ import portrait_nain_20_140_artisan from './img/nains/portraits/20_140_artisan.j
 import portrait_nain_30_180_ingenieur from './img/nains/portraits/30_180_ingenieur.jpg'
 import portrait_nain_30_140_guerriere from './img/nains/portraits/30_140_guerriere.jpg'
 import portrait_nain_20_140_tueuse from './img/nains/portraits/20_140_tueuse.jpg'
+import portrait_nain_85_210_colporteur from './img/nains/portraits/85_210_colporteur.jpg'
+import portrait_nain_85_210_chasseur from './img/nains/portraits/85_210_chasseur.jpg'
+import portrait_nain_30_125_soldate from './img/nains/portraits/30_125_soldate.jpg'
+import portrait_nain_80_180 from './img/nains/portraits/80_180.jpg'
+import portrait_nain_100_plus from './img/nains/portraits/100_plus.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_100_plus,
+    ageMin: 100,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_80_180,
+    ageMin: 80,
+    ageMax: 180,
+    carrieres: [],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_125_soldate,
+    ageMin: 30,
+    ageMax: 125,
+    carrieres: [nomSoldat],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_85_210_chasseur,
+    ageMin: 85,
+    ageMax: 210,
+    carrieres: [nomChasseur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_85_210_colporteur,
+    ageMin: 85,
+    ageMax: 210,
+    carrieres: [nomColporteur],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_20_140_tueuse,
