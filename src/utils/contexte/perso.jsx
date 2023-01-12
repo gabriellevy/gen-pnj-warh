@@ -225,8 +225,7 @@ export function majCompetences(
       )
       changementsAuPerso[compPropertyName] =
         changementsAuPerso[compPropertyName] +
-        getRandomInt(6) * (nivCarriere + 1) +
-        5 * nivCarriere
+        getRandomInt(7) * (nivCarriere + 1)
       console.log(
         compPropertyName + ' : ' + changementsAuPerso[compPropertyName]
       )
@@ -238,9 +237,7 @@ export function majCompetences(
           carriereObj.evolutions[1].competences[i]
         )
         changementsAuPerso[compPropertyName] =
-          changementsAuPerso[compPropertyName] +
-          getRandomInt(6) * nivCarriere +
-          5 * (nivCarriere - 1)
+          changementsAuPerso[compPropertyName] + getRandomInt(7) * nivCarriere
       }
       // augmentations de caracs de niveau '2' :
       if (nivCarriere > 1) {
@@ -250,8 +247,7 @@ export function majCompetences(
           )
           changementsAuPerso[compPropertyName] =
             changementsAuPerso[compPropertyName] +
-            getRandomInt(6) * (nivCarriere - 1) +
-            5 * (nivCarriere - 2)
+            getRandomInt(7) * (nivCarriere - 1)
         }
         // augmentations de caracs de niveau '3' :
         if (nivCarriere > 2) {
@@ -265,7 +261,7 @@ export function majCompetences(
             )
             changementsAuPerso[compPropertyName] =
               changementsAuPerso[compPropertyName] +
-              getRandomInt(6) * (nivCarriere - 2)
+              getRandomInt(7) * (nivCarriere - 2)
           }
         }
       }
