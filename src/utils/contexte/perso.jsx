@@ -77,7 +77,7 @@ export function genererNom(perso) {
 }
 
 /**
- * donne les valeurs initiales des caracs du perso selon sa coterie
+ * donne les valeurs initiales des caracs du perso selon sa race
  * @param {*} perso
  * @param {*} changementsAuPerso
  */
@@ -135,7 +135,7 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
   } else if (perso.coterie === nomCotHalfelins) {
     changementsAuPerso['cc'] = 10 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
-    changementsAuPerso['force'] = 30 + lancerDe('D10') + lancerDe('D10')
+    changementsAuPerso['force'] = 10 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['sociabilite'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -215,7 +215,7 @@ export function majCompetences(
   nivCarriere
 ) {
   // les compétences initiales sont d'abord resettées à 0
-  // elles devraient l'être selon la coterie mais on verra plus tard (A FAIRE)
+  // elles devraient l'être selon la race du personnage mais on verra plus tard (A FAIRE)
   setCompetencesAZero(perso, changementsAuPerso)
   if (carriereObj.evolutions[0].competences !== undefined) {
     // augmentations de compétences de niveau '0' :
@@ -223,12 +223,11 @@ export function majCompetences(
       var compPropertyName = getCompObjPropertyName(
         carriereObj.evolutions[0].competences[i]
       )
-      changementsAuPerso[compPropertyName] =
-        changementsAuPerso[compPropertyName] +
-        getRandomInt(7) * (nivCarriere + 1)
-      console.log(
-        compPropertyName + ' : ' + changementsAuPerso[compPropertyName]
-      )
+      var valAugmentation = getRandomInt(9) * (nivCarriere + 1)
+      if (valAugmentation > 2) {
+        changementsAuPerso[compPropertyName] =
+          changementsAuPerso[compPropertyName] + valAugmentation
+      }
     }
     // augmentations de caracs de niveau '1' :
     if (nivCarriere > 0) {
@@ -236,8 +235,11 @@ export function majCompetences(
         compPropertyName = getCompObjPropertyName(
           carriereObj.evolutions[1].competences[i]
         )
-        changementsAuPerso[compPropertyName] =
-          changementsAuPerso[compPropertyName] + getRandomInt(7) * nivCarriere
+        valAugmentation = getRandomInt(9) * nivCarriere
+        if (valAugmentation > 2) {
+          changementsAuPerso[compPropertyName] =
+            changementsAuPerso[compPropertyName] + valAugmentation
+        }
       }
       // augmentations de caracs de niveau '2' :
       if (nivCarriere > 1) {
@@ -245,9 +247,11 @@ export function majCompetences(
           compPropertyName = getCompObjPropertyName(
             carriereObj.evolutions[2].competences[i]
           )
-          changementsAuPerso[compPropertyName] =
-            changementsAuPerso[compPropertyName] +
-            getRandomInt(7) * (nivCarriere - 1)
+          valAugmentation = getRandomInt(9) * (nivCarriere - 1)
+          if (valAugmentation > 2) {
+            changementsAuPerso[compPropertyName] =
+              changementsAuPerso[compPropertyName] + valAugmentation
+          }
         }
         // augmentations de caracs de niveau '3' :
         if (nivCarriere > 2) {
@@ -259,9 +263,11 @@ export function majCompetences(
             compPropertyName = getCompObjPropertyName(
               carriereObj.evolutions[3].competences[i]
             )
-            changementsAuPerso[compPropertyName] =
-              changementsAuPerso[compPropertyName] +
-              getRandomInt(7) * (nivCarriere - 2)
+            valAugmentation = getRandomInt(9) * (nivCarriere - 2)
+            if (valAugmentation > 2) {
+              changementsAuPerso[compPropertyName] =
+                changementsAuPerso[compPropertyName] + valAugmentation
+            }
           }
         }
       }
