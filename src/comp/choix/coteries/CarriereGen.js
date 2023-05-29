@@ -5,6 +5,7 @@ import {
   nomCotEstalie,
   nomCotHalfelins,
   nomCotHautsElfes,
+  nomCotKislevites,
   nomCotNains,
 } from '../../../donnees/lstCoteries'
 import { getRandomInt } from '../../../utils/rand'
@@ -236,6 +237,7 @@ export function genCarriere(nomCoterie) {
   } else if (
     // ------------HUMAINS -----------------
     nomCoterie === nomCotEmpire ||
+    nomCoterie === nomCotKislevites ||
     nomCoterie === nomCotEstalie
   ) {
     // ---------- citadins ---------//

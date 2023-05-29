@@ -92,10 +92,6 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
   changementsAuPerso['intelligence'] = 20 + lancerDe('D10') + lancerDe('D10')
   changementsAuPerso['force_mentale'] = 20 + lancerDe('D10') + lancerDe('D10')
   changementsAuPerso['sociabilite'] = 20 + lancerDe('D10') + lancerDe('D10')
-  changementsAuPerso['pointsDeBlessure'] =
-    Math.floor(changementsAuPerso['force'] / 10) +
-    2 * Math.floor(changementsAuPerso['endurance'] / 10) +
-    Math.floor(changementsAuPerso['force_mentale'] / 10)
 
   if (perso.coterie === nomCotHautsElfes) {
     changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -105,10 +101,6 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
     changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['intelligence'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 30 + lancerDe('D10') + lancerDe('D10')
-    changementsAuPerso['pointsDeBlessure'] =
-      Math.floor(changementsAuPerso['force'] / 10) +
-      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
-      Math.floor(changementsAuPerso['force_mentale'] / 10)
   } else if (perso.coterie === nomCotElfesSylvains) {
     changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -117,10 +109,6 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
     changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['intelligence'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 30 + lancerDe('D10') + lancerDe('D10')
-    changementsAuPerso['pointsDeBlessure'] =
-      Math.floor(changementsAuPerso['force'] / 10) +
-      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
-      Math.floor(changementsAuPerso['force_mentale'] / 10)
   } else if (perso.coterie === nomCotNains) {
     changementsAuPerso['cc'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['endurance'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -128,10 +116,6 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
     changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 40 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['sociabilite'] = 10 + lancerDe('D10') + lancerDe('D10')
-    changementsAuPerso['pointsDeBlessure'] =
-      Math.floor(changementsAuPerso['force'] / 10) +
-      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
-      Math.floor(changementsAuPerso['force_mentale'] / 10)
   } else if (perso.coterie === nomCotHalfelins) {
     changementsAuPerso['cc'] = 10 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['ct'] = 30 + lancerDe('D10') + lancerDe('D10')
@@ -139,9 +123,6 @@ export function setCaracsInitiales(perso, changementsAuPerso) {
     changementsAuPerso['dexterite'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['force_mentale'] = 30 + lancerDe('D10') + lancerDe('D10')
     changementsAuPerso['sociabilite'] = 30 + lancerDe('D10') + lancerDe('D10')
-    changementsAuPerso['pointsDeBlessure'] =
-      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
-      Math.floor(changementsAuPerso['force_mentale'] / 10)
   }
 }
 
@@ -149,17 +130,18 @@ export function setCompetencesAZero(perso, changementsAuPerso) {
   for (let i = 0; i < lstComps.length; i++) {
     const compPropertyName = getCompObjPropertyName(lstComps[i].titre)
     changementsAuPerso[compPropertyName] = 0
-    console.log(compPropertyName + ' : ' + changementsAuPerso[compPropertyName])
   }
 }
 
 /**
  * maj les caracs en fonction de la carrière et des niveaux d'évolution du personnage
  */
-export function majCaracs(perso, changementsAuPerso, carriereObj, nivCarriere) {
+export function majCaracs(perso, changementsAuPerso, nivCarriere) {
+  // récupérer la carrière du joueur en tant qu'objet à partir de la str
+  var carriereObj = getCarriere(perso.carriere)
   // les caracs initiales sont d'abord resettées selon la coterie, avant d'être modifiées par la carrière
   setCaracsInitiales(perso, changementsAuPerso)
-  if (carriereObj.evolutions[0].caracs !== undefined) {
+  if (carriereObj && carriereObj.evolutions[0].caracs !== undefined) {
     // augmentations de caracs de niveau '0' :
     for (let i = 0; i < carriereObj.evolutions[0].caracs.length; ++i) {
       var caracStr = getCaracObjPropertyName(
@@ -203,17 +185,25 @@ export function majCaracs(perso, changementsAuPerso, carriereObj, nivCarriere) {
       }
     }
   }
+
+  // points de blessure
+  changementsAuPerso['pointsDeBlessure'] =
+    Math.floor(changementsAuPerso['force'] / 10) +
+    2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+    Math.floor(changementsAuPerso['force_mentale'] / 10)
+  if (perso.coterie === nomCotHalfelins) {
+    changementsAuPerso['pointsDeBlessure'] =
+      2 * Math.floor(changementsAuPerso['endurance'] / 10) +
+      Math.floor(changementsAuPerso['force_mentale'] / 10)
+  }
 }
 
 /**
  * maj les compétences en fonction de la carrière et des niveaux d'évolution du personnage
  */
-export function majCompetences(
-  perso,
-  changementsAuPerso,
-  carriereObj,
-  nivCarriere
-) {
+export function majCompetences(perso, changementsAuPerso, nivCarriere) {
+  // récupérer la carrière du joueur en tant qu'objet à partir de la str
+  var carriereObj = getCarriere(perso.carriere)
   // les compétences initiales sont d'abord resettées à 0
   // elles devraient l'être selon la race du personnage mais on verra plus tard (A FAIRE)
   setCompetencesAZero(perso, changementsAuPerso)
@@ -316,6 +306,11 @@ export const PersoProvider = ({ children }) => {
     var changementsAuPerso = {}
 
     setCaracsInitiales(perso, changementsAuPerso)
+    var indexEvolution = getIndexEvolutionObjFromCarriereAndEvolutionStr(
+      perso.classe,
+      perso.carriere,
+      perso.evolution
+    )
 
     // mettre à jour des caracs selon la coterie actuelle
     // --------- age
@@ -336,6 +331,7 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['nom'] = genererNom(perso)
     changementsAuPerso['poids'] = calculerPoids(perso)
 
+    majCaracs(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.coterie])
@@ -381,8 +377,8 @@ export const PersoProvider = ({ children }) => {
       changementsAuPerso.statut_echelon = evolutionObj.statut.echelon
       changementsAuPerso.statut_standing = evolutionObj.statut.standing
     }
-    majCaracs(perso, changementsAuPerso, carriereObj, indexEvolution)
-    majCompetences(perso, changementsAuPerso, carriereObj, indexEvolution)
+    majCaracs(perso, changementsAuPerso, indexEvolution)
+    majCompetences(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.carriere])
@@ -392,8 +388,6 @@ export const PersoProvider = ({ children }) => {
    */
   useEffect(() => {
     if (perso.evolution === undefined || perso.evolution === '') return
-    // récupérer la carrière du joueur en tant qu'objet à partir de la str
-    var carriereObj = getCarriere(perso.carriere)
 
     // l'utiliser pour déterminer l'évolution de carrière
     var evolutionObj = getEvolutionObjFromCarriereAndEvolutionStr(
@@ -414,8 +408,8 @@ export const PersoProvider = ({ children }) => {
     }
     // A FAIRE : les caracs du perso devrait être resettées (en fonction de la coterie) avant la fonction suivante
     // (ou alors il faut séparer "caracs initiales" des caracs améliorées par la carrière)
-    majCaracs(perso, changementsAuPerso, carriereObj, indexEvolution)
-    majCompetences(perso, changementsAuPerso, carriereObj, indexEvolution)
+    majCaracs(perso, changementsAuPerso, indexEvolution)
+    majCompetences(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.evolution])
