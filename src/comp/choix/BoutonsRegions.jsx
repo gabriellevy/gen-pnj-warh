@@ -7,6 +7,7 @@ import {
   nomBretonnie,
   nomKislev,
   nomMootland,
+  nomRegMiddenheim,
   nomRegMontagnesGrises,
   nomRegReikland,
 } from '../../donnees/lstRegions'
@@ -19,6 +20,7 @@ import {
   nomCotHalfelins,
   nomCotHautsElfes,
   nomCotKislevites,
+  nomCotMiddenheimer,
   nomCotNains,
 } from '../../donnees/lstCoteries'
 
@@ -75,7 +77,16 @@ function BoutonsRegions() {
     // changement de la coterie selon la région sélectionnée => entraîne le changeemnt de caracs par propagation
     var nouvCoterie = nomCotEmpire
     var rand = getRandomInt(100)
-    if (region.titre === nomRegReikland) {
+    if (region.titre === nomRegMiddenheim) {
+      if (rand === 0) nouvCoterie = nomCotHautsElfes
+      else if (rand === 1) nouvCoterie = nomCotElfesSylvains
+      else if (rand <= 2) nouvCoterie = nomCotBretonniens
+      //else if (rand <= 6) nouvCoterie = nomCotEstalie
+      else if (rand <= 6) nouvCoterie = nomCotHalfelins
+      else if (rand <= 8) nouvCoterie = nomCotKislevites
+      else if (rand <= 11) nouvCoterie = nomCotNains
+      else if (rand <= 95) nouvCoterie = nomCotMiddenheimer
+    } else if (region.titre === nomRegReikland) {
       if (rand === 0) nouvCoterie = nomCotHautsElfes
       else if (rand === 1) nouvCoterie = nomCotElfesSylvains
       else if (rand <= 4) nouvCoterie = nomCotBretonniens
@@ -83,6 +94,7 @@ function BoutonsRegions() {
       else if (rand <= 9) nouvCoterie = nomCotHalfelins
       else if (rand <= 10) nouvCoterie = nomCotKislevites
       else if (rand <= 13) nouvCoterie = nomCotNains
+      else if (rand <= 14) nouvCoterie = nomCotMiddenheimer
     } else if (region.titre === nomRegMontagnesGrises) {
       if (rand === 0) nouvCoterie = nomCotHautsElfes
       else if (rand === 1) nouvCoterie = nomCotElfesSylvains
