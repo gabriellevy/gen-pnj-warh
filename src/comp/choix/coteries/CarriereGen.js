@@ -39,6 +39,7 @@ import {
   nomEspion,
   nomFemmeDuFleuve,
   nomFlagellant,
+  nomFrereLoup,
   nomGarde,
   nomGladiateur,
   nomGuerriers,
@@ -363,7 +364,7 @@ export function genCarriere(nomCoterie) {
       carriereStr = nomRepurgateur
     } else if (scoreCarriere <= 68) {
       classeStr = nomItinerants
-      carriereStr = nomFlagellant
+      carriereStr = nomFrereLoup
       // ---------- riverains ---------//
       /*} else if (scoreCarriere <= 61) {
       classeStr = nomRiverains

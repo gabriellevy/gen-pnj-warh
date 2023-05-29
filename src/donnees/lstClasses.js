@@ -158,6 +158,7 @@ import {
   nomSavoirTheologie,
   nomSavoirTorture,
   nomSavoirTroll,
+  nomSavoirUlric,
   nomSavoirVivre,
   nomSavoirVoiesFluviales,
   nomSignesSecretsChasseurs,
@@ -216,6 +217,7 @@ export const nomChasseurDePrimes = 'Chasseur de primes'
 export const nomCocher = 'Cocher'
 export const nomColporteur = 'Colporteur'
 export const nomFlagellant = 'Flagellant'
+export const nomFrereLoup = 'Frère loup'
 export const nomMessager = 'Messager'
 export const nomPatrouilleurRoutier = 'Patrouilleur routier'
 export const nomRepurgateur = 'Répurgateur'
@@ -393,6 +395,10 @@ export const nomNegociantItinerant = 'Négociant itinérant'
 export const nomZelote = 'Zélote'
 export const nomPenitent = 'Pénitent'
 export const nomPropheteDuDestin = 'Prophète du destin'
+
+export const nomSurvivant = 'Survivant'
+export const nomCompagnonLoup = 'Compagnon loup'
+export const nomGrandLoup = 'Grand loup'
 
 export const nomCoureur = 'Coureur'
 export const nomEstafette = 'Estafette'
@@ -2368,6 +2374,65 @@ export const lstClasses = [
             },
             caracs: [nomSociabilite],
             competences: [nomCommandement, nomDivertissementDiscours],
+          },
+        ],
+      },
+      {
+        titre: nomFrereLoup,
+        description: 'Frère loup',
+        evolutions: [
+          {
+            titre: nomSurvivant,
+            statut: {
+              echelon: bronze,
+              standing: 0,
+            },
+            caracs: [nomCC, nomEndurance, nomForce],
+            competences: [
+              nomCalme,
+              nomCorpsACorpsBagarre,
+              nomCorpsACorpsBase,
+              nomEscalade,
+              nomGuerison,
+              nomIntimidation,
+              nomIntuition,
+              nomResistance,
+              nomSavoirUlric,
+              nomSurvieExterieur,
+            ],
+          },
+          {
+            titre: nomFrereLoup,
+            statut: {
+              echelon: bronze,
+              standing: 0,
+            },
+            caracs: [nomForceMentale],
+            competences: [
+              nomAthletisme,
+              nomDiscretionRurale,
+              nomEsquive,
+              nomSavoirBetes,
+              nomSavoirHerbes,
+            ],
+          },
+          {
+            titre: nomCompagnonLoup,
+            statut: {
+              echelon: bronze,
+              standing: 0,
+            },
+            caracs: [nomInitiative],
+            competences: [nomOrientation, nomPerception, nomPistage],
+          },
+          {
+            titre: nomGrandLoup,
+            statut: {
+              echelon: bronze,
+              standing: 0,
+            },
+            caracs: [nomAgilete],
+            competences: [nomNatation, nomSoinsAnimaux],
           },
         ],
       },
