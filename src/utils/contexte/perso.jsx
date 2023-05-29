@@ -8,6 +8,7 @@ import {
   nomCotElfesSylvains,
   nomCotBretonniens,
   nomCotKislevites,
+  nomCotMiddenheimer,
 } from '../../donnees/lstCoteries'
 import { genNomConquistador } from '../../donnees/coteries/conquistadors/nomsConquistadors'
 import { genNomEmpire } from '../../donnees/coteries/empire/nomsEmpire'
@@ -68,6 +69,7 @@ export function genererNom(perso) {
     return genNomKislevite(perso.male)
   else if (perso.coterie === nomCotHalfelins) return genNomHalfelin(perso.male)
   else if (perso.coterie === nomCotEmpire) return genNomEmpire(perso.male)
+  else if (perso.coterie === nomCotMiddenheimer) return genNomEmpire(perso.male)
   else if (perso.coterie === nomCotNains) {
     return genNomNain(perso.male)
   } else if (perso.coterie === nomCotHalfelins) {

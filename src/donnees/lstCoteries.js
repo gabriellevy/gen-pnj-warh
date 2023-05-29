@@ -40,7 +40,8 @@ export const nomCotHalfelins = 'Halfelin'
 export const nomCotNains = 'Nain'
 export const nomCotAlbion = 'Albionais'
 export const nomCotSkavens = 'Skaven'
-export const nomCotEmpire = 'Empire'
+export const nomCotEmpire = 'Empire' // == surtout le Reikland, mais le reste aussi par défaut
+export const nomCotMiddenheimer = 'Middenheimer'
 
 export function getCoterieObj(idCoterie) {
   var coterieObj

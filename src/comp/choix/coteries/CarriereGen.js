@@ -6,6 +6,7 @@ import {
   nomCotHalfelins,
   nomCotHautsElfes,
   nomCotKislevites,
+  nomCotMiddenheimer,
   nomCotNains,
 } from '../../../donnees/lstCoteries'
 import { getRandomInt } from '../../../utils/rand'
@@ -233,6 +234,208 @@ export function genCarriere(nomCoterie) {
     } else if (scoreCarriere <= 100) {
       classeStr = nomRuraux
       carriereStr = nomVillageois
+    }
+  } else if (
+    // ------------Middenheimer -----------------
+    nomCoterie === nomCotMiddenheimer
+  ) {
+    // ---------- lettrés ---------//
+    if (scoreCarriere <= 1) {
+      classeStr = nomLettres
+      carriereStr = nomApothicaire
+    } else if (scoreCarriere <= 2) {
+      classeStr = nomLettres
+      carriereStr = nomIngenieur
+    } else if (scoreCarriere <= 3) {
+      classeStr = nomLettres
+      carriereStr = nomJuriste
+    } else if (scoreCarriere <= 5) {
+      classeStr = nomLettres
+      carriereStr = nomNonne
+    } else if (scoreCarriere <= 6) {
+      classeStr = nomLettres
+      carriereStr = nomMedecin
+    } else if (scoreCarriere <= 11) {
+      classeStr = nomLettres
+      carriereStr = nomPretre
+    } else if (scoreCarriere <= 13) {
+      classeStr = nomLettres
+      carriereStr = nomErudit
+    } else if (scoreCarriere <= 14) {
+      classeStr = nomLettres
+      carriereStr = nomSorcier
+      // ---------- citadins ---------//
+    } else if (scoreCarriere <= 15) {
+      classeStr = nomCitadins
+      carriereStr = nomAgitateur
+    } else if (scoreCarriere <= 18) {
+      classeStr = nomCitadins
+      carriereStr = nomArtisan
+    } else if (scoreCarriere <= 21) {
+      classeStr = nomCitadins
+      carriereStr = nomMendiant
+    } else if (scoreCarriere <= 22) {
+      classeStr = nomCitadins
+      carriereStr = nomEnqueteur
+    } else if (scoreCarriere <= 24) {
+      classeStr = nomCitadins
+      carriereStr = nomMarchand
+    } else if (scoreCarriere <= 26) {
+      classeStr = nomCitadins
+      carriereStr = nomRatier
+    } else if (scoreCarriere <= 28) {
+      classeStr = nomCitadins
+      carriereStr = nomBourgeois
+    } else if (scoreCarriere <= 31) {
+      classeStr = nomCitadins
+      carriereStr = nomMilicien
+      // ---------- courtisans ---------//
+    } else if (scoreCarriere <= 32) {
+      classeStr = nomCourtisans
+      carriereStr = nomConseiller
+    } else if (scoreCarriere <= 33) {
+      classeStr = nomCourtisans
+      carriereStr = nomArtiste
+    } else if (scoreCarriere <= 34) {
+      classeStr = nomCourtisans
+      carriereStr = nomDuelliste
+    } else if (scoreCarriere <= 35) {
+      classeStr = nomCourtisans
+      carriereStr = nomEmissaire
+    } else if (scoreCarriere <= 36) {
+      classeStr = nomCourtisans
+      carriereStr = nomNoble
+    } else if (scoreCarriere <= 39) {
+      classeStr = nomCourtisans
+      carriereStr = nomServiteur
+    } else if (scoreCarriere <= 40) {
+      classeStr = nomCourtisans
+      carriereStr = nomEspion
+    } else if (scoreCarriere <= 41) {
+      classeStr = nomCourtisans
+      carriereStr = nomIntendant
+      // ---------- ruraux ---------//
+    } else if (scoreCarriere <= 42) {
+      classeStr = nomRuraux
+      carriereStr = nomBailli
+    } else if (scoreCarriere <= 43) {
+      classeStr = nomRuraux
+      carriereStr = nomSorcierDeVillage
+    } else if (scoreCarriere <= 44) {
+      classeStr = nomRuraux
+      carriereStr = nomHerboriste
+    } else if (scoreCarriere <= 45) {
+      classeStr = nomRuraux
+      carriereStr = nomChasseur
+    } else if (scoreCarriere <= 47) {
+      classeStr = nomRuraux
+      carriereStr = nomMineur
+    } else if (scoreCarriere <= 48) {
+      classeStr = nomRuraux
+      carriereStr = nomMystique
+    } else if (scoreCarriere <= 49) {
+      classeStr = nomRuraux
+      carriereStr = nomEclaireur
+    } else if (scoreCarriere <= 54) {
+      classeStr = nomRuraux
+      carriereStr = nomVillageois
+      // ---------- itinérants ---------//
+    } else if (scoreCarriere <= 55) {
+      classeStr = nomItinerants
+      carriereStr = nomChasseurDePrimes
+    } else if (scoreCarriere <= 57) {
+      classeStr = nomItinerants
+      carriereStr = nomCocher
+    } else if (scoreCarriere <= 60) {
+      classeStr = nomItinerants
+      carriereStr = nomSaltimbanque
+    } else if (scoreCarriere <= 61) {
+      classeStr = nomItinerants
+      carriereStr = nomMessager
+    } else if (scoreCarriere <= 63) {
+      classeStr = nomItinerants
+      carriereStr = nomColporteur
+    } else if (scoreCarriere <= 64) {
+      classeStr = nomItinerants
+      carriereStr = nomPatrouilleurRoutier
+    } else if (scoreCarriere <= 65) {
+      classeStr = nomItinerants
+      carriereStr = nomRepurgateur
+    } else if (scoreCarriere <= 68) {
+      classeStr = nomItinerants
+      carriereStr = nomFlagellant
+      // ---------- riverains ---------//
+      /*} else if (scoreCarriere <= 61) {
+      classeStr = nomRiverains
+      carriereStr = nomBatelier*/
+    } else if (scoreCarriere <= 69) {
+      classeStr = nomRiverains
+      carriereStr = nomContrebandier
+    } else if (scoreCarriere <= 71) {
+      classeStr = nomRiverains
+      carriereStr = nomDebardeur
+      /*} else if (scoreCarriere <= 67) {
+      classeStr = nomRiverains
+      carriereStr = nomFemmeDuFleuve
+    } else if (scoreCarriere <= 69) {
+      classeStr = nomRiverains
+      carriereStr = nomMarin
+    } else if (scoreCarriere <= 70) {
+      classeStr = nomRiverains
+      carriereStr = nomNaufrageur
+    } else if (scoreCarriere <= 71) {
+      classeStr = nomRiverains
+      carriereStr = nomNautonnier
+    } else if (scoreCarriere <= 73) {
+      classeStr = nomRiverains
+      carriereStr = nomPatrouilleurFluvial*/
+      // ---------- roublards ---------//
+    } else if (scoreCarriere <= 73) {
+      classeStr = nomRoublards
+      carriereStr = nomEntremetteur
+    } else if (scoreCarriere <= 74) {
+      classeStr = nomRoublards
+      carriereStr = nomCharlatan
+    } else if (scoreCarriere <= 76) {
+      classeStr = nomRoublards
+      carriereStr = nomReceleur
+    } else if (scoreCarriere <= 77) {
+      classeStr = nomRoublards
+      carriereStr = nomPilleurDeTombes
+    } else if (scoreCarriere <= 79) {
+      classeStr = nomRoublards
+      carriereStr = nomHorsLaLoi
+    } else if (scoreCarriere <= 82) {
+      classeStr = nomRoublards
+      carriereStr = nomRanconneur
+    } else if (scoreCarriere <= 86) {
+      classeStr = nomRoublards
+      carriereStr = nomVoleur
+    } else if (scoreCarriere <= 87) {
+      classeStr = nomRoublards
+      carriereStr = nomSorcierDissident
+      // ---------- guerriers ---------//
+    } else if (scoreCarriere <= 89) {
+      classeStr = nomGuerriers
+      carriereStr = nomCavalier
+    } else if (scoreCarriere <= 92) {
+      classeStr = nomGuerriers
+      carriereStr = nomGarde
+    } else if (scoreCarriere <= 93) {
+      classeStr = nomGuerriers
+      carriereStr = nomChevalier
+    } else if (scoreCarriere <= 94) {
+      classeStr = nomGuerriers
+      carriereStr = nomGladiateur
+    } else if (scoreCarriere <= 95) {
+      classeStr = nomGuerriers
+      carriereStr = nomSpadassin
+    } else if (scoreCarriere <= 99) {
+      classeStr = nomGuerriers
+      carriereStr = nomSoldat
+    } else if (scoreCarriere <= 100) {
+      classeStr = nomGuerriers
+      carriereStr = nomPretreGuerrier
     }
   } else if (
     // ------------HUMAINS -----------------
