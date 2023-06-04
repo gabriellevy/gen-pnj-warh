@@ -122,6 +122,7 @@ import {
   nomResistanceAlcool,
   nomSavoirAnatomie,
   nomSavoirArt,
+  nomSavoirArtGuerre,
   nomSavoirAstrologie,
   nomSavoirBetes,
   nomSavoirChaos,
@@ -143,9 +144,11 @@ import {
   nomSavoirHerbes,
   nomSavoirHistoire,
   nomSavoirIngenierie,
+  nomSavoirLeMoot,
   nomSavoirLoi,
   nomSavoirMagie,
   nomSavoirMagieNoire,
+  nomSavoirNecromancie,
   nomSavoirNoble,
   nomSavoirPlantes,
   nomSavoirPoison,
@@ -165,6 +168,7 @@ import {
   nomSavoirVoiesFluviales,
   nomSignesSecretsChasseurs,
   nomSignesSecretsContrebandiers,
+  nomSignesSecretsEclaireurss,
   nomSignesSecretsGuilde,
   nomSignesSecretsMineurs,
   nomSignesSecretsOrdreChevaleresque,
@@ -226,6 +230,7 @@ export const nomMessager = 'Messager'
 export const nomPatrouilleurRoutier = 'Patrouilleur routier'
 export const nomRepurgateur = 'Répurgateur'
 export const nomSaltimbanque = 'Saltimbanque'
+export const nomGardechamps = 'Gardechamps'
 
 export const nomApothicaire = 'Apothicaire'
 export const nomErudit = 'Erudit'
@@ -415,6 +420,10 @@ export const nomMessagerVeteran = 'Messager vétéran'
 export const nomPeager = 'Péager'
 export const nomSergentPatrouilleur = 'Sergent patrouilleur'
 export const nomCapitainePatrouilleur = 'Capitaine patrouilleur'
+
+export const nomGardeNovice = 'Garde novice'
+export const nomSergentGardechamps = 'Sergent Gardechamps'
+export const nomCapitaineGardechamps = 'Capitaine Gardechamps'
 
 export const nomInterrogateur = 'Interrogateur'
 export const nomInquisiteur = 'Inquisiteur'
@@ -2630,6 +2639,69 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomOrientation, nomSavoirEmpire],
+          },
+        ],
+      },
+      {
+        titre: nomGardechamps,
+        description: 'Garde champs',
+        evolutions: [
+          {
+            titre: nomGardeNovice,
+            statut: {
+              echelon: bronze,
+              standing: 4,
+            },
+            caracs: [nomCT, nomAgilete, nomForceMentale],
+            competences: [
+              nomDiscretionRurale,
+              nomIntuition,
+              nomMetier,
+              nomOrientation,
+              nomPerception,
+              nomProjectilesFronde,
+              nomRagot,
+              nomSavoirLeMoot,
+            ],
+          },
+          {
+            titre: nomGardechamps,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+            caracs: [nomIntelligence],
+            competences: [
+              nomCharme,
+              nomCorpsACorpsBase,
+              nomEsquive,
+              nomResistanceAlcool,
+              nomSurvieExterieur,
+              nomSignesSecretsEclaireurss,
+            ],
+          },
+          {
+            titre: nomSergentGardechamps,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+            caracs: [nomCC],
+            competences: [
+              nomCalme,
+              nomPiegeage,
+              nomResistance,
+              nomSavoirNecromancie,
+            ],
+          },
+          {
+            titre: nomCapitaineGardechamps,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+            caracs: [nomEndurance],
+            competences: [nomCommandement, nomSavoirArtGuerre],
           },
         ],
       },

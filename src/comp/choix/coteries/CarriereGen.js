@@ -44,6 +44,7 @@ import {
   nomFlagellant,
   nomFrereLoup,
   nomGarde,
+  nomGardechamps,
   nomGladiateur,
   nomGuerriers,
   nomHerboriste,
@@ -1503,7 +1504,7 @@ export function genCarriereHobbit(scoreCarriere) {
     carriereStr = nomMessager
   } else if (scoreCarriere <= 52) {
     classeStr = nomItinerants
-    carriereStr = nomPatrouilleurRoutier
+    carriereStr = nomGardechamps
   } else if (scoreCarriere <= 55) {
     classeStr = nomItinerants
     carriereStr = nomSaltimbanque
