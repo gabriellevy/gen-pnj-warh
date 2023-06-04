@@ -1,6 +1,7 @@
 export const nomRegReikland = 'Reikland'
 export const nomRegMiddenheim = 'Middenheim'
 export const nomRegMiddenlander = 'Middenland'
+export const nomRegNordlander = 'Nordland'
 export const nomRegMontagnesGrises = 'Montagnes grises'
 export const nomBretonnie = 'Bretonnie'
 export const nomKislev = 'Kislev'
@@ -17,6 +18,10 @@ export const lstRegions = [
   },
   {
     titre: nomRegMiddenlander,
+    description: '',
+  },
+  {
+    titre: nomRegNordlander,
     description: '',
   },
   {

@@ -10,6 +10,7 @@ import {
   nomRegMiddenheim,
   nomRegMiddenlander,
   nomRegMontagnesGrises,
+  nomRegNordlander,
   nomRegReikland,
 } from '../../donnees/lstRegions'
 import styled from 'styled-components'
@@ -24,6 +25,7 @@ import {
   nomCotMiddenheimer,
   nomCotMiddenlander,
   nomCotNains,
+  nomCotNordlander,
 } from '../../donnees/lstCoteries'
 
 const Button = styled.button`
@@ -97,6 +99,15 @@ function BoutonsRegions() {
       else if (rand <= 8) nouvCoterie = nomCotKislevites
       else if (rand <= 11) nouvCoterie = nomCotNains
       else if (rand <= 95) nouvCoterie = nomCotMiddenlander
+    } else if (region.titre === nomRegNordlander) {
+      if (rand === 0) nouvCoterie = nomCotHautsElfes
+      else if (rand === 1) nouvCoterie = nomCotElfesSylvains
+      else if (rand <= 2) nouvCoterie = nomCotBretonniens
+      //else if (rand <= 6) nouvCoterie = nomCotEstalie
+      else if (rand <= 6) nouvCoterie = nomCotHalfelins
+      else if (rand <= 8) nouvCoterie = nomCotKislevites
+      else if (rand <= 11) nouvCoterie = nomCotNains
+      else if (rand <= 95) nouvCoterie = nomCotNordlander
     } else if (region.titre === nomRegReikland) {
       if (rand === 0) nouvCoterie = nomCotHautsElfes
       else if (rand === 1) nouvCoterie = nomCotElfesSylvains

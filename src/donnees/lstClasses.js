@@ -19,6 +19,7 @@ import {
   nomCalme,
   nomCharme,
   nomChevaucher,
+  nomChevaucherBlaireau,
   nomCommandement,
   nomConduiteAttelage,
   nomCorpsACorpsAuChoix,
@@ -47,6 +48,7 @@ import {
   nomDivertissementRhetorique,
   nomDivertissementVoyance,
   nomDressage,
+  nomDressageBlaireau,
   nomDressageCheval,
   nomDressageChien,
   nomEmpriseSurAnimaux,
@@ -204,6 +206,7 @@ export const nomIntendant = 'Intendant'
 export const nomNoble = 'Noble'
 export const nomServiteur = 'Serviteur'
 
+// guerriers
 export const nomCavalier = 'Cavalier'
 export const nomChevalier = 'Chevalier'
 export const nomGarde = 'Garde'
@@ -212,6 +215,7 @@ export const nomPretreGuerrier = 'Prêtre guerrier'
 export const nomSoldat = 'Soldat'
 export const nomSpadassin = 'Spadassin'
 export const nomTueur = 'Tueur'
+export const nomChevaucheurBaireau = 'Chevaucheur de blaireau'
 
 export const nomChasseurDePrimes = 'Chasseur de primes'
 export const nomCocher = 'Cocher'
@@ -366,6 +370,10 @@ export const nomLegendeFosse = 'Légende de la fosse'
 export const nomNovice = 'Novice'
 export const nomPretreSergent = 'Prêtre sergent'
 export const nomPretreCapitaine = 'Prêtre capitaine'
+
+export const nomTaquineurBlaireau = 'Taquineur de blaireau'
+export const nomSergentBlaireau = 'Sergent blaireau'
+export const nomMaitreBlaireau = 'Maître blaireau'
 
 export const nomRecrue = 'Recrue'
 export const nomSergent = 'Sergent'
@@ -1987,6 +1995,69 @@ export const lstClasses = [
             },
             caracs: [nomSociabilite],
             competences: [nomOrientation, nomSavoirGuerre],
+          },
+        ],
+      },
+      {
+        titre: nomChevaucheurBaireau,
+        description: 'Chevaucheur de blaireau',
+        evolutions: [
+          {
+            titre: nomTaquineurBlaireau,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+            caracs: [nomCT, nomAgilete, nomIntelligence],
+            competences: [
+              nomChevaucherBlaireau,
+              nomDressageBlaireau,
+              nomEsquive,
+              nomEmpriseSurAnimaux,
+              nomMetier,
+              nomPerception,
+              nomProjectilesFronde,
+              nomRagot,
+            ],
+          },
+          {
+            titre: nomChevaucheurBaireau,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+            caracs: [nomCC],
+            competences: [
+              nomCharme,
+              nomCorpsACorpsBase,
+              nomOrientation,
+              nomProjectilesEntraves,
+              nomSoinsAnimaux,
+              nomResistance,
+            ],
+          },
+          {
+            titre: nomSergentBlaireau,
+            statut: {
+              echelon: argent,
+              standing: 5,
+            },
+            caracs: [nomForce],
+            competences: [
+              nomCorpsACorpsCavalerie,
+              nomIntimidation,
+              nomPistage,
+              nomSurvieExterieur,
+            ],
+          },
+          {
+            titre: nomMaitreBlaireau,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+            caracs: [nomSociabilite],
+            competences: [nomCommandement, nomResistanceAlcool],
           },
         ],
       },
