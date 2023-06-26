@@ -7,6 +7,7 @@ import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_empire from './img/empire/portraits/standard.jpg'
 import portrait_middenheim from './img/empire/portraits/standard_middenheim.jpg'
 import portrait_middenlander from './img/empire/portraits/standard_middenlander.jpg'
+import portrait_nordlander from './img/empire/portraits/standard_nordlander.jpg'
 
 import bg_halfelins_a from './img/halfelins/bg1.png'
 import bg_halfelins_b from './img/halfelins/bg2.png'
@@ -32,6 +33,8 @@ import bg_middenheim3 from './img/empire/middenheim3.png'
 import bg_middenlander1 from './img/empire/middenlander1.png'
 import bg_middenlander2 from './img/empire/middenlander2.png'
 import bg_middenlander3 from './img/empire/middenlander3.png'
+import bg_nordland1 from './img/empire/nordland1.png'
+import bg_nordland2 from './img/empire/nordland2.png'
 import bg_nains_a from './img/nains/bg4.png'
 import bg_nains_b from './img/nains/bg1.png'
 import bg_nains_c from './img/nains/bg2.png'
@@ -108,6 +111,15 @@ export const lstCoteries = [
     portrait: portrait_middenlander,
     fonds: [bg_middenlander1, bg_middenlander2, bg_middenlander3],
     page: 'https://bibliotheque-imperiale.com/index.php/Middenland',
+    description:
+      "Duché du middenland",
+  },
+  {
+    titre: nomCotNordlander,
+    affiche: true,
+    portrait: portrait_nordlander,
+    fonds: [bg_nordland2, bg_nordland1],
+    page: 'https://bibliotheque-imperiale.com/index.php/Nordland',
     description:
       "Duché du middenland",
   },
