@@ -5,7 +5,7 @@ import { nomCotElfesSylvains } from './lstCoteries'
 import { nomCotKislevites } from './lstCoteries'
 import { nomCotHalfelins } from './lstCoteries'
 import { nomCotNains } from './lstCoteries'
-import { nomCotEmpire } from './lstCoteries'
+import { nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander } from './lstCoteries'
 import {
   nomCourtisans,
   nomLettres,
@@ -920,7 +920,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire35_65_marin,
     ageMin: 35,
     ageMax: 65,
@@ -929,7 +929,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire30_60_magicien_ombre,
     ageMin: 30,
     ageMax: 60,
@@ -938,7 +938,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_60_espion_messager,
     ageMin: 40,
     ageMax: 60,
@@ -947,7 +947,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_sorcier_dissident,
     ageMin: 30,
     ageMax: 55,
@@ -956,7 +956,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_marin,
     ageMin: 25,
     ageMax: 50,
@@ -965,7 +965,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_soldat_b,
     ageMin: 50,
     carrieres: [nomSoldat],
@@ -973,7 +973,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_soldat,
     ageMin: 50,
     carrieres: [nomSoldat],
@@ -981,7 +981,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire60_plus_conseiller,
     ageMin: 60,
     carrieres: [nomConseiller],
@@ -989,7 +989,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_rural,
     ageMin: 25,
     ageMax: 50,
@@ -998,7 +998,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_itinerant,
     ageMin: 25,
     ageMax: 50,
@@ -1007,7 +1007,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_chasseuse,
     ageMin: 15,
     ageMax: 35,
@@ -1016,7 +1016,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_noble,
     ageMin: 50,
     carrieres: [nomNoble],
@@ -1024,7 +1024,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire60_plus_intendant,
     ageMin: 60,
     carrieres: [nomIntendant],
@@ -1032,7 +1032,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_pretre_guerrier,
     ageMin: 50,
     carrieres: [nomPretreGuerrier],
@@ -1040,7 +1040,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_homme_fleuve,
     ageMin: 30,
     ageMax: 55,
@@ -1049,7 +1049,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_50_femme_fleuve,
     ageMin: 20,
     ageMax: 50,
@@ -1058,7 +1058,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_60_chasseur_primes,
     ageMin: 35,
     ageMax: 60,
@@ -1067,7 +1067,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_courtisan,
     ageMin: 15,
     ageMax: 35,
@@ -1076,7 +1076,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_45_horslaloi,
     ageMin: 30,
     ageMax: 45,
@@ -1094,7 +1094,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_45_itinerant,
     ageMin: 30,
     ageMax: 45,
@@ -1103,7 +1103,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_45_bailli,
     ageMin: 30,
     ageMax: 45,
@@ -1112,7 +1112,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_65_roublard,
     ageMin: 30,
     ageMax: 65,
@@ -1121,7 +1121,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_guerrier,
     ageMin: 30,
     ageMax: 55,
@@ -1130,7 +1130,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire18_40_marchande,
     ageMin: 18,
     ageMax: 40,
@@ -1139,7 +1139,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_chasseur_primes,
     ageMin: 30,
     ageMax: 55,
@@ -1148,7 +1148,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_riveraine,
     ageMin: 20,
     ageMax: 45,
@@ -1157,7 +1157,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_pretre_guerrier,
     ageMin: 40,
     carrieres: [nomPretreGuerrier],
@@ -1165,7 +1165,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_sorcier_dissident,
     ageMin: 50,
     carrieres: [nomSorcierDissident],
@@ -1173,7 +1173,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_chevalier,
     ageMin: 50,
     carrieres: [nomChevalier],
@@ -1181,7 +1181,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_lettre,
     ageMin: 50,
     carrieres: [nomLettres, nomIngenieur],
@@ -1189,7 +1189,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire35_plus_magicien_metal,
     ageMin: 35,
     carrieres: [nomSorcier],
@@ -1197,7 +1197,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire25_60_magicien_mort,
     ageMin: 25,
     ageMax: 60,
@@ -1206,7 +1206,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire25_60_magicien_bete,
     ageMin: 25,
     ageMax: 60,
@@ -1215,7 +1215,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire25_60_magicien,
     ageMin: 25,
     ageMax: 60,
@@ -1224,7 +1224,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire25_60_magicien_feu,
     ageMin: 25,
     ageMax: 60,
@@ -1233,7 +1233,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotKislevites],
     image: portrait_empire40_plus_noble_emissaire,
     ageMin: 40,
     carrieres: [nomNoble, nomEmissaire],
@@ -1241,7 +1241,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotKislevites],
     image: portrait_empire40_plus_noble_duelliste,
     ageMin: 40,
     carrieres: [nomNoble, nomEmissaire, nomDuelliste],
@@ -1249,7 +1249,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire40_plus_magicien_lumiere,
     ageMin: 40,
     carrieres: [nomSorcier],
@@ -1257,7 +1257,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_guerrier,
     ageMin: 30,
     ageMax: 50,
@@ -1266,7 +1266,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire28_60_debardeur,
     ageMin: 28,
     ageMax: 60,
@@ -1275,7 +1275,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_marchand_emissaire,
     ageMin: 40,
     carrieres: [nomMarchand, nomEmissaire],
@@ -1283,7 +1283,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire40_plus_magicien_cieux,
     ageMin: 40,
     carrieres: [nomSorcier],
@@ -1291,7 +1291,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_repurgateur,
     ageMin: 40,
     carrieres: [nomRepurgateur],
@@ -1299,7 +1299,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_plus_medecin,
     ageMin: 15,
     carrieres: [nomMedecin],
@@ -1307,7 +1307,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_roublard_b,
     ageMin: 20,
     ageMax: 45,
@@ -1316,7 +1316,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire20_60_magicienne_feu,
     ageMin: 20,
     ageMax: 60,
@@ -1325,7 +1325,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire55_plus_ingenieur,
     ageMin: 55,
     carrieres: [nomIngenieur],
@@ -1333,7 +1333,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_repurgateur,
     ageMin: 25,
     ageMax: 45,
@@ -2099,7 +2099,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire55_plus_pretreGuerrier,
     ageMin: 55,
     carrieres: [nomPretreGuerrier, nomSoldat],
@@ -2107,7 +2107,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_milicien,
     ageMin: 30,
     ageMax: 55,
@@ -2116,7 +2116,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_soldat,
     ageMin: 20,
     ageMax: 50,
@@ -2125,7 +2125,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_villageoise,
     ageMin: 20,
     ageMax: 40,
@@ -2134,7 +2134,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotKislevites],
     image: portrait_empire55_plus_soldat,
     ageMin: 55,
     carrieres: [nomSoldat],
@@ -2142,7 +2142,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_35_f_duelliste,
     ageMin: 20,
     ageMax: 35,
@@ -2151,7 +2151,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_f_mystique,
     ageMin: 50,
     carrieres: [nomMystique],
@@ -2159,7 +2159,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_pretre,
     ageMin: 50,
     carrieres: [nomPretre],
@@ -2167,7 +2167,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_65_pilleurDeTombe,
     ageMin: 40,
     ageMax: 65,
@@ -2176,7 +2176,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_55_mendiant,
     ageMin: 20,
     ageMax: 55,
@@ -2185,7 +2185,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_pretreGuerrier,
     ageMin: 30,
     ageMax: 60,
@@ -2194,7 +2194,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_nonne,
     ageMin: 20,
     ageMax: 40,
@@ -2203,7 +2203,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_batelier,
     ageMin: 50,
     carrieres: [nomBatelier],
@@ -2211,7 +2211,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_chasseurDePrimes,
     ageMin: 20,
     ageMax: 40,
@@ -2220,7 +2220,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_25_villageoise,
     ageMin: 15,
     ageMax: 25,
@@ -2229,7 +2229,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_cocher,
     ageMin: 50,
     carrieres: [nomCocher],
@@ -2237,7 +2237,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_60_gladiateur,
     ageMin: 35,
     ageMax: 60,
@@ -2246,7 +2246,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_bourgeoise,
     ageMin: 25,
     ageMax: 45,
@@ -2255,7 +2255,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_plus_bailli,
     ageMin: 45,
     carrieres: [nomBailli],
@@ -2263,7 +2263,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_f_noble,
     ageMin: 15,
     ageMax: 35,
@@ -2272,7 +2272,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_plus_villageois,
     ageMin: 45,
     carrieres: [nomVillageois],
@@ -2280,7 +2280,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_plus_villageoise,
     ageMin: 45,
     carrieres: [nomVillageois],
@@ -2288,7 +2288,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_60_spadassin,
     ageMin: 40,
     ageMax: 60,
@@ -2297,7 +2297,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_artiste,
     ageMin: 15,
     ageMax: 35,
@@ -2306,7 +2306,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_citadin,
     ageMin: 50,
     carrieres: [],
@@ -2314,7 +2314,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_erudit_2,
     ageMin: 50,
     carrieres: [nomErudit, nomConseiller],
@@ -2322,7 +2322,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_65_f_bailli,
     ageMin: 35,
     ageMax: 65,
@@ -2331,7 +2331,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_entremetteur,
     ageMin: 50,
     carrieres: [nomEntremetteur, nomBourgeois, nomBailli],
@@ -2339,7 +2339,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_25_lettres,
     ageMin: 15,
     ageMax: 25,
@@ -2348,7 +2348,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_cocher,
     ageMin: 30,
     ageMax: 60,
@@ -2357,7 +2357,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_espionne,
     ageMin: 15,
     ageMax: 35,
@@ -2366,7 +2366,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_espion,
     ageMin: 30,
     ageMax: 60,
@@ -2375,7 +2375,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_charlatan,
     ageMin: 30,
     ageMax: 50,
@@ -2390,7 +2390,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_chevaliere,
     ageMin: 15,
     ageMax: 35,
@@ -2399,7 +2399,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_saltimbanque,
     ageMin: 20,
     ageMax: 40,
@@ -2408,7 +2408,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_55_courtisan,
     ageMin: 25,
     ageMax: 55,
@@ -2417,7 +2417,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_60_guerrier,
     ageMin: 35,
     ageMax: 60,
@@ -2426,7 +2426,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire60_plus_milicien,
     ageMin: 60,
     carrieres: [nomMilicien],
@@ -2434,7 +2434,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_40_agitateur,
     ageMin: 25,
     ageMax: 40,
@@ -2443,7 +2443,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire50_plus,
     ageMin: 50,
     carrieres: [],
@@ -2451,7 +2451,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_cavalier,
     ageMin: 30,
     ageMax: 60,
@@ -2460,7 +2460,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire60_plus_roublard,
     ageMin: 60,
     carrieres: [],
@@ -2468,7 +2468,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_40_guerriere,
     ageMin: 15,
     ageMax: 40,
@@ -2477,7 +2477,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_40_citadine,
     ageMin: 15,
     ageMax: 40,
@@ -2486,7 +2486,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_entremetteur,
     ageMin: 30,
     ageMax: 50,
@@ -2495,7 +2495,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_80_enqueteur,
     ageMin: 45,
     ageMax: 80,
@@ -2504,7 +2504,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_80_cavalier,
     ageMin: 45,
     ageMax: 80,
@@ -2513,7 +2513,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_50_ranconneuse,
     ageMin: 20,
     ageMax: 50,
@@ -2522,7 +2522,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_60_f_medecin,
     ageMin: 35,
     ageMax: 60,
@@ -2531,7 +2531,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_70_sorcierVillage,
     ageMin: 35,
     ageMax: 70,
@@ -2540,7 +2540,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_charlatan,
     ageMin: 25,
     ageMax: 45,
@@ -2549,7 +2549,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_soldate,
     ageMin: 25,
     ageMax: 45,
@@ -2558,7 +2558,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire35_60_noble,
     ageMin: 35,
     ageMax: 60,
@@ -2567,7 +2567,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_entremetteur,
     ageMin: 25,
     ageMax: 45,
@@ -2576,7 +2576,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_70_contrebandiere,
     ageMin: 40,
     ageMax: 70,
@@ -2585,7 +2585,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_45_chasseusePrimes,
     ageMin: 15,
     ageMax: 45,
@@ -2594,7 +2594,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire55_plus_pretre,
     ageMin: 55,
     carrieres: [nomPretre],
@@ -2602,7 +2602,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_serviteuse,
     ageMin: 15,
     ageMax: 35,
@@ -2611,7 +2611,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_patrouilleurRoutier,
     ageMin: 20,
     ageMax: 40,
@@ -2620,7 +2620,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_mendiant,
     ageMin: 30,
     carrieres: [nomMendiant, nomPilleurDeTombes],
@@ -2628,7 +2628,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_soldat,
     ageMin: 25,
     ageMax: 45,
@@ -2637,7 +2637,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_40_bailli,
     ageMin: 25,
     ageMax: 40,
@@ -2646,7 +2646,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire16_35_sorcierDissident,
     ageMin: 16,
     ageMax: 35,
@@ -2655,7 +2655,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_70_charlatane,
     ageMin: 40,
     ageMax: 70,
@@ -2664,7 +2664,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_70_charlatan,
     ageMin: 30,
     ageMax: 70,
@@ -2673,7 +2673,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_50_voleur,
     ageMin: 20,
     ageMax: 50,
@@ -2682,7 +2682,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_50_f_saltimbanque,
     ageMin: 20,
     ageMax: 50,
@@ -2691,7 +2691,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_conseiller,
     ageMin: 30,
     ageMax: 55,
@@ -2700,7 +2700,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_naufrageur,
     ageMin: 30,
     ageMax: 55,
@@ -2709,7 +2709,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_chasseusePrimes,
     ageMin: 20,
     ageMax: 40,
@@ -2718,7 +2718,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_pilleuseTombe,
     ageMin: 30,
     carrieres: [nomPilleurDeTombes],
@@ -2726,7 +2726,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_intendant,
     ageMin: 30,
     ageMax: 60,
@@ -2735,7 +2735,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire20_40_spadassin,
     ageMin: 20,
     ageMax: 40,
@@ -2744,7 +2744,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_ranconneur,
     ageMin: 30,
     ageMax: 60,
@@ -2753,7 +2753,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_villageois,
     ageMin: 25,
     ageMax: 50,
@@ -2762,7 +2762,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_colporteur,
     ageMin: 30,
     ageMax: 60,
@@ -2771,7 +2771,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_artisan,
     ageMin: 25,
     ageMax: 50,
@@ -2780,7 +2780,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_enqueteur,
     ageMin: 25,
     ageMax: 45,
@@ -2789,7 +2789,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_f_saltimbanque,
     ageMin: 20,
     ageMax: 45,
@@ -2798,7 +2798,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_f_saltimbanque,
     ageMin: 15,
     ageMax: 35,
@@ -2807,7 +2807,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_villageoise_2,
     ageMin: 15,
     ageMax: 35,
@@ -2816,7 +2816,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_75_guerrier,
     ageMin: 40,
     ageMax: 75,
@@ -2825,7 +2825,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_60_noble,
     ageMin: 40,
     ageMax: 60,
@@ -2834,7 +2834,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_emissaire,
     ageMin: 30,
     ageMax: 55,
@@ -2843,7 +2843,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_plus_chevalier,
     ageMin: 45,
     carrieres: [nomChevalier],
@@ -2851,7 +2851,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_soldat,
     ageMin: 30,
     ageMax: 50,
@@ -2860,7 +2860,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_duelliste,
     ageMin: 30,
     ageMax: 50,
@@ -2869,7 +2869,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_30_bourgeoise,
     ageMin: 15,
     ageMax: 30,
@@ -2878,7 +2878,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_roublard,
     ageMin: 20,
     ageMax: 45,
@@ -2887,7 +2887,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_garde,
     ageMin: 30,
     ageMax: 60,
@@ -2896,7 +2896,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_patrouilleurFluvial,
     ageMin: 50,
     carrieres: [nomPatrouilleurFluvial, nomMilicien],
@@ -2904,7 +2904,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_40_bourgeoise,
     ageMin: 15,
     ageMax: 40,
@@ -2913,7 +2913,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_40_bourgeoise,
     ageMin: 20,
     ageMax: 40,
@@ -2922,7 +2922,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_50_chasseur_de_primes,
     ageMin: 20,
     ageMax: 50,
@@ -2931,7 +2931,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_f_juriste,
     ageMin: 20,
     ageMax: 45,
@@ -2940,7 +2940,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_mineuse,
     ageMin: 20,
     ageMax: 45,
@@ -2949,7 +2949,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_flagellant,
     ageMin: 20,
     ageMax: 45,
@@ -2958,7 +2958,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_spadassin,
     ageMin: 30,
     ageMax: 60,
@@ -2967,7 +2967,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_60_f_herboriste,
     ageMin: 25,
     ageMax: 60,
@@ -2976,7 +2976,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_45_f_artisan,
     ageMin: 15,
     ageMax: 45,
@@ -2985,7 +2985,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_garde,
     ageMin: 30,
     carrieres: [nomGarde],
@@ -2993,7 +2993,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_plus_duelliste,
     ageMin: 50,
     carrieres: [nomDuelliste, nomPatrouilleurRoutier, nomChasseurDePrimes],
@@ -3001,7 +3001,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_erudit,
     ageMin: 50,
     carrieres: [nomErudit, nomApothicaire, nomJuriste],
@@ -3009,7 +3009,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_flagellant,
     ageMin: 30,
     carrieres: [nomFlagellant],
@@ -3017,14 +3017,14 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire50_plus_guerrier,
     ageMin: 50,
     classes: [nomGuerriers],
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_50_ratier,
     ageMin: 25,
     ageMax: 50,
@@ -3032,7 +3032,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_55_gladiateur,
     ageMin: 30,
     ageMax: 55,
@@ -3040,7 +3040,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_70_courtisans,
     ageMin: 45,
     ageMax: 70,
@@ -3048,7 +3048,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_saltimbanque,
     ageMin: 30,
     ageMax: 60,
@@ -3056,14 +3056,14 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_plus_repurgateur,
     ageMin: 30,
     carrieres: [nomRepurgateur],
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire20_45_naufrageuse,
     ageMin: 20,
     ageMax: 45,
@@ -3071,7 +3071,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_50_villageois,
     ageMin: 30,
     ageMax: 50,
@@ -3079,7 +3079,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire45_75_agitateur,
     ageMin: 45,
     ageMax: 75,
@@ -3087,7 +3087,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_chasseur_primes,
     ageMin: 25,
     ageMax: 45,
@@ -3096,7 +3096,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire40_65_garde,
     ageMin: 40,
     ageMax: 65,
@@ -3104,7 +3104,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_35_villageoise,
     ageMin: 15,
     ageMax: 45,
@@ -3112,7 +3112,7 @@ export const lstPortraits = [
     male: false,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_naufrageur,
     ageMin: 30,
     ageMax: 60,
@@ -3120,7 +3120,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
     image: portrait_empire30_60_courtisans,
     ageMin: 30,
     ageMax: 60,
@@ -3128,7 +3128,7 @@ export const lstPortraits = [
     male: true,
   },
   {
-    coteries: [nomCotEmpire, nomCotBretonniens, nomCotKislevites],
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_60_lettres,
     ageMin: 30,
     ageMax: 60,
