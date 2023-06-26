@@ -6,6 +6,7 @@ import portrait_halfelins from './img/halfelins/portraits/30_85.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_empire from './img/empire/portraits/standard.jpg'
 import portrait_middenheim from './img/empire/portraits/standard_middenheim.jpg'
+import portrait_middenlander from './img/empire/portraits/standard_middenlander.jpg'
 
 import bg_halfelins_a from './img/halfelins/bg1.png'
 import bg_halfelins_b from './img/halfelins/bg2.png'
@@ -28,6 +29,9 @@ import bg_empire_d from './img/empire/bg3.png'
 import bg_middenheim1 from './img/empire/middenheim1.png'
 import bg_middenheim2 from './img/empire/middenheim2.png'
 import bg_middenheim3 from './img/empire/middenheim3.png'
+import bg_middenlander1 from './img/empire/middenlander1.png'
+import bg_middenlander2 from './img/empire/middenlander2.png'
+import bg_middenlander3 from './img/empire/middenlander3.png'
 import bg_nains_a from './img/nains/bg4.png'
 import bg_nains_b from './img/nains/bg1.png'
 import bg_nains_c from './img/nains/bg2.png'
@@ -97,6 +101,15 @@ export const lstCoteries = [
     page: 'https://whfb-fr.lexicanum.com/wiki/Middenheim',
     description:
       "Fondée avant la naissance de l'Empire, la gigantesque montagne sur laquelle est bâtie la ville de Middenheim, que l'on appelle le Fauschlag ou l'Ulricsberg, domine la Drakwald, telle une île dans un océan vert.",
+  },
+  {
+    titre: nomCotMiddenlander,
+    affiche: true,
+    portrait: portrait_middenlander,
+    fonds: [bg_middenlander1, bg_middenlander2, bg_middenlander3],
+    page: 'https://bibliotheque-imperiale.com/index.php/Middenland',
+    description:
+      "Duché du middenland",
   },
   {
     titre: nomCotNains,
