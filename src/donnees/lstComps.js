@@ -94,6 +94,7 @@ export const nomMetierCartographe = 'Cartographe'
 export const nomMetierColifichets = 'Métier (colifichets)'
 export const nomMetierCharpentier = 'Charpentier'
 export const nomMetierMarechalFerrant = 'Métier (maréchal ferrant)'
+export const nomMetierFabricantArcs = "Métier (fabricant d'arcs)"
 export const nomMetierHerboriste = 'Herboriste'
 export const nomMetierVigneron = 'Virgneron'
 export const nomMetierImprimerie = 'Imprimerie'

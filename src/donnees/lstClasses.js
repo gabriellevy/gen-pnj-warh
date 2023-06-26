@@ -84,6 +84,7 @@ import {
   nomMetierConstructionBateaux,
   nomMetierEmpoisonneur,
   nomMetierExplosifs,
+  nomMetierFabricantArcs,
   nomMetierGraveur,
   nomMetierHerboriste,
   nomMetierImprimerie,
@@ -234,6 +235,7 @@ export const nomRepurgateur = 'Répurgateur'
 export const nomSaltimbanque = 'Saltimbanque'
 export const nomGardechamps = 'Gardechamps'
 export const nomPatrouilleurKarak = 'Patrouilleur des karaks'
+export const nomRodeurFantome = 'Rodeur fantôme'
 
 export const nomApothicaire = 'Apothicaire'
 export const nomErudit = 'Erudit'
@@ -294,6 +296,10 @@ export function getCarriere(idCarr) {
   }
   return null
 }
+
+export const nomGardeForestier = 'Garde forestier'
+export const nomEspritVent = 'Esprit du vent'
+export const nomCourrouxForet = 'Courroux de la forêt'
 
 export const nomCoureurForts = 'Coureur des forts'
 export const nomGardienRoutesKarak = 'Gardien des routes des karaks'
@@ -2272,6 +2278,69 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomConduiteAttelage, nomSavoirLoi],
+          },
+        ],
+      },
+      {
+        titre: nomRodeurFantome,
+        description: 'RodeurFantome',
+        evolutions: [
+          {
+            titre: nomGardeForestier,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+            caracs: [nomCT, nomAgilete, nomIntelligence],
+            competences: [
+              nomDiscretionAuChoix,
+              nomEscalade,
+              nomMetierFabricantArcs,
+              nomOrientation,
+              nomProjectilesArc,
+              nomSavoirBetes,
+              nomSurvieExterieur,
+              nomPerception,
+            ],
+          },
+          {
+            titre: nomRodeurFantome,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+            caracs: [nomDexterite],
+            competences: [
+              nomCorpsACorpsBase,
+              nomAthletisme,
+              nomEmpriseSurAnimaux,
+              nomPiegeage,
+              nomSignesSecretsRangers,
+              nomPistage,
+            ],
+          },
+          {
+            titre: nomEspritVent,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+            caracs: [nomCC],
+            competences: [
+              nomCalme,
+              nomEsquive,
+              nomNatation,
+              nomResistance,
+            ],
+          },
+          {
+            titre: nomCourrouxForet,
+            statut: {
+              echelon: argent,
+              standing: 3,
+            },
+            caracs: [nomIntelligence],
+            competences: [nomIntimidation, nomLangueAuChoix1],
           },
         ],
       },
