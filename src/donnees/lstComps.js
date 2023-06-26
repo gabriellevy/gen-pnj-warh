@@ -185,6 +185,7 @@ export const nomSignesSecretsMineurs = 'Signes secrets de mineurs'
 export const nomSignesSecretsGuilde = 'Signes secrets de guilde'
 export const nomSignesSecretsChasseurs = 'Signes secrets de chasseurs'
 export const nomSignesSecretsEclaireurss = "Signes secrets d'éclaireurs"
+export const nomSignesSecretsRangers = "Signes secrets de rangers"
 export const nomSignesSecretsVagabond = 'Signes secrets de vagabond'
 export const nomSignesSecretsVoleur = 'Signes secrets de voleur'
 export const nomSignesSecretsChoix = 'Signes secrets au choix'

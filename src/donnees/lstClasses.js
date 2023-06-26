@@ -172,6 +172,7 @@ import {
   nomSignesSecretsGuilde,
   nomSignesSecretsMineurs,
   nomSignesSecretsOrdreChevaleresque,
+  nomSignesSecretsRangers,
   nomSignesSecretsVagabond,
   nomSignesSecretsVoleur,
   nomSoinsAnimaux,
@@ -221,6 +222,7 @@ export const nomSpadassin = 'Spadassin'
 export const nomTueur = 'Tueur'
 export const nomChevaucheurBaireau = 'Chevaucheur de blaireau'
 
+// itinérants
 export const nomChasseurDePrimes = 'Chasseur de primes'
 export const nomCocher = 'Cocher'
 export const nomColporteur = 'Colporteur'
@@ -231,6 +233,7 @@ export const nomPatrouilleurRoutier = 'Patrouilleur routier'
 export const nomRepurgateur = 'Répurgateur'
 export const nomSaltimbanque = 'Saltimbanque'
 export const nomGardechamps = 'Gardechamps'
+export const nomPatrouilleurKarak = 'Patrouilleur des karaks'
 
 export const nomApothicaire = 'Apothicaire'
 export const nomErudit = 'Erudit'
@@ -291,6 +294,10 @@ export function getCarriere(idCarr) {
   }
   return null
 }
+
+export const nomCoureurForts = 'Coureur des forts'
+export const nomGardienRoutesKarak = 'Gardien des routes des karaks'
+export const nomArpenteurKarak = 'Arpenteur des karaks'
 
 export const nomPamphletaire = 'Pamphlétaire'
 export const nomFauteurTrouble = 'Fauteur de trouble'
@@ -2265,6 +2272,69 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomConduiteAttelage, nomSavoirLoi],
+          },
+        ],
+      },
+      {
+        titre: nomPatrouilleurKarak,
+        description: 'nomPatrouilleurKarak',
+        evolutions: [
+          {
+            titre: nomCoureurForts,
+            statut: {
+              echelon: bronze,
+              standing: 3,
+            },
+            caracs: [nomCC, nomEndurance, nomForce],
+            competences: [
+              nomEscalade,
+              nomCorpsACorpsBase,
+              nomEsquive,
+              nomMetierCartographe,
+              nomPerception,
+              nomRamer,
+              nomResistance,
+              nomSurvieExterieur,
+            ],
+          },
+          {
+            titre: nomPatrouilleurKarak,
+            statut: {
+              echelon: argent,
+              standing: 1,
+            },
+            caracs: [nomCT],
+            competences: [
+              nomEmpriseSurAnimaux,
+              nomIntuition,
+              nomProjectilesPoudreNoire,
+              nomPistage,
+              nomSignesSecretsEclaireurss,
+              nomSignesSecretsRangers,
+            ],
+          },
+          {
+            titre: nomGardienRoutesKarak,
+            statut: {
+              echelon: argent,
+              standing: 2,
+            },
+            caracs: [nomAgilete],
+            competences: [
+              nomDiscretionSouterraine,
+              nomOrientation,
+              nomPiegeage,
+              nomSavoirIngenierie,
+            ],
+          },
+          {
+            titre: nomArpenteurKarak,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+            caracs: [nomIntelligence],
+            competences: [nomCalme, nomLangueAuChoix1],
           },
         ],
       },
