@@ -79,6 +79,7 @@ import {
   nomMystique,
   nomSorcierDeVillage,
   nomVillageois,
+  nomFrereLoup,
 } from './lstClasses'
 
 import portrait_conquistador_25_60 from './img/conquistadors/portraits/25-60.jpg'
@@ -459,6 +460,7 @@ import portrait_empire30_55_sorcier_dissident from './img/empire/portraits/30_55
 import portrait_empire40_60_espion_messager from './img/empire/portraits/40_60_espion_messager.jpg'
 import portrait_empire30_60_magicien_ombre from './img/empire/portraits/30_60_magicien_ombre.jpg'
 import portrait_empire35_65_marin from './img/empire/portraits/35_65_marin.jpg'
+import portrait_empire25_65_frere_loup from './img/empire/portraits/standard_middenheim.jpg'
 
 import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
 import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
@@ -925,6 +927,15 @@ export const lstPortraits = [
     ageMin: 35,
     ageMax: 65,
     carrieres: [nomMarin],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotMiddenheimer],
+    image: portrait_empire25_65_frere_loup,
+    ageMin: 25,
+    ageMax: 65,
+    carrieres: [nomFrereLoup],
     classes: [],
     male: true,
   },

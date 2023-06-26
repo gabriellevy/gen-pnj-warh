@@ -5,6 +5,7 @@ import portrait_zaporogue from './img/kislevites/portraits/20-45.jpg'
 import portrait_halfelins from './img/halfelins/portraits/30_85.jpg'
 import portrait_nains from './img/nains/portraits/40_100.jpg'
 import portrait_empire from './img/empire/portraits/standard.jpg'
+import portrait_middenheim from './img/empire/portraits/standard_middenheim.jpg'
 
 import bg_halfelins_a from './img/halfelins/bg1.png'
 import bg_halfelins_b from './img/halfelins/bg2.png'
@@ -24,6 +25,9 @@ import bg_empire_a from './img/empire/bg4.png'
 import bg_empire_b from './img/empire/bg1.png'
 import bg_empire_c from './img/empire/bg2.png'
 import bg_empire_d from './img/empire/bg3.png'
+import bg_middenheim1 from './img/empire/middenheim1.png'
+import bg_middenheim2 from './img/empire/middenheim2.png'
+import bg_middenheim3 from './img/empire/middenheim3.png'
 import bg_nains_a from './img/nains/bg4.png'
 import bg_nains_b from './img/nains/bg1.png'
 import bg_nains_c from './img/nains/bg2.png'
@@ -84,6 +88,15 @@ export const lstCoteries = [
     page: 'https://bibliotheque-imperiale.com/index.php/Cat%C3%A9gorie:L%27Empire',
     description:
       'Au cours de siècles de guerres, l’Empire est devenu un vaste royaume regroupant des provinces et des cités-états unies sous la bannière de l’Empereur. Pour les habitants du Vieux Monde, la représentation habituelle de l’Empire est celle d’une contrée couverte d’immenses et sombres forêts, entourée d’impénétrables chaînes de montagnes. Une terre sur laquelle l’humanité et les autres races coexistent à l’abri des murailles de quelques îlots de civilisation dispersés, depuis lesquels ils observent d’un œil craintif les dangers qui se tapissent sous les noires frondaisons. Il y a certainement une part de vérité dans cette manière de voir, mais comme tout stéréotype, elle peint le tableau à très gros traits et simplifie à l’extrême une situation infiniment plus diverse et complexe. ',
+  },
+  {
+    titre: nomCotMiddenheimer,
+    affiche: true,
+    portrait: portrait_middenheim,
+    fonds: [bg_middenheim1, bg_middenheim2, bg_middenheim3],
+    page: 'https://whfb-fr.lexicanum.com/wiki/Middenheim',
+    description:
+      "Fondée avant la naissance de l'Empire, la gigantesque montagne sur laquelle est bâtie la ville de Middenheim, que l'on appelle le Fauschlag ou l'Ulricsberg, domine la Drakwald, telle une île dans un océan vert.",
   },
   {
     titre: nomCotNains,
