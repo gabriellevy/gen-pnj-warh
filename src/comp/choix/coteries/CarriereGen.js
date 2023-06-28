@@ -1083,7 +1083,7 @@ export function genCarriere(nomCoterie) {
       classeStr = nomRuraux
       carriereStr = nomVillageois
     }
-  } else if (nomCoterie === nomCotHalfelins) {
+  } else if (nomCoterie === nomCotHalfelins) { // ------------ HOBBITS -----------------
     return genCarriereHobbit(scoreCarriere)
   } else if ( nomCoterie === nomCotElfesSylvains ) { // ------------ELFES SYLVAINS -----------------
     return genCarriereElfesSylvains(scoreCarriere)

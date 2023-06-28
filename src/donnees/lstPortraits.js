@@ -484,6 +484,7 @@ import portrait_bretonnien_50_75_rural from './img/bretonniens/portraits/50_75_r
 import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_plus_rural.jpg'
 import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
 import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
+import portrait_bretonnien_25_50_agitateur from './img/bretonniens/portraits/25_50_agitateur.jpg'
 
 import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
 import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
@@ -802,6 +803,17 @@ export const lstPortraits = [
       nomMilicien,
       nomDebardeur,
       nomPatrouilleurFluvial,
+    ],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens],
+    image: portrait_bretonnien_25_50_agitateur,
+    ageMin: 25,
+    ageMax: 50,
+    carrieres: [
+      nomAgitateur,
     ],
     classes: [],
     male: true,
