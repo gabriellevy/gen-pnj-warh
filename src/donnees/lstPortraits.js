@@ -485,6 +485,7 @@ import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_pl
 import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
 import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
 import portrait_bretonnien_25_50_agitateur from './img/bretonniens/portraits/25_50_agitateur.jpg'
+import portrait_bretonnien_40_80_erudit from './img/bretonniens/portraits/40_80_erudit.jpg'
 
 import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
 import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
@@ -2341,6 +2342,15 @@ export const lstPortraits = [
     image: portrait_empire50_plus_erudit_2,
     ageMin: 50,
     carrieres: [nomErudit, nomConseiller],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_40_80_erudit,
+    ageMin: 40,
+    ageMax: 80,
+    carrieres: [nomErudit],
     classes: [],
     male: true,
   },
