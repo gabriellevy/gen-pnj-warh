@@ -462,31 +462,6 @@ import portrait_empire30_60_magicien_ombre from './img/empire/portraits/30_60_ma
 import portrait_empire35_65_marin from './img/empire/portraits/35_65_marin.jpg'
 import portrait_empire25_65_frere_loup from './img/empire/portraits/standard_middenheim.jpg'
 
-import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
-import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
-import portrait_templier_femme20_40 from './img/bretonniens/portraits/femme20_40.jpg'
-import portrait_templier_femme70_plus from './img/bretonniens/portraits/femme70+.jpg'
-import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
-import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
-import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
-import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
-import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
-import portrait_35_60_chevalier from './img/bretonniens/portraits/35_60_chevalier.jpg'
-import portrait_bretonniens_50_plus_intendant from './img/bretonniens/portraits/50_plus_intendant.jpg'
-import portrait_bretonniens_25_45_saltimbanque from './img/bretonniens/portraits/25_45_saltimbanque.jpg'
-import portrait_bretonnien_15_30_noble from './img/bretonniens/portraits/15_30_noble.jpg'
-import portrait_bretonnien_15_35_guerrier from './img/bretonniens/portraits/15_35_guerrier.jpg'
-import portrait_bretonnien_45_75_bailli from './img/bretonniens/portraits/45_75_bailli.jpg'
-import portrait_bretonnien_25_45_guerrier from './img/bretonniens/portraits/25_45_guerrier.jpg'
-import portrait_bretonnien_15_35_guerriere from './img/bretonniens/portraits/15_35_guerriere.jpg'
-import portrait_bretonnien_15_25_serviteuse_messagere from './img/bretonniens/portraits/15_25_serviteuse_messagere.jpg'
-import portrait_bretonnien_50_75_rural from './img/bretonniens/portraits/50_75_rural.jpg'
-import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_plus_rural.jpg'
-import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
-import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
-import portrait_bretonnien_25_50_agitateur from './img/bretonniens/portraits/25_50_agitateur.jpg'
-import portrait_bretonnien_40_80_erudit from './img/bretonniens/portraits/40_80_erudit.jpg'
-
 import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
 import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
 import portrait_nain_30_160_charpentier from './img/nains/portraits/30_160_charpentier.png'
@@ -519,7 +494,54 @@ import portrait_nain_30_125_soldate from './img/nains/portraits/30_125_soldate.j
 import portrait_nain_80_180 from './img/nains/portraits/80_180.jpg'
 import portrait_nain_100_plus from './img/nains/portraits/100_plus.jpg'
 
+import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
+import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
+import portrait_templier_femme20_40 from './img/bretonniens/portraits/femme20_40.jpg'
+import portrait_templier_femme70_plus from './img/bretonniens/portraits/femme70+.jpg'
+import portrait_templier_30_plus from './img/bretonniens/portraits/30+.jpg'
+import portrait_templier_50_plus from './img/bretonniens/portraits/50+.jpg'
+import portrait_templier_50_plus_b from './img/bretonniens/portraits/50+_b.jpg'
+import portrait_templier_60_plus from './img/bretonniens/portraits/60+.jpg'
+import portrait_f18_35_chevalier from './img/bretonniens/portraits/f18_35_chevalier.jpg'
+import portrait_35_60_chevalier from './img/bretonniens/portraits/35_60_chevalier.jpg'
+import portrait_bretonniens_50_plus_intendant from './img/bretonniens/portraits/50_plus_intendant.jpg'
+import portrait_bretonniens_25_45_saltimbanque from './img/bretonniens/portraits/25_45_saltimbanque.jpg'
+import portrait_bretonnien_15_30_noble from './img/bretonniens/portraits/15_30_noble.jpg'
+import portrait_bretonnien_15_35_guerrier from './img/bretonniens/portraits/15_35_guerrier.jpg'
+import portrait_bretonnien_45_75_bailli from './img/bretonniens/portraits/45_75_bailli.jpg'
+import portrait_bretonnien_25_45_guerrier from './img/bretonniens/portraits/25_45_guerrier.jpg'
+import portrait_bretonnien_15_35_guerriere from './img/bretonniens/portraits/15_35_guerriere.jpg'
+import portrait_bretonnien_15_25_serviteuse_messagere from './img/bretonniens/portraits/15_25_serviteuse_messagere.jpg'
+import portrait_bretonnien_50_75_rural from './img/bretonniens/portraits/50_75_rural.jpg'
+import portrait_bretonnien_65_plus_rural from './img/bretonniens/portraits/65_plus_rural.jpg'
+import portrait_bretonnien_40_60_saltimbanque from './img/bretonniens/portraits/40_60_saltimbanque.jpg'
+import portrait_bretonnien_35_60_agitateur from './img/bretonniens/portraits/35_60_agitateur.jpg'
+import portrait_bretonnien_25_50_agitateur from './img/bretonniens/portraits/25_50_agitateur.jpg'
+import portrait_bretonnien_40_80_erudit from './img/bretonniens/portraits/40_80_erudit.jpg'
+import portrait_bretonnien_16_40_saltimbanque from './img/bretonniens/portraits/16_40_saltimbanque.jpg'
+import portrait_bretonnien_16_35_bourgeois from './img/bretonniens/portraits/16_35_bourgeois.jpg'
+import portrait_bretonnien_20_45_garde from './img/bretonniens/portraits/20_45_garde.jpg'
+import portrait_bretonnien_35_60_guerriers from './img/bretonniens/portraits/35_60_guerriers.jpg'
+
 export const lstPortraits = [
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_20_45_garde,
+    ageMin: 20,
+    ageMax: 45,
+    carrieres: [nomGarde],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_35_60_guerriers,
+    ageMin: 35,
+    ageMax: 60,
+    carrieres: [nomSoldat, nomGarde],
+    classes: [nomGuerriers],
+    male: true,
+  },
   {
     coteries: [nomCotNains],
     image: portrait_nain_100_plus,
@@ -764,6 +786,24 @@ export const lstPortraits = [
     ageMin: 30,
     ageMax: 160,
     carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_16_40_saltimbanque,
+    ageMin: 16,
+    ageMax: 40,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotBretonniens],
+    image: portrait_bretonnien_16_35_bourgeois,
+    ageMin: 16,
+    ageMax: 35,
+    carrieres: [nomBourgeois],
     classes: [],
     male: true,
   },
