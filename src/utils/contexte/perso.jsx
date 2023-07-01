@@ -19,7 +19,7 @@ import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
-
+import { lstCoteries } from '../../donnees/lstCoteries'
 import {
   getCompetence,
   getCompObjPropertyName,
@@ -296,6 +296,8 @@ export const PersoProvider = ({ children }) => {
     statut_echelon: '',
     statut_standing: '',
     autre_portrait:0, // 0 quand le perso est invalidé pour recalcul
+    rafraichir_coterie: 0, // 0 quand le perso est invalidé pour recalcul
+    rafraichir: 0,
   })
 
   useEffect(() => {
@@ -305,6 +307,22 @@ export const PersoProvider = ({ children }) => {
       perso[idComp] = 0
     })
   }, [])
+
+  useEffect(() => {
+    // perso recréé de zéro
+    var indexCoterie = getRandomInt(lstCoteries.length)
+    var coterieObj = lstCoteries[indexCoterie]
+    var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]
+
+    var changementsAuPerso = {
+      coterie: coterieObj.titre,
+      rafraichir: 0,
+      fond: fond,
+    }
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+
+  }, [perso.rafraichir])
 
   // le changement de coterie implique un recalcul de presque tout :
   // âge, métier, portrait
@@ -337,12 +355,12 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['classe'] = classeStr
     changementsAuPerso['nom'] = genererNom(perso)
     changementsAuPerso['poids'] = calculerPoids(perso)
-    changementsAuPerso['autre_portrait'] = 0
+    changementsAuPerso['rafraichir_coterie'] = 0
 
     majCaracs(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
-  }, [perso.coterie])
+  }, [perso.coterie, perso.rafraichir_coterie])
 
   /**
    * régénération du poids

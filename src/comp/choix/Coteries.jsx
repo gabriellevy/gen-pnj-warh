@@ -5,7 +5,6 @@ import '../../styles/Coteries.css'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
-import { getRandomInt } from '../../utils/rand'
 import styled from 'styled-components'
 
 const SpanNoir = styled.span`
@@ -23,20 +22,12 @@ function Coteries() {
 
   // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
   useEffect(() => {
-    if (perso.coterie === undefined || perso.coterie === '') {
-      // A FAIRE : refactoriser tout ça proprement et faire en sorte que l'affichage du perso soit mis à jour immédiatement
-      var indexCoterie = getRandomInt(lstCoteries.length)
-      var coterieObj = lstCoteries[indexCoterie]
-      var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]
-
       var changementsAuPerso = {
-        coterie: coterieObj.titre,
-        fond: fond,
+        rafraichir: 1,
       }
       var persoFinal = { ...perso, ...changementsAuPerso }
       setPerso(persoFinal)
-    }
-  }, [perso, setPerso])
+  }, [])
 
   function gererAge(e) {
     majAge(e.target.value)

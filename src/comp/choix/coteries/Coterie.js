@@ -25,6 +25,7 @@ function Coterie({
     var changementsAuPerso = {
       fond: fond,
       coterie: titre, // titre de coterie
+      rafraichir_coterie: 1,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)

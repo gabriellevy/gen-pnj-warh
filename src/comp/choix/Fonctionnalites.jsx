@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import styled from 'styled-components'
@@ -23,6 +22,14 @@ function Fonctionnalites() {
 
   function rafraichir() {
     var changementsAuPerso = {
+        rafraichir: 1,
+    }
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+  }
+
+  function nouveauPortrait() {
+    var changementsAuPerso = {
         autre_portrait: 1,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
@@ -32,6 +39,9 @@ function Fonctionnalites() {
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
         <Button onClick={() => rafraichir()}>
+          Nouveau personnage
+        </Button>
+        <Button onClick={() => nouveauPortrait()}>
           Autre portrait
         </Button>
     </div>
