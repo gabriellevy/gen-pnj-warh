@@ -111,7 +111,7 @@ const ChoixClasse = () => {
       <FlecheSpanNoir>-&gt;</FlecheSpanNoir>
       {lstClasses.map((classeObj) =>
         classeObj.titre === classe ? (
-          <label>
+          <label key={classeObj.titre}>
             <SelectNoir value={carriere} onChange={changeCarriere}>
               {classeObj.carrieres.map((carriereObj) => (
                 <option key={carriereObj.titre} value={carriereObj.titre}>
@@ -130,7 +130,7 @@ const ChoixClasse = () => {
           ? classeObj.carrieres.map((carriereObj) =>
               carriereObj.titre === carriere &&
               carriereObj.evolutions !== undefined ? (
-                <label>
+                <label key={carriereObj.titre}>
                   <SelectNoir value={evolution} onChange={changeEvolution}>
                     {carriereObj.evolutions.map((evolutionObj) => (
                       <option

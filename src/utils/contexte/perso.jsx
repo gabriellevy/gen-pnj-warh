@@ -19,9 +19,7 @@ import { genNomElfe } from '../../donnees/coteries/elfes/nomsElfes'
 import { genNomBretonnien } from '../../donnees/coteries/bretonniens/nomBretonniens'
 import { genNomKislevite } from '../../donnees/coteries/kislevites/nomsKislevites'
 import { genNomHalfelin } from '../../donnees/coteries/halfelins/nomsHalfelins'
-import { lstCoteries } from '../../donnees/lstCoteries'
 import {
-  getCompetence,
   getCompObjPropertyName,
   lstComps,
 } from '../../donnees/lstComps'
@@ -33,6 +31,7 @@ import {
   getIndexEvolutionObjFromCarriereAndEvolutionStr,
 } from '../../donnees/lstClasses'
 import { getCaracObjPropertyName } from '../../donnees/lstCaracs'
+import { lstRegions, majCoterieSelonRegion, nomBretonnie, nomKislev, nomMootland, nomRegMiddenheim, nomRegMiddenlander, nomRegMontagnesGrises, nomRegNordlander, nomRegReikland } from '../../donnees/lstRegions'
 
 export const PersoContexte = createContext()
 
@@ -310,19 +309,36 @@ export const PersoProvider = ({ children }) => {
 
   useEffect(() => {
     // perso recréé de zéro
-    var indexCoterie = getRandomInt(lstCoteries.length)
+    var indexRegion = getRandomInt(lstRegions.length)
+    var regionObj = lstRegions[indexRegion]
+    
+    /*var indexCoterie = getRandomInt(lstCoteries.length)
     var coterieObj = lstCoteries[indexCoterie]
-    var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]
+    var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]*/
 
     var changementsAuPerso = {
-      coterie: coterieObj.titre,
       rafraichir: 0,
-      fond: fond,
+      region: regionObj.titre,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
 
   }, [perso.rafraichir])
+
+  useEffect(() => {
+
+    if (perso.region !== undefined) {
+      var nouvCoterie = majCoterieSelonRegion(perso.region)
+      
+      var changementsAuPerso = {
+        coterie: nouvCoterie,
+      }
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
+
+    }
+
+  }, [perso.region])
 
   // le changement de coterie implique un recalcul de presque tout :
   // âge, métier, portrait
