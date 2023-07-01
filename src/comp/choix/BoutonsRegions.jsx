@@ -32,9 +32,8 @@ const Button = styled.button`
   background-color: black;
   color: white;
   font-size: 15px;
-  padding: 6px 20px;
+  padding: 5px 14px;
   border-radius: 5px;
-  margin: 6px 0px;
   cursor: pointer;
   &:disabled {
     color: grey;
@@ -50,9 +49,6 @@ const ButtonToggle = styled(Button)`
     `
     opacity: 1;
   `}
-`
-const ButtonGroup = styled.div`
-  display: flex;
 `
 
 function BoutonsRegions() {
@@ -164,7 +160,6 @@ function BoutonsRegions() {
 
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
-      <ButtonGroup>
         {lstRegions.map((region) => (
           <ButtonToggle
             key={region.titre}
@@ -174,7 +169,6 @@ function BoutonsRegions() {
             {region.titre}
           </ButtonToggle>
         ))}
-      </ButtonGroup>
     </div>
   )
 }
