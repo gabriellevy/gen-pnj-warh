@@ -295,6 +295,7 @@ export const PersoProvider = ({ children }) => {
     evolution: '',
     statut_echelon: '',
     statut_standing: '',
+    autre_portrait:0, // 0 quand le perso est invalidé pour recalcul
   })
 
   useEffect(() => {
@@ -307,7 +308,7 @@ export const PersoProvider = ({ children }) => {
 
   // le changement de coterie implique un recalcul de presque tout :
   // âge, métier, portrait
-  // mais pas la région car au contraire c'est le changemnt de région qui implique le changement de coterie
+  // mais pas la région car au contraire c'est le changement de région qui implique le changement de coterie
   useEffect(() => {
     var changementsAuPerso = {}
 
@@ -336,6 +337,7 @@ export const PersoProvider = ({ children }) => {
     changementsAuPerso['classe'] = classeStr
     changementsAuPerso['nom'] = genererNom(perso)
     changementsAuPerso['poids'] = calculerPoids(perso)
+    changementsAuPerso['autre_portrait'] = 0
 
     majCaracs(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
