@@ -17,7 +17,7 @@ const SpanNoir = styled.span`
   margin: 5px 0px;
 `
 
-function Selection() {
+function Coteries() {
   const { perso, setPerso } = useContext(PersoContexte)
   const [age, majAge] = useState(perso.age)
 
@@ -110,4 +110,4 @@ function Selection() {
   )
 }
 
-export default Selection
+export default Coteries
