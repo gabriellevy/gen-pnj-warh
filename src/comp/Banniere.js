@@ -157,15 +157,12 @@ function Banniere() {
                       {lstTalents.map(({ titre, description }) => {
                         const idTalent = getTalentObjPropertyName(titre)
                         // la valeur finale dépend du talent :
-                        // A FAIRE : afficher valeurTalent seulement si supérieur à 1
                         const valeurTalent = perso[idTalent]
-                        
-    console.log("idTalent : " + idTalent + " ------ valeurTalent : " + valeurTalent);
                         if (valeurTalent > 0) {
                           return (
                             <span key={titre} title={description}>
                               <li>
-                                {titre}({valeurTalent}) 
+                                {titre}{(valeurTalent > 1) ? ({ valeurTalent }) :''}
                               </li>
                             </span>
                           )
