@@ -182,6 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
+import { nomAffable, nomBaratiner, nomChatDeGouttiere, nomCombatDeloyal, nomErgoteur, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomIntrigant, nomLireEcrire, nomMenteur, nomOrateur, nomPasDeCote, nomSavoirVivreAuChoix, nomSociable } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -653,6 +654,12 @@ export const lstClasses = [
               nomSavoirPolitique,
               nomSubornation,
             ],
+            talents: [
+              nomBaratiner,
+              nomFaireLaManche,
+              nomLireEcrire,
+              nomSociable,
+            ]
           },
           {
             titre: nomAgitateur,
@@ -669,6 +676,12 @@ export const lstClasses = [
               nomIntuition,
               nomPari,
             ],
+            talents: [
+              nomChatDeGouttiere,
+              nomErgoteur,
+              nomFerveurArdente,
+              nomOrateur,
+            ]
           },
           {
             titre: nomFauteurTrouble,
@@ -683,6 +696,12 @@ export const lstClasses = [
               nomIntimidation,
               nomPerception,
             ],
+            talents: [
+              nomCombatDeloyal,
+              nomFuite,
+              nomMenteur,
+              nomPasDeCote,
+            ]
           },
           {
             titre: nomDemagogue,
@@ -692,6 +711,12 @@ export const lstClasses = [
             },
             caracs: [nomInitiative],
             competences: [nomChevaucher, nomSavoirHeraldique],
+            talents: [
+              nomAffable,
+              nomGrandOrateur,
+              nomIntrigant,
+              nomSavoirVivreAuChoix,
+            ]
           },
         ],
       },
