@@ -32,6 +32,7 @@ import {
 } from '../../donnees/lstClasses'
 import { getCaracObjPropertyName } from '../../donnees/lstCaracs'
 import { lstRegions, majCoterieSelonRegion, nomBretonnie, nomKislev, nomMootland, nomRegMiddenheim, nomRegMiddenlander, nomRegMontagnesGrises, nomRegNordlander, nomRegReikland } from '../../donnees/lstRegions'
+import { getTalentObjPropertyName, lstTalents } from '../../donnees/lstTalents'
 
 export const PersoContexte = createContext()
 
@@ -138,6 +139,13 @@ export function setCompetencesAZero(perso, changementsAuPerso) {
   }
 }
 
+export function setTalentsAZero(perso, changementsAuPerso) {
+  for (let i = 0; i < lstTalents.length; i++) {
+    const talentPropertyName = getTalentObjPropertyName(lstTalents[i].titre)
+    changementsAuPerso[talentPropertyName] = 0
+  }
+}
+
 /**
  * maj les caracs en fonction de la carrière et des niveaux d'évolution du personnage
  */
@@ -200,6 +208,65 @@ export function majCaracs(perso, changementsAuPerso, nivCarriere) {
     changementsAuPerso['pointsDeBlessure'] =
       2 * Math.floor(changementsAuPerso['endurance'] / 10) +
       Math.floor(changementsAuPerso['force_mentale'] / 10)
+  }
+}
+
+/**
+ * maj les talents en fonction de la carrière et des niveaux d'évolution du personnage
+ */
+export function majTalents(perso, changementsAuPerso, nivCarriere) {
+  // récupérer la carrière du joueur en tant qu'objet à partir de la str
+  var carriereObj = getCarriere(perso.carriere)
+  // les talents initiaux sont d'abord resettées à 0
+  // ils devraient l'être selon la race du personnage mais on verra plus tard (A FAIRE)
+  setTalentsAZero(perso, changementsAuPerso)
+  if (carriereObj.evolutions[0].talents !== undefined) {
+    // augmentations de talents de niveau '0' :
+    for (let i = 0; i < carriereObj.evolutions[0].talents.length; ++i) {
+      var talentPropertyName = getTalentObjPropertyName(
+        carriereObj.evolutions[0].talents[i]
+      )
+      var valAugmentation = getRandomInt(4) - 2// A FAIRE : gérer les talents qui peuvent monter de niveau
+      if (valAugmentation > 0) {
+        changementsAuPerso[talentPropertyName] = 1
+      }
+    }
+    // augmentations de caracs de niveau '1' :
+    if (nivCarriere > 0) {
+      for (let i = 0; i < carriereObj.evolutions[1].talents.length; ++i) {
+        talentPropertyName = getTalentObjPropertyName(
+          carriereObj.evolutions[1].talents[i]
+        )
+        valAugmentation = getRandomInt(4) - 2// A FAIRE : gérer les talents qui peuvent monter de niveau
+        if (valAugmentation > 0) {
+          changementsAuPerso[talentPropertyName] = 1
+        }
+      }
+      // augmentations de caracs de niveau '2' :
+      if (nivCarriere > 1) {
+        for (let i = 0; i < carriereObj.evolutions[2].talents.length; ++i) {
+          talentPropertyName = getTalentObjPropertyName(
+            carriereObj.evolutions[2].talents[i]
+          )
+          valAugmentation = getRandomInt(4) - 2// A FAIRE : gérer les talents qui peuvent monter de niveau
+          if (valAugmentation > 0) {
+            changementsAuPerso[talentPropertyName] = 1
+          }
+        }
+        // augmentations de caracs de niveau '3' :
+        if (nivCarriere > 2) {
+          for (let i = 0; i < carriereObj.evolutions[3].talents.length; ++i) {
+            talentPropertyName = getTalentObjPropertyName(
+              carriereObj.evolutions[3].talents[i]
+            )
+            valAugmentation = getRandomInt(4) - 2// A FAIRE : gérer les talents qui peuvent monter de niveau
+            if (valAugmentation > 0) {
+              changementsAuPerso[talentPropertyName] = 1
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -304,6 +371,11 @@ export const PersoProvider = ({ children }) => {
     lstComps.forEach(({ titre, description }) => {
       const idComp = getCompObjPropertyName(titre)
       perso[idComp] = 0
+    })
+    // valeurs de base de compétences :
+    lstTalents.forEach(({ titre, description }) => {
+      const idTalent = getTalentObjPropertyName(titre)
+      perso[idTalent] = 0
     })
   }, [])
 
@@ -421,6 +493,7 @@ export const PersoProvider = ({ children }) => {
     }
     majCaracs(perso, changementsAuPerso, indexEvolution)
     majCompetences(perso, changementsAuPerso, indexEvolution)
+    majTalents(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.carriere])
@@ -452,6 +525,7 @@ export const PersoProvider = ({ children }) => {
     // (ou alors il faut séparer "caracs initiales" des caracs améliorées par la carrière)
     majCaracs(perso, changementsAuPerso, indexEvolution)
     majCompetences(perso, changementsAuPerso, indexEvolution)
+    majTalents(perso, changementsAuPerso, indexEvolution)
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.evolution])

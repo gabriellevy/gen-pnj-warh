@@ -9,6 +9,7 @@ import {
   lstComps,
 } from '../donnees/lstComps'
 import { getCaracObjPropertyName } from '../donnees/lstCaracs'
+import { getTalent, getTalentObjPropertyName, lstTalents } from '../donnees/lstTalents'
 
 function afficheObjets(perso) {
   if (perso.objets === undefined || perso.objets.length === 0) return ''
@@ -152,6 +153,27 @@ function Banniere() {
                 <td>
                   <div className="descriptionPerso">
                     <h4>Talents</h4>
+                    <ul>
+                      {lstTalents.map(({ titre, description }) => {
+                        const idTalent = getTalentObjPropertyName(titre)
+                        // la valeur finale dépend du talent :
+                        // A FAIRE : afficher valeurTalent seulement si supérieur à 1
+                        const valeurTalent = perso[idTalent]
+                        
+    console.log("idTalent : " + idTalent + " ------ valeurTalent : " + valeurTalent);
+                        if (valeurTalent > 0) {
+                          return (
+                            <span key={titre} title={description}>
+                              <li>
+                                {titre}({valeurTalent}) 
+                              </li>
+                            </span>
+                          )
+                        } else {
+                          return ''
+                        }
+                      })}
+                    </ul>
                   </div>
                 </td>
               </tr>

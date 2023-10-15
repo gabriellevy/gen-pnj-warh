@@ -7,7 +7,7 @@ export const nomCombatDeloyal = 'Combat déloyal'
 export const nomErgoteur = 'Ergoteur'
 export const nomFaireLaManche = 'Faire la manche'
 export const nomFerveurArdente = 'Ferveur ardente'
-export const nomFuite = 'Fuite !'
+export const nomFuite = 'Fuite'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomIntrigant = 'Intrigant'
 export const nomLireEcrire = 'Lire / écrire'
@@ -99,6 +99,6 @@ export function getTalent(idTalent) {
  * @param {*} nomTalentStr : la chaîne de caractère décrivant le champs Talent à l'utilisateur
  * @returns identifiant à utiliser pour accéder aux champs Talent de l'objet personnage via l'opérateur []
  */
-export function getCompObjPropertyName(nomTalentStr) {
+export function getTalentObjPropertyName(nomTalentStr) {
     return normalizeCaracteres(retireAccents(nomTalentStr)).toLowerCase()
 }
