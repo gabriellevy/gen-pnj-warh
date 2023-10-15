@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gen-pnj-warh/static/css/main.c09107c2.css",
-    "main.js": "/gen-pnj-warh/static/js/main.9e191c67.js",
+    "main.css": "/gen-pnj-warh/static/css/main.d72ac62f.css",
+    "main.js": "/gen-pnj-warh/static/js/main.b8a5c891.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/nordland1.png": "/gen-pnj-warh/static/media/nordland1.101de7eae1674dc50445.png",
     "static/media/middenheim1.png": "/gen-pnj-warh/static/media/middenheim1.7bb7e32870846adf453f.png",
@@ -438,11 +438,11 @@
     "static/media/F50+.jpg": "/gen-pnj-warh/static/media/F50+.6ac7205212a9ca1b6220.jpg",
     "static/media/portrait_forgeron_60+.jpg": "/gen-pnj-warh/static/media/portrait_forgeron_60+.ad13f173184695218994.jpg",
     "index.html": "/gen-pnj-warh/index.html",
-    "main.c09107c2.css.map": "/gen-pnj-warh/static/css/main.c09107c2.css.map",
-    "main.9e191c67.js.map": "/gen-pnj-warh/static/js/main.9e191c67.js.map"
+    "main.d72ac62f.css.map": "/gen-pnj-warh/static/css/main.d72ac62f.css.map",
+    "main.b8a5c891.js.map": "/gen-pnj-warh/static/js/main.b8a5c891.js.map"
   },
   "entrypoints": [
-    "static/css/main.c09107c2.css",
-    "static/js/main.9e191c67.js"
+    "static/css/main.d72ac62f.css",
+    "static/js/main.b8a5c891.js"
   ]
 }
