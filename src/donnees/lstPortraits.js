@@ -461,6 +461,8 @@ import portrait_empire40_60_espion_messager from './img/empire/portraits/40_60_e
 import portrait_empire30_60_magicien_ombre from './img/empire/portraits/30_60_magicien_ombre.jpg'
 import portrait_empire35_65_marin from './img/empire/portraits/35_65_marin.jpg'
 import portrait_empire25_65_frere_loup from './img/empire/portraits/standard_middenheim.jpg'
+import portrait_empire40_70_f_erudit from './img/empire/portraits/40_70_f_erudit.jpg'
+import portrait_empire20_40_f_erudit from './img/empire/portraits/20_40_f_erudit.jpg'
 
 import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
 import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
@@ -524,6 +526,24 @@ import portrait_bretonnien_20_45_garde from './img/bretonniens/portraits/20_45_g
 import portrait_bretonnien_35_60_guerriers from './img/bretonniens/portraits/35_60_guerriers.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire20_40_f_erudit,
+    ageMin: 20,
+    ageMax: 40,
+    carrieres: [nomErudit],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire40_70_f_erudit,
+    ageMin: 40,
+    ageMax: 70,
+    carrieres: [nomErudit],
+    classes: [],
+    male: false,
+  },
   {
     coteries: [nomCotBretonniens],
     image: portrait_bretonnien_20_45_garde,
