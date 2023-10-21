@@ -1,6 +1,6 @@
 import '../styles/Banniere.css'
 import Portrait from './Portrait'
-import { useContext } from 'react'
+import { useContext, useRef } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
 import { getRandomInt } from '../utils/rand'
 import {
@@ -10,6 +10,23 @@ import {
 } from '../donnees/lstComps'
 import { getCaracObjPropertyName } from '../donnees/lstCaracs'
 import { getTalent, getTalentObjPropertyName, lstTalents } from '../donnees/lstTalents'
+import { useReactToPrint } from 'react-to-print'
+import styled from 'styled-components'
+
+const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 4px 30px;
+  border-radius: 4px;
+  margin: 5px 0px;
+  cursor: pointer;
+  &:disabled {
+    color: grey;
+    opacity: 0.7;
+    cursor: default;
+  }
+`
 
 function afficheObjets(perso) {
   if (perso.objets === undefined || perso.objets.length === 0) return ''
@@ -27,7 +44,12 @@ function afficheObjets(perso) {
 
 function Banniere() {
   const { perso } = useContext(PersoContexte)
+  const componentRef = useRef();
   const persoSelectionne = Object.entries(perso).length !== 0
+
+    const VersPdf = useReactToPrint({
+      content: () => componentRef.current
+    });
 
   if (persoSelectionne) {
     const male = getRandomInt(2) === 0
@@ -49,7 +71,7 @@ function Banniere() {
     }
   }
   return (
-    <div className="banniere">
+    <div className="banniere" ref={componentRef}>
       {persoSelectionne ? (
         <div>
           <table className="tableSansBord">
@@ -172,6 +194,11 @@ function Banniere() {
                       })}
                     </ul>
                   </div>
+                </td>
+                <td>
+                  <Button onClick={() => VersPdf()}>
+                    Pdf
+                  </Button>
                 </td>
               </tr>
             </tbody>
