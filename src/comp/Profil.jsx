@@ -83,7 +83,8 @@ function Profil() {
                     </td>
                     <td>
                     <div className="descriptionPerso">
-                        {perso.coterie} ({perso.region})
+                        {perso.coterie}
+                        {perso.region !== undefined && perso.region !== '' ? ' ('+perso.region+')' : ''}
                         <br />
                         {perso.age} ans
                         <br />

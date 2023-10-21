@@ -37,12 +37,12 @@ import { getTalentObjPropertyName, lstTalents } from '../../donnees/lstTalents'
 export const PersoContexte = createContext()
 
 export function calculerPoids(perso) {
-  var poidsVal = getRandomInt(8)
+  var poidsVal = 35 + getRandomInt(15)
 
   if (perso.male) poidsVal = poidsVal + getRandomInt(13)
   if (perso.age > 25) poidsVal = poidsVal + getRandomInt(7)
 
-  poidsVal = poidsVal + perso.endurance + perso.force
+  poidsVal = poidsVal + perso.endurance/4 + perso.force/4
 
   if (perso.coterie === nomCotHalfelins) poidsVal = poidsVal - 20
   if (

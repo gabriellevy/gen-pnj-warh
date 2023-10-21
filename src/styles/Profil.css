@@ -3,10 +3,10 @@
     background: #fffef0;
   filter: url(#wavy2);
   width: 300px;
+  border-radius: 5px;
 }
 
 .portrait_img {
-  border: solid 5px black;
   border-radius: 5px;
   width: 165px;
   height: 195px;
@@ -25,7 +25,7 @@
   padding: 2px 2px;
   margin: 2px 2px;
   width: 95%;
-  font-size: 12px;
+  font-size: 11px;
   border-collapse: collapse;
 }
 
