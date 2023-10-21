@@ -4,6 +4,11 @@
   height: 100%;
 }
 
+#tout {
+  display: flex;
+  justify-content: space-around;
+}
+
 html,
 body {
   height: 100%;

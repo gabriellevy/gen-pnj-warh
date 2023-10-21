@@ -1,4 +1,4 @@
-import '../styles/Banniere.css'
+import '../styles/Profil.css'
 import Portrait from './Portrait'
 import { useContext, useRef } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
@@ -42,7 +42,7 @@ function afficheObjets(perso) {
   })
 }
 
-function Banniere() {
+function Profil() {
   const { perso } = useContext(PersoContexte)
   const componentRef = useRef();
   const persoSelectionne = Object.entries(perso).length !== 0
@@ -70,10 +70,11 @@ function Banniere() {
       perso.male = male
     }
   }
-  return (
-    <div className="banniere" ref={componentRef}>
+    return (
+      <div className="profil">
       {persoSelectionne ? (
         <div>
+    <span ref={componentRef}>
           <table className="tableSansBord">
             <tbody>
               <tr>
@@ -81,74 +82,56 @@ function Banniere() {
                   <Portrait perso={perso} />
                 </td>
                 <td>
-                  <table className="descriptionPerso">
-                    <tbody>
-                      <tr>
-                        <td>CC </td>
-                        <td>{perso.cc}</td>
-                      </tr>
-                      <tr>
-                        <td>CT </td>
-                        <td> {perso.ct}</td>
-                      </tr>
-                      <tr>
-                        <td>FOR </td>
-                        <td> {perso.force}</td>
-                      </tr>
-                      <tr>
-                        <td>END </td>
-                        <td> {perso.endurance}</td>
-                      </tr>
-                      <tr>
-                        <td>INIT </td>
-                        <td> {perso.initiative}</td>
-                      </tr>
-                      <tr>
-                        <td>AG </td>
-                        <td> {perso.agilete}</td>
-                      </tr>
-                      <tr>
-                        <td>DEX </td>
-                        <td> {perso.dexterite}</td>
-                      </tr>
-                      <tr>
-                        <td>INT </td>
-                        <td> {perso.intelligence}</td>
-                      </tr>
-                      <tr>
-                        <td>F.M </td>
-                        <td> {perso.force_mentale}</td>
-                      </tr>
-                      <tr>
-                        <td>SOC </td>
-                        <td> {perso.sociabilite}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td>
                   <div className="descriptionPerso">
-                    <h3>{perso.nom}</h3>
                     {perso.coterie} ({perso.region})
-                    <br />
-                    {perso.evolution !== undefined && perso.evolution !== ''
-                      ? perso.evolution
-                      : perso.carriere}
                     <br />
                     {perso.age} ans
                     <br />
                     {perso.poids} kg
                     <br />
-                    Statut : {perso.statut_echelon} {perso.statut_standing}
                     {afficheObjets(perso)}
-                    <br />
-                    Points de blessure : {perso.pointsDeBlessure}
                   </div>
                 </td>
-                <td>
+              </tr>
+            </tbody>
+            </table>
+            <h3>{perso.nom} - 
+                    {perso.evolution !== undefined && perso.evolution !== ''
+                      ? perso.evolution
+                      : perso.carriere}
+                     ({perso.statut_echelon} {perso.statut_standing})</h3>
+            <table className="descriptionPerso">
+                <tbody>
+                    <tr>
+                    <td>CC </td>
+                    <td>CT </td>
+                    <td>FOR </td>
+                    <td>END </td>
+                    <td>INIT </td>
+                    <td>AG </td>
+                    <td>DEX </td>
+                    <td>INT </td>
+                    <td>F.M </td>
+                              <td>SOC </td>
+                              <td>Bl</td>
+                    </tr>
+                    <tr>
+                    <td>{perso.cc}</td>
+                    <td> {perso.ct}</td>
+                    <td> {perso.force}</td>
+                    <td> {perso.endurance}</td>
+                    <td> {perso.initiative}</td>
+                    <td> {perso.agilete}</td>
+                    <td> {perso.dexterite}</td>
+                    <td> {perso.intelligence}</td>
+                    <td> {perso.force_mentale}</td>
+                    <td> {perso.sociabilite}</td>
+                    <td> {perso.pointsDeBlessure}</td>
+                    </tr>
+                </tbody>
+            </table>
                   <div className="descriptionPerso">
-                    <h4>Compétences</h4>
-                    <ul>
+                    <b>Compétences : </b>
                       {lstComps.map(({ titre, description }) => {
                         const idComp = getCompObjPropertyName(titre)
                         // la valeur finale dépend de la compétence mais aussi de la valeur de la carac liée :
@@ -160,19 +143,14 @@ function Banniere() {
                           const valeur = valeurComp + valeurCarac
                           return (
                             <span key={titre} title={description}>
-                              <li>
-                                {titre}({valeur})
-                              </li>
+                                 {titre} {valeur}, 
                             </span>
                           )
                         } else {
                           return ''
                         }
                       })}
-                    </ul>
                   </div>
-                </td>
-                <td>
                   <div className="descriptionPerso">
                     <h4>Talents</h4>
                     <ul>
@@ -194,15 +172,10 @@ function Banniere() {
                       })}
                     </ul>
                   </div>
-                </td>
-                <td>
-                  <Button onClick={() => VersPdf()}>
-                    Pdf
-                  </Button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        </span>
+            <Button onClick={() => VersPdf()}>
+            Pdf
+            </Button>
         </div>
       ) : (
         <h1>Création de personnage Warhammer</h1>
@@ -211,4 +184,4 @@ function Banniere() {
   )
 }
 
-export default Banniere
+export default Profil

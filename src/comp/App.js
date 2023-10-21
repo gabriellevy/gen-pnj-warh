@@ -1,4 +1,4 @@
-import Banniere from './Banniere'
+import Profil from './Profil'
 import '../styles/App.css'
 import ZoneDeChoix from './ZoneDeChoix'
 import { useEffect, useContext } from 'react'
@@ -14,12 +14,13 @@ function App() {
   return (
     <div className="App">
       <div
+        id="tout"
         className="bgImg"
         style={{
           backgroundImage: `url(${perso.fond})`,
         }}
       >
-        <Banniere perso={perso} />
+        <Profil perso={perso} />
         <ZoneDeChoix />
       </div>
     </div>

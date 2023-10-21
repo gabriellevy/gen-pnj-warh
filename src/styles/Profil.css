@@ -1,6 +1,5 @@
-.banniere {
-  display: flex;
-  align-items: left;
+.profil {
+  width: 300px;
 }
 
 .portrait_img {
