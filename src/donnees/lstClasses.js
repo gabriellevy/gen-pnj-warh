@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomChatDeGouttiere, nomCombatDeloyal, nomErgoteur, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomIntrigant, nomLireEcrire, nomMenteur, nomOrateur, nomPasDeCote, nomSavoirVivreAuChoix, nomSociable } from './lstTalents'
+import { nomAffable, nomBaratiner, nomBricoleur, nomChatDeGouttiere, nomCombatDeloyal, nomCostaud, nomDoigtsDeFee, nomErgoteur, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomIntrigant, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNegociateur, nomOrateur, nomPasDeCote, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSensAiguiseGoutOuToucher, nomSociable, nomSuborneur, nomTravailleurQualifieAuChoix, nomTresFort } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -741,6 +741,12 @@ export const lstClasses = [
               nomResistance,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomArtiste,
+              nomInfatigable,
+              nomMaitreArtisan,
+              nomTresFort,
+            ]
           },
           {
             titre: nomArtisan,
@@ -757,6 +763,12 @@ export const lstClasses = [
               nomSavoirRegion,
               nomRagot,
             ],
+            talents: [
+              nomCostaud,
+              nomDoigtsDeFee,
+              nomNegociateur,
+              nomSavoirVivreGuilde,
+            ]
           },
           {
             titre: nomMaitreArtisan,
@@ -771,6 +783,12 @@ export const lstClasses = [
               nomRecherche,
               nomSignesSecretsGuilde,
             ],
+            talents: [
+              nomBricoleur,
+              nomLireEcrire,
+              nomTravailleurQualifieAuChoix,
+              nomSensAiguiseGoutOuToucher,
+            ]
           },
           {
             titre: nomMaitreGuilde,
@@ -780,6 +798,12 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomIntimidation, nomSubornation],
+            talents: [
+              nomIntrigant,
+              nomMagnumOpus,
+              nomOrateur,
+              nomSuborneur,
+            ]
           },
         ],
       },
