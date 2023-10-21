@@ -1,4 +1,7 @@
-.profil {
+#parchment {
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #fffef0;
+  filter: url(#wavy2);
   width: 300px;
 }
 
@@ -11,19 +14,25 @@
   align-items: left;
 }
 
+.nomPerso {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .descriptionPerso {
-  display: flex;
-  align-items: left;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  padding: 4px 4px;
-  border-radius: 4px;
-  margin: 0px 0px;
-  font-size: 13px;
-  width: 100%;
-  margin: auto;
+  color: rgb(34, 25, 3);
+  padding: 2px 2px;
+  margin: 2px 2px;
+  width: 95%;
+  font-size: 12px;
   border-collapse: collapse;
+}
+
+.caracs {
+  border: solid 1px black;
+  text-align: center;
+  font-size: 12px;
 }
 
 h4 {
