@@ -526,8 +526,18 @@ import portrait_empire40_70_f_erudit from './img/empire/portraits/40_70_f_erudit
 import portrait_empire20_40_f_erudit from './img/empire/portraits/20_40_f_erudit.jpg'
 import portrait_empire25_45_f_erudit from './img/empire/portraits/25_45_f_erudit.jpg'
 import portrait_empire15_30_lettree_citadine from './img/empire/portraits/15_30_lettree_citadine.jpg'
+import portrait_empire15_26_duelliste from './img/empire/portraits/15_26_duelliste.jpg'
 
 export const lstPortraits = [
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander],
+    image: portrait_empire15_26_duelliste,
+    ageMin: 15,
+    ageMax: 26,
+    carrieres: [nomDuelliste, nomNoble],
+    classes: [],
+    male: true,
+  },
   {
     coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire15_30_lettree_citadine,
@@ -1181,7 +1191,7 @@ export const lstPortraits = [
   {
     coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire30_45_horslaloi,
-    ageMin: 30,
+    ageMin: 26,
     ageMax: 45,
     carrieres: [
       nomHorsLaLoi,
@@ -1192,6 +1202,7 @@ export const lstPortraits = [
       nomNautonnier,
       nomCocher,
       nomAgitateur,
+      nomDuelliste
     ],
     classes: [],
     male: true,
@@ -3201,9 +3212,9 @@ export const lstPortraits = [
   {
     coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
     image: portrait_empire25_45_chasseur_primes,
-    ageMin: 25,
+    ageMin: 18,
     ageMax: 45,
-    carrieres: [nomChasseurDePrimes, nomDuelliste],
+    carrieres: [nomDuelliste],
     classes: [nomCourtisans, nomCitadins],
     male: true,
   },
