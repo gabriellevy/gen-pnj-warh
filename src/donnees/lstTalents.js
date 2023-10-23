@@ -4,6 +4,7 @@ export const nomAffable = 'Affable'
 export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
 export const nomBricoleur = 'Bricoleur'
+export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
 export const nomCooperatif = 'Coopératif'
@@ -25,7 +26,9 @@ export const nomLireEcrire = 'Lire / écrire'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
 export const nomMenteur = 'Menteur'
+export const nomNanti = 'Nanti'
 export const nomNegociateur = 'Négociateur'
+export const nomNumismate = 'Numismate'
 export const nomOrateur = 'Orateur'
 export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
@@ -44,6 +47,7 @@ export const nomSuborneur = 'Suborneur'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
+export const nomVolonteDeFer = 'Volonté de fer'
 export const nomVivacite = 'Vivacité'
 
 export const lstTalents = [
@@ -140,6 +144,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomNumismate,
+      description: [''],
+    },
+    {
       titre: nomOrateur,
       description: [''],
     },
@@ -193,6 +201,10 @@ export const lstTalents = [
     },
     {
       titre: nomVivacite,
+      description: [''],
+    },
+    {
+      titre: nomVolonteDeFer,
       description: [''],
     },
 ]

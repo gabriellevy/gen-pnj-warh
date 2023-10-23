@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomBricoleur, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomDiscret, nomDoigtsDeFee, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNegociateur, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomVivacite } from './lstTalents'
+import { nomAffable, nomBaratiner, nomBricoleur, nomChanceux, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomDiscret, nomDoigtsDeFee, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomVivacite, nomVolonteDeFer } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -997,6 +997,12 @@ export const lstClasses = [
               nomSoinsAnimaux,
               nomSubornation,
             ],
+            talents: [
+              nomAffable,
+              nomBaratiner,
+              nomLireEcrire,
+              nomNegociateur,
+            ]
           },
           {
             titre: nomMarchand,
@@ -1013,6 +1019,12 @@ export const lstClasses = [
               nomPerception,
               nomSavoirRegion,
             ],
+            talents: [
+              nomEscroquer,
+              nomPerspicace,
+              nomSavoirVivreGuilde,
+              nomSuborneur,
+            ]
           },
           {
             titre: nomMaitreMarchand,
@@ -1027,6 +1039,12 @@ export const lstClasses = [
               nomOrientation,
               nomSignesSecretsGuilde,
             ],
+            talents: [
+              nomMenteur,
+              nomNumismate,
+              nomSavoirVivreAuChoix,
+              nomVivacite,
+            ]
           },
           {
             titre: nomPrinceMarchand,
@@ -1036,6 +1054,12 @@ export const lstClasses = [
             },
             caracs: [nomCC],
             competences: [nomIntimidation, nomSavoirChoix1],
+            talents: [
+              nomChanceux,
+              nomIntrigant,
+              nomNanti,
+              nomVolonteDeFer,
+            ]
           },
         ],
       },
