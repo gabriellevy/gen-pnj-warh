@@ -6,15 +6,21 @@ export const nomBaratiner = 'Baratiner'
 export const nomBricoleur = 'Bricoleur'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
+export const nomCooperatif = 'Coopératif'
 export const nomCostaud = 'Costaud'
+export const nomDiscret = 'Discret'
 export const nomDoigtsDeFee = 'Doigts de fée'
+export const nomEffraction = 'Effraction'
 export const nomErgoteur = 'Ergoteur'
+export const nomEscroquer = 'Escroquer'
 export const nomFaireLaManche = 'Faire la manche'
 export const nomFerveurArdente = 'Ferveur ardente'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomInfatigable = 'Infatigable'
+export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
+export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
@@ -22,13 +28,23 @@ export const nomMenteur = 'Menteur'
 export const nomNegociateur = 'Négociateur'
 export const nomOrateur = 'Orateur'
 export const nomPasDeCote = 'Pas de côté'
+export const nomPerseverant = 'Persévérant'
+export const nomPerspicace = 'Perspicace'
+export const nomPresenceImposante = 'Présence imposante'
+export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
+export const nomSavoirVivreServiteur = 'Savoir vivre (serviteur)'
+export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
 export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
+export const nomSixiemeSens = 'Sixième sens'
 export const nomSociable = 'Sociable'
+export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
-export const nomTravailleurQualifieAuChoix = 'Trvailleur qualifié (au choix)'
+export const nomTourDesSouvenirs = 'Tour des souvenirs'
+export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
+export const nomVivacite = 'Vivacité'
 
 export const lstTalents = [
     {
@@ -64,7 +80,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomEffraction,
+      description: [''],
+    },
+    {
       titre: nomErgoteur,
+      description: [''],
+    },
+    {
+      titre: nomEscroquer,
       description: [''],
     },
     {
@@ -85,6 +109,10 @@ export const lstTalents = [
     },
     {
       titre: nomInfatigable,
+      description: [''],
+    },
+    {
+      titre: nomInsignifiant,
       description: [''],
     },
     {
@@ -120,7 +148,19 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomPerseverant,
+      description: [''],
+    },
+    {
+      titre: nomPerspicace,
+      description: [''],
+    },
+    {
       titre: nomSensAiguiseGoutOuToucher,
+      description: [''],
+    },
+    {
+      titre: nomSavantAuChoix,
       description: [''],
     },
     {
@@ -129,6 +169,10 @@ export const lstTalents = [
     },
     {
       titre: nomSavoirVivreGuilde,
+      description: [''],
+    },
+    {
+      titre: nomSavoirVivreServiteur,
       description: [''],
     },
     {
@@ -145,6 +189,10 @@ export const lstTalents = [
     },
     {
       titre: nomTresFort,
+      description: [''],
+    },
+    {
+      titre: nomVivacite,
       description: [''],
     },
 ]

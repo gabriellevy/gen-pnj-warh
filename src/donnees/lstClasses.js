@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomBricoleur, nomChatDeGouttiere, nomCombatDeloyal, nomCostaud, nomDoigtsDeFee, nomErgoteur, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomIntrigant, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNegociateur, nomOrateur, nomPasDeCote, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSensAiguiseGoutOuToucher, nomSociable, nomSuborneur, nomTravailleurQualifieAuChoix, nomTresFort } from './lstTalents'
+import { nomAffable, nomBaratiner, nomBricoleur, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomDiscret, nomDoigtsDeFee, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNegociateur, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomVivacite } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -828,6 +828,12 @@ export const lstClasses = [
               nomRagot,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomChatDeGouttiere,
+              nomCostaud,
+              nomInsignifiant,
+              nomSavoirVivreServiteur,
+            ]
           },
           {
             titre: nomBourgeois,
@@ -844,6 +850,12 @@ export const lstClasses = [
               nomSavoirRegion,
               nomSubornation,
             ],
+            talents: [
+              nomEscroquer,
+              nomNegociateur,
+              nomSavoirVivreAuChoix,
+              nomSociable,
+            ]
           },
           {
             titre: nomConseillerMunicipal,
@@ -853,6 +865,12 @@ export const lstClasses = [
             },
             caracs: [nomDexterite],
             competences: [nomCalme, nomPerception, nomRecherche, nomSavoirLoi],
+            talents: [
+              nomCooperatif,
+              nomLireEcrire,
+              nomOrateur,
+              nomSuborneur,
+            ]
           },
           {
             titre: nomBourgmestre,
@@ -862,6 +880,12 @@ export const lstClasses = [
             },
             caracs: [nomForceMentale],
             competences: [nomIntimidation, nomSavoirPolitique],
+            talents: [
+              nomAffable,
+              nomGrandOrateur,
+              nomIntrigant,
+              nomPresenceImposante,
+            ]
           },
         ],
       },
@@ -886,6 +910,12 @@ export const lstClasses = [
               nomPistage,
               nomRagot,
             ],
+            talents: [
+              nomChatDeGouttiere,
+              nomInsignifiant,
+              nomLireEcrire,
+              nomVivacite,
+            ]
           },
           {
             titre: nomEnqueteur,
@@ -902,6 +932,12 @@ export const lstClasses = [
               nomResistanceAlcool,
               nomSavoirLoi,
             ],
+            talents: [
+              nomDiscret,
+              nomPerseverant,
+              nomPerspicace,
+              nomSavoirVivreAuChoix,
+            ]
           },
           {
             titre: nomMaitreEnqueteur,
@@ -916,6 +952,12 @@ export const lstClasses = [
               nomSavoirChoix1,
               nomSubornation,
             ],
+            talents: [
+              nomAffable,
+              nomEffraction,
+              nomSixiemeSens,
+              nomStudieux,
+            ]
           },
           {
             titre: nomDetective,
@@ -925,6 +967,12 @@ export const lstClasses = [
             },
             caracs: [nomForceMentale],
             competences: [nomIntimidation, nomSavoirChoix2],
+            talents: [
+              nomLectureRapide,
+              nomEffraction,
+              nomSensAiguiseAuChoix,
+              nomTourDesSouvenirs,
+            ]
           },
         ],
       },
