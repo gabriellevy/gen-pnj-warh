@@ -5,13 +5,16 @@ export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
 export const nomBricoleur = 'Bricoleur'
 export const nomBrouet = 'Brouet'
+export const nomCaid = 'Caid'
 export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
 export const nomCooperatif = 'Coopératif'
 export const nomCostaud = 'Costaud'
+export const nomCriminel = 'Criminel'
 export const nomDiscret = 'Discret'
 export const nomDoigtsDeFee = 'Doigts de fée'
+export const nomDurACuire = 'Dur à cuire'
 export const nomEffraction = 'Effraction'
 export const nomErgoteur = 'Ergoteur'
 export const nomEscroquer = 'Escroquer'
@@ -36,8 +39,10 @@ export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomResistanceMaladie = 'Résistance à la maladie'
+export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
+export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
 export const nomSavoirVivreServiteur = 'Savoir vivre (serviteur)'
 export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
@@ -75,6 +80,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCaid,
+      description: [''],
+    },
+    {
       titre: nomChatDeGouttiere,
       description: [''],
     },
@@ -87,7 +96,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCriminel,
+      description: [''],
+    },
+    {
       titre: nomDoigtsDeFee,
+      description: [''],
+    },
+    {
+      titre: nomDurACuire,
       description: [''],
     },
     {
@@ -176,6 +193,10 @@ export const lstTalents = [
     },
     {
       titre: nomSensAiguiseGoutOuToucher,
+      description: [''],
+    },
+    {
+      titre: nomSansPeurMiliciens,
       description: [''],
     },
     {
