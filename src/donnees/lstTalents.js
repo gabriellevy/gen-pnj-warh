@@ -4,6 +4,7 @@ export const nomAffable = 'Affable'
 export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
 export const nomBricoleur = 'Bricoleur'
+export const nomBrouet = 'Brouet'
 export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
@@ -34,6 +35,7 @@ export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
+export const nomResistanceMaladie = 'Résistance à la maladie'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
@@ -47,6 +49,7 @@ export const nomSuborneur = 'Suborneur'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
+export const nomTresResistant = 'Très résistant'
 export const nomVolonteDeFer = 'Volonté de fer'
 export const nomVivacite = 'Vivacité'
 
@@ -65,6 +68,10 @@ export const lstTalents = [
     },
     {
       titre: nomBricoleur,
+      description: [''],
+    },
+    {
+      titre: nomBrouet,
       description: [''],
     },
     {
@@ -164,6 +171,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomResistanceMaladie,
+      description: [''],
+    },
+    {
       titre: nomSensAiguiseGoutOuToucher,
       description: [''],
     },
@@ -197,6 +208,10 @@ export const lstTalents = [
     },
     {
       titre: nomTresFort,
+      description: [''],
+    },
+    {
+      titre: nomTresResistant,
       description: [''],
     },
     {

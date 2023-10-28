@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomBricoleur, nomChanceux, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomDiscret, nomDoigtsDeFee, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomVivacite, nomVolonteDeFer } from './lstTalents'
+import { nomAffable, nomBaratiner, nomBricoleur, nomBrouet, nomChanceux, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomDiscret, nomDoigtsDeFee, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomResistanceMaladie, nomSavoirVivreAuChoix, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVivacite, nomVolonteDeFer } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -1084,6 +1084,12 @@ export const lstClasses = [
               nomResistance,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomBrouet,
+              nomFaireLaManche,
+              nomResistanceMaladie,
+              nomTresResistant,
+            ]
           },
           {
             titre: nomMendiant,
