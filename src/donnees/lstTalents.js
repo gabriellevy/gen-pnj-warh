@@ -4,6 +4,7 @@ export const nomAffable = 'Affable'
 export const nomAmbidextre = 'Ambidextre'
 export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
+export const nomBattement = 'Battement'
 export const nomBonnesJambes = 'Bonnes jambes'
 export const nomBricoleur = 'Bricoleur'
 export const nomBrouet = 'Brouet'
@@ -11,6 +12,7 @@ export const nomCaid = 'Caid'
 export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
+export const nomCombatInstinctif = 'Combat instictif'
 export const nomCombattantEnEspaceClos = 'Combattant en espace clos'
 export const nomCoeurVaillant = 'Coeur vaillant'
 export const nomCooperatif = 'Coopératif'
@@ -19,6 +21,7 @@ export const nomCoudeACoude = 'Coude à coude'
 export const nomCoupPuissant = 'Coup puissants'
 export const nomCriminel = 'Criminel'
 export const nomDesarmer = 'Désarmer'
+export const nomDistraire = 'Distraire'
 export const nomDiscret = 'Discret'
 export const nomDoigtsDeFee = 'Doigts de fée'
 export const nomDurACuire = 'Dur à cuire'
@@ -27,8 +30,11 @@ export const nomErgoteur = 'Ergoteur'
 export const nomEscroquer = 'Escroquer'
 export const nomFaireLaManche = 'Faire la manche'
 export const nomFlairerLesEnnuis = 'Flairer les ennuis'
+export const nomFeinte = 'Feinte'
 export const nomFerveurArdente = 'Ferveur ardente'
 export const nomFrappeAssomante = 'Frappe assomante'
+export const nomFrappeBlessante = 'Frappe blessante'
+export const nomFrappeReactive = 'Frappe réactive'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomInfatigable = 'Infatigable'
@@ -38,6 +44,8 @@ export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
+export const nomMaitriseDuCombat = 'Maîtrise du combat'
+export const nomManiementDeDeuxArmes = 'Maniement de deux armes'
 export const nomMenacant = 'Menaçant'
 export const nomMenteur = 'Menteur'
 export const nomNanti = 'Nanti'
@@ -51,7 +59,9 @@ export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomRatDEgout = "Rat d'égoûts"
+export const nomRenversement = 'Renversement'
 export const nomResistanceMaladie = 'Résistance à la maladie'
+export const nomRiposte = 'Riposte'
 export const nomRobuste = 'Robuste'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
@@ -70,6 +80,7 @@ export const nomSociable = 'Sociable'
 export const nomSprinter = 'Sprinter'
 export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
+export const nomTirRapide = 'Tir rapide'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
@@ -93,6 +104,10 @@ export const lstTalents = [
     },
     {
       titre: nomBaratiner,
+      description: [''],
+    },
+    {
+      titre: nomBattement,
       description: [''],
     },
     {
@@ -121,6 +136,10 @@ export const lstTalents = [
     },
     {
       titre: nomCombatDeloyal,
+      description: [''],
+    },
+    {
+      titre: nomCombatInstinctif,
       description: [''],
     },
     {
@@ -184,6 +203,14 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomFrappeBlessante,
+      description: [''],
+    },
+    {
+      titre: nomFrappeReactive,
+      description: [''],
+    },
+    {
       titre: nomFuite,
       description: [''],
     },
@@ -213,6 +240,14 @@ export const lstTalents = [
     },
     {
       titre: nomMaitreArtisan,
+      description: [''],
+    },
+    {
+      titre: nomMaitriseDuCombat,
+      description: [''],
+    },
+    {
+      titre: nomManiementDeDeuxArmes,
       description: [''],
     },
     {
@@ -260,7 +295,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomRenversement,
+      description: [''],
+    },
+    {
       titre: nomResistanceMaladie,
+      description: [''],
+    },
+    {
+      titre: nomRiposte,
       description: [''],
     },
     {
@@ -309,6 +352,10 @@ export const lstTalents = [
     },
     {
       titre: nomSuborneur,
+      description: [''],
+    },
+    {
+      titre: nomTirRapide,
       description: [''],
     },
     {
