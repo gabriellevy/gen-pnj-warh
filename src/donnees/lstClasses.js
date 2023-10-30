@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCombatDeloyal, nomCooperatif, nomCostaud, nomCoudeACoude, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssomante, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomResistanceMaladie, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer } from './lstTalents'
+import { nomAffable, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssomante, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomObstine, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomResistanceMaladie, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -1258,6 +1258,12 @@ export const lstClasses = [
               nomResistance,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomCoupPuissant,
+              nomFrappeAssomante,
+              nomResistanceMaladie,
+              nomVisionNocturne,
+            ]
           },
           {
             titre: nomRatier,
@@ -1274,6 +1280,12 @@ export const lstClasses = [
               nomSavoirPoison,
               nomSoinsAnimaux,
             ],
+            talents: [
+              nomCombattantEnEspaceClos,
+              nomSavoirVivreGuilde,
+              nomSansPeurRats,
+              nomTresResistant,
+            ]
           },
           {
             titre: nomEgoutier,
@@ -1288,6 +1300,12 @@ export const lstClasses = [
               nomEsquive,
               nomProjectilesArbaletePoing,
             ],
+            talents: [
+              nomBonnesJambes,
+              nomCoeurVaillant,
+              nomDurACuire,
+              nomRatDEgout,
+            ]
           },
           {
             titre: nomExterminateur,
@@ -1297,6 +1315,12 @@ export const lstClasses = [
             },
             caracs: [nomForce],
             competences: [nomCommandement, nomPistage],
+            talents: [
+              nomMenacant,
+              nomObstine,
+              nomRobuste,
+              nomSansPeurSkaven,
+            ]
           },
         ],
       },

@@ -3,15 +3,19 @@ import { normalizeCaracteres, retireAccents } from '../utils/retireAccents'
 export const nomAffable = 'Affable'
 export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
+export const nomBonnesJambes = 'Bonnes jambes'
 export const nomBricoleur = 'Bricoleur'
 export const nomBrouet = 'Brouet'
 export const nomCaid = 'Caid'
 export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
+export const nomCombattantEnEspaceClos = 'Combattant en espace clos'
+export const nomCoeurVaillant = 'Coeur vaillant'
 export const nomCooperatif = 'Coopératif'
 export const nomCostaud = 'Costaud'
 export const nomCoudeACoude = 'Coude à coude'
+export const nomCoupPuissant = 'Coup puissants'
 export const nomCriminel = 'Criminel'
 export const nomDesarmer = 'Désarmer'
 export const nomDiscret = 'Discret'
@@ -33,19 +37,24 @@ export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
+export const nomMenacant = 'Menaçant'
 export const nomMenteur = 'Menteur'
 export const nomNanti = 'Nanti'
 export const nomNegociateur = 'Négociateur'
 export const nomNumismate = 'Numismate'
+export const nomObstine = 'Obstiné'
 export const nomOrateur = 'Orateur'
 export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
+export const nomRatDEgout = "Rat d'égoûts"
 export const nomResistanceMaladie = 'Résistance à la maladie'
 export const nomRobuste = 'Robuste'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
+export const nomSansPeurRats = 'Sans peur (rats)'
+export const nomSansPeurSkaven = 'Sans peur (skaven)'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
@@ -81,6 +90,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomBonnesJambes,
+      description: [''],
+    },
+    {
       titre: nomBricoleur,
       description: [''],
     },
@@ -97,7 +110,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCoeurVaillant,
+      description: [''],
+    },
+    {
       titre: nomCombatDeloyal,
+      description: [''],
+    },
+    {
+      titre: nomCombattantEnEspaceClos,
       description: [''],
     },
     {
@@ -106,6 +127,10 @@ export const lstTalents = [
     },
     {
       titre: nomCoudeACoude,
+      description: [''],
+    },
+    {
+      titre: nomCoupPuissant,
       description: [''],
     },
     {
@@ -185,6 +210,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomMenacant,
+      description: [''],
+    },
+    {
       titre: nomMenteur,
       description: [''],
     },
@@ -194,6 +223,10 @@ export const lstTalents = [
     },
     {
       titre: nomNumismate,
+      description: [''],
+    },
+    {
+      titre: nomObstine,
       description: [''],
     },
     {
@@ -213,6 +246,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomRatDEgout,
+      description: [''],
+    },
+    {
       titre: nomResistanceMaladie,
       description: [''],
     },
@@ -226,6 +263,14 @@ export const lstTalents = [
     },
     {
       titre: nomSansPeurMiliciens,
+      description: [''],
+    },
+    {
+      titre: nomSansPeurRats,
+      description: [''],
+    },
+    {
+      titre: nomSansPeurSkaven,
       description: [''],
     },
     {
