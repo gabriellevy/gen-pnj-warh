@@ -11,7 +11,9 @@ export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomCombatDeloyal = 'Combat déloyal'
 export const nomCooperatif = 'Coopératif'
 export const nomCostaud = 'Costaud'
+export const nomCoudeACoude = 'Coude à coude'
 export const nomCriminel = 'Criminel'
+export const nomDesarmer = 'Désarmer'
 export const nomDiscret = 'Discret'
 export const nomDoigtsDeFee = 'Doigts de fée'
 export const nomDurACuire = 'Dur à cuire'
@@ -19,7 +21,9 @@ export const nomEffraction = 'Effraction'
 export const nomErgoteur = 'Ergoteur'
 export const nomEscroquer = 'Escroquer'
 export const nomFaireLaManche = 'Faire la manche'
+export const nomFlairerLesEnnuis = 'Flairer les ennuis'
 export const nomFerveurArdente = 'Ferveur ardente'
+export const nomFrappeAssomante = 'Frappe assomante'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomInfatigable = 'Infatigable'
@@ -39,22 +43,27 @@ export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomResistanceMaladie = 'Résistance à la maladie'
+export const nomRobuste = 'Robuste'
+export const nomSansPeurCriminels = 'Sans peur (criminels)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
 export const nomSavoirVivreServiteur = 'Savoir vivre (serviteur)'
+export const nomSavoirVivreSoldats = 'Savoir vivre (dsoldats)'
 export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
 export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
 export const nomSixiemeSens = 'Sixième sens'
 export const nomSociable = 'Sociable'
+export const nomSprinter = 'Sprinter'
 export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
 export const nomTresResistant = 'Très résistant'
+export const nomVisionNocturne = 'Vision nocturne'
 export const nomVolonteDeFer = 'Volonté de fer'
 export const nomVivacite = 'Vivacité'
 
@@ -96,7 +105,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCoudeACoude,
+      description: [''],
+    },
+    {
       titre: nomCriminel,
+      description: [''],
+    },
+    {
+      titre: nomDesarmer,
       description: [''],
     },
     {
@@ -125,6 +142,14 @@ export const lstTalents = [
     },
     {
       titre: nomFerveurArdente,
+      description: [''],
+    },
+    {
+      titre: nomFlairerLesEnnuis,
+      description: [''],
+    },
+    {
+      titre: nomFrappeAssomante,
       description: [''],
     },
     {
@@ -196,6 +221,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomSansPeurCriminels,
+      description: [''],
+    },
+    {
       titre: nomSansPeurMiliciens,
       description: [''],
     },
@@ -217,6 +246,10 @@ export const lstTalents = [
     },
     {
       titre: nomSociable,
+      description: [''],
+    },
+    {
+      titre: nomSprinter,
       description: [''],
     },
     {
