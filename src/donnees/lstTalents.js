@@ -1,6 +1,7 @@
 import { normalizeCaracteres, retireAccents } from '../utils/retireAccents'
 
 export const nomAffable = 'Affable'
+export const nomAmbidextre = 'Ambidextre'
 export const nomArtiste = 'Artiste'
 export const nomBaratiner = 'Baratiner'
 export const nomBonnesJambes = 'Bonnes jambes'
@@ -41,6 +42,7 @@ export const nomMenacant = 'Menaçant'
 export const nomMenteur = 'Menteur'
 export const nomNanti = 'Nanti'
 export const nomNegociateur = 'Négociateur'
+export const nomNoctambule = 'Noctambule'
 export const nomNumismate = 'Numismate'
 export const nomObstine = 'Obstiné'
 export const nomOrateur = 'Orateur'
@@ -79,6 +81,10 @@ export const nomVivacite = 'Vivacité'
 export const lstTalents = [
     {
       titre: nomAffable,
+      description: [''],
+    },
+    {
+      titre: nomAmbidextre,
       description: [''],
     },
     {
@@ -219,6 +225,10 @@ export const lstTalents = [
     },
     {
       titre: nomNegociateur,
+      description: [''],
+    },
+    {
+      titre: nomNoctambule,
       description: [''],
     },
     {

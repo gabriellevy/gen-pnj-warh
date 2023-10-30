@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import { nomAffable, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssomante, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNumismate, nomObstine, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomResistanceMaladie, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer } from './lstTalents'
+import { nomAffable, nomAmbidextre, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssomante, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNoctambule, nomNumismate, nomObstine, nomOrateur, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomResistanceMaladie, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreServiteur, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -1351,6 +1351,12 @@ export const lstClasses = [
               nomResistance,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomArtiste,
+              nomInfatigable,
+              nomPerseverant,
+              nomVivacite,
+            ]
           },
           {
             titre: nomArtiste,
@@ -1367,6 +1373,12 @@ export const lstClasses = [
               nomMetierMaterielArtistique,
               nomPari,
             ],
+            talents: [
+              nomCriminel,
+              nomDoigtsDeFee,
+              nomNoctambule,
+              nomSociable,
+            ]
           },
           {
             titre: nomArtisteRenom,
@@ -1381,6 +1393,12 @@ export const lstClasses = [
               nomSavoirArt,
               nomSavoirHeraldique,
             ],
+            talents: [
+              nomFlairerLesEnnuis,
+              nomNegociateur,
+              nomSavoirVivreAuChoix,
+              nomSensAiguiseAuChoix,
+            ]
           },
           {
             titre: nomMaestro,
@@ -1390,6 +1408,12 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomChevaucher, nomRecherche],
+            talents: [
+              nomAmbidextre,
+              nomCaid,
+              nomLireEcrire,
+              nomMagnumOpus,
+            ]
           },
         ],
       },
