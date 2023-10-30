@@ -1438,6 +1438,12 @@ export const lstClasses = [
               nomResistance,
               nomResistanceAlcool,
             ],
+            talents: [
+              nomInsignifiant,
+              nomLireEcrire,
+              nomSavoirVivreAuChoix,
+              nomSociable,
+            ]
           },
           {
             titre: nomConseiller,
@@ -1454,6 +1460,12 @@ export const lstClasses = [
               nomPari,
               nomSavoirRegion,
             ],
+            talents: [
+              nomBaratiner,
+              nomCooperatif,
+              nomCriminel,
+              nomIntrigant,
+            ]
           },
           {
             titre: nomConsultant,
@@ -1468,6 +1480,12 @@ export const lstClasses = [
               nomLangueAuChoix1,
               nomSavoirChoix1,
             ],
+            talents: [
+              nomErgoteur,
+              nomMenteur,
+              nomNoctambule,
+              nomSuborneur,
+            ]
           },
           {
             titre: nomChancelier,
@@ -1477,6 +1495,12 @@ export const lstClasses = [
             },
             caracs: [nomForceMentale],
             competences: [nomChevaucher, nomSavoirHeraldique],
+            talents: [
+              nomAffable,
+              nomCaid,
+              nomEscroquer,
+              nomPresenceImposante,
+            ]
           },
         ],
       },
