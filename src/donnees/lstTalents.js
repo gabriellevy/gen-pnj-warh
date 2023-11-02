@@ -38,13 +38,17 @@ export const nomFrappeBlessante = 'Frappe blessante'
 export const nomFrappeReactive = 'Frappe réactive'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
+export const nomIdentiteSecrete = 'Identité secrète'
+export const nomImitation = 'Imitation'
 export const nomInfatigable = 'Infatigable'
 export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
 export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
+export const nomLireSurLesLevres = 'Lire sur les lèvres'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
+export const nomMaitreEnDeguisement = 'Maître en déguisement'
 export const nomMaitriseDuCombat = 'Maîtrise du combat'
 export const nomManiementDeDeuxArmes = 'Maniement de deux armes'
 export const nomMenacant = 'Menaçant'
@@ -227,6 +231,14 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomIdentiteSecrete,
+      description: [''],
+    },
+    {
+      titre: nomImitation,
+      description: [''],
+    },
+    {
       titre: nomInfatigable,
       description: [''],
     },
@@ -240,6 +252,10 @@ export const lstTalents = [
     },
     {
       titre: nomLireEcrire,
+      description: [''],
+    },
+    {
+      titre: nomLireSurLesLevres,
       description: [''],
     },
     {
