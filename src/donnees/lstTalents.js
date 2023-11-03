@@ -1,11 +1,13 @@
 import { normalizeCaracteres, retireAccents } from '../utils/retireAccents'
 
 export const nomAffable = 'Affable'
+export const nomAffiniteAvecLesAnimaux = 'Affinité avec les animaux'
 export const nomAmbidextre = 'Ambidextre'
 export const nomArtiste = 'Artiste'
 export const nomAttirant = 'Attirant'
 export const nomBaratiner = 'Baratiner'
 export const nomBattement = 'Battement'
+export const nomBonMarcheurAuChoix = 'Bon marcheur (au choix)'
 export const nomBonnesJambes = 'Bonnes jambes'
 export const nomBricoleur = 'Bricoleur'
 export const nomBrouet = 'Brouet'
@@ -57,6 +59,7 @@ export const nomNanti = 'Nanti'
 export const nomNegociateur = 'Négociateur'
 export const nomNoblesse = 'Noblesse'
 export const nomNoctambule = 'Noctambule'
+export const nomNomade = 'Nomade'
 export const nomNumismate = 'Numismate'
 export const nomObstine = 'Obstiné'
 export const nomOrateur = 'Orateur'
@@ -74,6 +77,7 @@ export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSansPeurRats = 'Sans peur (rats)'
 export const nomSansPeurSkaven = 'Sans peur (skaven)'
 export const nomSavantAuChoix = 'Savant (au choix)'
+export const nomSavantRegion = 'Savant (région)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
@@ -103,6 +107,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomAffiniteAvecLesAnimaux,
+      description: [''],
+    },
+    {
       titre: nomAmbidextre,
       description: [''],
     },
@@ -120,6 +128,10 @@ export const lstTalents = [
     },
     {
       titre: nomBattement,
+      description: [''],
+    },
+    {
+      titre: nomBonMarcheurAuChoix,
       description: [''],
     },
     {
@@ -295,6 +307,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomNomade,
+      description: [''],
+    },
+    {
       titre: nomNumismate,
       description: [''],
     },
@@ -356,6 +372,10 @@ export const lstTalents = [
     },
     {
       titre: nomSavantAuChoix,
+      description: [''],
+    },
+    {
+      titre: nomSavantRegion,
       description: [''],
     },
     {
