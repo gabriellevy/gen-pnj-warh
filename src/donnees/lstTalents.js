@@ -68,9 +68,11 @@ export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPresenceImposante = 'Présence imposante'
+export const nomPrevoyant = 'Prévoyant'
 export const nomRatDEgout = "Rat d'égoûts"
 export const nomRenversement = 'Renversement'
 export const nomResistanceMaladie = 'Résistance à la maladie'
+export const nomResistancePoison = 'Résistance au poisone'
 export const nomRiposte = 'Riposte'
 export const nomRobuste = 'Robuste'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
@@ -83,8 +85,8 @@ export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
 export const nomSavoirVivreNobles = 'Savoir vivre (nobles)'
-export const nomSavoirVivreServiteur = 'Savoir vivre (serviteur)'
-export const nomSavoirVivreSoldats = 'Savoir vivre (dsoldats)'
+export const nomSavoirVivreServiteurs = 'Savoir vivre (serviteurs)'
+export const nomSavoirVivreSoldats = 'Savoir vivre (soldats)'
 export const nomSeigneurDeGuerre = 'Seigneur de guerre'
 export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
 export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
@@ -341,6 +343,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomPrevoyant,
+      description: [''],
+    },
+    {
       titre: nomRatDEgout,
       description: [''],
     },
@@ -350,6 +356,10 @@ export const lstTalents = [
     },
     {
       titre: nomResistanceMaladie,
+      description: [''],
+    },
+    {
+      titre: nomResistancePoison,
       description: [''],
     },
     {
@@ -397,7 +407,7 @@ export const lstTalents = [
       description: [''],
     },
     {
-      titre: nomSavoirVivreServiteur,
+      titre: nomSavoirVivreServiteurs,
       description: [''],
     },
     {
