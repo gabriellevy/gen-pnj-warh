@@ -42,6 +42,7 @@ export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomIdentiteSecrete = 'Identité secrète'
 export const nomImitation = 'Imitation'
+export const nomImperturbable = 'Imperturbable'
 export const nomInfatigable = 'Infatigable'
 export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
@@ -84,6 +85,7 @@ export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
 export const nomSavoirVivreNobles = 'Savoir vivre (nobles)'
 export const nomSavoirVivreServiteur = 'Savoir vivre (serviteur)'
 export const nomSavoirVivreSoldats = 'Savoir vivre (dsoldats)'
+export const nomSeigneurDeGuerre = 'Seigneur de guerre'
 export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
 export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
 export const nomSixiemeSens = 'Sixième sens'
@@ -251,6 +253,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomImperturbable,
+      description: [''],
+    },
+    {
       titre: nomInfatigable,
       description: [''],
     },
@@ -392,6 +398,10 @@ export const lstTalents = [
     },
     {
       titre: nomSavoirVivreServiteur,
+      description: [''],
+    },
+    {
+      titre: nomSeigneurDeGuerre,
       description: [''],
     },
     {
