@@ -45,10 +45,12 @@ export const nomFrappeBlessante = 'Frappe blessante'
 export const nomFrappeReactive = 'Frappe réactive'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
+export const nomGuerrierNe = 'Guerrier né'
 export const nomHaineAuChoix = 'Haine (au choix)'
 export const nomIdentiteSecrete = 'Identité secrète'
 export const nomImitation = 'Imitation'
 export const nomImperturbable = 'Imperturbable'
+export const nomInebranlable = 'Inébranlable'
 export const nomInfatigable = 'Infatigable'
 export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
@@ -73,6 +75,7 @@ export const nomOrateur = 'Orateur'
 export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
+export const nomPorteBouclier = 'Porte bouclier'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomPrevoyant = 'Prévoyant'
 export const nomRatDEgout = "Rat d'égoûts"
@@ -82,6 +85,7 @@ export const nomResistanceMaladie = 'Résistance à la maladie'
 export const nomResistancePoison = 'Résistance au poisone'
 export const nomRiposte = 'Riposte'
 export const nomRobuste = 'Robuste'
+export const nomSansPeurAuChoix = 'Sans peur (au choix)'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSansPeurRats = 'Sans peur (rats)'
@@ -272,6 +276,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomGuerrierNe,
+      description: [''],
+    },
+    {
       titre: nomHaineAuChoix,
       description: [''],
     },
@@ -285,6 +293,10 @@ export const lstTalents = [
     },
     {
       titre: nomImperturbable,
+      description: [''],
+    },
+    {
+      titre: nomInebranlable,
       description: [''],
     },
     {
@@ -369,6 +381,10 @@ export const lstTalents = [
     },
     {
       titre: nomPerspicace,
+      description: [''],
+    },
+    {
+      titre: nomPorteBouclier,
       description: [''],
     },
     {
