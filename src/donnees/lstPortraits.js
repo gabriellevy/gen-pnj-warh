@@ -447,6 +447,7 @@ import portrait_empire30_60_cocher from './img/empire/portraits/30_60_cocher.jpg
 import portrait_empire15_25_lettres from './img/empire/portraits/15_25_lettres.jpg'
 import portrait_empire50_plus_entremetteur from './img/empire/portraits/50_plus_entremetteur.jpg'
 import portrait_empire35_65_f_bailli from './img/empire/portraits/35_65_f_bailli.jpg'
+import portrait_empire50_plus_marchande from './img/empire/portraits/50+_marchande.jpg'
 import portrait_empire50_plus_erudit_2 from './img/empire/portraits/50_plus_erudit.jpg'
 import portrait_empire50_plus_citadin from './img/empire/portraits/50_plus_citadin.jpg'
 import portrait_empire15_35_artiste from './img/empire/portraits/15_35_artiste.jpg'
@@ -2449,7 +2450,15 @@ export const lstPortraits = [
     image: portrait_empire35_65_f_bailli,
     ageMin: 35,
     ageMax: 65,
-    carrieres: [nomBailli],
+    carrieres: [nomBailli, nomMarchand],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire50_plus_marchande,
+    ageMin: 50,
+    carrieres: [nomMarchand],
     classes: [],
     male: false,
   },
