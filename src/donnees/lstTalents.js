@@ -6,6 +6,7 @@ export const nomAffiniteAvecLesAnimaux = 'Affinité avec les animaux'
 export const nomAmbidextre = 'Ambidextre'
 export const nomArtilleur = 'Artilleur'
 export const nomArtiste = 'Artiste'
+export const nomAssautFeroce = 'Assaut féroce'
 export const nomAttirant = 'Attirant'
 export const nomBaratiner = 'Baratiner'
 export const nomBattement = 'Battement'
@@ -50,6 +51,7 @@ export const nomHaineAuChoix = 'Haine (au choix)'
 export const nomIdentiteSecrete = 'Identité secrète'
 export const nomImitation = 'Imitation'
 export const nomImperturbable = 'Imperturbable'
+export const nomImpitoyable = 'Impitoyable'
 export const nomInebranlable = 'Inébranlable'
 export const nomInfatigable = 'Infatigable'
 export const nomInsignifiant = 'Insignifiant'
@@ -60,6 +62,7 @@ export const nomLireSurLesLevres = 'Lire sur les lèvres'
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
 export const nomMaitreEnDeguisement = 'Maître en déguisement'
+export const nomMaitriseDesDes = 'Maîtrise des dés'
 export const nomMaitriseDuCombat = 'Maîtrise du combat'
 export const nomManiementDeDeuxArmes = 'Maniement de deux armes'
 export const nomMenacant = 'Menaçant'
@@ -87,9 +90,11 @@ export const nomRiposte = 'Riposte'
 export const nomRobuste = 'Robuste'
 export const nomSansPeurAuChoix = 'Sans peur (au choix)'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
+export const nomSansPeurIntrus = 'Sans peur (intrus)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSansPeurRats = 'Sans peur (rats)'
 export const nomSansPeurSkaven = 'Sans peur (skaven)'
+export const nomSautCarpe = 'Saut carpé'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavantRegion = 'Savant (région)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
@@ -137,6 +142,10 @@ export const lstTalents = [
     },
     {
       titre: nomArtiste,
+      description: [''],
+    },
+    {
+      titre: nomAssautFeroce,
       description: [''],
     },
     {
@@ -296,6 +305,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomImpitoyable,
+      description: [''],
+    },
+    {
       titre: nomInebranlable,
       description: [''],
     },
@@ -325,6 +338,10 @@ export const lstTalents = [
     },
     {
       titre: nomMaitreArtisan,
+      description: [''],
+    },
+    {
+      titre: nomMaitriseDesDes,
       description: [''],
     },
     {
@@ -424,6 +441,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomSansPeurIntrus,
+      description: [''],
+    },
+    {
       titre: nomSansPeurMiliciens,
       description: [''],
     },
@@ -433,6 +454,10 @@ export const lstTalents = [
     },
     {
       titre: nomSansPeurSkaven,
+      description: [''],
+    },
+    {
+      titre: nomSautCarpe,
       description: [''],
     },
     {
