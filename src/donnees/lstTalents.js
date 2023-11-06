@@ -21,6 +21,7 @@ export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomClaquerLeFouet = 'Claquer le fouet'
 export const nomCombatDeloyal = 'Combat déloyal'
 export const nomCombatInstinctif = 'Combat instictif'
+export const nomCombattantAuContact = 'Combattant au contact'
 export const nomCombattantEnEspaceClos = 'Combattant en espace clos'
 export const nomCoeurVaillant = 'Coeur vaillant'
 export const nomCooperatif = 'Coopératif'
@@ -34,6 +35,8 @@ export const nomDiscret = 'Discret'
 export const nomDoigtsDeFee = 'Doigts de fée'
 export const nomDurACuire = 'Dur à cuire'
 export const nomEffraction = 'Effraction'
+export const nomEffrayant = 'Effrayant'
+export const nomEndurci = 'Endurci'
 export const nomErgoteur = 'Ergoteur'
 export const nomEscroquer = 'Escroquer'
 export const nomExaltant = 'Exaltant'
@@ -59,6 +62,7 @@ export const nomIntrigant = 'Intrigant'
 export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomLireSurLesLevres = 'Lire sur les lèvres'
+export const nomMachoiresDAcier = "Mavhoîres d'acier"
 export const nomMagnumOpus = 'Magnum opus'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
 export const nomMaitreEnDeguisement = 'Maître en déguisement'
@@ -205,6 +209,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCombattantAuContact,
+      description: [''],
+    },
+    {
       titre: nomCombattantEnEspaceClos,
       description: [''],
     },
@@ -238,6 +246,14 @@ export const lstTalents = [
     },
     {
       titre: nomEffraction,
+      description: [''],
+    },
+    {
+      titre: nomEffrayant,
+      description: [''],
+    },
+    {
+      titre: nomEndurci,
       description: [''],
     },
     {
@@ -330,6 +346,10 @@ export const lstTalents = [
     },
     {
       titre: nomLireSurLesLevres,
+      description: [''],
+    },
+    {
+      titre: nomMachoiresDAcier,
       description: [''],
     },
     {
