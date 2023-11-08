@@ -4,12 +4,14 @@ export const nomAcrobatiesEquestres = 'Acrobaties équestres'
 export const nomAffable = 'Affable'
 export const nomAffiniteAvecLesAnimaux = 'Affinité avec les animaux'
 export const nomAmbidextre = 'Ambidextre'
+export const nomAmePure = 'Âme pure'
 export const nomArtilleur = 'Artilleur'
 export const nomArtiste = 'Artiste'
 export const nomAssautFeroce = 'Assaut féroce'
 export const nomAttirant = 'Attirant'
 export const nomBaratiner = 'Baratiner'
 export const nomBattement = 'Battement'
+export const nomBeniAuChoix = 'Béni (au choix)'
 export const nomBonMarcheurAuChoix = 'Bon marcheur (au choix)'
 export const nomBonnesJambes = 'Bonnes jambes'
 export const nomBricoleur = 'Bricoleur'
@@ -51,6 +53,7 @@ export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomGuerrierNe = 'Guerrier né'
 export const nomHaineAuChoix = 'Haine (au choix)'
+export const nomHaineSacree = 'Haine sacrée'
 export const nomIdentiteSecrete = 'Identité secrète'
 export const nomImitation = 'Imitation'
 export const nomImperturbable = 'Imperturbable'
@@ -59,6 +62,7 @@ export const nomInebranlable = 'Inébranlable'
 export const nomInfatigable = 'Infatigable'
 export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
+export const nomInvocationAuChoix = 'Invocation (au choix)'
 export const nomLectureRapide = 'Lecture rapide'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomLireSurLesLevres = 'Lire sur les lèvres'
@@ -103,6 +107,7 @@ export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavantRegion = 'Savant (région)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
+export const nomSavoirVivreFideles = 'Savoir vivre (fidèles)'
 export const nomSavoirVivreGuilde = 'Savoir vivre (guilde)'
 export const nomSavoirVivreNobles = 'Savoir vivre (nobles)'
 export const nomSavoirVivreServiteurs = 'Savoir vivre (serviteurs)'
@@ -123,6 +128,7 @@ export const nomTresFort = 'Très fort'
 export const nomTresResistant = 'Très résistant'
 export const nomVigilance = 'Vigilance'
 export const nomVisionNocturne = 'Vision nocturne'
+export const nomVisionsSacrees = 'Visions sacrées'
 export const nomVolonteDeFer = 'Volonté de fer'
 export const nomVivacite = 'Vivacité'
 export const nomVoyageurAguerri = 'Voyageur aguerri'
@@ -138,6 +144,10 @@ export const lstTalents = [
     },
     {
       titre: nomAmbidextre,
+      description: [''],
+    },
+    {
+      titre: nomAmePure,
       description: [''],
     },
     {
@@ -162,6 +172,10 @@ export const lstTalents = [
     },
     {
       titre: nomBattement,
+      description: [''],
+    },
+    {
+      titre: nomBeniAuChoix,
       description: [''],
     },
     {
@@ -309,6 +323,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomHaineSacree,
+      description: [''],
+    },
+    {
       titre: nomIdentiteSecrete,
       description: [''],
     },
@@ -338,6 +356,10 @@ export const lstTalents = [
     },
     {
       titre: nomIntrigant,
+      description: [''],
+    },
+    {
+      titre: nomInvocationAuChoix,
       description: [''],
     },
     {
@@ -493,6 +515,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomSavoirVivreFideles,
+      description: [''],
+    },
+    {
       titre: nomSavoirVivreGuilde,
       description: [''],
     },
@@ -542,6 +568,14 @@ export const lstTalents = [
     },
     {
       titre: nomVigilance,
+      description: [''],
+    },
+    {
+      titre: nomVisionNocturne,
+      description: [''],
+    },
+    {
+      titre: nomVisionsSacrees,
       description: [''],
     },
     {
