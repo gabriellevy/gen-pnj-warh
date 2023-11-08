@@ -21,11 +21,12 @@ export const nomCavalierEmerite = 'Cavalier émérite'
 export const nomChanceux = 'Chanceux'
 export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomClaquerLeFouet = 'Claquer le fouet'
+export const nomCoeurVaillant = 'Coeur vaillant'
 export const nomCombatDeloyal = 'Combat déloyal'
 export const nomCombatInstinctif = 'Combat instictif'
 export const nomCombattantAuContact = 'Combattant au contact'
 export const nomCombattantEnEspaceClos = 'Combattant en espace clos'
-export const nomCoeurVaillant = 'Coeur vaillant'
+export const nomContorsioniste = 'Contorsioniste'
 export const nomCooperatif = 'Coopératif'
 export const nomCostaud = 'Costaud'
 export const nomCoudeACoude = 'Coude à coude'
@@ -83,6 +84,7 @@ export const nomNomade = 'Nomade'
 export const nomNumismate = 'Numismate'
 export const nomObstine = 'Obstiné'
 export const nomOrateur = 'Orateur'
+export const nomOreilleAbsolue = 'Oreille Absolue'
 export const nomPasDeCote = 'Pas de côté'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
@@ -120,6 +122,7 @@ export const nomSociable = 'Sociable'
 export const nomSprinter = 'Sprinter'
 export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
+export const nomTireurDElite = "Tireur d'élite"
 export const nomTirPrecis = 'Tir précis'
 export const nomTirRapide = 'Tir rapide'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
@@ -228,6 +231,10 @@ export const lstTalents = [
     },
     {
       titre: nomCombattantEnEspaceClos,
+      description: [''],
+    },
+    {
+      titre: nomContorsioniste,
       description: [''],
     },
     {
@@ -431,6 +438,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomOreilleAbsolue,
+      description: [''],
+    },
+    {
       titre: nomPasDeCote,
       description: [''],
     },
@@ -544,6 +555,10 @@ export const lstTalents = [
     },
     {
       titre: nomSuborneur,
+      description: [''],
+    },
+    {
+      titre: nomTireurDElite,
       description: [''],
     },
     {
