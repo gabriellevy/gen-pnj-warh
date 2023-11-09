@@ -106,6 +106,7 @@ export const nomSansPeurAuChoix = 'Sans peur (au choix)'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
 export const nomSansPeurIntrus = 'Sans peur (intrus)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
+export const nomSansPeurPrimes = 'Sans peur (primes)'
 export const nomSansPeurRats = 'Sans peur (rats)'
 export const nomSansPeurSkaven = 'Sans peur (skaven)'
 export const nomSansPeurTout = 'Sans peur (tout)'
@@ -129,8 +130,10 @@ export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
 export const nomTireurDElite = "Tireur d'élite"
 export const nomTireurDePrecision = "Tireur de précision"
+export const nomTirMortel = 'Tir mortel'
 export const nomTirPrecis = 'Tir précis'
 export const nomTirRapide = 'Tir rapide'
+export const nomTirSur = 'Tir sûr'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTresFort = 'Très fort'
@@ -524,6 +527,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomSansPeurPrimes,
+      description: [''],
+    },
+    {
       titre: nomSansPeurRats,
       description: [''],
     },
@@ -592,11 +599,19 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomTirMortel,
+      description: [''],
+    },
+    {
       titre: nomTirPrecis,
       description: [''],
     },
     {
       titre: nomTirRapide,
+      description: [''],
+    },
+    {
+      titre: nomTirSur,
       description: [''],
     },
     {
