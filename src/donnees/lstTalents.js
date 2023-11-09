@@ -104,6 +104,8 @@ export const nomRiposte = 'Riposte'
 export const nomRobuste = 'Robuste'
 export const nomSansPeurAuChoix = 'Sans peur (au choix)'
 export const nomSansPeurCriminels = 'Sans peur (criminels)'
+export const nomSansPeurHommesBetes = 'Sans peur (hommes-bêtes)'
+export const nomSansPeurHorsLaLoi = 'Sans peur (hors la loi)'
 export const nomSansPeurIntrus = 'Sans peur (intrus)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSansPeurPrimes = 'Sans peur (primes)'
@@ -123,6 +125,7 @@ export const nomSavoirVivreSoldats = 'Savoir vivre (soldats)'
 export const nomSeigneurDeGuerre = 'Seigneur de guerre'
 export const nomSensAiguiseAuChoix = 'Sens aiguisé (au choix)'
 export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
+export const nomSensDeLOrientation = "Sens de l'orientation"
 export const nomSixiemeSens = 'Sixième sens'
 export const nomSociable = 'Sociable'
 export const nomSprinter = 'Sprinter'
@@ -519,6 +522,14 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomSansPeurHommesBetes,
+      description: [''],
+    },
+    {
+      titre: nomSansPeurHorsLaLoi,
+      description: [''],
+    },
+    {
       titre: nomSansPeurIntrus,
       description: [''],
     },
@@ -576,6 +587,10 @@ export const lstTalents = [
     },
     {
       titre: nomSeigneurDeGuerre,
+      description: [''],
+    },
+    {
+      titre: nomSensDeLOrientation,
       description: [''],
     },
     {
