@@ -23,6 +23,7 @@ export const nomChatDeGouttiere = 'Chat de gouttière'
 export const nomClaquerLeFouet = 'Claquer le fouet'
 export const nomCoeurVaillant = 'Coeur vaillant'
 export const nomCombatDeloyal = 'Combat déloyal'
+export const nomCombatEnEspaceClos = 'Combat en espace clos'
 export const nomCombatInstinctif = 'Combat instictif'
 export const nomCombattantAuContact = 'Combattant au contact'
 export const nomCombattantEnEspaceClos = 'Combattant en espace clos'
@@ -47,9 +48,11 @@ export const nomFaireLaManche = 'Faire la manche'
 export const nomFlairerLesEnnuis = 'Flairer les ennuis'
 export const nomFeinte = 'Feinte'
 export const nomFerveurArdente = 'Ferveur ardente'
-export const nomFrappeAssomante = 'Frappe assomante'
+export const nomFrappeAssommante = 'Frappe assommante'
 export const nomFrappeBlessante = 'Frappe blessante'
+export const nomFrappePrecise = 'Frappe précise'
 export const nomFrappeReactive = 'Frappe réactive'
+export const nomFrenesie = 'Frénésie'
 export const nomFuite = 'Fuite !'
 export const nomGrandOrateur = 'Grand orateur'
 export const nomGuerrierNe = 'Guerrier né'
@@ -92,6 +95,7 @@ export const nomPorteBouclier = 'Porte bouclier'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomPrevoyant = 'Prévoyant'
 export const nomRatDEgout = "Rat d'égoûts"
+export const nomRechargementRapide = "Rechargement rapide"
 export const nomReflexesFoudroyants = "Réflexes foudroyants"
 export const nomRenversement = 'Renversement'
 export const nomResistanceMaladie = 'Résistance à la maladie'
@@ -104,6 +108,7 @@ export const nomSansPeurIntrus = 'Sans peur (intrus)'
 export const nomSansPeurMiliciens = 'Sans peur (miliciens)'
 export const nomSansPeurRats = 'Sans peur (rats)'
 export const nomSansPeurSkaven = 'Sans peur (skaven)'
+export const nomSansPeurTout = 'Sans peur (tout)'
 export const nomSautCarpe = 'Saut carpé'
 export const nomSavantAuChoix = 'Savant (au choix)'
 export const nomSavantRegion = 'Savant (région)'
@@ -123,6 +128,7 @@ export const nomSprinter = 'Sprinter'
 export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
 export const nomTireurDElite = "Tireur d'élite"
+export const nomTireurDePrecision = "Tireur de précision"
 export const nomTirPrecis = 'Tir précis'
 export const nomTirRapide = 'Tir rapide'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
@@ -222,6 +228,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomCombatEnEspaceClos,
+      description: [''],
+    },
+    {
       titre: nomCombatInstinctif,
       description: [''],
     },
@@ -302,7 +312,7 @@ export const lstTalents = [
       description: [''],
     },
     {
-      titre: nomFrappeAssomante,
+      titre: nomFrappeAssommante,
       description: [''],
     },
     {
@@ -310,7 +320,15 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomFrappePrecise,
+      description: [''],
+    },
+    {
       titre: nomFrappeReactive,
+      description: [''],
+    },
+    {
+      titre: nomFrenesie,
       description: [''],
     },
     {
@@ -466,6 +484,10 @@ export const lstTalents = [
       description: [''],
     },
     {
+      titre: nomRechargementRapide,
+      description: [''],
+    },
+    {
       titre: nomReflexesFoudroyants,
       description: [''],
     },
@@ -507,6 +529,10 @@ export const lstTalents = [
     },
     {
       titre: nomSansPeurSkaven,
+      description: [''],
+    },
+    {
+      titre: nomSansPeurTout,
       description: [''],
     },
     {
@@ -559,6 +585,10 @@ export const lstTalents = [
     },
     {
       titre: nomTireurDElite,
+      description: [''],
+    },
+    {
+      titre: nomTireurDePrecision,
       description: [''],
     },
     {
