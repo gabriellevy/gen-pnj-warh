@@ -1,4 +1,3 @@
-import { getRandomInt } from '../../utils/rand'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'

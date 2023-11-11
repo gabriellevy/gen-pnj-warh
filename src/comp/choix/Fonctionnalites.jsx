@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
-import styled from 'styled-components'
-import { Bouton, BoutonBascule } from '../App'
+import { Bouton } from '../App'
 
 function Fonctionnalites() {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -25,7 +24,7 @@ function Fonctionnalites() {
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
         <Bouton onClick={() => rafraichir()}>
-          Nouveau personnage
+          Aléatoire complet
         </Bouton>
         <Bouton onClick={() => nouveauPortrait()}>
           Autre portrait

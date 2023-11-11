@@ -1,15 +1,13 @@
 import Coteries from './choix/Coteries'
-import BoutonsRegions from './choix/BoutonsRegions'
 import Sexe from './choix/Sexe'
-import Fonctionnalites from './choix/Fonctionnalites'
+import GenPerso from './choix/GenPerso'
 
 function ZoneDeChoix() {
   return (
     <div>
-      <BoutonsRegions />
+      <GenPerso/>
       <Coteries />
       <Sexe />
-      <Fonctionnalites />
     </div>
   )
 }
