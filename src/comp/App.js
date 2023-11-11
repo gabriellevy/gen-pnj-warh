@@ -1,5 +1,4 @@
 import Profil from './Profil'
-import '../styles/App.css'
 import ZoneDeChoix from './ZoneDeChoix'
 import { useEffect, useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
@@ -51,7 +50,15 @@ const styles = {
     height: '720px',
     maxWidth: '1280px',
     maxHeight: '720px',
+    display: 'flex',
+    justifyContent: 'space-around',
   },
+
+  app: {
+  margin: 'auto',
+  backgroundColor: '#000000',
+  height: '100%',
+  }
 }
 
 function App() {
