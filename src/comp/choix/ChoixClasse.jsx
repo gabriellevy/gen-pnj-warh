@@ -9,15 +9,6 @@ import { PersoContexte } from '../../utils/contexte/perso'
 import { getRandomInt } from '../../utils/rand'
 import styled from 'styled-components'
 
-const SpanNoir = styled.span`
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 8px 30px;
-  border-radius: 6px;
-  margin: 5px 0px;
-`
-
 const FlecheSpanNoir = styled.span`
   background-color: black;
   color: white;

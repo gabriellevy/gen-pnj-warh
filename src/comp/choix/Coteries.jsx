@@ -5,16 +5,7 @@ import '../../styles/Coteries.css'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
-import styled from 'styled-components'
-
-const SpanNoir = styled.span`
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 4px 30px;
-  border-radius: 4px;
-  margin: 5px 0px;
-`
+import { SpanNoir } from '../App'
 
 function Coteries() {
   const { perso, setPerso } = useContext(PersoContexte)
