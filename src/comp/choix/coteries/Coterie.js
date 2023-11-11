@@ -96,7 +96,6 @@ function Coterie({
   var selection = perso.coterie === titre
 
   return (
-    <li>
       <Box
         sx={ selection ? styles.lstCoteries_li_selection: styles.lstCoteries_li }
         id={titre}
@@ -114,7 +113,6 @@ function Coterie({
           {titre}
         </Box>
       </Box>
-    </li>
   )
 }
 

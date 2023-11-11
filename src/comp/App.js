@@ -108,6 +108,11 @@ const styles = {
   margin: 'auto',
   backgroundColor: '#000000',
   height: '100%',
+  },
+
+  profil: {
+    padding: '10px',
+    borderRadius: "10px",
   }
 }
 
@@ -128,7 +133,9 @@ function App() {
             backgroundImage: `url(${perso.fond})`,
           }}
         >
-          <Profil perso={perso} />
+          <Box sx={ styles.profil }>
+            <Profil perso={perso}/>
+          </Box>
           <ZoneDeChoix />
         </Box>
       </ThemeProvider>

@@ -14,7 +14,7 @@ const styles = {
         elevation: '5',
         backgroundColor: '#000000',
         color: '#FFFFFF',
-        padding: '5px 5px 5px 5px',
+        padding: '5px',
         border: "1px solid #AAAAAA",
         borderRadius: "10px",
     }

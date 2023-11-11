@@ -1,11 +1,20 @@
 import Coterie from './coteries/Coterie'
-import ChoixClasse from './ChoixClasse'
 import { lstCoteries } from '../../donnees/lstCoteries'
-import '../../styles/Coteries.css'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
-import { SpanNoir } from '../App'
+import { Box, Grid } from '@mui/material'
+
+const styles = {
+  lstCoteries_ul: {
+    listStyleType: 'none',
+    padding: '0px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    marginTop:'0px',
+    marginBottom:'0px',
+  }
+}
 
 function Coteries() {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -21,7 +30,7 @@ function Coteries() {
 
   return (
     <div>
-      <ul className="lstCoteries_ul">
+      <Grid container direction={'row'}>
         {lstCoteries.map(
           ({
             titre,
@@ -36,23 +45,25 @@ function Coteries() {
             objets,
           }) =>
             affiche ? (
-              <Coterie
-                key={titre}
-                titre={titre}
-                portrait={portrait}
-                niveau_richesse={niveau_richesse}
-                fonds={fonds}
-                page={page}
-                voies={voies}
-                modifs_caracs={modifs_caracs}
-                modifs_comps={modifs_comps}
-                objets={objets}
-              />
+              <Box x sx={styles.lstCoteries_ul}>
+                <Coterie
+                  key={titre}
+                  titre={titre}
+                  portrait={portrait}
+                  niveau_richesse={niveau_richesse}
+                  fonds={fonds}
+                  page={page}
+                  voies={voies}
+                  modifs_caracs={modifs_caracs}
+                  modifs_comps={modifs_comps}
+                  objets={objets}
+                  />
+                </Box>
             ) : (
               ''
             )
         )}
-      </ul>
+        </Grid>
     </div>
   )
 }
