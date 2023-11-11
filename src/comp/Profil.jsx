@@ -9,9 +9,8 @@ import {
   lstComps,
 } from '../donnees/lstComps'
 import { getCaracObjPropertyName } from '../donnees/lstCaracs'
-import { getTalent, getTalentObjPropertyName, lstTalents } from '../donnees/lstTalents'
+import { getTalentObjPropertyName, lstTalents } from '../donnees/lstTalents'
 import { useReactToPrint } from 'react-to-print'
-import styled from 'styled-components'
 import { Bouton } from './App'
 
 function afficheObjets(perso) {
@@ -29,9 +28,17 @@ function afficheObjets(perso) {
 }
 
 function Profil() {
-  const { perso } = useContext(PersoContexte)
+  const { perso, setPerso } = useContext(PersoContexte)
   const componentRef = useRef();
   const persoSelectionne = Object.entries(perso).length !== 0
+
+  function nouveauPortrait() {
+    var changementsAuPerso = {
+        autre_portrait: 1,
+    }
+    var persoFinal = { ...perso, ...changementsAuPerso }
+    setPerso(persoFinal)
+  }
 
     const VersPdf = useReactToPrint({
       content: () => componentRef.current
@@ -166,9 +173,12 @@ function Profil() {
                 </div>
             </div>
             </div>
-                <Bouton onClick={() => VersPdf()}>
+              <Bouton onClick={() => VersPdf()}>
                 Pdf
-                </Bouton>
+              </Bouton>
+              <Bouton onClick={() => nouveauPortrait()}>
+                Autre portrait
+              </Bouton>
             </div>
         ) : (
             <h1>Création de personnage Warhammer</h1>
