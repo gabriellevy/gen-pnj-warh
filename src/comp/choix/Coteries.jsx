@@ -9,7 +9,6 @@ import { SpanNoir } from '../App'
 
 function Coteries() {
   const { perso, setPerso } = useContext(PersoContexte)
-  const [age, majAge] = useState(perso.age)
 
   // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
   useEffect(() => {
@@ -19,20 +18,6 @@ function Coteries() {
       var persoFinal = { ...perso, ...changementsAuPerso }
       setPerso(persoFinal)
   }, [])
-
-  function gererAge(e) {
-    majAge(e.target.value)
-
-    var changementsAuPerso = {
-      age: e.target.value,
-    }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }
-
-  useEffect(() => {
-    majAge(perso.age)
-  }, [perso.age])
 
   return (
     <div>
@@ -68,26 +53,6 @@ function Coteries() {
             )
         )}
       </ul>
-
-      <form>
-        <div style={{ padding: '5px 15px 5px 15px' }}>
-          <SpanNoir>
-            Âge :
-            <input
-              type="text"
-              id="age"
-              maxLength={3}
-              pattern="[+-]?\d+(?:[.,]\d+)?"
-              placeholder="Âge du perso"
-              onChange={gererAge}
-              value={age}
-            />
-          </SpanNoir>
-        </div>
-        <div style={{ padding: '15px 15px 15px 15px' }}>
-          <ChoixClasse />
-        </div>
-      </form>
     </div>
   )
 }

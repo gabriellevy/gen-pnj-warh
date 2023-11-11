@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { Bouton } from '../App'
-import Fonctionnalites from './Fonctionnalites'
 import BoutonsRegions from './BoutonsRegions'
 import { Box, Paper, Typography } from '@mui/material'
 import '@fontsource/roboto/300.css';
@@ -12,10 +11,12 @@ import '@fontsource/roboto/700.css';
 
 const styles = {
     paragraphe: {
-        elevation: '3',
+        elevation: '5',
         backgroundColor: '#000000',
         color: '#FFFFFF',
-        padding: '5px 15px 5px 15px',
+        padding: '5px 5px 5px 5px',
+        border: "1px solid #AAAAAA",
+        borderRadius: "10px",
     }
 }
 
@@ -32,8 +33,8 @@ function GenPerso() {
 
   return (
       <div>
-        <Box sx={styles.paragraphe}>
-            <Typography variant="h4">
+        <Paper sx={styles.paragraphe}>
+            <Typography variant="h5">
                 Nouveau personnage : 
                 <Bouton onClick={() => rafraichir()}>
                     Aléatoire complet
@@ -43,7 +44,7 @@ function GenPerso() {
                 Par région : 
             </Typography>
             <BoutonsRegions />
-        </Box>
+        </Paper>
     </div>
   )
 }

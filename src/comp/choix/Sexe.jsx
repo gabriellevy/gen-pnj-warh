@@ -26,7 +26,7 @@ function Sexe() {
   }, [perso.male])
 
   return (
-    <div style={{ padding: '5px 15px 5px 15px' }}>
+    <div>
       <ButtonGroup>
         <BoutonBascule active={maleVal} onClick={() => gererSexe(true)}>
           Homme
