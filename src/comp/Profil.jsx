@@ -12,21 +12,7 @@ import { getCaracObjPropertyName } from '../donnees/lstCaracs'
 import { getTalent, getTalentObjPropertyName, lstTalents } from '../donnees/lstTalents'
 import { useReactToPrint } from 'react-to-print'
 import styled from 'styled-components'
-
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 14px;
-  padding: 4px 30px;
-  border-radius: 4px;
-  margin: 5px 0px;
-  cursor: pointer;
-  &:disabled {
-    color: grey;
-    opacity: 0.7;
-    cursor: default;
-  }
-`
+import { Bouton } from './App'
 
 function afficheObjets(perso) {
   if (perso.objets === undefined || perso.objets.length === 0) return ''
@@ -180,9 +166,9 @@ function Profil() {
                 </div>
             </div>
             </div>
-                <Button onClick={() => VersPdf()}>
+                <Bouton onClick={() => VersPdf()}>
                 Pdf
-                </Button>
+                </Bouton>
             </div>
         ) : (
             <h1>Création de personnage Warhammer</h1>

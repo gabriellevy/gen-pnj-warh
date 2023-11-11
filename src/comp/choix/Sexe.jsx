@@ -3,30 +3,8 @@ import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import styled from 'styled-components'
+import { BoutonBascule } from '../App'
 
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 14px;
-  padding: 4px 30px;
-  border-radius: 4px;
-  margin: 5px 0px;
-  cursor: pointer;
-  &:disabled {
-    color: grey;
-    opacity: 0.7;
-    cursor: default;
-  }
-`
-
-const ButtonToggle = styled(Button)`
-  opacity: 0.6;
-  ${({ active }) =>
-    active &&
-    `
-    opacity: 1;
-  `}
-`
 const ButtonGroup = styled.div`
   display: flex;
 `
@@ -51,12 +29,12 @@ function Sexe() {
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
       <ButtonGroup>
-        <ButtonToggle active={maleVal} onClick={() => gererSexe(true)}>
+        <BoutonBascule active={maleVal} onClick={() => gererSexe(true)}>
           Homme
-        </ButtonToggle>
-        <ButtonToggle active={!maleVal} onClick={() => gererSexe(false)}>
+        </BoutonBascule>
+        <BoutonBascule active={!maleVal} onClick={() => gererSexe(false)}>
           Femme
-        </ButtonToggle>
+        </BoutonBascule>
       </ButtonGroup>
     </div>
   )

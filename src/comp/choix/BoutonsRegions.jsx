@@ -1,33 +1,10 @@
 import { useState } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
-import styled from 'styled-components'
 import {
   lstRegions
 } from '../../donnees/lstRegions'
-
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 15px;
-  padding: 5px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  &:disabled {
-    color: grey;
-    opacity: 0.7;
-    cursor: default;
-  }
-`
-
-const ButtonToggle = styled(Button)`
-  opacity: 0.6;
-  ${({ active }) =>
-    active &&
-    `
-    opacity: 1;
-  `}
-`
+import { BoutonBascule } from '../App'
 
 function BoutonsRegions() {
   const { perso, setPerso } = useContext(PersoContexte)
@@ -48,13 +25,13 @@ function BoutonsRegions() {
   return (
     <div style={{ padding: '5px 15px 5px 15px' }}>
         {lstRegions.map((region) => (
-          <ButtonToggle
+          <BoutonBascule
             key={region.titre}
             active={active === region}
             onClick={() => gererRegion(region)}
           >
             {region.titre}
-          </ButtonToggle>
+          </BoutonBascule>
         ))}
     </div>
   )
