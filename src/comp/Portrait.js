@@ -1,4 +1,3 @@
-import '../styles/Portrait.css'
 import { lstPortraits } from '../donnees/lstPortraits'
 import { getRandomInt } from '../utils/rand'
 import { useContext } from 'react'
