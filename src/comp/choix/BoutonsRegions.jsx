@@ -1,5 +1,4 @@
-import { getRandomInt } from '../../utils/rand'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import styled from 'styled-components'
