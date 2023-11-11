@@ -84,15 +84,6 @@ export const BoutonBascule = styled(Bouton)`
   `}
 `
 
-export const SpanNoir = styled.span`
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 4px 30px;
-  border-radius: 4px;
-  margin: 5px 0px;
-`
-
 const styles = {
   background: {
     transitionDuration: '5s',

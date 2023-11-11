@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import styled from 'styled-components'
 import { BoutonBascule } from '../App'
+import { Grid } from '@mui/material'
 
 const ButtonGroup = styled.div`
   display: flex;
