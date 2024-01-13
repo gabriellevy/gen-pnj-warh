@@ -416,6 +416,7 @@ import portrait_empire25_40_bailli from './img/empire/portraits/25_40_bailli.jpg
 import portrait_empire25_45_soldat from './img/empire/portraits/25_45_soldat.jpg'
 import portrait_empire30_plus_mendiant from './img/empire/portraits/30_plus_mendiant.jpg'
 import portrait_empire20_40_patrouilleurRoutier from './img/empire/portraits/20_40_patrouilleurRoutier.jpg'
+import portrait_empire15_25_f_batelier from './img/empire/portraits/15_25_f_batelier.png'
 import portrait_empire15_35_serviteuse from './img/empire/portraits/15_35_serviteuse.jpg'
 import portrait_empire55_plus_pretre from './img/empire/portraits/55_plus_pretre.jpg'
 import portrait_empire15_45_chasseusePrimes from './img/empire/portraits/15_45_chasseusePrimes.jpg'
@@ -2733,6 +2734,15 @@ export const lstPortraits = [
     carrieres: [nomPretre],
     classes: [],
     male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire15_25_f_batelier,
+    ageMin: 15,
+    ageMax: 25,
+    carrieres: [],
+    classes: [nomRiverains],
+    male: false,
   },
   {
     coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],

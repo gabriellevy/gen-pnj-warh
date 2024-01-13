@@ -51,7 +51,7 @@ function Portrait() {
 
   var portraitsRestants = getPortraits(perso, true, false, true)
   if (portraitsRestants.length === 0) {
-    // on n'a rien trouvé qui corresponde aux carrieres
+    // on n'a rien trouvé qui corresponde aux carrieres + nation
     portraitsRestants = getPortraits(perso, true, true, false)
     if (portraitsRestants.length === 0) {
       // on n'a rien trouvé qui corresponde aux classes
