@@ -393,6 +393,7 @@ import portrait_empire30_55_emissaire from './img/empire/portraits/30_55_emissai
 import portrait_empire40_60_noble from './img/empire/portraits/40_60_noble.jpg'
 import portrait_empire40_75_guerrier from './img/empire/portraits/40_75_guerrier.jpg'
 import portrait_empire15_35_villageoise_2 from './img/empire/portraits/15_35_villageoise_2.jpg'
+import portrait_empire15_25_f from './img/empire/portraits/15_25_f.png'
 import portrait_empire15_35_f_saltimbanque from './img/empire/portraits/15_35_f_saltimbanque.jpg'
 import portrait_empire20_45_f_saltimbanque from './img/empire/portraits/20_45_f_saltimbanque.jpg'
 import portrait_empire25_45_enqueteur from './img/empire/portraits/25_45_enqueteur.jpg'
@@ -2925,6 +2926,15 @@ export const lstPortraits = [
     image: portrait_empire20_45_f_saltimbanque,
     ageMin: 20,
     ageMax: 45,
+    carrieres: [nomSaltimbanque],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotEmpire],
+    image: portrait_empire15_25_f,
+    ageMin: 15,
+    ageMax: 25,
     carrieres: [nomSaltimbanque],
     classes: [],
     male: false,
