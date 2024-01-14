@@ -3292,6 +3292,12 @@ export const lstClasses = [
               nomSavoirUlric,
               nomSurvieExterieur,
             ],
+            talents: [
+              nomBrouet,
+              nomChargeBerserk,
+              nomFrenesie,
+              nomNomade,
+            ]
           },
           {
             titre: nomFrereLoup,
@@ -3307,6 +3313,12 @@ export const lstClasses = [
               nomSavoirBetes,
               nomSavoirHerbes,
             ],
+            talents: [
+              nomDurACuire,
+              nomEndurci,
+              nomFouleeAuChoix,
+              nomSensAiguiseAuChoix,
+            ]
           },
           {
             titre: nomCompagnonLoup,
@@ -3316,6 +3328,12 @@ export const lstClasses = [
             },
             caracs: [nomInitiative],
             competences: [nomOrientation, nomPerception, nomPistage],
+            talents: [
+              nomAssautFeroce,
+              nomPansementDeFortune,
+              nomSensDeLOrientation,
+              nomVoyageurAguerri,
+            ]
           },
           {
             titre: nomGrandLoup,
@@ -3325,6 +3343,12 @@ export const lstClasses = [
             },
             caracs: [nomAgilete],
             competences: [nomNatation, nomSoinsAnimaux],
+            talents: [
+              nomControleDeLaFrenesie,
+              nomEffrayant,
+              nomFerveurArdente,
+              nomSansPeurHommesBetes,
+            ]
           },
         ],
       },
