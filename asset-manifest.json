@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.be88f328.css",
-    "main.js": "/gen-pnj-warh/static/js/main.6edf1836.js",
+    "main.js": "/gen-pnj-warh/static/js/main.60a6b67e.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/nordland1.png": "/gen-pnj-warh/static/media/nordland1.101de7eae1674dc50445.png",
     "static/media/middenheim1.png": "/gen-pnj-warh/static/media/middenheim1.7bb7e32870846adf453f.png",
@@ -39,6 +39,7 @@
     "static/media/140_plus_guerrier.png": "/gen-pnj-warh/static/media/140_plus_guerrier.e0df0c0a6bd1017fbb0f.png",
     "static/media/20_100_chasseuse.png": "/gen-pnj-warh/static/media/20_100_chasseuse.cf9b0f74928167c34bde.png",
     "static/media/femme20-40_d.png": "/gen-pnj-warh/static/media/femme20-40_d.4c551a7dce8f03ffa962.png",
+    "static/media/15_25_f_batelier.png": "/gen-pnj-warh/static/media/15_25_f_batelier.c147d373a32f8c27a9d4.png",
     "static/media/30_160_saltimbanque.png": "/gen-pnj-warh/static/media/30_160_saltimbanque.ee2558d5d47a719988fd.png",
     "static/media/15_85_gladiatrice.png": "/gen-pnj-warh/static/media/15_85_gladiatrice.7e5fdc6cad5e10fd72d6.png",
     "static/media/6_30_f.png": "/gen-pnj-warh/static/media/6_30_f.fbcf146ca146bf0c7357.png",
@@ -61,6 +62,7 @@
     "static/media/50+_guerrier.png": "/gen-pnj-warh/static/media/50+_guerrier.9c7a464fabb9319d590c.png",
     "static/media/45_140_rural.png": "/gen-pnj-warh/static/media/45_140_rural.82b2562e382b849223f6.png",
     "static/media/80_280_moine.png": "/gen-pnj-warh/static/media/80_280_moine.e90f19533c1112fd9573.png",
+    "static/media/15_25_f.png": "/gen-pnj-warh/static/media/15_25_f.63b1991e9b4169a78b20.png",
     "static/media/20_60_magicienne_feu.jpg": "/gen-pnj-warh/static/media/20_60_magicienne_feu.6a323d0ce57ac49c9d70.jpg",
     "static/media/25_50_soldat.jpg": "/gen-pnj-warh/static/media/25_50_soldat.2ff3893a2702a99db0f2.jpg",
     "static/media/50_plus_erudit.jpg": "/gen-pnj-warh/static/media/50_plus_erudit.5816b4e7391e1e83c080.jpg",
@@ -501,10 +503,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/gen-pnj-warh/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/gen-pnj-warh/index.html",
     "main.be88f328.css.map": "/gen-pnj-warh/static/css/main.be88f328.css.map",
-    "main.6edf1836.js.map": "/gen-pnj-warh/static/js/main.6edf1836.js.map"
+    "main.60a6b67e.js.map": "/gen-pnj-warh/static/js/main.60a6b67e.js.map"
   },
   "entrypoints": [
     "static/css/main.be88f328.css",
-    "static/js/main.6edf1836.js"
+    "static/js/main.60a6b67e.js"
   ]
 }
