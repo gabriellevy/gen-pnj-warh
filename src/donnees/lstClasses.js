@@ -182,7 +182,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import {nomSansPeurHorsLaLoi, nomSensDeLOrientation, nomSansPeurHommesBetes, nomSansPeurPrimes, nomTirSur, nomTirMortel, nomFrappePrecise, nomSansPeurTout, nomFrenesie, nomTireurDePrecision, nomRechargementRapide, nomCombatEnEspaceClos, nomContorsioniste, nomTireurDElite, nomOreilleAbsolue, nomHaineSacree, nomVisionsSacrees, nomAmePure, nomBeniAuChoix, nomSavoirVivreFideles, nomInvocationAuChoix, nomCombattantAuContact, nomEndurci, nomEffrayant, nomMachoiresDAcier, nomMaitriseDesDes, nomImpitoyable, nomSansPeurIntrus, nomSautCarpe, nomAssautFeroce, nomGuerrierNe, nomSansPeurAuChoix, nomPorteBouclier, nomInebranlable, nomTirPrecis, nomExaltant, nomHaineAuChoix, nomArtilleur, nomAcrobatiesEquestres, nomVigilance, nomReflexesFoudroyants, nomClaquerLeFouet, nomCavalierEmerite, nomAffable,nomSavoirVivreServiteurs, nomResistancePoison, nomPrevoyant, nomImperturbable, nomSeigneurDeGuerre, nomSavantRegion, nomNomade, nomBonMarcheurAuChoix, nomAffiniteAvecLesAnimaux, nomMaitreEnDeguisement, nomImitation, nomIdentiteSecrete, nomLireSurLesLevres, nomAmbidextre, nomAttirant, nomNoblesse, nomVoyageurAguerri, nomSavoirVivreNobles, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombatInstinctif, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssommante, nomFrappeBlessante, nomFrappeReactive, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMaitriseDuCombat, nomManiementDeDeuxArmes, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNoctambule, nomDistraire, nomFeinte, nomNumismate, nomObstine, nomOrateur, nomBattement, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomRenversement, nomResistanceMaladie, nomRiposte, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTirRapide, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer, nomPecheur, nomChargeBerserk, nomHaineHeretiques, nomPansementDeFortune, nomSansPeurHeretiques, nomControleDeLaFrenesie, nomMarinier, nomNageurEndurant } from './lstTalents'
+import {nomSansPeurHorsLaLoi, nomSensDeLOrientation, nomSansPeurHommesBetes, nomSansPeurPrimes, nomTirSur, nomTirMortel, nomFrappePrecise, nomSansPeurTout, nomFrenesie, nomTireurDePrecision, nomRechargementRapide, nomCombatEnEspaceClos, nomContorsioniste, nomTireurDElite, nomOreilleAbsolue, nomHaineSacree, nomVisionsSacrees, nomAmePure, nomBeniAuChoix, nomSavoirVivreFideles, nomInvocationAuChoix, nomCombattantAuContact, nomEndurci, nomEffrayant, nomMachoiresDAcier, nomMaitriseDesDes, nomImpitoyable, nomSansPeurIntrus, nomSautCarpe, nomAssautFeroce, nomGuerrierNe, nomSansPeurAuChoix, nomPorteBouclier, nomInebranlable, nomTirPrecis, nomExaltant, nomHaineAuChoix, nomArtilleur, nomAcrobatiesEquestres, nomVigilance, nomReflexesFoudroyants, nomClaquerLeFouet, nomCavalierEmerite, nomAffable,nomSavoirVivreServiteurs, nomResistancePoison, nomPrevoyant, nomImperturbable, nomSeigneurDeGuerre, nomSavantRegion, nomNomade, nomBonMarcheurAuChoix, nomAffiniteAvecLesAnimaux, nomMaitreEnDeguisement, nomImitation, nomIdentiteSecrete, nomLireSurLesLevres, nomAmbidextre, nomAttirant, nomNoblesse, nomVoyageurAguerri, nomSavoirVivreNobles, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombatInstinctif, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssommante, nomFrappeBlessante, nomFrappeReactive, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMaitriseDuCombat, nomManiementDeDeuxArmes, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNoctambule, nomDistraire, nomFeinte, nomNumismate, nomObstine, nomOrateur, nomBattement, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomRenversement, nomResistanceMaladie, nomRiposte, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTirRapide, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer, nomPecheur, nomChargeBerserk, nomHaineHeretiques, nomPansementDeFortune, nomSansPeurHeretiques, nomControleDeLaFrenesie, nomMarinier, nomNageurEndurant, nomFouleeAuChoix, nomVeloce, nomHaineHorsLaLoi, nomSansPeurSorcieres, nomPerceptionDeLaMagie, nomDetermine } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -3373,6 +3373,12 @@ export const lstClasses = [
               nomResistance,
               nomRagot,
             ],
+            talents: [
+              nomFuite,
+              nomPasDeCote,
+              nomSprinter,
+              nomVeloce,
+            ]
           },
           {
             titre: nomMessager,
@@ -3389,6 +3395,12 @@ export const lstClasses = [
               nomSoinsAnimaux,
               nomSavoirRegion,
             ],
+            talents: [
+              nomClaquerLeFouet,
+              nomCriminel,
+              nomSensDeLOrientation,
+              nomVoyageurAguerri,
+            ]
           },
           {
             titre: nomEstafette,
@@ -3403,6 +3415,12 @@ export const lstClasses = [
               nomResistanceAlcool,
               nomSurvieExterieur,
             ],
+            talents: [
+              nomAcrobatiesEquestres,
+              nomFlairerLesEnnuis,
+              nomImpitoyable,
+              nomPerseverant,
+            ]
           },
           {
             titre: nomMessagerVeteran,
@@ -3412,6 +3430,12 @@ export const lstClasses = [
             },
             caracs: [nomSociabilite],
             competences: [nomIntimidation, nomCommandement],
+            talents: [
+              nomCaid,
+              nomHaineHorsLaLoi,
+              nomNegociateur,
+              nomTresResistant,
+            ]
           },
         ],
       },
@@ -3436,6 +3460,12 @@ export const lstClasses = [
               nomResistanceAlcool,
               nomSubornation,
             ],
+            talents: [
+              nomEscroquer,
+              nomImperturbable,
+              nomNumismate,
+              nomTireurDePrecision,
+            ]
           },
           {
             titre: nomPatrouilleurRoutier,
@@ -3452,6 +3482,12 @@ export const lstClasses = [
               nomSurvieExterieur,
               nomResistance,
             ],
+            talents: [
+              nomCavalierEmerite,
+              nomClaquerLeFouet,
+              nomCriminel,
+              nomVoyageurAguerri,
+            ]
           },
           {
             titre: nomSergentPatrouilleur,
@@ -3466,6 +3502,12 @@ export const lstClasses = [
               nomCommandement,
               nomProjectilesPoudreNoire,
             ],
+            talents: [
+              nomFlairerLesEnnuis,
+              nomHaineAuChoix,
+              nomSavoirVivreSoldats,
+              nomSansPeurHorsLaLoi,
+            ]
           },
           {
             titre: nomCapitainePatrouilleur,
@@ -3475,6 +3517,12 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomOrientation, nomSavoirEmpire],
+            talents: [
+              nomCaid,
+              nomOrateur,
+              nomPresenceImposante,
+              nomVigilance,
+            ]
           },
         ],
       },
@@ -3562,6 +3610,12 @@ export const lstClasses = [
               nomResistanceAlcool,
               nomSavoirTorture,
             ],
+            talents: [
+              nomDetermine,
+              nomImperturbable,
+              nomLireEcrire,
+              nomMenacant,
+            ]
           },
           {
             titre: nomRepurgateur,
@@ -3578,6 +3632,12 @@ export const lstClasses = [
               nomRagot,
               nomSavoirSorciere,
             ],
+            talents: [
+              nomDiscret,
+              nomManiementDeDeuxArmes,
+              nomTireurDePrecision,
+              nomVoyageurAguerri,
+            ]
           },
           {
             titre: nomInquisiteur,
@@ -3592,6 +3652,12 @@ export const lstClasses = [
               nomResistance,
               nomSavoirRegion,
             ],
+            talents: [
+              nomFlairerLesEnnuis,
+              nomImpitoyable,
+              nomObstine,
+              nomSansPeurSorcieres,
+            ]
           },
           {
             titre: nomRepurgateurVeteran,
@@ -3601,6 +3667,12 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomSavoirChaos, nomSavoirPolitique],
+            talents: [
+              nomAmePure,
+              nomEffrayant,
+              nomPerceptionDeLaMagie,
+              nomVolonteDeFer,
+            ]
           },
         ],
       },
