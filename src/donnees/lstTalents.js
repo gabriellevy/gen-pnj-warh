@@ -76,6 +76,7 @@ export const nomInsignifiant = 'Insignifiant'
 export const nomIntrigant = 'Intrigant'
 export const nomInvocationAuChoix = 'Invocation (au choix)'
 export const nomLectureRapide = 'Lecture rapide'
+export const nomLinguistique = 'Linguistique'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomLireSurLesLevres = 'Lire sur les lèvres'
 export const nomMachoiresDAcier = "Mavhoîres d'acier"
