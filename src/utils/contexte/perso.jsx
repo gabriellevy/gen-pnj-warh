@@ -31,7 +31,7 @@ import {
   getIndexEvolutionObjFromCarriereAndEvolutionStr,
 } from '../../donnees/lstClasses'
 import { getCaracObjPropertyName } from '../../donnees/lstCaracs'
-import { lstRegions, majCoterieSelonRegion, nomBretonnie, nomKislev, nomMootland, nomRegMiddenheim, nomRegMiddenlander, nomRegMontagnesGrises, nomRegNordlander, nomRegReikland } from '../../donnees/lstRegions'
+import { lstRegions, majCoterieSelonRegion} from '../../donnees/lstRegions'
 import { getTalentObjPropertyName, lstTalents } from '../../donnees/lstTalents'
 
 export const PersoContexte = createContext()
@@ -354,51 +354,74 @@ export const PersoProvider = ({ children }) => {
     pointsDeBlessure: 0,
     poids: 0,
     evts: [],
-    coterie: '', // titre de coterie
     nom: '',
     classe: '',
     carriere: '',
     evolution: '',
     statut_echelon: '',
     statut_standing: '',
-    autre_portrait:0, // 0 quand le perso est invalidé pour recalcul
-    rafraichir_coterie: 0, // 0 quand le perso est invalidé pour recalcul
-    rafraichir: 0,
+    autre_portrait:0, // 1 quand le perso est invalidé pour recalcul
+    rafraichir_coterie: 0, // 1 quand le perso est invalidé pour recalcul
+    rafraichir: 0, // 1 quand la région est changée pour régénérer un perso
+    region: undefined,
+    coterie: undefined, // titre de coterie
   })
 
-  useEffect(() => {
-    // valeurs de base de compétences :
+  /**
+   * mettre à zéro toutes les valeurs de base de compétences et de talents
+   */
+  /*useEffect(() => {
     lstComps.forEach(({ titre, description }) => {
       const idComp = getCompObjPropertyName(titre)
       perso[idComp] = 0
     })
-    // valeurs de base de compétences :
     lstTalents.forEach(({ titre, description }) => {
       const idTalent = getTalentObjPropertyName(titre)
       perso[idTalent] = 0
     })
-  }, [])
+  })*/
 
+  // le changement de coterie implique un recalcul de presque tout :
+  // âge, métier, portrait
+  // mais pas la région car au contraire c'est le changement de région qui implique le changement de coterie
   useEffect(() => {
-    // perso recréé de zéro
-    var indexRegion = getRandomInt(lstRegions.length)
-    var regionObj = lstRegions[indexRegion]
-    
-    /*var indexCoterie = getRandomInt(lstCoteries.length)
-    var coterieObj = lstCoteries[indexCoterie]
-    var fond = coterieObj.fonds[getRandomInt(coterieObj.fonds.length)]*/
-
-    var changementsAuPerso = {
-      rafraichir: 0,
-      region: regionObj.titre,
+    if (perso.coterie !== undefined) {
+      var changementsAuPerso = {}
+  
+      setCaracsInitiales(perso, changementsAuPerso)
+      var indexEvolution = getIndexEvolutionObjFromCarriereAndEvolutionStr(
+        perso.classe,
+        perso.carriere,
+        perso.evolution
+      )
+  
+      // mettre à jour des caracs selon la coterie actuelle
+      // --------- age
+      var age = getRandomInt(60) + 15 // pour un humain classique
+      if (perso.coterie === nomCotNains) {
+        age = getRandomInt(600) + 15
+      }
+      if (perso.coterie === nomCotHalfelins) {
+        age = age * 2
+      }
+      // ----------- classe et carrière aleatoires
+      var classeCarriereObj = genCarriere(perso.coterie)
+      var classeStr = classeCarriereObj.classeStr
+      var carriereStr = classeCarriereObj.carriereStr
+      changementsAuPerso['age'] = age
+      changementsAuPerso['carriere'] = carriereStr
+      changementsAuPerso['classe'] = classeStr
+      changementsAuPerso['nom'] = genererNom(perso)
+      changementsAuPerso['poids'] = calculerPoids(perso)
+      changementsAuPerso['rafraichir_coterie'] = 0
+  
+      majCaracs(perso, changementsAuPerso, indexEvolution)
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
     }
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-
-  }, [perso.rafraichir])
+  }, [perso.coterie, perso.rafraichir_coterie])
 
   useEffect(() => {
-
     if (perso.region !== undefined) {
       var nouvCoterie = majCoterieSelonRegion(perso.region)
       
@@ -411,44 +434,6 @@ export const PersoProvider = ({ children }) => {
     }
 
   }, [perso.region])
-
-  // le changement de coterie implique un recalcul de presque tout :
-  // âge, métier, portrait
-  // mais pas la région car au contraire c'est le changement de région qui implique le changement de coterie
-  useEffect(() => {
-    var changementsAuPerso = {}
-
-    setCaracsInitiales(perso, changementsAuPerso)
-    var indexEvolution = getIndexEvolutionObjFromCarriereAndEvolutionStr(
-      perso.classe,
-      perso.carriere,
-      perso.evolution
-    )
-
-    // mettre à jour des caracs selon la coterie actuelle
-    // --------- age
-    var age = getRandomInt(60) + 15 // pour un humain classique
-    if (perso.coterie === nomCotNains) {
-      age = getRandomInt(600) + 15
-    }
-    if (perso.coterie === nomCotHalfelins) {
-      age = age * 2
-    }
-    // ----------- classe et carrière aleatoires
-    var classeCarriereObj = genCarriere(perso.coterie)
-    var classeStr = classeCarriereObj.classeStr
-    var carriereStr = classeCarriereObj.carriereStr
-    changementsAuPerso['age'] = age
-    changementsAuPerso['carriere'] = carriereStr
-    changementsAuPerso['classe'] = classeStr
-    changementsAuPerso['nom'] = genererNom(perso)
-    changementsAuPerso['poids'] = calculerPoids(perso)
-    changementsAuPerso['rafraichir_coterie'] = 0
-
-    majCaracs(perso, changementsAuPerso, indexEvolution)
-    var persoFinal = { ...perso, ...changementsAuPerso }
-    setPerso(persoFinal)
-  }, [perso.coterie, perso.rafraichir_coterie])
 
   /**
    * régénération du poids
@@ -529,6 +514,33 @@ export const PersoProvider = ({ children }) => {
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }, [perso.evolution])
+  /**
+   * perso recréé de zéro quand on lui change sa région
+   */
+  useEffect(() => {
+    if (perso.rafraichir === 1) {
+      var indexRegion = getRandomInt(lstRegions.length)
+      var regionObj = lstRegions[indexRegion]
+  
+      var changementsAuPerso = {
+        rafraichir: 0,
+        region: regionObj.titre,
+      }
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
+    }
+  }, [perso.rafraichir])
+
+
+  // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
+  useEffect(() => {
+      var changementsAuPerso = {
+        rafraichir: 1,
+      }
+      var persoFinal = { ...perso, ...changementsAuPerso }
+      setPerso(persoFinal)
+  }, [])
+
 
   return (
     <PersoContexte.Provider value={{ perso, setPerso }}>

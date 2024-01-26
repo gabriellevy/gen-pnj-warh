@@ -82,7 +82,7 @@ function Coterie({
    * application de tous les changements lors de la sélection d'une coterie
    */
   function appliquerSelection() {
-    var fond = fonds[getRandomInt(fonds.length)]
+        var fond = fonds[getRandomInt(fonds.length)]
 
     var changementsAuPerso = {
       fond: fond,

@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { PersoContexte } from '../../utils/contexte/perso'
 import { Bouton } from '../App'
 import BoutonsRegions from './BoutonsRegions'
-import { Box, Paper, Typography } from '@mui/material'
+import { Paper, Typography } from '@mui/material'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -31,7 +31,7 @@ function GenPerso() {
       setPerso(persoFinal)
     }
 
-  return (
+      return (
       <div>
         <Paper sx={styles.paragraphe}>
             <Typography variant="h5">

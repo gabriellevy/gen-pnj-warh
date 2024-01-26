@@ -1,8 +1,5 @@
 import Coterie from './coteries/Coterie'
 import { lstCoteries } from '../../donnees/lstCoteries'
-import { useEffect } from 'react'
-import { useContext } from 'react'
-import { PersoContexte } from '../../utils/contexte/perso'
 import { Box, Grid } from '@mui/material'
 
 const styles = {
@@ -17,17 +14,6 @@ const styles = {
 }
 
 function Coteries() {
-  const { perso, setPerso } = useContext(PersoContexte)
-
-  // manière détournée bancale de faire l'initialisation aléatoire de la coterie mais bon je fais ce que je peux
-  useEffect(() => {
-      var changementsAuPerso = {
-        rafraichir: 1,
-      }
-      var persoFinal = { ...perso, ...changementsAuPerso }
-      setPerso(persoFinal)
-  }, [])
-
   return (
     <div>
       <Grid container direction={'row'}>

@@ -33,16 +33,16 @@ function Profil() {
   const persoSelectionne = Object.entries(perso).length !== 0
 
   function nouveauPortrait() {
-    var changementsAuPerso = {
+        var changementsAuPerso = {
         autre_portrait: 1,
     }
     var persoFinal = { ...perso, ...changementsAuPerso }
     setPerso(persoFinal)
   }
 
-    const VersPdf = useReactToPrint({
-      content: () => componentRef.current
-    });
+  const VersPdf = useReactToPrint({
+    content: () => componentRef.current
+  });
 
   if (persoSelectionne) {
     const male = getRandomInt(2) === 0
