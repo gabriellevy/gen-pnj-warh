@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gen-pnj-warh/static/css/main.be88f328.css",
-    "main.js": "/gen-pnj-warh/static/js/main.fd623fdd.js",
+    "main.js": "/gen-pnj-warh/static/js/main.45cccfd1.js",
     "static/media/bg1.png": "/gen-pnj-warh/static/media/bg1.1d8c1cae5132412b08f6.png",
     "static/media/nordland1.png": "/gen-pnj-warh/static/media/nordland1.101de7eae1674dc50445.png",
     "static/media/middenheim1.png": "/gen-pnj-warh/static/media/middenheim1.7bb7e32870846adf453f.png",
@@ -503,10 +503,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/gen-pnj-warh/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/gen-pnj-warh/index.html",
     "main.be88f328.css.map": "/gen-pnj-warh/static/css/main.be88f328.css.map",
-    "main.fd623fdd.js.map": "/gen-pnj-warh/static/js/main.fd623fdd.js.map"
+    "main.45cccfd1.js.map": "/gen-pnj-warh/static/js/main.45cccfd1.js.map"
   },
   "entrypoints": [
     "static/css/main.be88f328.css",
-    "static/js/main.fd623fdd.js"
+    "static/js/main.45cccfd1.js"
   ]
 }
