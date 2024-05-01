@@ -4666,6 +4666,12 @@ export const lstClasses = [
               nomAthletisme,
               nomEscalade,
             ],
+            talents: [
+              nomCombatDeloyal,
+              nomCostaud,
+              nomInfatigable,
+              nomTresFort,
+            ]
           },
           {
             titre: nomDebardeur,
@@ -4682,6 +4688,12 @@ export const lstClasses = [
               nomPerception,
               nomSubornation,
             ],
+            talents: [
+              nomCriminel,
+              nomBonnesJambes,
+              nomPerseverant,
+              nomSavoirVivreGuilde,
+            ]
           },
           {
             titre: nomContremaitre,
@@ -4696,6 +4708,12 @@ export const lstClasses = [
               nomEvaluation,
               nomIntuition,
             ],
+            talents: [
+              nomEscroquer,
+              nomNegociateur,
+              nomOrateur,
+              nomSavoirVivreCriminels,
+            ]
           },
           {
             titre: nomMaitreDocks,
@@ -4705,6 +4723,12 @@ export const lstClasses = [
             },
             caracs: [nomIntelligence],
             competences: [nomCharme, nomSavoirTaxes],
+            talents: [
+              nomCaid,
+              nomLireEcrire,
+              nomMenacant,
+              nomNumismate,
+            ]
           },
         ],
       },

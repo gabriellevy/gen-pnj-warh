@@ -31,9 +31,10 @@ function Coteries() {
             objets,
           }) =>
             affiche ? (
-              <Box x sx={styles.lstCoteries_ul}>
+              <Box 
+                key={titre}
+                sx={styles.lstCoteries_ul}>
                 <Coterie
-                  key={titre}
                   titre={titre}
                   portrait={portrait}
                   niveau_richesse={niveau_richesse}
@@ -44,7 +45,7 @@ function Coteries() {
                   modifs_comps={modifs_comps}
                   objets={objets}
                   />
-                </Box>
+              </Box>
             ) : (
               ''
             )
