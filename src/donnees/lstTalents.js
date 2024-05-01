@@ -13,6 +13,8 @@ export const nomBaratiner = 'Baratiner'
 export const nomBattement = 'Battement'
 export const nomBeniAuChoix = 'Béni (au choix)'
 export const nomBonMarcheurAuChoix = 'Bon marcheur (au choix)'
+export const nomBonMarcheurMarecages = 'Bon marcheur (marécages)'
+export const nomBonMarcheurLittoral = 'Bon marcheur (littoral)'
 export const nomBonnesJambes = 'Bonnes jambes'
 export const nomBricoleur = 'Bricoleur'
 export const nomBrouet = 'Brouet'
@@ -116,6 +118,7 @@ export const nomPerceptionDeLaMagie = 'Perception de la magie'
 export const nomPerseverant = 'Persévérant'
 export const nomPerspicace = 'Perspicace'
 export const nomPharmacologie = 'Pharmacologie'
+export const nomPiedMarin = 'Pied marin'
 export const nomPorteBouclier = 'Porte bouclier'
 export const nomPresenceImposante = 'Présence imposante'
 export const nomPrevoyant = 'Prévoyant'
@@ -140,6 +143,7 @@ export const nomSansPeurRats = 'Sans peur (rats)'
 export const nomSansPeurSkaven = 'Sans peur (skaven)'
 export const nomSansPeurSorcieres = 'Sans peur (sorcières)'
 export const nomSansPeurTout = 'Sans peur (tout)'
+export const nomSansPeurPatrouilleursFluviaux = 'Sans peur (patrouilleurs fluviaux)'
 export const nomSautCarpe = 'Saut carpé'
 export const nomSavantApothicaire = 'Savant (apothicaire)'
 export const nomSavantAuChoix = 'Savant (au choix)'
@@ -235,6 +239,10 @@ export const lstTalents = [
     },
     {
       titre: nomBonMarcheurAuChoix,
+      description: [''],
+    },
+    {
+      titre: nomBonMarcheurLittoral,
       description: [''],
     },
     {

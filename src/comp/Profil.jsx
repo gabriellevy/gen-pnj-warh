@@ -90,7 +90,7 @@ function Profil() {
                 </tbody>
             </table>
             <div>
-                <div class="nomPerso">{perso.nom} -&nbsp;
+                <div className="nomPerso">{perso.nom} -&nbsp;
                     {perso.evolution !== undefined && perso.evolution !== ''
                         ? perso.evolution
                         : perso.carriere}
