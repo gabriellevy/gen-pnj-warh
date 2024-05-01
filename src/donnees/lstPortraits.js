@@ -258,7 +258,7 @@ import portrait_nain_25_95_eclaireur from './img/nains/portraits/25_95_eclaireur
 import portrait_nain_30_180_mineur from './img/nains/portraits/30_180_mineur.jpg'
 import portrait_nain_60_200_bourgeois from './img/nains/portraits/60_200_bourgeois.jpg'
 import portrait_nain_80_200_guerrier from './img/nains/portraits/80_200_guerrier.jpg'
-
+import portrait_nain_30_80_f_ingénieur from './img/nains/portraits/30_80_f_ingénieur.png'
 import portrait_nain_100_200 from './img/nains/portraits/100_200.png'
 import portrait_nain_20_100_chasseuse from './img/nains/portraits/20_100_chasseuse.png'
 import portrait_nain_30_160_charpentier from './img/nains/portraits/30_160_charpentier.png'
@@ -480,6 +480,7 @@ import portrait_empire30_55_milicien from './img/empire/portraits/30_55_milicien
 import portrait_empire55_plus_pretreGuerrier from './img/empire/portraits/55_plus_pretreGuerrier.jpg'
 import portrait_empire25_45_repurgateur from './img/empire/portraits/25_45_repurgateur.jpg'
 import portrait_empire55_plus_ingenieur from './img/empire/portraits/55_plus_ingenieur.jpg'
+import portrait_empire16_35_f_ingenieur from './img/empire/portraits/16_35_f_ingénieur.png'
 import portrait_empire20_60_magicienne_feu from './img/empire/portraits/20_60_magicienne_feu.jpg'
 import portrait_empire20_45_roublard_b from './img/empire/portraits/20_45_roublard_b.jpg'
 import portrait_empire15_plus_medecin from './img/empire/portraits/15_plus_medecin.jpg'
@@ -603,6 +604,15 @@ export const lstPortraits = [
     carrieres: [],
     classes: [],
     male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_30_80_f_ingénieur,
+    ageMin: 30,
+    ageMax: 80,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: false,
   },
   {
     coteries: [nomCotNains],
@@ -1450,6 +1460,15 @@ export const lstPortraits = [
     carrieres: [nomIngenieur],
     classes: [],
     male: true,
+  },
+  {
+    coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
+    image: portrait_empire16_35_f_ingenieur,
+    ageMin: 16,
+    ageMax: 35,
+    carrieres: [nomIngenieur],
+    classes: [],
+    male: false,
   },
   {
     coteries: [nomCotEmpire, nomCotMiddenheimer, nomCotMiddenlander, nomCotNordlander, nomCotBretonniens, nomCotKislevites],
