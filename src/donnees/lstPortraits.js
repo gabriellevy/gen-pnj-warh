@@ -290,6 +290,10 @@ import portrait_nain_85_210_chasseur from './img/nains/portraits/85_210_chasseur
 import portrait_nain_30_125_soldate from './img/nains/portraits/30_125_soldate.jpg'
 import portrait_nain_80_180 from './img/nains/portraits/80_180.jpg'
 import portrait_nain_100_plus from './img/nains/portraits/100_plus.jpg'
+import portrait_nain_25_60_f from './img/nains/portraits/25_60_f.png'
+import portrait_nain_15_30_f from './img/nains/portraits/15_30_f.png'
+import portrait_nain_15_30_f_mineuse_ingenieur from './img/nains/portraits/15_30_f_mineuse_ingénieur.png'
+import portrait_nain_100_plus_mineuse_ingenieur from './img/nains/portraits/100_plus_mineuse_ingénieur.png'
 
 import portrait_templier_20_40 from './img/bretonniens/portraits/20-40.jpg'
 import portrait_templier_femme15_30 from './img/bretonniens/portraits/femme15_30.jpg'
@@ -1780,6 +1784,41 @@ export const lstPortraits = [
     carrieres: [],
     classes: [nomGuerriers],
     male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_25_60_f,
+    ageMin: 25,
+    ageMax: 60,
+    carrieres: [],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_30_f_mineuse_ingenieur,
+    ageMin: 15,
+    ageMax: 30,
+    carrieres: [nomMineur, nomIngenieur],
+    classes: [],
+    male: false,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_100_plus_mineuse_ingenieur,
+    ageMin: 100,
+    carrieres: [nomMineur, nomIngenieur],
+    classes: [],
+    male: true,
+  },
+  {
+    coteries: [nomCotNains],
+    image: portrait_nain_15_30_f,
+    ageMin: 15,
+    ageMax: 30,
+    carrieres: [],
+    classes: [],
+    male: false,
   },
   {
     coteries: [nomCotNains],
