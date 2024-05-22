@@ -11,6 +11,9 @@ import {
   nomSociabilite,
 } from './lstCaracs'
 import {
+  nomFocalisationDhar,
+  nomSavoirAuChoix,
+  nomLangueSombre,
   nomArtAuChoix,
   nomArtCalligraphie,
   nomArtEcriture,
@@ -182,7 +185,7 @@ import {
   nomVoile,
 } from './lstComps'
 import { bronze, argent, or } from './lstNiveauDeVie'
-import {nomSansPeurPatrouilleursFluviaux, nomBonMarcheurLittoral, nomPiedMarin, nomMageDeGuerre, nomDictionInstinctive, nomMainsAgiles, nomDetectionDArtefacts, nomMagieDesArcanesDomaineAuChoix, nomSecondeVue, nomMagieMineure, nomHarmonisationAethyrique, nomSavantTheologie, nomResistanceAuChoix, nomSavantMedecine, nomChirurgie, nomSavantLoi, nomSansPeurHorsLaLoi, nomSensDeLOrientation, nomSansPeurHommesBetes, nomSansPeurPrimes, nomTirSur, nomTirMortel, nomFrappePrecise, nomSansPeurTout, nomFrenesie, nomTireurDePrecision, nomRechargementRapide, nomCombatEnEspaceClos, nomContorsioniste, nomTireurDElite, nomOreilleAbsolue, nomHaineSacree, nomVisionsSacrees, nomAmePure, nomBeniAuChoix, nomSavoirVivreFideles, nomInvocationAuChoix, nomCombattantAuContact, nomEndurci, nomEffrayant, nomMachoiresDAcier, nomMaitriseDesDes, nomImpitoyable, nomSansPeurIntrus, nomSautCarpe, nomAssautFeroce, nomGuerrierNe, nomSansPeurAuChoix, nomPorteBouclier, nomInebranlable, nomTirPrecis, nomExaltant, nomHaineAuChoix, nomArtilleur, nomAcrobatiesEquestres, nomVigilance, nomReflexesFoudroyants, nomClaquerLeFouet, nomCavalierEmerite, nomAffable,nomSavoirVivreServiteurs, nomResistancePoison, nomPrevoyant, nomImperturbable, nomSeigneurDeGuerre, nomSavantRegion, nomNomade, nomBonMarcheurAuChoix, nomAffiniteAvecLesAnimaux, nomMaitreEnDeguisement, nomImitation, nomIdentiteSecrete, nomLireSurLesLevres, nomAmbidextre, nomAttirant, nomNoblesse, nomVoyageurAguerri, nomSavoirVivreNobles, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombatInstinctif, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssommante, nomFrappeBlessante, nomFrappeReactive, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMaitriseDuCombat, nomManiementDeDeuxArmes, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNoctambule, nomDistraire, nomFeinte, nomNumismate, nomObstine, nomOrateur, nomBattement, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomRenversement, nomResistanceMaladie, nomRiposte, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTirRapide, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer, nomPecheur, nomChargeBerserk, nomHaineHeretiques, nomPansementDeFortune, nomSansPeurHeretiques, nomControleDeLaFrenesie, nomMarinier, nomNageurEndurant, nomFouleeAuChoix, nomVeloce, nomHaineHorsLaLoi, nomSansPeurSorcieres, nomPerceptionDeLaMagie, nomDetermine, nomTravailleurQualifieEmpoisonneur, nomSensAiguiseGout, nomTravailleurQualifieApothicaire, nomPharmacologie, nomMaitreArtisanApothicaire, nomConcocter, nomSavoirVivreErudits, nomSavantApothicaire, nomDoueEnCalcul, nomSavantAuChoix, nomLinguistique, nomTravailleurQualifieIngenierie, nomTireurEmbusque, nomMaitreArtisanIngenieur, nomBonMarcheurMarecages } from './lstTalents'
+import {NomMagieDuChaosTzeentch, nomSavoirVivreHommesBetes, nomCorruptionChoisie, nomSansPeurPatrouilleursFluviaux, nomBonMarcheurLittoral, nomPiedMarin, nomMageDeGuerre, nomDictionInstinctive, nomMainsAgiles, nomDetectionDArtefacts, nomMagieDesArcanesDomaineAuChoix, nomSecondeVue, nomMagieMineure, nomHarmonisationAethyrique, nomSavantTheologie, nomResistanceAuChoix, nomSavantMedecine, nomChirurgie, nomSavantLoi, nomSansPeurHorsLaLoi, nomSensDeLOrientation, nomSansPeurHommesBetes, nomSansPeurPrimes, nomTirSur, nomTirMortel, nomFrappePrecise, nomSansPeurTout, nomFrenesie, nomTireurDePrecision, nomRechargementRapide, nomCombatEnEspaceClos, nomContorsioniste, nomTireurDElite, nomOreilleAbsolue, nomHaineSacree, nomVisionsSacrees, nomAmePure, nomBeniAuChoix, nomSavoirVivreFideles, nomInvocationAuChoix, nomCombattantAuContact, nomEndurci, nomEffrayant, nomMachoiresDAcier, nomMaitriseDesDes, nomImpitoyable, nomSansPeurIntrus, nomSautCarpe, nomAssautFeroce, nomGuerrierNe, nomSansPeurAuChoix, nomPorteBouclier, nomInebranlable, nomTirPrecis, nomExaltant, nomHaineAuChoix, nomArtilleur, nomAcrobatiesEquestres, nomVigilance, nomReflexesFoudroyants, nomClaquerLeFouet, nomCavalierEmerite, nomAffable,nomSavoirVivreServiteurs, nomResistancePoison, nomPrevoyant, nomImperturbable, nomSeigneurDeGuerre, nomSavantRegion, nomNomade, nomBonMarcheurAuChoix, nomAffiniteAvecLesAnimaux, nomMaitreEnDeguisement, nomImitation, nomIdentiteSecrete, nomLireSurLesLevres, nomAmbidextre, nomAttirant, nomNoblesse, nomVoyageurAguerri, nomSavoirVivreNobles, nomBaratiner, nomBonnesJambes, nomBricoleur, nomBrouet, nomCaid, nomChanceux, nomChatDeGouttiere, nomCoeurVaillant, nomCombatDeloyal, nomCombatInstinctif, nomCombattantEnEspaceClos, nomCooperatif, nomCostaud, nomCoudeACoude, nomCoupPuissant, nomCriminel, nomDesarmer, nomDiscret, nomDoigtsDeFee, nomDurACuire, nomEffraction, nomErgoteur, nomEscroquer, nomFaireLaManche, nomFerveurArdente, nomFlairerLesEnnuis, nomFrappeAssommante, nomFrappeBlessante, nomFrappeReactive, nomFuite, nomGrandOrateur, nomInfatigable, nomInsignifiant, nomIntrigant, nomLectureRapide, nomLireEcrire, nomMagnumOpus, nomMaitriseDuCombat, nomManiementDeDeuxArmes, nomMenacant, nomMenteur, nomNanti, nomNegociateur, nomNoctambule, nomDistraire, nomFeinte, nomNumismate, nomObstine, nomOrateur, nomBattement, nomPasDeCote, nomPerseverant, nomPerspicace, nomPresenceImposante, nomRatDEgout, nomRenversement, nomResistanceMaladie, nomRiposte, nomRobuste, nomSansPeurCriminels, nomSansPeurMiliciens, nomSansPeurRats, nomSansPeurSkaven, nomSavoirVivreAuChoix, nomSavoirVivreCriminels, nomSavoirVivreGuilde, nomSavoirVivreSoldats, nomSensAiguiseAuChoix, nomSensAiguiseGoutOuToucher, nomSixiemeSens, nomSociable, nomSprinter, nomStudieux, nomSuborneur, nomTirRapide, nomTourDesSouvenirs, nomTravailleurQualifieAuChoix, nomTresFort, nomTresResistant, nomVisionNocturne, nomVivacite, nomVolonteDeFer, nomPecheur, nomChargeBerserk, nomHaineHeretiques, nomPansementDeFortune, nomSansPeurHeretiques, nomControleDeLaFrenesie, nomMarinier, nomNageurEndurant, nomFouleeAuChoix, nomVeloce, nomHaineHorsLaLoi, nomSansPeurSorcieres, nomPerceptionDeLaMagie, nomDetermine, nomTravailleurQualifieEmpoisonneur, nomSensAiguiseGout, nomTravailleurQualifieApothicaire, nomPharmacologie, nomMaitreArtisanApothicaire, nomConcocter, nomSavoirVivreErudits, nomSavantApothicaire, nomDoueEnCalcul, nomSavantAuChoix, nomLinguistique, nomTravailleurQualifieIngenierie, nomTireurEmbusque, nomMaitreArtisanIngenieur, nomBonMarcheurMarecages } from './lstTalents'
 
 // classes
 export const nomCitadins = 'Citadins'
@@ -193,6 +196,7 @@ export const nomLettres = 'Lettrés'
 export const nomRiverains = 'Riverains'
 export const nomRoublards = 'Roublards'
 export const nomRuraux = 'Ruraux'
+export const nomChaotiques = 'Chaotiques'
 
 // -------------- carrières
 export const nomAgitateur = 'Agitateur'
@@ -274,6 +278,9 @@ export const nomMineur = 'Mineur'
 export const nomMystique = 'Mystique'
 export const nomSorcierDeVillage = 'Sorcier de village'
 export const nomVillageois = 'Villageois'
+
+// chaotiques
+export const nomGuerrierTzeentch = 'Guerrier de Tzeentch'
 
 export function getClasseObj(idClasse) {
   var coterieObj
@@ -573,6 +580,10 @@ export const nomSageVillage = 'Sage de village'
 export const nomPaysan = 'Paysan'
 export const nomEchevin = 'Échevin'
 export const nomDoyen = 'Doyen'
+
+export const nomInitieDesMysteres = 'Initié des mystères'
+export const nomFavoriTzeentch = 'Favori de Tzeentch'
+export const nomEluTzeentch = 'Élu de Tzeentch'
 
 export function getEvolutionObjFromCarriereAndEvolutionStr(
   nomClasseStr,
@@ -6064,4 +6075,101 @@ export const lstClasses = [
       },
     ],
   },
-]
+  {
+    titre: nomChaotiques,
+    description: 'Chaos',
+    carrieres: [
+      {
+        titre: nomGuerrierTzeentch,
+        description: 'Guerrier de Tzeentch',
+        evolutions: [
+          {
+            titre: nomInitieDesMysteres,
+            statut: {
+              echelon: bronze,
+              standing: 1,
+            },
+            caracs: [nomCC, nomEndurance, nomIntelligence],
+            competences: [
+              nomAthletisme,
+              nomCharme,
+              nomCorpsACorpsBase,
+              nomDiscretionRurale,
+              nomLangueMagick,
+              nomPerception,
+              nomRagot,
+              nomResistanceAlcool,
+            ],
+            talents: [
+              nomCorruptionChoisie,
+              nomCoupPuissant,
+              nomManiementDeDeuxArmes,
+              nomPorteBouclier,
+              nomSavoirVivreHommesBetes,
+            ]
+          },
+          {
+            titre: nomGuerrierTzeentch,
+            statut: {
+              echelon: bronze,
+              standing: 5,
+            },
+            caracs: [nomForceMentale],
+            competences: [
+              nomEsquive,
+              nomIntimidation,
+              nomIntuition,
+              nomResistance,
+              nomLangueSombre,
+              nomSubornation,
+            ],
+            talents: [
+              nomIntrigant,
+              nomMagieMineure,
+              nomMenacant,
+              nomRenversement,
+            ]
+          },
+          {
+            titre: nomFavoriTzeentch,
+            statut: {
+              echelon: argent,
+              standing: 4,
+            },
+            caracs: [nomAgilete],
+            competences: [
+              nomCommandement,
+              nomCorpsACorpsAuChoix,
+              nomFocalisationDhar,
+              nomSavoirAuChoix,
+            ],
+            talents: [
+              nomAssautFeroce,
+              nomFrappeBlessante,
+              nomMageDeGuerre,
+              NomMagieDuChaosTzeentch,
+            ]
+          },
+          {
+            titre: nomEluTzeentch,
+            statut: {
+              echelon: or,
+              standing: 1,
+            },
+            caracs: [nomForce],
+            competences: [
+              nomCalme,
+              nomSavoirAuChoix,
+            ],
+            talents: [
+              nomDictionInstinctive,
+              nomMenteur,
+              nomSeigneurDeGuerre,
+              nomTueur,
+            ]
+          },
+        ],
+      },
+    ],
+  },
+];
