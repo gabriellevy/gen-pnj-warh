@@ -100,6 +100,7 @@ export const nomMagnumOpus = 'Magnum opus'
 export const nomMainsAgiles = 'Mains agiles'
 export const nomMaitreArtisan = 'Maître artisan (au choix)'
 export const nomMaitreArtisanApothicaire = 'Maître artisan (apothicaire)'
+export const nomMaitreArtisanConstructeurDeBateaux = 'Maître artisan (constructeur de bateaux)'
 export const nomMaitreArtisanIngenieur = 'Maître artisan (ingénieur)'
 export const nomMaitreEnDeguisement = 'Maître en déguisement'
 export const nomMaitriseDesDes = 'Maîtrise des dés'
@@ -159,6 +160,7 @@ export const nomSavantLoi = 'Savant (loi)'
 export const nomSavantRegion = 'Savant (région)'
 export const nomSavantTheologie = 'Savant (théologie)'
 export const nomSavantTzeentch = 'Savant (Tzeentch)'
+export const nomSavantVoiesFluviales = 'Savant (voies fluviales)'
 export const nomSavoirVivreAuChoix = 'Savoir vivre (au choix)'
 export const nomSavoirVivreCriminels = 'Savoir vivre (criminels)'
 export const nomSavoirVivreErudits = 'Savoir vivre (érudits)'
@@ -189,6 +191,7 @@ export const nomTirSur = 'Tir sûr'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
 export const nomTravailleurQualifieApothicaire = 'Travailleur qualifié (apothicaire)'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
+export const nomTravailleurQualifieConstructeurDeBateaux = 'Travailleur qualifié (constructeur de bateaux)'
 export const nomTravailleurQualifieEmpoisonneur = 'Travailleur qualifié (empoisonneur)'
 export const nomTravailleurQualifieIngenierie = 'Travailleur qualifié (ingéniérie)'
 export const nomTresFort = 'Très fort'
@@ -202,6 +205,18 @@ export const nomVivacite = 'Vivacité'
 export const nomVoyageurAguerri = 'Voyageur aguerri'
 
 export const lstTalents = [
+    {
+      titre: nomTravailleurQualifieConstructeurDeBateaux,
+      description: [''],
+    },
+    {
+      titre: nomSavantVoiesFluviales,
+      description: [''],
+    },
+    {
+      titre: nomMaitreArtisanConstructeurDeBateaux,
+      description: [''],
+    },
     {
       titre: nomAffable,
       description: [''],
