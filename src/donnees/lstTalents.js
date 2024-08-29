@@ -191,6 +191,7 @@ export const nomTirPrecis = 'Tir précis'
 export const nomTirRapide = 'Tir rapide'
 export const nomTirSur = 'Tir sûr'
 export const nomTourDesSouvenirs = 'Tour des souvenirs'
+export const nomTrappeur = 'Trappeur'
 export const nomTravailleurQualifieApothicaire = 'Travailleur qualifié (apothicaire)'
 export const nomTravailleurQualifieAuChoix = 'Travailleur qualifié (au choix)'
 export const nomTravailleurQualifieConstructeurDeBateaux = 'Travailleur qualifié (constructeur de bateaux)'
@@ -207,6 +208,10 @@ export const nomVivacite = 'Vivacité'
 export const nomVoyageurAguerri = 'Voyageur aguerri'
 
 export const lstTalents = [
+    {
+      titre: nomTrappeur,
+      description: [''],
+    },
     {
       titre: nomLoupDeMer,
       description: [''],
