@@ -90,6 +90,7 @@ export const nomLectureRapide = 'Lecture rapide'
 export const nomLinguistique = 'Linguistique'
 export const nomLireEcrire = 'Lire / écrire'
 export const nomLireSurLesLevres = 'Lire sur les lèvres'
+export const nomLoupDeMer = 'Loup de mer'
 export const nomMachoiresDAcier = "Mavhoîres d'acier"
 export const nomMageDeGuerre = 'Mage de guerre'
 export const nomMagieDesArcanesDomaineAuChoix = 'Magie des arcanes (domaine au choix)'
@@ -178,6 +179,7 @@ export const nomSensAiguiseGoutOuToucher = 'Sens aiguisé (goût ou toucher)'
 export const nomSensDeLOrientation = "Sens de l'orientation"
 export const nomSixiemeSens = 'Sixième sens'
 export const nomSociable = 'Sociable'
+export const nomSouplesseFeline = 'Souplesse féline'
 export const nomSprinter = 'Sprinter'
 export const nomStudieux = 'Studieux'
 export const nomSuborneur = 'Suborneur'
@@ -205,6 +207,14 @@ export const nomVivacite = 'Vivacité'
 export const nomVoyageurAguerri = 'Voyageur aguerri'
 
 export const lstTalents = [
+    {
+      titre: nomLoupDeMer,
+      description: [''],
+    },
+    {
+      titre: nomSouplesseFeline,
+      description: [''],
+    },
     {
       titre: nomTravailleurQualifieConstructeurDeBateaux,
       description: [''],
