@@ -367,20 +367,6 @@ export const PersoProvider = ({ children }) => {
     coterie: undefined, // titre de coterie
   })
 
-  /**
-   * mettre à zéro toutes les valeurs de base de compétences et de talents
-   */
-  /*useEffect(() => {
-    lstComps.forEach(({ titre, description }) => {
-      const idComp = getCompObjPropertyName(titre)
-      perso[idComp] = 0
-    })
-    lstTalents.forEach(({ titre, description }) => {
-      const idTalent = getTalentObjPropertyName(titre)
-      perso[idTalent] = 0
-    })
-  })*/
-
   // le changement de coterie implique un recalcul de presque tout :
   // âge, métier, portrait
   // mais pas la région car au contraire c'est le changement de région qui implique le changement de coterie
@@ -430,9 +416,7 @@ export const PersoProvider = ({ children }) => {
       }
       var persoFinal = { ...perso, ...changementsAuPerso }
       setPerso(persoFinal)
-
     }
-
   }, [perso.region])
 
   /**

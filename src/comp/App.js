@@ -1,6 +1,6 @@
 import Profil from './Profil'
 import ZoneDeChoix from './ZoneDeChoix'
-import { useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import { PersoContexte } from '../utils/contexte/perso'
 import { createTheme } from '@mui/material/styles';
 import { Box, ThemeProvider,  } from '@mui/system';
@@ -110,9 +110,7 @@ const styles = {
 function App() {
   const { perso } = useContext(PersoContexte)
 
-  useEffect(() => {
-    document.title = 'Générateur de personnage warhammer'
-  }, [])
+  document.title = 'Générateur de personnage warhammer';
 
   return (
     <div sx={styles.app}>
